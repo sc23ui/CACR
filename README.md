@@ -17,8 +17,8 @@ AGENCY
     - loginAlternate-cacr-overide.css
     https://rawgit.com/chenrygit/CACR/master/agency/css/loginAlternate-cacr-overide.css
 
-    - myDashboardApssPage-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/agency/css/myDashboardApssPage-cacr-overide.css
+    - myDashboardAppsPage-cacr-overide.css
+    https://rawgit.com/chenrygit/CACR/master/agency/css/myDashboardAppsPage-cacr-overide.css
 
     - navDisplayAndDetailsPages-cacr-overide.css
     https://rawgit.com/chenrygit/CACR/master/agency/css/navDisplayAndDetailsPages-cacr-overide.css
@@ -78,8 +78,8 @@ CORPORATE
     - loginAlternate-cacr-overide.css
     https://rawgit.com/chenrygit/CACR/master/corporate/css/loginAlternate-cacr-overide.css
 
-    - myDashboardApssPage-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/corporate/css/myDashboardApssPage-cacr-overide.css
+    - myDashboardAppsPage-cacr-overide.css
+    https://rawgit.com/chenrygit/CACR/master/corporate/css/myDashboardAppsPage-cacr-overide.css
 
     - navDisplayAndDetailsPages-cacr-overide.css
     https://rawgit.com/chenrygit/CACR/master/corporate/css/navDisplayAndDetailsPages-cacr-overide.css
