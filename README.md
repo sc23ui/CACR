@@ -5,121 +5,120 @@ Corporate and Agency Competitive Response
 AGENCY
 
     /css
-    - components-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/agency/css/common-cacr-overide.css
+    - components-cacr-overide.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/css/common-cacr-overide.css" media="all"/>
 
-    - landing-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/agency/css/landing-cacr-overide.css
+    - landing-cacr-overide.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/css/landing-cacr-overide.css" media="all"/>
 
-    - login-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/agency/css/login-cacr-overide.css
+    - login-cacr-overide.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/css/login-cacr-overide.css" media="all"/>
 
-    - loginAlternate-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/agency/css/loginAlternate-cacr-overide.css
+    - loginAlternate-cacr-overide.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/css/loginAlternate-cacr-overide.css" media="all"/>
 
-    - myDashboardAppsPage-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/agency/css/myDashboardAppsPage-cacr-overide.css
+    - myDashboardApssPage-cacr-overide.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/css/myDashboardApssPage-cacr-overide.css" media="all"/>
 
-    - navDisplayAndDetailsPages-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/agency/css/navDisplayAndDetailsPages-cacr-overide.css
+    - navDisplayAndDetailsPages-cacr-overide.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/css/navDisplayAndDetailsPages-cacr-overide.css" media="all"/>
 
      /common
-     - common-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/agency/common/common-cacr-overide.css
+     - common-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/common-cacr-overide.css" media="all"/>
 
-     - commonElements-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/agency/common/commonElements-cacr-overide.css
+     - commonElements-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/commonElements-cacr-overide.css" media="all"/>
 
-     - header-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/agency/common/header-cacr-overide.css
+     - header-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/header-cacr-overide.css" media="all"/>
 
-     - generalheader-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/agency/common/generalheader-cacr-overide.css
+     - generalheader-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/generalheader-cacr-overide.css" media="all"/>
 
-     - footer-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/agency/common/footer-cacr-overide.css
+     - footer-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/footer-cacr-overide.css" media="all"/>
 
-     - components-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/agency/common/components-cacr-overide.css
+     - components-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/components-cacr-overide.css" media="all"/>
 
-     - components-cacr-new.css
-     https://rawgit.com/chenrygit/CACR/master/agency/common/components-cacr-new.css
+     - components-cacr-new.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/components-cacr-new.css" media="all"/>
 
-     - unsupportedBrowserMessageModal-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/agency/common/unsupportedBrowserMessageModal-cacr-overide.css
+     - unsupportedBrowserMessageModal-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/unsupportedBrowserMessageModal-cacr-overide.css" media="all"/>
 
 
      /ie
-     - ie10-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/agency/ie/ie10-cacr-overide.css
+     - ie10-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/ie/ie10-cacr-overide.css" media="all"/>
 
-     - ieHeader-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/agency/ie/ieHeader-cacr-overide.css
+     - ieHeader-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/ie/ieHeader-cacr-overide.css" media="all"/>
 
 
      /home
-     - home-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/agency/home/home-cacr-overide.css
+     - home-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/home/home-cacr-overide.css" media="all"/>
 
 
 
 CORPORATE
 
     /css
-    - components-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/corporate/css/common-cacr-overide.css
+    - components-cacr-overide.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/css/common-cacr-overide.css" media="all"/>
 
-    - landing-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/corporate/css/landing-cacr-overide.css
+    - landing-cacr-overide.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/css/landing-cacr-overide.css" media="all"/>
 
-    - login-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/corporate/css/login-cacr-overide.css
+    - login-cacr-overide.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/css/login-cacr-overide.css" media="all"/>
 
-    - loginAlternate-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/corporate/css/loginAlternate-cacr-overide.css
+    - loginAlternate-cacr-overide.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/css/loginAlternate-cacr-overide.css" media="all"/>
 
-    - myDashboardAppsPage-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/corporate/css/myDashboardAppsPage-cacr-overide.css
+    - myDashboardApssPage-cacr-overide.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/css/myDashboardApssPage-cacr-overide.css" media="all"/>
 
-    - navDisplayAndDetailsPages-cacr-overide.css
-    https://rawgit.com/chenrygit/CACR/master/corporate/css/navDisplayAndDetailsPages-cacr-overide.css
+    - navDisplayAndDetailsPages-cacr-overide.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/css/navDisplayAndDetailsPages-cacr-overide.css" media="all"/>
 
      /common
-     - common-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/corporate/common/common-cacr-overide.css
+     - common-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/common/common-cacr-overide.css" media="all"/>
 
-     - commonElements-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/corporate/common/commonElements-cacr-overide.css
+     - commonElements-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/common/commonElements-cacr-overide.css" media="all"/>
 
-     - header-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/corporate/common/header-cacr-overide.css
+     - header-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/common/header-cacr-overide.css" media="all"/>
 
-     - generalheader-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/corporate/common/generalheader-cacr-overide.css
+     - generalheader-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/common/generalheader-cacr-overide.css" media="all"/>
 
-     - footer-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/corporate/common/footer-cacr-overide.css
+     - footer-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/common/footer-cacr-overide.css" media="all"/>
 
-     - components-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/corporate/common/components-cacr-overide.css
+     - components-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/common/components-cacr-overide.css" media="all"/>
 
-     - components-cacr-new.css
-     https://rawgit.com/chenrygit/CACR/master/corporate/common/components-cacr-new.css
+     - components-cacr-new.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/common/components-cacr-new.css" media="all"/>
 
-     - unsupportedBrowserMessageModal-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/corporate/common/unsupportedBrowserMessageModal-cacr-overide.css
+     - unsupportedBrowserMessageModal-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/common/unsupportedBrowserMessageModal-cacr-overide.css" media="all"/>
 
 
      /ie
-     - ie10-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/corporate/ie/ie10-cacr-overide.css
+     - ie10-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/ie/ie10-cacr-overide.css" media="all"/>
 
-     - ieHeader-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/corporate/ie/ieHeader-cacr-overide.css
+     - ieHeader-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/ie/ieHeader-cacr-overide.css" media="all"/>
 
 
      /home
-     - home-cacr-overide.css
-     https://rawgit.com/chenrygit/CACR/master/corporate/home/home-cacr-overide.css
-
+     - home-cacr-overide.css" media="all"/>
+     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/home/home-cacr-overide.css" media="all"/>
 
