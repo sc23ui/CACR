@@ -10,6 +10,16 @@
   
 .v2 .corp-inactiveButton {
     background: #707070;
+    font-size: 16px;
+  }
+
+.v2 .corp-activeButton {
+   font-size: 16px;
+  }
+
+.v2 .corp-buttonDiv {
+   padding-top: 10px;
+   padding-bottom: 10px;
   }
 
 .v2 .corp-primaryButton {
