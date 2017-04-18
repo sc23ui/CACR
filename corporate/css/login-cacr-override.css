@@ -1,1 +1,54 @@
 
+/* login-cacr-override.css */
+.v2 .login-alternate {
+    background-color: #F6F6F7;
+  }
+
+.v2 .corpLoginHeader {
+    color: #0B1F66;
+  }
+  
+.v2 ::-webkit-input-placeholder { 
+    color:    #707070
+  }
+
+.v2 :-moz-placeholder { 
+    color:    #707070
+  }
+  
+.v2 ::-moz-placeholder { 
+    color:    #707070
+  }
+  
+.v2 :-ms-input-placeholder {
+    color:    #707070
+  }
+
+.v2 .corp-inactiveButton {
+    background: #707070;
+  }
+
+.v2 .corp-primaryButton {
+    background:  -webkit-linear-gradient(#E3132C,#CB1127)
+  }
+
+.v2 .remember-me-style {
+    color: #333333;
+  }
+
+.v2 .login-label-style {
+    color: #333333;
+  }
+  
+.v2 .corpFWLink {
+    color: #0253A4;
+  }
+
+.v2 .corpFWLink:hover {
+    color: #1C7BD9;
+  }
+  
+.v2 .darkBGText {
+    color: #333333;
+}
+
