@@ -13,7 +13,10 @@
   }
 
 .v2 .corp-primaryButton {
-    background:  -webkit-linear-gradient(#E3132C,#CB1127)
+    background-image: linear-gradient(#E3132C,#CB1127); /*general*/
+	background: -webkit-linear-gradient(#E3132C,#CB1127); /*for Safari*/
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E3132C', endColorstr='#CB1127',GradientType=0 ); /*for IE*/
+   /* background:  -webkit-linear-gradient(#E3132C,#CB1127)*/
   }
 
 .v2 .remember-me-style {
