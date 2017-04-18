@@ -8,6 +8,8 @@
     color: #0B1F66;
   }
   
+/* Removing placeholder css rules
+
 .v2 ::-webkit-input-placeholder { 
     color:    #707070
   }
@@ -22,7 +24,7 @@
   
 .v2 :-ms-input-placeholder {
     color:    #707070
-  }
+  } */
 
 .v2 .corp-inactiveButton {
     background: #707070;
