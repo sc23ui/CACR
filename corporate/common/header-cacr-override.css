@@ -2,11 +2,11 @@
 	background-color: #174873;
 }
 .v2 #header {
-    background-color: #174873;
-}
-.v2 #deltaLinkSubHeader{
 	background-color: #174873;
-	border-top: 1px solid #c7c7c7;                                   
+}
+.v2 #deltaLinkSubHeader {
+	background-color: #174873;
+	border-top: 1px solid #c7c7c7;
 }
 .v2 #menu a {
 	color: #FFF;
@@ -23,12 +23,12 @@
 	border-width: 1px;
 	border-color: #991933;
 }
-.v2 .verticalLoginHeader{
-    background-color: #FFFFFF;
+.v2 .verticalLoginHeader {
+	background-color: #FFFFFF;
 }
-.v2 h4.verticalTitle{
-    font-size: 18px;
-    color: #0B1F66;
+.v2 h4.verticalTitle {
+	font-size: 18px;
+	color: #0B1F66;
 }
 .v2 .corp-switchLangLinkText {
 	font-size: 1.1em;
@@ -37,19 +37,19 @@
 .v2 .corp-switchLangLinkText:hover {
 	color: #0253A4 !important;
 }
-.v2 .corp-globeLogo:hover{
-	 color: #0253A4 !important;
+.v2 .corp-globeLogo:hover {
+	color: #0253A4 !important;
 }
 .v2 .login {
-     font-size: 1.1em;
-     color: #1FA5E4;
+	font-size: 1.1em;
+	color: #1FA5E4;
 }
-.v2 .verticalLoginContent{
-    background-color: #F6F6F6;
+.v2 .verticalLoginContent {
+	background-color: #F6F6F6;
 }
-.v2 .logoutLogo {   
-    background-image: url("/etc/designs/corporate/images/logout.png");   
+.v2 .logoutLogo {
+	background-image: url("/etc/designs/corporate/images/logout.png");
 }
-.v2 .myProfileLogo {  
-    background-image: url("/etc/designs/corporate/images/profile.png");   
+.v2 .myProfileLogo {
+	background-image: url("/etc/designs/corporate/images/profile.png");
 }
