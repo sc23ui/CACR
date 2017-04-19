@@ -3,64 +3,36 @@
 }
 .v2 #header {
     background-color: #174873;
-    width: 960px;
-    height: 109px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
 }
 .v2 #deltaLinkSubHeader{
-	width: 100%;
-	min-width: 960px;
-	height: 50px;
 	background-color: #174873;
-	overflow: visible!important;
 	border-top: 1px solid #c7c7c7;                                   
 }
 .v2 #menu a {
 	color: #FFF;
-	display: inline-block;
-	font-size: 1.3em;
-	font-weight: 700;
-	line-height: normal;
-	text-transform: uppercase;
-	vertical-align: middle;
 }
 .v2 .corp-switchLangActiveText {
-	font-weight: 700;
 	font-size: 1.1em;
 	color: #FFFFFF;
-	pointer-events: none;
-	cursor: default !important;
-	padding-left: 4px;
-	padding-right: 4px;
 }
-
 .v2 .corp-switchLangActiveText:hover {
 	color: #333333 !important;
-	cursor: default !important;
 }
-
 .v2 .primaryButton {
 	background-color: #E3132C;
 	border-width: 1px;
 	border-color: #991933;
 }
 .v2 .verticalLoginHeader{
-    padding: 13px 30px;
     background-color: #FFFFFF;
 }
 .v2 h4.verticalTitle{
     font-size: 18px;
     color: #0B1F66;
-    font-weight: 400;
 }
-   .v2 .corp-switchLangLinkText {
-	font-weight: 700;
+.v2 .corp-switchLangLinkText {
 	font-size: 1.1em;
 	color: #1FA5E4;
-	padding-left: 4px;
-	padding-right: 4px;
 }
 .v2 .corp-switchLangLinkText:hover {
 	color: #0253A4 !important;
@@ -71,28 +43,13 @@
 .v2 .login {
      font-size: 1.1em;
      color: #1FA5E4;
-     height: 16px;
-     font-weight: 700;
 }
 .v2 .verticalLoginContent{
     background-color: #F6F6F6;
-    text-align: left;
-    padding: 18px 30px;
-    min-height: 280px;
 }
-.v2 .logoutLogo {
-    height: 16px;
-    width: 16px;        
-    background: url("/etc/designs/corporate/images/logout.png") no-repeat scroll 0 0 transparent;   
-    overflow: hidden;
-    text-align: left;  
-    margin-left: 10px;
+.v2 .logoutLogo {   
+    background-image: url("/etc/designs/corporate/images/logout.png");   
 }
-.v2 .myProfileLogo {
-    height: 16px;
-    width: 16px;        
-    background: url("/etc/designs/corporate/images/profile.png") no-repeat scroll 0 0 transparent;
-    display: block;    
-    overflow: hidden;
-    text-align: left;     
+.v2 .myProfileLogo {  
+    background-image: url("/etc/designs/corporate/images/profile.png");   
 }
