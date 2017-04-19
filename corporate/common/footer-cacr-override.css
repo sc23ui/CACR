@@ -1,1 +1,21 @@
 /* footer-cacr-override.css */
+.v2 #corp-footer hr {
+    color: #ffffff;
+    height: 1px;
+}
+.v2 .corp-footerContent {
+    font-size: 1.4em;
+    color: #FFFFFF;
+    }
+
+.v2 a.corp-footerLinks:hover {
+      color: #a9dbff;
+  }
+
+.v2 a.corp-footerLinks {
+      color: #87cdff;
+  }
+
+.v2  #corp-footer {
+    background-color: #123c64;
+  }
