@@ -13,10 +13,10 @@
 }
 .v2 .corp-switchLangActiveText {
 	font-size: 1.1em;
-	color: #FFFFFF;
+	color: #d6f3fb;
 }
 .v2 .corp-switchLangActiveText:hover {
-	color: #333333 !important;
+	color: #d6f3fb !important;
 }
 .v2 .primaryButton {
 	background-color: #E3132C;
@@ -27,22 +27,19 @@
 	background-color: #FFFFFF;
 }
 .v2 h4.verticalTitle {
-	font-size: 18px;
 	color: #0B1F66;
 }
 .v2 .corp-switchLangLinkText {
-	font-size: 1.1em;
-	color: #1FA5E4;
+	color: #92caf9;
 }
 .v2 .corp-switchLangLinkText:hover {
-	color: #0253A4 !important;
+	color: #fff !important;
 }
 .v2 .corp-globeLogo:hover {
-	color: #0253A4 !important;
+	color: #fff !important;
 }
 .v2 .login {
-	font-size: 1.1em;
-	color: #1FA5E4;
+	color: #92caf9;
 }
 .v2 .verticalLoginContent {
 	background-color: #F6F6F6;
@@ -52,4 +49,10 @@
 }
 .v2 .myProfileLogo {
 	background-image: url("/etc/designs/corporate/images/profile.png");
+}
+.v2 #gotoLoginAltBtnID {
+	color: #92caf9;
+}
+.v2 #gotoLoginAltBtnID:hover {
+	color: #fff;
 }
