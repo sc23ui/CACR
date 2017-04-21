@@ -1,5 +1,5 @@
 /* common-cacr-override.css */
 #contentBody {
-	background-image:none;
-	background-color:#fff;	
+	background-image:none !important;
+	background-color:#fff !important;	
 }
