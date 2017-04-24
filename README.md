@@ -1,7 +1,7 @@
 # CACR
 Corporate and Agency Competitive Response
 
-AGENCY
+AGENCY (/deltapro)
 
     /css
     - components-cacr-override.css
@@ -120,3 +120,32 @@ CORPORATE
      - home-cacr-override.css
      <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/home/home-cacr-override.css" media="all"/>
 
+APPS
+
+    Travel Exceptions & Waivers
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/travel-exceptions-and-waivers/v2-override.css" media="all"/>
+	
+    Preferred Seats
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/preferred-seats/v2-override.css" media="all"/>
+		
+    Sky Partner OnDemand
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/sky-partner-ondemand/v2-override.css" media="all"/>
+		
+    Sky Partner Performance+
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/sky-partner-performance-plus/v2-override.css" media="all"/>
+		
+    eNCI
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/enci/v2-override.css" media="all"/>
+		
+    Operational Excellence
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/operational-excellence/v2-override.css" media="all"/>
+		
+    Delta University
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/delta-university/v2-override.css" media="all"/>
+		
+    Delta Edge
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/delta-edge/v2-override.css" media="all"/>
+	
+	eCredits & eCertificates
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/ecredits-and-ecertificates/v2-override.css" media="all"/>
+		
