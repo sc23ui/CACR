@@ -100,7 +100,7 @@
 	background:none !important;
 	color: #0B1F66;
 }
-.v2 #account_menu li.active {
+.v2 #menu li.active, .v2 #menu li.active a, .v2 #account_menu > li.active > a, .v2 #account_menu li.active {
     background:#fff !important;
 	color: #0B1F66 !important;
 }
