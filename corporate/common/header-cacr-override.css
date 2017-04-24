@@ -13,10 +13,10 @@
 }
 .v2 .corp-switchLangActiveText {
 	font-size: 1.1em;
-	color: #d6f3fb;
+	color: #fff;
 }
 .v2 .corp-switchLangActiveText:hover {
-	color: #d6f3fb !important;
+	color: #fff !important;
 }
 .v2 .primaryButton {
 	background-color: #E3132C;
@@ -55,4 +55,7 @@
 }
 .v2 #gotoLoginAltBtnID:hover {
 	color: #A9DBFF;
+}
+.v2 .corp-headerUserNameLabel {
+	color:#fff;	
 }
