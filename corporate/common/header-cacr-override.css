@@ -61,6 +61,10 @@
 }
 .v2 #account_menu > li a {
 	color:#0B1F66;
+	border-color:#c7c7c7; 
+}
+.v2 .dasboardDropdown {
+	color:#0B1F66 !important;
 }
 .v2 .corp-headerCorpNameLabel {
 	color:#fff !important;
