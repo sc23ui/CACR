@@ -44,17 +44,17 @@
 .v2 .verticalLoginContent {
 	background-color: #F6F6F6;
 }
-.v2 .logoutLogo , .corp-logoutLogo {
-	background-image: url("http://dlkd3.delta.com:17021//etc/designs/corporate/images/logout.png");
+.v2 .logoutLogo, .corp-logoutLogo {
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/logout.png");
 }
-.v2 .myProfileLogo , .corp-myProfileLogo {
-	background-image: url("http://dlkd3.delta.com:17021//etc/designs/corporate/images/profile.png");
+.v2 .myProfileLogo, .corp-myProfileLogo {
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/profile.png");
 }
-.v2 .logoutLogo:hover , .corp-logoutLogo:hover {
-	background-image: url("http://dlkd3.delta.com:17021//etc/designs/corporate/images/logout_hover.png");
+.v2 .logoutLogo:hover, .corp-logoutLogo:hover {
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/logout_hover.png") !important;
 }
-.v2 .myProfileLogo:hover , .corp-myProfileLogo:hover {
-	background-image: url("http://dlkd3.delta.com:17021//etc/designs/corporate/images/profile_hover.png");
+.v2 .myProfileLogo:hover, .corp-myProfileLogo:hover {
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/profile_hover.png") !important;
 }
 .v2 #gotoLoginAltBtnID {
 	color: #87cdff;
@@ -62,40 +62,40 @@
 .v2 #gotoLoginAltBtnID:hover {
 	color: #A9DBFF;
 }
- .v2 .dashboard-dropdown-item {
-	background-color:#fff !important;
-	border:1px solid #c7c7c7 !important; 
- }
- .v2 .dashboard-dropdown-item hover {
-	background-color:#f6f6f7 !important;	
+.v2 .dashboard-dropdown-item {
+	background-color: #fff !important;
+	border: 1px solid #c7c7c7 !important;
+}
+.v2 .dashboard-dropdown-item hover {
+	background-color: #f6f6f7 !important;
 }
 .v2 #account_menu > li {
-	background-color:#fff !important;
-	border:1px solid #c7c7c7 !important; 
+	background-color: #fff !important;
+	border: 1px solid #c7c7c7 !important;
 }
 .v2 .dashboard-dropdown-item-level-2 {
-	background-color:#fff !important;	
+	background-color: #fff !important;
 }
 .v2 .dashboard-dropdown-item-level-2:hover {
-	background-color:#f6f6f7 !important;	
+	background-color: #f6f6f7 !important;
 }
 .v2 .dashboard-dropdown-item-level-2 a {
-	 background:none !important;
-	 border:none !important;
- }
+	background: none !important;
+	border: none !important;
+}
 .v2 #account_menu > li a {
-	background-color:#fff !important;
-	color:#0B1F66;	
+	background-color: #fff !important;
+	color: #0B1F66;
 }
 .v2 .dasboardDropdown {
-	color:#0B1F66 !important;
+	color: #0B1F66 !important;
 }
 .v2 .corp-headerCorpNameLabel {
-	color:#fff !important;
+	color: #fff !important;
 }
 .v2 .corp-headerUserNameLabel {
-	color:#fff !important;	
+	color: #fff !important;
 }
 #report_menu {
-	box-shadow:none !important;	
+	box-shadow: none !important;
 }
