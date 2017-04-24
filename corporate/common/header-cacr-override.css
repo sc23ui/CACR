@@ -13,10 +13,10 @@
 }
 .v2 .corp-switchLangActiveText {
 	font-size: 1.1em;
-	color: #d6f3fb;
+	color: #87CDFF;
 }
 .v2 .corp-switchLangActiveText:hover {
-	color: #d6f3fb !important;
+	color: #87CDFF !important;
 }
 .v2 .primaryButton {
 	background-color: #E3132C;
@@ -33,10 +33,10 @@
 	color: #92caf9;
 }
 .v2 .corp-switchLangLinkText:hover {
-	color: #fff !important;
+	color: #A9DBFF !important;
 }
 .v2 .corp-globeLogo:hover {
-	color: #fff !important;
+	color: #A9DBFF !important;
 }
 .v2 .login {
 	color: #92caf9;
@@ -54,5 +54,5 @@
 	color: #92caf9;
 }
 .v2 #gotoLoginAltBtnID:hover {
-	color: #fff;
+	color: #A9DBFF;
 }
