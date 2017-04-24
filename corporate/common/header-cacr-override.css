@@ -75,18 +75,21 @@
 	background-color: #fff !important;
 	border: 1px solid #c7c7c7 !important;
 }
+.v2 #account_menu > li:hover {
+	background-color: #f6f6f7 !important;
+}
 .v2 .dashboard-dropdown-item-level-2 {
 	background-color: #fff !important;
 }
 .v2 .dashboard-dropdown-item-level-2:hover {
-	background-color: #f6f6f7 !important;
+	
 }
 .v2 .dashboard-dropdown-item-level-2 a {
 	background: none !important;
 	border: none !important;
 }
 .v2 #account_menu > li a {
-	background-color: #fff !important;
+	background:none !important;
 	color: #0B1F66;
 }
 .v2 .dasboardDropdown {
