@@ -67,7 +67,7 @@
 }
 .v2 #account_menu > li a {
 	color:#0B1F66;
-	border-color:#c7c7c7; 
+	border:1px solid #c7c7c7 !important; 
 }
 .v2 .dasboardDropdown {
 	color:#0B1F66 !important;
