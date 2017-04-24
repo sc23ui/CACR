@@ -51,11 +51,11 @@
 	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/profile.png");
 }
 .v2 .logoutLogo:hover, .corp-logoutLogo:hover {
-	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/logout_hover.png") !important;
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/logout_hover.png");
 	background-position: 0 0 !important;
 }
 .v2 .myProfileLogo:hover, .corp-myProfileLogo:hover {
-	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/profile_hover.png") !important;
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/profile_hover.png");
 	background-position: 0 0 !important;
 }
 .v2 #gotoLoginAltBtnID {
