@@ -66,9 +66,12 @@
 	background-color:#fff !important;
 	border:1px solid #c7c7c7 !important; 
  }
-.v2 #account_menu > li , .v2 .dashboard-dropdown-item-level-2 {
+.v2 #account_menu > li {
 	background-color:#fff !important;
 	border:1px solid #c7c7c7 !important; 
+}
+.v2 .dashboard-dropdown-item-level-2 {
+	background-color:#fff !important;	
 }
  .v2 .dashboard-dropdown-item-level-2 a {
 	 border:none !important;
