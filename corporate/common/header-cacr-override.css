@@ -97,6 +97,9 @@
 	border: none !important;
 	font-size:1em !important;
 }
+.v2 #account_menu .navigationLink {
+	height:48px;	
+}
 .v2 #account_menu > li a {
 	background:none !important;
 	color: #0B1F66;
