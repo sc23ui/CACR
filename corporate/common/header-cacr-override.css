@@ -66,6 +66,9 @@
 	background-color:#fff !important;
 	border:1px solid #c7c7c7 !important; 
  }
+ .v2 .dashboard-dropdown-item hover {
+	background-color:#f6f6f7 !important;	
+}
 .v2 #account_menu > li {
 	background-color:#fff !important;
 	border:1px solid #c7c7c7 !important; 
@@ -73,7 +76,11 @@
 .v2 .dashboard-dropdown-item-level-2 {
 	background-color:#fff !important;	
 }
- .v2 .dashboard-dropdown-item-level-2 a {
+.v2 .dashboard-dropdown-item-level-2:hover {
+	background-color:#f6f6f7 !important;	
+}
+.v2 .dashboard-dropdown-item-level-2 a {
+	 background:none !important;
 	 border:none !important;
  }
 .v2 #account_menu > li a {
