@@ -75,7 +75,7 @@
 	background-color: #fff;
 	border: 1px solid #c7c7c7 !important;
 }
-.v2 #account_menu > li:hover , .v2 .dashboard-dropdown-item {
+.v2 #account_menu > li:hover {
 	background-color: #f6f6f7 !important;
 }
 .v2 .dashboard-dropdown-item-level-2 {
