@@ -89,3 +89,6 @@
 .v2 .corp-headerUserNameLabel {
 	color:#fff !important;	
 }
+#report_menu {
+	box-shadow:none !important;	
+}
