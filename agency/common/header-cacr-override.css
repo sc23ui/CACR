@@ -11,11 +11,11 @@
 .v2 #menu a {
 	color: #FFF;
 }
-.v2 .corp-switchLangActiveText {
+.v2 .switchLangActiveText {
 	font-size: 1.1em;
 	color: #fff;
 }
-.v2 .corp-switchLangActiveText:hover {
+.v2 .switchLangActiveText:hover {
 	color: #fff !important;
 }
 .v2 .primaryButton {
@@ -29,13 +29,13 @@
 .v2 h4.verticalTitle {
 	color: #0B1F66;
 }
-.v2 .corp-switchLangLinkText {
+.v2 .switchLangLinkText {
 	color: #87cdff;
 }
-.v2 .corp-switchLangLinkText:hover {
+.v2 .switchLangLinkText:hover {
 	color: #A9DBFF !important;
 }
-.v2 .corp-globeLogo:hover {
+.v2 .globeLogo:hover {
 	color: #A9DBFF !important;
 }
 .v2 .login {
@@ -44,17 +44,17 @@
 .v2 .verticalLoginContent {
 	background-color: #F6F6F6;
 }
-.v2 .logoutLogo, .corp-logoutLogo {
+.v2 .logoutLogo, .logoutLogo {
 	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/logout.png");
 }
-.v2 .myProfileLogo, .corp-myProfileLogo {
+.v2 .myProfileLogo, .myProfileLogo {
 	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/profile.png");
 }
-.v2 .logoutLogo:hover, .corp-logoutLogo:hover {
+.v2 .logoutLogo:hover, .logoutLogo:hover {
 	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/logout_hover.png");
 	background-position: 0 0 !important;
 }
-.v2 .myProfileLogo:hover, .corp-myProfileLogo:hover {
+.v2 .myProfileLogo:hover, .myProfileLogo:hover {
 	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/profile_hover.png");
 	background-position: 0 0 !important;
 }
@@ -108,10 +108,10 @@
 .v2 .dashboardDropdown {
 	color: #0B1F66 !important;
 }
-.v2 .corp-headerCorpNameLabel {
+.v2 .headerCorpNameLabel {
 	color: #fff !important;
 }
-.v2 .corp-headerUserNameLabel {
+.v2 .headerUserNameLabel {
 	color: #fff !important;
 }
 #report_menu {
