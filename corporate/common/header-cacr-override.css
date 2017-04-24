@@ -44,10 +44,10 @@
 .v2 .verticalLoginContent {
 	background-color: #F6F6F6;
 }
-.v2 .logoutLogo {
+.v2 .logoutLogo , .corp-logoutLogo {
 	background-image: url("/etc/designs/corporate/images/logout.png");
 }
-.v2 .myProfileLogo {
+.v2 .myProfileLogo , .corp-myProfileLogo {
 	background-image: url("/etc/designs/corporate/images/profile.png");
 }
 .v2 #gotoLoginAltBtnID {
