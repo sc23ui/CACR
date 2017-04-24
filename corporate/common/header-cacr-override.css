@@ -13,10 +13,10 @@
 }
 .v2 .corp-switchLangActiveText {
 	font-size: 1.1em;
-	color: #87CDFF;
+	color: #d6f3fb;
 }
 .v2 .corp-switchLangActiveText:hover {
-	color: #87CDFF !important;
+	color: #d6f3fb !important;
 }
 .v2 .primaryButton {
 	background-color: #E3132C;
