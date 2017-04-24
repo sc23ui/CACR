@@ -120,7 +120,7 @@ CORPORATE
      - home-cacr-override.css
      <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/corporate/home/home-cacr-override.css" media="all"/>
 
-APPS
+APPS (place the corresponding app CSS override file inside the corresponding application, below all existing stylesheets/CSS)
 
     Travel Exceptions & Waivers
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/travel-exceptions-and-waivers/v2-override.css" media="all"/>
