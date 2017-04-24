@@ -56,15 +56,15 @@
 .v2 #gotoLoginAltBtnID:hover {
 	color: #A9DBFF;
 }
-.v2 .corp-headerUserNameLabel {
-	color:#fff;	
-}
 .v2 #account_menu > li {
-	background-color:#fff;
+	background-color:#fff !important;
 }
 .v2 #account_menu > li a {
 	color:#0B1F66;
 }
 .v2 .corp-headerCorpNameLabel {
-	color:#fff;
+	color:#fff !important;
+}
+.v2 .corp-headerUserNameLabel {
+	color:#fff !important;	
 }
