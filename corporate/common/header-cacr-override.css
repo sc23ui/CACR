@@ -62,6 +62,6 @@
 .v2 #account_menu > li {
 	background-color:#fff;
 }
-.v2 #account_menu > li a , .v2 #account_menu > li a:hover {
+.v2 #account_menu > li a {
 	color:#0B1F66;
 }
