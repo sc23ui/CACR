@@ -45,10 +45,10 @@
 	background-color: #F6F6F6;
 }
 .v2 .logoutLogo , .corp-logoutLogo {
-	background-image: url("/etc/designs/corporate/images/logout.png");
+	background-image: url("http://dlkd3.delta.com:17021//etc/designs/corporate/images/logout.png");
 }
 .v2 .myProfileLogo , .corp-myProfileLogo {
-	background-image: url("/etc/designs/corporate/images/profile.png");
+	background-image: url("http://dlkd3.delta.com:17021//etc/designs/corporate/images/profile.png");
 }
 .v2 #gotoLoginAltBtnID {
 	color: #92caf9;
@@ -56,7 +56,7 @@
 .v2 #gotoLoginAltBtnID:hover {
 	color: #A9DBFF;
 }
-.v2 #account_menu > li {
+.v2 #account_menu > li , .v2 .dashboard-dropdown-item-level-2{
 	background-color:#fff !important;
 }
 .v2 #account_menu > li a {
