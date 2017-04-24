@@ -86,8 +86,9 @@
 }
 .v2 .dashboard-dropdown-item-level-2 {
 	padding:0px !important;
-	min-width:250px;
-	margin-left:-33px;	
+	min-width:240px;
+	margin-left:-33px !important;	
+	margin-top:
 }
 .v2 .dashboard-dropdown-item-level-2:hover {
 	background-color: #f6f6f7 !important
@@ -95,7 +96,7 @@
 .v2 .dashboard-dropdown-item-level-2 a {
 	background: none !important;
 	border: none !important;
-	font-size:1em !important;
+	font-size:1.4em !important;
 }
 .v2 #account_menu .navigationLink {
 	height:48px;	
@@ -115,4 +116,5 @@
 }
 #report_menu {
 	box-shadow: none !important;
+	margin-top:-3px;
 }
