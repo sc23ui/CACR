@@ -100,7 +100,10 @@
 	background:none !important;
 	color: #0B1F66;
 }
-
+.v2 #account_menu li.active {
+    background:#fff !important;
+	color: #0B1F66 !important;
+}
 
 .v2 .dashboardDropdown {
 	color: #0B1F66 !important;
@@ -125,8 +128,4 @@
 	background: none !important;
 	border: none !important;
 	font-size:1.4em !important;
-}
-.v2 .navigationLink .active {
-    background:#fff !important;
-	color: #0B1F66 !important;
 }
