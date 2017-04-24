@@ -78,7 +78,7 @@
 	padding:none !important;
 }
 .v2 #account_menu > li a {
-	padding:0px 17px;
+	padding:5px 17px 0px 17px;
 }
 .v2 #account_menu > li:hover {
 	background-color: #f6f6f7 !important;
