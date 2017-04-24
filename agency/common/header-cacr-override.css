@@ -1,1 +1,80 @@
-/* header-cacr-override.css */
+.v2 #mainHeader {
+	background-color: #174873;
+}
+.v2 #header {
+	background-color: #174873;
+}
+.v2 #deltaLinkSubHeader {
+	background-color: #174873;
+	border-top: 1px solid #c7c7c7;
+}
+.v2 #menu a {
+	color: #FFF;
+}
+.v2 .corp-switchLangActiveText {
+	font-size: 1.1em;
+	color: #fff;
+}
+.v2 .corp-switchLangActiveText:hover {
+	color: #fff !important;
+}
+.v2 .primaryButton {
+	background-color: #E3132C;
+	border-width: 1px;
+	border-color: #991933;
+}
+.v2 .verticalLoginHeader {
+	background-color: #FFFFFF;
+}
+.v2 h4.verticalTitle {
+	color: #0B1F66;
+}
+.v2 .corp-switchLangLinkText {
+	color: #87cdff;
+}
+.v2 .corp-switchLangLinkText:hover {
+	color: #A9DBFF !important;
+}
+.v2 .corp-globeLogo:hover {
+	color: #A9DBFF !important;
+}
+.v2 .login {
+	color: #87cdff;
+}
+.v2 .verticalLoginContent {
+	background-color: #F6F6F6;
+}
+.v2 .logoutLogo , .corp-logoutLogo {
+	background-image: url("http://dlkd3.delta.com:17021//etc/designs/corporate/images/logout.png");
+}
+.v2 .myProfileLogo , .corp-myProfileLogo {
+	background-image: url("http://dlkd3.delta.com:17021//etc/designs/corporate/images/profile.png");
+}
+.v2 .logoutLogo:hover , .corp-logoutLogo:hover {
+	background-image: url("http://dlkd3.delta.com:17021//etc/designs/corporate/images/logout_hover.png");
+}
+.v2 .myProfileLogo:hover , .corp-myProfileLogo:hover {
+	background-image: url("http://dlkd3.delta.com:17021//etc/designs/corporate/images/profile_hover.png");
+}
+.v2 #gotoLoginAltBtnID {
+	color: #87cdff;
+}
+.v2 #gotoLoginAltBtnID:hover {
+	color: #A9DBFF;
+}
+.v2 #account_menu > li , .v2 .dashboard-dropdown-item-level-2{
+	background-color:#fff !important;
+	border:1px solid #c7c7c7 !important; 
+}
+.v2 #account_menu > li a {
+	color:#0B1F66;
+}
+.v2 .dasboardDropdown {
+	color:#0B1F66 !important;
+}
+.v2 .corp-headerCorpNameLabel {
+	color:#fff !important;
+}
+.v2 .corp-headerUserNameLabel {
+	color:#fff !important;	
+}
