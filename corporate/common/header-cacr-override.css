@@ -87,7 +87,7 @@
 .v2 .dashboard-dropdown-item-level-2 {
 	padding:0px !important;
 	min-width:250px;
-	font-size:1.4em;
+	margin-left:-33px;	
 }
 .v2 .dashboard-dropdown-item-level-2:hover {
 	background-color: #f6f6f7 !important
@@ -95,6 +95,7 @@
 .v2 .dashboard-dropdown-item-level-2 a {
 	background: none !important;
 	border: none !important;
+	font-size:1em !important;
 }
 .v2 #account_menu > li a {
 	background:none !important;
