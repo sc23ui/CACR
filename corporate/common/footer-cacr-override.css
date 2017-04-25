@@ -15,3 +15,9 @@
 .v2 #corp-footer {
 	background-color: #123c64;
 }
+.v2 .corp-footerImages {
+        padding-right: 60px;
+}
+.v2 .padding-right-16 {
+        padding-right: 30px;
+}
