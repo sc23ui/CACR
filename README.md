@@ -3,9 +3,7 @@ Corporate and Agency Competitive Response
 
 ## Chrome Extension
 
-Open [chrome://extensions/](chrome://extensions/) and drag/drop delta-chrome-ext.crx onto that page to install. Click the Delta icon in the toolbar, and enter the directory to this repo on your local computer into the plugin and save.
-
-To use the local CSS instead of the remote, just click the Big Red Button.
+Open [chrome://extensions/](chrome://extensions/) and check the box labeled `Developer mode` in the top right. Drag/drop this repository folder onto that page to install the plugin. Click the Delta icon in the toolbar and verify the plugin opens. To use the local CSS instead of the remote, just click the Big Red Button.
 
 ## Override Stylesheets
 

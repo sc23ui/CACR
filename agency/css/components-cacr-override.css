@@ -1,1 +1,7 @@
 /* components-cacr-override.css */
+
+body {
+  background: #06c;
+  color: #fff;
+  font: 18px "Open Sans";
+}
