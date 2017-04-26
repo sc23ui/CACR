@@ -1,27 +1,88 @@
 <style>
-.v2 .videoText-component {
-	background:#f6f6f7;
-	width:300px;
-	height:357px;
-}
-.v2 .videoText-component .video {
-	width:300px;
-	height:169px;
-}
-.v2 .videoText-component .content {
-	padding:10px;
-	font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
-	font-size:14px;
-	font-weight:400;
-	color:#0b1f66;
-}
+	.v2 .video-component-w33 {
+		width:300px;
+		height:357px;
+	}
+	.v2 .video-component-w50 {
+		width:465px;
+		height:532px;
+	}
+	.v2 .video-component-w66 {
+		width:630px;
+		height:532px;
+	}
+	.v2 .video-component-w33 .video-component-embed {
+		width:300px;
+		height:169px;
+	}
+	.v2 .video-component-w50 .video-component-embed {
+		width:465px;
+		height:262px;
+	}
+	.v2 .video-component-w66 .video-component-embed {
+		width:630px;
+		height:354px;
+	}
+	.v2 .video-component-container {
+		position:relative;
+		background:#f6f6f7;
+	}
+	.v2 .video-component-title {
+		font-weight:600;
+		font-size:25px;
+		color:#0b1f66;
+		text-transform:uppercase;
+		padding-bottom:10px;
+	}
+
+	.v2 .video-component-description {
+		padding:20px;
+		font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
+		font-size:14px;
+		font-weight:400;
+		color:#0b1f66;
+	}
+
+	.v2 .video-component-link {
+		position:absolute;
+		right:20px;
+		bottom:20px;
+		display:block;
+		font-weight:600;
+		color:0253a4;
+		text-transform:uppercase;
+		text-decoration:none;
+	}
 </style>
 
+
 <div class="v2">
-	<div class="videoText-component">
-		<iframe class="video" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
-        <div class="content">
-        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Morbi eros ligula, cursus at accumsan sed, imperdiet in nisi.
-        </div>
+
+	<div class="video-component-container video-component-w33">
+		<iframe class="video-component-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
+		<div class="video-component-description">
+			<div class="video-component-title">Lorem Ipsum Dolar Amit</div>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. 
+			<a href="#" class="video-component-link">Learn More &gt;</a>
+		</div>
 	</div>
+	
+		<div class="video-component-container video-component-w50">
+		<iframe class="video-component-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
+		<div class="video-component-description">
+			<div class="video-component-title">Lorem Ipsum Dolar Amit</div>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. 
+			<a href="#" class="video-component-link">Learn More &gt;</a>
+		</div>
+	</div>
+	
+		<div class="video-component-container video-component-w66">
+		<iframe class="video-component-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
+		<div class="video-component-description">
+			<div class="video-component-title">Lorem Ipsum Dolar Amit</div>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. 
+			<a href="#" class="video-component-link">Learn More &gt;</a>
+		</div>
+	</div>
+
 </div>
