@@ -14,7 +14,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://pro-si.delta.com/", "https://dlkd3.delta.com:17021/"],
+      "matches": ["https://pro-si.delta.com/*", "https://dlkd3.delta.com:17021/*"],
       "js": ["chrome-extension/js/load-local.js"]
     }
   ],
