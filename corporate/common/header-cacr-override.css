@@ -129,3 +129,12 @@
 	border: none !important;
 	font-size:1.4em !important;
 }
+
+.v2 .loginMessageDiv {
+    height: auto!important;
+}
+
+.v2 .label , .v2 .linkStyle ,.v2 input {
+    font-size: 1.4em;
+} 
+
