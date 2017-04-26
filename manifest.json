@@ -14,7 +14,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["https://pro-si.delta.com/", "https://dlkd3.delta.com:17021/"],
       "js": ["chrome-extension/js/load-local.js"]
     }
   ],
@@ -29,7 +29,7 @@
     "agency/css/landing-cacr-override.css",
     "agency/css/login-cacr-override.css",
     "agency/css/loginAlternate-cacr-override.css",
-    "agency/css/myDashboardAppsPage-cacr-override.css",
+    "agency/css/myDashboardApssPage-cacr-override.css",
     "agency/css/navDisplayAndDetailsPages-cacr-override.css",
     "agency/common/common-cacr-override.css",
     "agency/common/commonElements-cacr-override.css",
