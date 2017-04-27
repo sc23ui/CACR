@@ -1,6 +1,12 @@
 # CACR
 Corporate and Agency Competitive Response
 
+## Chrome Extension
+
+Open [chrome://extensions/](chrome://extensions/) and check the box labeled `Developer mode` in the top right. Drag/drop this repository folder onto that page to install the plugin. Click the Delta icon in the toolbar and verify the plugin opens. To use the local CSS instead of the remote, just click the Big Red Button.
+
+## Override Stylesheets
+
 AGENCY (/deltapro)
 
     /css
@@ -124,28 +130,27 @@ APPS (place the corresponding app CSS override file inside the corresponding app
 
     Travel Exceptions & Waivers
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/travel-exceptions-and-waivers/v2-override.css" media="all"/>
-	
+
     Preferred Seats
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/preferred-seats/v2-override.css" media="all"/>
-		
+
     Sky Partner OnDemand
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/sky-partner-ondemand/v2-override.css" media="all"/>
-		
+
     Sky Partner Performance+
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/sky-partner-performance-plus/v2-override.css" media="all"/>
-		
+
     eNCI
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/enci/v2-override.css" media="all"/>
-		
+
     Operational Excellence
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/operational-excellence/v2-override.css" media="all"/>
-		
+
     Delta University
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/delta-university/v2-override.css" media="all"/>
-		
+
     Delta Edge
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/delta-edge/v2-override.css" media="all"/>
-	
+
 	eCredits & eCertificates
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/apps/ecredits-and-ecertificates/v2-override.css" media="all"/>
-		

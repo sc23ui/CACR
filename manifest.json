@@ -1,0 +1,72 @@
+{
+  "manifest_version": 2,
+
+  "name": "Delta CACR",
+  "description": "Toggle between proxied CSS file and local repository.",
+  "version": "0.1.0",
+
+  "browser_action": {
+   "default_icon": "chrome-extension/img/icon-off.png",
+   "default_popup": "chrome-extension/index.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://pro-si.delta.com/*", "http://dlkd3.delta.com:17021/*"],
+      "js": ["chrome-extension/js/load-local.js"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "scripts": ["chrome-extension/js/background.js"]
+  },
+  "web_accessible_resources": [
+    "agency/css/components-cacr-override.css",
+    "agency/css/landing-cacr-override.css",
+    "agency/css/login-cacr-override.css",
+    "agency/css/loginAlternate-cacr-override.css",
+    "agency/css/myDashboardApssPage-cacr-override.css",
+    "agency/css/navDisplayAndDetailsPages-cacr-override.css",
+    "agency/common/common-cacr-override.css",
+    "agency/common/commonElements-cacr-override.css",
+    "agency/common/header-cacr-override.css",
+    "agency/common/generalheader-cacr-override.css",
+    "agency/common/footer-cacr-override.css",
+    "agency/common/components-cacr-override.css",
+    "agency/common/components-cacr-new.css",
+    "agency/common/unsupportedBrowserMessageModal-cacr-override.css",
+    "agency/ie/ie10-cacr-override.css",
+    "agency/ie/ieHeader-cacr-override.css",
+    "agency/home/home-cacr-override.css",
+    "corporate/css/components-cacr-override.css",
+    "corporate/css/landing-cacr-override.css",
+    "corporate/css/login-cacr-override.css",
+    "corporate/css/loginAlternate-cacr-override.css",
+    "corporate/css/myDashboardApssPage-cacr-override.css",
+    "corporate/css/navDisplayAndDetailsPages-cacr-override.css",
+    "corporate/common/common-cacr-override.css",
+    "corporate/common/commonElements-cacr-override.css",
+    "corporate/common/header-cacr-override.css",
+    "corporate/common/generalheader-cacr-override.css",
+    "corporate/common/footer-cacr-override.css",
+    "corporate/common/components-cacr-override.css",
+    "corporate/common/components-cacr-new.css",
+    "corporate/common/unsupportedBrowserMessageModal-cacr-override.css",
+    "corporate/ie/ie10-cacr-override.css",
+    "corporate/ie/ieHeader-cacr-override.css",
+    "corporate/home/home-cacr-override.css",
+    "apps/travel-exceptions-and-waivers/v2-override.css",
+    "apps/preferred-seats/v2-override.css",
+    "apps/sky-partner-ondemand/v2-override.css",
+    "apps/sky-partner-performance-plus/v2-override.css",
+    "apps/enci/v2-override.css",
+    "apps/operational-excellence/v2-override.css",
+    "apps/delta-university/v2-override.css",
+    "apps/delta-edge/v2-override.css",
+    "apps/ecredits-and-ecertificates/v2-override.css"
+   ]
+}
