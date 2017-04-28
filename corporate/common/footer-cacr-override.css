@@ -21,3 +21,7 @@
 .v2 .padding-right-16 {
         padding-right: 30px;
 }
+
+.v2 .corp-footerImageDiv a:last-child >img {
+    padding-right: 0px;
+}
