@@ -28,6 +28,7 @@
 
 .v2 .corp-primaryButton {
     background-color: #E3132c;
+    background-image: none;
   }
 
 .v2 .corp-primaryButton:hover{
