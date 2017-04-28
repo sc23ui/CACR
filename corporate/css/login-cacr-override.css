@@ -8,6 +8,10 @@
     color: #0B1F66;
   }
 
+.v2 .corpLoginContent {
+    height: auto;
+}
+
 .v2 .corp-inactiveButton {
     background: #707070;
     font-size: 16px;
