@@ -12,13 +12,14 @@
   text-align:left;
 }
 
-.v2 .headingbutton > .heading{
+.v2 .heading-button > .heading{
   text-align: center;
 }
 
-.v2 .onlyHeading,.v2  .headingArrow, .v2 .headingbutton, .v2 .headingDescriptionArrow,.v2  .headingDescriptionButton{
+.v2 .only-heading,.v2  .heading-arrow, .v2 .heading-button, .v2 .heading-description-arrow,.v2  .heading-description-button{
   padding:20px;
 }
+
 .v2 .heading {
   font-size: 30px;
     font-weight: 600;
@@ -31,7 +32,7 @@
     text-align: left;
 }
 
-.v2 .learnMore {
+.v2 .learn-more {
     height: 45px;
     font-size: 16px;
     color: #ffffff;
@@ -43,23 +44,23 @@
 }
 
 .v2 .button{
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
 }
  .v2 a:hover{
    opacity:0.8;
  }
-.v2 .Wrapper {
+.v2 .wrapper {
     padding-bottom: 20px;
     /* top: 10px; */
 }
 
-.v2 .corpImage {
+.v2 .corp-image {
     width: 300px;
     height: 532px;
     z-index: 1;
 }
 
-.v2 .contentWrapperDiv {
+.v2 .content-wrapper-div {
     position: absolute;
 }
 
@@ -69,7 +70,8 @@
     position: absolute;
     vertical-align: middle;
   }
-.v2 .overlayContent {
+
+.v2 .overlay-content {
   position: absolute;
   z-index: 1;
   height: auto;
@@ -83,28 +85,28 @@
 
 }
 
-.v2 .headingArrow {
+.v2 .heading-arrow {
     position: relative;
     /*width: 100%;*/
 
 }
 
-.v2 .headingArrow .arrow{
+.v2 .heading-arrow .arrow{
   top:36%;
 }
 
-.v2 .headingbutton .button{
+.v2 .heading-button .button{
   padding-top:15px;
 }
 
-.v2 .headingDescriptionArrow .arrow{
+.v2 .heading-description-arrow .arrow{
   bottom: 130px;
   top:12%;
   left:auto;
 
 }
 
-.v2 .headingDescriptionArrow .heading{
+.v2 .heading-description-arrow .heading{
       width: 220px;
 }
 
@@ -134,30 +136,30 @@
 </style>
 
 <div class="v2">
-<div class="contentDiv">
-  <a class ="hoverContent" href="https://pro.delta.com">
-    <div class = "contentWrapperDiv">
-      <img class="corpImage" src="I:\CACR\Sprint2\CACR25\grou_300x532.jpg" alt="backgroundImage" />
-      <div class="overlayContent">
-        <div class="headingDescriptionButton" style="display:none">
+<div class="content-div">
+  <a class ="hover-content" href="https://pro.delta.com">
+    <div class = "content-wrapper-div">
+      <img class="corp-image" src="I:\CACR\Sprint2\CACR25\grou_300x532.jpg" alt="backgroundImage" />
+      <div class="overlay-content">
+        <div class="heading-description-button" style="display:none">
           <h2 class="heading">Customize the Ideal Vacation</h2>
           <h2 class="description">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</h2>
-          <div class="button"><button class="learnMore" name="LearnMore" value="click"> Learn More</button></div>
+          <div class="button"><button class="learn-more" name="LearnMore" value="click"> Learn More</button></div>
         </div>
-        <div class="headingDescriptionArrow" style="display:none">
+        <div class="heading-description-arrow" style="display:none">
           <h2 class="heading">Customize the Ideal Vacation</h2>
           <h2 class="description">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</h2>
           <div class="arrow"><img src="I:\CACR\Sprint2\CACR25\arrow.png"  alt="click" /></div>
         </div>
-        <div class="headingbutton" >
+        <div class="heading-button" >
           <h2 class="heading">A step up at every step</h2>
-          <div class="button"><button class="learnMore" name="LearnMore" value="click"> Learn More</button></div>
+          <div class="button"><button class="learn-more" name="LearnMore" value="click"> Learn More</button></div>
         </div>
-        <div class="headingArrow" style="display:none">
+        <div class="heading-arrow" style="display:none">
           <h2 class="heading">A step up at every step</h2>
           <div class="arrow"><img src="I:\CACR\Sprint2\CACR25\arrow.png" align="right" alt="click" /></div>
         </div>
-        <div class="onlyHeading" style="display:none" >
+        <div class="only-heading" style="display:none" >
           <div class="heading">A step up at every step</div>
         </div>
       </div>
