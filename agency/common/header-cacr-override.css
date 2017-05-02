@@ -11,13 +11,8 @@
 .v2 #menu a {
 	color: #FFF;
 }
-.v2 .switchLangActiveText {
-	font-size: 1.1em;
-	color: #fff;
-}
-.v2 .switchLangActiveText:hover {
-	color: #fff !important;
-}
+
+
 .v2 .primaryButton {
 	background-color: #E3132C;
 	border-width: 1px;
@@ -29,6 +24,13 @@
 .v2 h4.verticalTitle {
 	color: #0B1F66;
 }
+.v2 .switchLangActiveText {
+	font-size: 1.1em;
+	color: #fff;
+}
+.v2 .switchLangActiveText:hover {
+	color: #fff !important;
+}
 .v2 .switchLangLinkText {
 	color: #87cdff;
 }
@@ -38,6 +40,14 @@
 .v2 .globeLogo:hover {
 	color: #A9DBFF !important;
 }
+.v2 .headerCorpNameLabel {
+	color: #fff !important;
+}
+.v2 .headerUserNameLabel {
+	color: #fff !important;
+}
+
+
 .v2 .login {
 	color: #87cdff;
 }
@@ -45,17 +55,17 @@
 	background-color: #F6F6F6;
 }
 .v2 .logoutLogo, .logoutLogo {
-	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/logout.png");
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/deltapro/images/logout.png");
 }
 .v2 .myProfileLogo, .myProfileLogo {
-	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/profile.png");
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/deltapro/images/profile.png");
 }
 .v2 .logoutLogo:hover, .logoutLogo:hover {
-	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/logout_hover.png");
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/deltapro/images/logout_hover.png");
 	background-position: 0 0 !important;
 }
 .v2 .myProfileLogo:hover, .myProfileLogo:hover {
-	background-image: url("http://dlkd3.delta.com:17021/etc/designs/corporate/images/profile_hover.png");
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/deltapro/images/profile_hover.png");
 	background-position: 0 0 !important;
 }
 .v2 #gotoLoginAltBtnID {
@@ -64,13 +74,12 @@
 .v2 #gotoLoginAltBtnID:hover {
 	color: #A9DBFF;
 }
-.v2 .dashboard-dropdown-item {
-	background-color: #fff !important;
-	border: 1px solid #c7c7c7 !important;
-	padding:0px !important;
-}
-.v2 .dashboard-dropdown-item hover {
-	background-color: #f6f6f7 !important;
+
+
+#report_menu {
+	box-shadow: none !important;
+	top:18px;
+	left:-28px;
 }
 .v2 #account_menu > li {
 	background-color: #fff;
@@ -84,11 +93,33 @@
 .v2 #account_menu > li:hover {
 	background-color: #f6f6f7 !important;
 }
+.v2 #account_menu .navigationLink {
+	height:48px;
+}
+.v2 #account_menu > li a {
+	background:none !important;
+	color: #0B1F66;
+}
+.v2 #menu li.active, .v2 #menu li.active a, .v2 #account_menu > li.active > a, .v2 #account_menu li.active {
+    background:#fff !important;
+	color: #0B1F66 !important;
+}
+
+.v2 .dashboardDropdown {
+	color: #0B1F66 !important;
+}
+.v2 .dashboard-dropdown-item {
+	background-color: #fff !important;
+	border: 1px solid #c7c7c7 !important;
+	padding:0px !important;
+}
+.v2 .dashboard-dropdown-item hover {
+	background-color: #f6f6f7 !important;
+}
 .v2 .dashboard-dropdown-item-level-2 {
 	padding:0px !important;
 	min-width:240px;
-	margin-left:-33px !important;	
-	margin-top:
+	margin-left:-33px !important;
 }
 .v2 .dashboard-dropdown-item-level-2:hover {
 	background-color: #f6f6f7 !important
@@ -98,24 +129,11 @@
 	border: none !important;
 	font-size:1.4em !important;
 }
-.v2 #account_menu .navigationLink {
-	height:48px;	
+
+.v2 .loginMessageDiv {
+    height: auto!important;
 }
-.v2 #account_menu > li a {
-	background:none !important;
-	color: #0B1F66;
-}
-.v2 .dashboardDropdown {
-	color: #0B1F66 !important;
-}
-.v2 .headerCorpNameLabel {
-	color: #fff !important;
-}
-.v2 .headerUserNameLabel {
-	color: #fff !important;
-}
-#report_menu {
-	box-shadow: none !important;
-	top:18px;
-	left:-28px;
+
+.v2 .label , .v2 .linkStyle ,.v2 input {
+    font-size: 1.4em;
 }
