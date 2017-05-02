@@ -4,76 +4,74 @@
 
 <style>
 
-.v2 .performance-statistics-header{
-    color: #FFF;
-    z-index: 200;
-    font-family: Open Sans;
-    font-size:70px;
-    font-weight:400;
-    margin:auto;
-    color: #FFF;
-    padding-top:6px;
+.v2 .performance-statistics-component-header{
+  color: #FFF;
+  z-index: 200;
+  font-family: Open Sans;
+  font-size: 70px;
+  font-weight: 400;
+  margin-top: -151px;
+  color: #FFF;
+  padding-top: 6px;
+
 }
 
-.v2 .performance-statistics-subheader{
-    color: #FFF;
-    z-index: 200;
-    font-family: Open Sans;
-    font-size:14px;
-    font-weight:300;
-    color: #FFF;
-    opacity: 0.4;
+.v2 .performance-statistics-component-subheader{
+  color: #FFF;
+  z-index: 200;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 300;
+  color: #FFF;
+  opacity: 0.4;
+  margin-top: -67px;
 }
 
-.v2 .performance-statistics-title{
-    height:30px;
-    position:absolute;
-    background-color:#22659c;
-    font-family: Open Sans;
-    font-size:20px;
-    font-weight:400;
-    Text-transform:uppercase;
-    color: #FFF;
-    bottom: 0px;
-    top:-20px;
-    width:300px;
-    text-align:center;
-    padding: 2px 0;
+.v2 .performance-statistics-component-title{
+      padding: 2px 0;
+      height: 30px;
+      position: relative;
+      background-color: #22659c;
+      font-family: Open Sans;
+      font-size: 20px;
+      font-weight: 400;
+      Text-transform: uppercase;
+      color: #FFF;
+      bottom: 0px;
+      width: 300px;
+      text-align: center;
+
 }
 
-.v2 .performance-statistics-component,.v2 .performance-statistics-component-header {
-    position: absolute;
-}
-
-.v2 .performance-statistics-image{
+.v2 .performance-statistics-component-image{
     z-index: 1;
     height:330px;
     width:300px;
 }
 
-.v2 .performance-statistics-overlay-content{
-    background-color: #000;
-    position: absolute;
-    height: 150px;
-    width: 300px;
-    opacity: 0.8;
-    font-family: Verdana, Geneva, sans-serif;
-    color: #FFF;
-    bottom: 0px;
-    z-index: 1;
-    text-align: center;
+.v2 .performance-statistics-component-overlay-content{
+  background-color: #000;
+  height: 150px;
+  width: 300px;
+  opacity: 0.8;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #FFF;
+  bottom: 0px;
+  z-index: 1;
+  text-align: center;
+
 }
 </style>
 <div class="v2">
-<div class = "performance-statistics-component">
-         <img class="performance-statistics-image" src="http://placekitten.com/300/330" />
-         <div class="performance-statistics-overlay-content">
-            <p class="performance-statistics-header">2.55</p>
-            <p class="performance-statistics-subheader">per 1000 Passengers-DOT</p>
-          </div>
+    <div class="performance-statistics-component-title">
+        <span>Mishandled bags</span>
     </div>
-    <div class="performance-statistics-component-header">
-      <p class="performance-statistics-title">Mishandled bags</p>
+    <div class = "performance-statistics-component">
+         <img class="performance-statistics-component-image" src="http://placekitten.com/300/330" />
     </div>
-</div>
+    <div class="performance-statistics-component-overlay-content">
+         <p class="performance-statistics-component-header">2.55</p>
+         <p class="performance-statistics-component-subheader">per 1000 Passengers-DOT</p>
+    </div>
 
+</div>
