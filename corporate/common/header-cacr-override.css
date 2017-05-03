@@ -8,10 +8,6 @@
 	background-color: #174873;
 	border-top: 1px solid #c7c7c7;
 }
-.v2 #menu a {
-	color: #FFF;
-}
-
 
 .v2 .primaryButton {
 	background-color: #E3132C;
@@ -94,9 +90,10 @@
 .v2 #account_menu > li:hover {
 	background-color: #f6f6f7 !important;
 }
-.v2 #menu .navigationLink li a {
+.v2 #menu a {
 	font-size:1.5em;
 	font-weight:600;
+	color:#fff;
 }
 .v2 #account_menu .navigationLink {
 	height:48px;
