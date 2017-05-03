@@ -25,13 +25,14 @@
 	color: #0B1F66;
 }
 .v2 .corp-switchLangActiveText {
-	font-size: 1.1em;
+	font-size: 1.4em;
 	color: #fff;
 }
 .v2 .corp-switchLangActiveText:hover {
 	color: #fff !important;
 }
 .v2 .corp-switchLangLinkText {
+	font-size:1.4em;
 	color: #87cdff;
 }
 .v2 .corp-switchLangLinkText:hover {
@@ -93,8 +94,13 @@
 .v2 #account_menu > li:hover {
 	background-color: #f6f6f7 !important;
 }
-.v2 #account_menu .navigationLink {
-	height:48px;	
+.v2 #account_menu .navigationLink , .v2 #account_menu .navigationLink {
+	height:48px;
+	font-size:1.5em;
+	font-weight:600;
+}
+.v2 #account_menu .navigationLink li {
+	border:none !important;
 }
 .v2 #account_menu > li a {
 	background:none !important;
@@ -119,7 +125,7 @@
 .v2 .dashboard-dropdown-item-level-2 {
 	padding:0px !important;
 	min-width:240px;
-	margin-left:-33px !important;	
+	margin-left:-33px !important;
 }
 .v2 .dashboard-dropdown-item-level-2:hover {
 	background-color: #f6f6f7 !important
@@ -136,5 +142,4 @@
 
 .v2 .label , .v2 .linkStyle ,.v2 input {
     font-size: 1.4em;
-} 
-
+}
