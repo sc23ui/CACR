@@ -66,6 +66,7 @@
 	background-position: 0 0 !important;
 }
 .v2 #gotoLoginAltBtnID {
+	font-size:1.4em;
 	color: #87cdff;
 }
 .v2 #gotoLoginAltBtnID:hover {
@@ -73,7 +74,7 @@
 }
 
 
-#report_menu {
+.v2 #report_menu {
 	box-shadow: none !important;
 	top:18px;
 	left:-28px;
@@ -111,7 +112,7 @@
     background:#fff !important;
 	color: #0B1F66 !important;
 }
-#account_menu .icon-down {
+.v2 #account_menu .icon-down {
 	padding-bottom:5px;
 }
 .v2 .dashboardDropdown {
