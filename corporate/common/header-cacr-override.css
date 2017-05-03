@@ -111,7 +111,9 @@
     background:#fff !important;
 	color: #0B1F66 !important;
 }
-
+#account-menu .icon-down {
+	padding-bottom:5px;
+}
 .v2 .dashboardDropdown {
 	color: #0B1F66 !important;
 }
