@@ -3,15 +3,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-
-
 <style>
 .v2 .headline-component {
     position: relative;
     cursor: pointer;
 }
+
+.v2 .headline-component:hover button {
+  background-color: #003366 
+}
 .v2 .headline-component:hover {
-    opacity: 0.8;
+    opacity:0.8;
 }
 .v2 .headline-component-overlay-content {
     position: absolute;
@@ -21,8 +23,7 @@
     background-color: black;
     bottom: 0px;
     background-color: rgba(0, 0, 0, 0.8);
-    font-family: open sans;
-
+    font-family: 'Open Sans';
     color: #ffffff;
     text-align: center;
 }
@@ -32,8 +33,7 @@
 .v2 .headline-component-heading {
     font-size: 30px;
     font-weight: 600;
-    font-family: Open Sans;
-
+    font-family: 'Open Sans';
     color: #ffffff;
     z-index: 200;
     margin: auto;
@@ -43,7 +43,7 @@
 .v2 .headline-component-description {
     font-size: 14px;
     font-weight: 300;
-    font-family: Open sans;
+    font-family: 'Open Sans';
     color: #ffffff;
     text-align: left;
     padding: 15px 0px;
@@ -55,7 +55,6 @@
 .v2 .headline-component-heading-description-button {
     padding: 20px;
 }
-
 .v2 .headline-component-heading-button > .headline-component-heading {
     text-align: center;
 }
@@ -65,9 +64,10 @@
 }
 .v2 .headline-component-heading-button .headline-component-button {
     padding-top: 15px;
-}
+    }
 .v2 .headline-component-button {
     padding-bottom: 20px;
+    cursor:pointer;
 }
 .v2 .headline-component-learn-more {
     height: 45px;
@@ -78,6 +78,7 @@
     border: 0px solid transparent;
     background-color: #0253a4;
     width: 260px;
+    cursor:pointer;
 }
 .v2 .headline-component-arrow {
     top: 47px;
@@ -130,7 +131,12 @@
     width: 630px;
     height: 270px;
 }
-.v2 .headline-component-w33 .headline-component-image {
+
+.v2 .headline-component-image {
+    width: inherit;
+    height: inherit;
+}
+/*.v2 .headline-component-w33 .headline-component-image {
     width: 300px;
 }
 .v2 .headline-component-w50 .headline-component-image {
@@ -138,7 +144,7 @@
 }
 .v2 .headline-component-w66 .headline-component-image {
     width: 630px;
-}
+}*/
 .v2 .headline-component-w33 .headline-component-heading-description-arrow .headline-component-heading {
     margin: 0;
 }
@@ -178,8 +184,6 @@ $(document).ready( function() {
 });
 </script>
 
-
-
 <div class="v2">
 
 
@@ -192,23 +196,19 @@ $(document).ready( function() {
                                 <div class="headline-component-heading">Customize the Ideal Vacation</div>
                                 <div class="headline-component-description">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
                                 <div class="headline-component-button"><button class="headline-component-learn-more"> Learn More</button></div>
-
                         </div>
                         <div class="headline-component-heading-description-arrow headline-component-hide">
                                 <div class="headline-component-heading">Customize the Ideal Vacation</div>
                                 <div class="headline-component-description">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
                                 <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" /></div>
-
                         </div>
                         <div class="headline-component-heading-button headline-component-hide">
                                 <div class="headline-component-heading">A step up at every step</div>
                                 <div class="headline-component-button"><button class="headline-component-learn-more"> Learn More</button></div>
-
                         </div>
                         <div class="headline-component-heading-arrow headline-component-hide">
                                 <div class="headline-component-heading">A step up at every step</div>
                                 <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" align="right" /></div>
-                                
                         </div>
                         <div class="headline-component-only-heading headline-component-hide">
                                 <div class="headline-component-heading">A step up at every step</div>
@@ -218,8 +218,8 @@ $(document).ready( function() {
 
 
         <br/><br/>
-      <!--// AEM author adjusts heights for components using height property of class headline-component-w50//-->
-      <div class="headline-component headline-component-w50">
+
+     <div class="headline-component headline-component-w50">
                 <img class="headline-component-image" src="http://placekitten.com/465/357" />
                 <div class="headline-component-overlay-content">
                         <div class="headline-component-heading-description-button">
@@ -248,7 +248,7 @@ $(document).ready( function() {
 
 
         <br/><br/>
-	<!--// AEM author adjusts heights for components using height property of class headline-component-w66//-->
+
         <div class="headline-component headline-component-w66">
                 <img class="headline-component-image" src="https://placekitten.com/630/270" />
                 <div class="headline-component-overlay-content">
