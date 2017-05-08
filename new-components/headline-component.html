@@ -1,40 +1,79 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <style>
+.v2 .headline-component {
+    position: relative;
+    cursor: pointer;
+}
 
-.v2 .headline-component-description {
-    font-size: 14px;
-    font-weight: 300;
-    font-family: Open sans;
+.v2 .headline-component:hover .headline-component-image {
+    opacity:0.8;
+}
+.v2 .headline-component-learn-more:hover {
+  background-color: #003366;
+  cursor: pointer;
+}
+
+.v2 .headline-component-overlay-content {
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Open Sans';
     color: #ffffff;
-  text-align:left;
+    text-align: center;
+}
+.v2 .headline-component-hide {
+    display: none;
 }
 
-.v2 .headline-component-heading-button > .headline-component-heading{
-  text-align: center;
-}
-
-.v2 .headline-component-only-heading,.v2  .headline-component-heading-arrow, .v2 .headline-component-heading-button, .v2 .headline-component-heading-description-arrow,.v2  .headline-component-heading-description-button{
-  padding:20px;
-}
-
-.v2 .headline-component-heading-button, .v2  .headline-component-heading-description-button{
-  padding-bottom:0px;
-}
 .v2 .headline-component-heading {
-  font-size: 30px;
+    font-size: 30px;
     font-weight: 600;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     color: #ffffff;
     z-index: 200;
     margin: auto;
     text-transform: uppercase;
-    /*padding: 20px;*/
     text-align: left;
 }
-
+.v2 .headline-component-description {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Open Sans';
+    color: #ffffff;
+    text-align: left;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.v2 .headline-component-only-heading,
+.v2 .headline-component-heading-arrow,
+.v2 .headline-component-heading-button,
+.v2 .headline-component-heading-description-arrow,
+.v2 .headline-component-heading-description-button {
+    padding: 20px;
+}
+.v2 .headline-component-heading-button > .headline-component-heading {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.v2 .headline-component-heading-button,
+.v2 .headline-component-heading-description-button {
+    /*padding-bottom: 0px;*/
+}
+.v2 .headline-component-heading-button .headline-component-button {
+    padding-top: 15px;
+    }
+.v2 .headline-component-button {
+  /*  padding-bottom: 20px;*/
+    cursor:pointer;
+}
 .v2 .headline-component-learn-more {
     height: 45px;
     font-size: 16px;
@@ -43,128 +82,203 @@
     padding: 7px 20px;
     border: 0px solid transparent;
     background-color: #0253a4;
-    width:260px;
+    width: 260px;
+    cursor:pointer;
 }
-
-.v2 .headline-component-button{
-  padding-bottom: 20px;
-}
- .v2 a:hover{
-   opacity:0.8;
- }
-.v2 .headline-component-wrapper {
-    padding-bottom: 20px;
-    /* top: 10px; */
-}
-
-.v2 .headline-component-image {
-    width: 300px;
-    height: 532px;
-    z-index: 1;
-}
-
-.v2 .headline-component {
-    position: absolute;
-}
-
 .v2 .headline-component-arrow {
     top: 47px;
     right: 20px;
     position: absolute;
     vertical-align: middle;
-  }
-.v2 .headline-component-overlay-content {
-  position: absolute;
-  z-index: 1;
-  height: auto;
-  width: 100%;
-  background-color: black;
-  bottom: 0px;
-  background-color: rgba(0,0,0, 0.8);
-  font-family: open sans;
-  color: #ffffff;
-  text-align: center;
-
 }
-
 .v2 .headline-component-heading-arrow {
     position: relative;
-    /*width: 100%;*/
-
 }
-
-.v2 .headline-component-heading-arrow .headline-component-arrow{
-  top:36%;
+.v2 .headline-component-heading-arrow .headline-component-arrow {
+    top: 36%;
 }
-
-.v2 .headline-component-heading-button .headline-component-button{
-  padding-top:15px;
+.v2 .headline-component-heading-description-arrow .headline-component-arrow {
+    bottom: 130px;
+    top: 12%;
+    left: auto;
 }
-
-.v2 .headline-component-heading-description-arrow .headline-component-arrow{
-  bottom: 130px;
-  top:12%;
-  left:auto;
-
+.v2 .headline-component-heading-description-arrow .headline-component-heading {
+    width: 220px;
 }
-
-.v2 .headline-component-heading-description-arrow .headline-component-heading{
-      width: 220px;
-}
-
 .v2 .headline-component-arrow {
     position: absolute;
     top: 23%;
     bottom: 0;
     left: 0;
-    right:7%;
-
-    text-align:center; /* Align center inline elements */
+    right: 7%;
+    text-align: center;
     font: 0/0 a;
 }
-
 .v2 .headline-component-arrow:before {
     content: ' ';
     display: inline-block;
     vertical-align: middle;
     height: 100%;
 }
-
 .v2 .headline-component-arrow img {
     vertical-align: middle;
     display: inline-block;
 }
+.v2 .headline-component-w33 {
+    width: 300px;
+    height: 532px;
+}
+.v2 .headline-component-w50 {
+    width: 465px;
+    height: 357px;
+}
+.v2 .headline-component-w66 {
+    width: 630px;
+    height: 270px;
+}
+
+.v2 .headline-component-image {
+    width: inherit;
+    height: inherit;
+}
+/*.v2 .headline-component-w33 .headline-component-image {
+    width: 300px;
+}
+.v2 .headline-component-w50 .headline-component-image {
+    width: 465px;
+}
+.v2 .headline-component-w66 .headline-component-image {
+    width: 630px;
+}*/
+.v2 .headline-component-w33 .headline-component-heading-description-arrow .headline-component-heading {
+    margin: 0;
+}
+.v2 .headline-component-w50 .headline-component-heading-arrow .headline-component-arrow {
+    top: 23%;
+}
+.v2 .headline-component-w50 .headline-component-heading-description-arrow .headline-component-heading {
+    width: auto;
+}
+.v2 .headline-component-w66 .headline-component-heading-arrow .headline-component-arrow {
+    top: 23%;
+}
+.v2 .headline-component-w66 .headline-component-heading-description-arrow .headline-component-heading {
+    width: auto;
+}
 
 </style>
 
+<script type="text/javascript">
+$(document).ready( function() {
+  //AEM author specifies the url for entire clickable area
+	$(".headline-component").click( function() {
+    window.open("#", "_self");
+		});
+  //AEM author specifies the url for Learn more button
+  $(".headline-component-learn-more").click( function() {
+    event.cancelBubble = true;
+    if(event.stopPropagation) event.stopPropagation();
+    window.open("#", "_self");
+    });
+    //AEM author specifies the url for arrow image
+  $(".headline-component-arrow").click( function() {
+    event.cancelBubble = true;
+    if(event.stopPropagation) event.stopPropagation();
+  	window.open("#", "_self");
+    });
+});
+</script>
+
 <div class="v2">
 
-  <a class ="headline-component-hover-content" href="https://pro.delta.com">
-    <div class = "headline-component">
-      <img class="headline-component-image" src="I:\CACR\Sprint2\CACR25\grou_300x532.jpg" alt="backgroundImage" />
-      <div class="headline-component-overlay-content">
-        <div class="headline-component-heading-description-button" style="display:none">
-          <h2 class="headline-component-heading">Customize the Ideal Vacation</h2>
-          <h2 class="headline-component-description">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</h2>
-          <div class="headline-component-button"><button class="headline-component-learn-more" name="LearnMore" value="click"> Learn More</button></div>
+
+        <!--// AEM author adjusts heights for components using height property of class headline-component-w33//-->
+        <div class="headline-component headline-component-w33">
+                <img class="headline-component-image" src="http://placekitten.com/300/532" />
+                <div class="headline-component-overlay-content">
+                        <!--// AEM author has ability to show/hide one of the below options by adding or removing headline-component-hide class//-->
+                        <div class="headline-component-heading-description-button">
+                                <div class="headline-component-heading">Customize the Ideal Vacation</div>
+                                <div class="headline-component-description">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                                <button class="headline-component-learn-more"> Learn More</button>
+                        </div>
+                        <div class="headline-component-heading-description-arrow headline-component-hide">
+                                <div class="headline-component-heading">Customize the Ideal Vacation</div>
+                                <div class="headline-component-description">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                                <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" /></div>
+                        </div>
+                        <div class="headline-component-heading-button headline-component-hide">
+                                <div class="headline-component-heading">A step up at every step</div>
+                                <button class="headline-component-learn-more"> Learn More</button>
+                        </div>
+                        <div class="headline-component-heading-arrow headline-component-hide">
+                                <div class="headline-component-heading">A step up at every step</div>
+                                <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" align="right" /></div>
+                        </div>
+                        <div class="headline-component-only-heading headline-component-hide">
+                                <div class="headline-component-heading">A step up at every step</div>
+                        </div>
+                </div>
         </div>
-        <div class="headline-component-heading-description-arrow" style="display:none">
-          <h2 class="headline-component-heading">Customize the Ideal Vacation</h2>
-          <h2 class="headline-component-description">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</h2>
-          <div class="headline-component-arrow"><img src="I:\CACR\Sprint2\CACR25\arrow.png"  alt="click" /></div>
+
+
+        <br/><br/>
+
+<div class="headline-component headline-component-w50">
+                <img class="headline-component-image" src="http://placekitten.com/465/357" />
+                <div class="headline-component-overlay-content">
+                        <div class="headline-component-heading-description-button">
+                                <div class="headline-component-heading">Customize the Ideal Vacation</div>
+                                <div class="headline-component-description">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                                <button class="headline-component-learn-more"> Learn More</button>
+                        </div>
+                        <div class="headline-component-heading-description-arrow headline-component-hide">
+                                <div class="headline-component-heading">Customize the Ideal Vacation</div>
+                                <div class="headline-component-description">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                                <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" /></div>
+                        </div>
+                        <div class="headline-component-heading-button headline-component-hide">
+                                <div class="headline-component-heading">A step up at every step</div>
+                                <button class="headline-component-learn-more"> Learn More</button>
+                        </div>
+                        <div class="headline-component-heading-arrow headline-component-hide">
+                                <div class="headline-component-heading">A step up at every step</div>
+                                <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" align="right" /></div>
+                        </div>
+                        <div class="headline-component-only-heading headline-component-hide">
+                                <div class="headline-component-heading">A step up at every step</div>
+                        </div>
+                </div>
         </div>
-        <div class="headline-component-heading-button" >
-          <h2 class="headline-component-heading">A step up at every step</h2>
-          <div class="headline-component-button"><button class="headline-component-learn-more" name="LearnMore" value="click"> Learn More</button></div>
+
+
+        <br/><br/>
+
+        <div class="headline-component headline-component-w66">
+                <img class="headline-component-image" src="https://placekitten.com/630/270" />
+                <div class="headline-component-overlay-content">
+                        <div class="headline-component-heading-description-button">
+                                <div class="headline-component-heading">Customize the Ideal Vacation</div>
+                                <div class="headline-component-description">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                                <button class="headline-component-learn-more"> Learn More</button>
+                        </div>
+                        <div class="headline-component-heading-description-arrow headline-component-hide">
+                                <div class="headline-component-heading">Customize the Ideal Vacation</div>
+                                <div class="headline-component-description">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                                <div class="headline-component-arrow"><img src="CACR/images/arrow.png" /></div>
+                        </div>
+                        <div class="headline-component-heading-button headline-component-hide">
+                                <div class="headline-component-heading">A step up at every step</div>
+                                <button class="headline-component-learn-more"> Learn More</button>
+                        </div>
+                        <div class="headline-component-heading-arrow headline-component-hide">
+                                <div class="headline-component-heading">A step up at every step</div>
+                                <div class="headline-component-arrow"><img src="CACR/images/arrow.png " align="right" /></div>
+                        </div>
+                        <div class="headline-component-only-heading headline-component-hide">
+                                <div class="headline-component-heading">A step up at every step</div>
+                        </div>
+                </div>
         </div>
-        <div class="headline-component-heading-arrow" style="display:none">
-          <h2 class="headline-component-heading">A step up at every step</h2>
-          <div class="headline-component-arrow"><img src="I:\CACR\Sprint2\CACR25\arrow.png" align="right" alt="click" /></div>
-        </div>
-        <div class="headline-component-only-heading" style="display:none" >
-          <div class="headline-component-heading">A step up at every step</div>
-        </div>
-      </div>
-    </div>
-  </a>
+
 </div>

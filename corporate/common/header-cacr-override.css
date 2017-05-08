@@ -8,10 +8,6 @@
 	background-color: #174873;
 	border-top: 1px solid #c7c7c7;
 }
-.v2 #menu a {
-	color: #FFF;
-}
-
 
 .v2 .primaryButton {
 	background-color: #E3132C;
@@ -25,13 +21,14 @@
 	color: #0B1F66;
 }
 .v2 .corp-switchLangActiveText {
-	font-size: 1.1em;
+	font-size: 1.4em;
 	color: #fff;
 }
 .v2 .corp-switchLangActiveText:hover {
 	color: #fff !important;
 }
 .v2 .corp-switchLangLinkText {
+	font-size:1.4em;
 	color: #87cdff;
 }
 .v2 .corp-switchLangLinkText:hover {
@@ -69,6 +66,7 @@
 	background-position: 0 0 !important;
 }
 .v2 #gotoLoginAltBtnID {
+	font-size:1.4em;
 	color: #87cdff;
 }
 .v2 #gotoLoginAltBtnID:hover {
@@ -76,7 +74,7 @@
 }
 
 
-#report_menu {
+.v2 #report_menu {
 	box-shadow: none !important;
 	top:18px;
 	left:-28px;
@@ -88,13 +86,23 @@
 }
 .v2 #account_menu > li a {
 	padding:6px 17px 0px 17px;
-	font-size:1.6em;
+	font-size:1.4em;
 }
 .v2 #account_menu > li:hover {
 	background-color: #f6f6f7 !important;
 }
+.v2 #menu a {
+	font-size:1.5em;
+	font-weight:600;
+	color:#fff;
+}
 .v2 #account_menu .navigationLink {
-	height:48px;	
+	height:48px;
+	font-size:1.4em;
+	font-weight:600;
+}
+.v2 #account_menu .navigationLink li {
+	border:none !important;
 }
 .v2 #account_menu > li a {
 	background:none !important;
@@ -104,7 +112,9 @@
     background:#fff !important;
 	color: #0B1F66 !important;
 }
-
+.v2 #account_menu .icon-down {
+	padding-bottom:5px;
+}
 .v2 .dashboardDropdown {
 	color: #0B1F66 !important;
 }
@@ -119,7 +129,7 @@
 .v2 .dashboard-dropdown-item-level-2 {
 	padding:0px !important;
 	min-width:240px;
-	margin-left:-33px !important;	
+	margin-left:-33px !important;
 }
 .v2 .dashboard-dropdown-item-level-2:hover {
 	background-color: #f6f6f7 !important
@@ -136,5 +146,4 @@
 
 .v2 .label , .v2 .linkStyle ,.v2 input {
     font-size: 1.4em;
-} 
-
+}
