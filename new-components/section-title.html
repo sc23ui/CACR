@@ -1,0 +1,57 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+<style>
+  /* for demo only - remove at CMS implementation */
+  body{
+    font-family:'Open Sans','Trebuchet MS',Verdana,Tahoma,sans-serif;
+    padding-top: 100px;
+  }
+  .section-title {
+    margin-bottom: 100px;
+  }
+</style>
+
+<style>
+  /* This component will resize horizontally to fit any container */
+  /* This componet will resize vertically to fit short and long content */
+  .section-title {
+    text-align:center;
+    max-width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+  .section-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #333;
+  }
+  .section-title-content {
+    position: relative;
+    z-index: 1;
+    display:inline-block;
+    box-sizing: border-box;
+    max-width: 70%;
+    font-size:28px;
+    font-weight:300;
+    line-height:30px;
+    text-transform: uppercase;
+    color:#333;
+    text-align:center;
+    background-color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<div class="section-title">
+  <div class="section-title-content">
+    Section Title
+  </div>
+</div>
