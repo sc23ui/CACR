@@ -1,10 +1,13 @@
-
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
 <style>
   /* for demo only - remove at CMS implementation */
   body{
     font-family:'Open Sans','Trebuchet MS',Verdana,Tahoma,sans-serif;
+    padding-top: 100px;
+  }
+  .section-title {
+    margin-bottom: 100px;
   }
 </style>
 
@@ -13,38 +16,48 @@
   /* This componet will resize vertically to fit short and long content */
   .section-title {
     text-align:center;
-    width:100%;
+    max-width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
   }
-  .section-title-bar {
-    display:table;
-    margin:0px auto;
-    text-align:center;
-  }
-  .section-title-line {
-    display:table-cell;
-    background-image:url('images/pixel-333.png');
-    background-repeat:repeat-x;
-    background-position:center;
-    width:32%;
-    height:1px;
-    min-width:75px;
-    max-width:200px;
+  .section-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #333;
   }
   .section-title-content {
+    position: relative;
+    z-index: 1;
     display:inline-block;
-    padding:0px 10px;
+    box-sizing: border-box;
+    max-width: 70%;
     font-size:28px;
-    font-weight:600;
+    font-weight:300;
     line-height:30px;
+    text-transform: uppercase;
     color:#333;
     text-align:center;
+    background-color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
   }
 </style>
 
 <div class="section-title">
-  <div class="section-title-bar">
-    <div class="section-title-line"></div>
-    <div class="section-title-content">Section Title</div>
-    <div class="section-title-line"></div>
+  <div class="section-title-content">
+    New Section Title
+  </div>
+</div>
+
+<div class="section-title">
+  <div class="section-title-content">
+    New Section Title That Is Very Long And Will Wrap
   </div>
 </div>
