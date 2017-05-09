@@ -1,4 +1,10 @@
 <style>
+	.v2 .video-component {
+		position:relative;
+		font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
+		background:#f6f6f7;
+	}
+
 	.v2 .video-component-w33 {
 		width:300px;
 		height:357px;
@@ -10,15 +16,6 @@
 	.v2 .video-component-w66 {
 		width:630px;
 		height:532px;
-	}
-	.v2 .video-component-w33 .video-component-description {
-		height:90px;
-	}
-	.v2 .video-component-w50 .video-component-description {
-		height:170px;
-	}
-	.v2 .video-component-w66 .video-component-description {
-		height:80px;
 	}
 	.v2 .video-component-w33 .video-component-embed {
 		width:300px;
@@ -32,9 +29,18 @@
 		width:630px;
 		height:354px;
 	}
-	.v2 .video-component {
-		position:relative;
-		background:#f6f6f7;
+	.v2 .video-component-w33 .video-component-description {
+		height:58px;
+	}
+	.v2 .video-component-w50 .video-component-description {
+		height:171px;
+	}
+	.v2 .video-component-w66 .video-component-description {
+		height:80px;
+	}
+
+	.v2 .video-component-content {
+		padding:15px 20px 40px 20px;
 	}
 	.v2 a.video-component-title {
 		display:block;
@@ -50,82 +56,123 @@
 		color:#1c7bd9;
 	}
 	.v2 .video-component-description {
-		padding:15px 20px 40px 20px;
-		font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
 		font-size:14px;
 		font-weight:400;
 		color:#0b1f66;
 		overflow:hidden;
 		text-overflow:ellipsis;
 	}
-	.v2 .video-component-link {
+	.v2 a.video-component-link {
 		position:absolute;
 		right:20px;
 		bottom:20px;
 		display:block;
+		font-size:14px;
 		font-weight:600;
 		color:#0253a4;
+	}
+	.v2 a.video-component-link:hover {
+		color:#1c7bd9;
 	}
 </style>
 
 <div class="v2">
 
+
+
+
+
 	<div class="video-component video-component-w33">
+
 		<iframe class="video-component-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
-		<div class="video-component-description">
+
+		<div class="video-component-content">
 
         	<!--// AEM property limit of 30 characters //-->
-			<a href="#" class="video-component-title">Lorem Ipsum Dolar Amit</a>
+			<a href="#" class="video-component-title">Lorem Ipsum Dola</a>
 
-            <!--// AEM property limit of 110 characters //-->
+      <!--// AEM property limit of 110 characters //-->
+			<div class="video-component-description">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-
-			<a href="#" class="video-component-link">Learn More &gt;</a>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			</div>
 
 		</div>
+
+		<a href="#" class="video-component-link">Learn More&nbsp;&gt;</a>
+
 	</div>
 
+
+
 	<br/><br/>
+
+
 
 	<div class="video-component video-component-w50">
+
 		<iframe class="video-component-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
-		<div class="video-component-description">
+
+		<div class="video-component-content">
 
         	<!--// AEM property limit of 60 characters //-->
-			<a href="#" class="video-component-title">Lorem Ipsum Dolar Amit</a>
+			<a href="#" class="video-component-title">LOREM IPSUM DOLAR AMIT</a>
 
-            <!--// AEM property limit of 490 characters //-->
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+					<div class="video-component-description">
+            <!--// AEM property limit of 550 characters //-->
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-
-			<a href="#" class="video-component-link">Learn More &gt;</a>
+					</div>
 
 		</div>
+
+		<a href="#" class="video-component-link">Learn More &nbsp;&gt;</a>
+
 	</div>
+
+
 
 	<br/><br/>
 
+
+
 	<div class="video-component video-component-w66">
+
 		<iframe class="video-component-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
-		<div class="video-component-description">
 
-        	<!--// AEM property limit of 70 characters //-->
-			<a href="#" class="video-component-title">Lorem Ipsum Dolar Amit</a>
+		<div class="video-component-content">
 
-            <!--// AEM property limit of 260 characters //-->
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+      <!--// AEM property limit of 40 characters //-->
+			<a href="#" class="video-component-title">LOREM IPSUM DOLAR AMIT </a>
+
+			<div class="video-component-description">
+            <!--// AEM property limit of 350 characters //-->
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-
-			<a href="#" class="video-component-link">Learn More &gt;</a>
+			</div>
 
 		</div>
+
+		<a href="#" class="video-component-link">Learn More &nbsp;&gt;</a>
+
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </div>

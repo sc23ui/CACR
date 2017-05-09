@@ -1,8 +1,10 @@
 <style>
 	.v2 .image-component {
 		position:relative;
+		font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
 		background:#f6f6f7;
 	}
+
 	.v2 .image-component-w33 {
 		width:300px;
 		height:357px;
@@ -15,8 +17,21 @@
 		width:630px;
 		height:532px;
 	}
+	.v2 .image-component-w33 .image-component-image {
+		width:300px;
+		height:120px;
+	}
+	.v2 .image-component-w50 .image-component-image {
+		width:465px;
+		height:120px;
+	}
+	.v2 .image-component-w66 .image-component-image {
+		width:630px;
+		height:120px;
+	}
+
 	.v2 .image-component-w33 .image-component-description {
-		height:128px;
+		height:98px;
 	}
 	.v2 .image-component-w50 .image-component-description {
 		height:300px;
@@ -24,16 +39,10 @@
 	.v2 .image-component-w66 .image-component-description {
 		height:300px;
 	}
-	.v2 .image-component-w33 .image-component-image {
-		width:300px;
-	}
-	.v2 .image-component-w50 .image-component-image {
-		width:465px;
-	}
-	.v2 .image-component-w66 .image-component-image {
-		width:630px;
-	}
 
+	.v2 .image-component-content {
+		padding:15px 20px 40px 20px;
+	}
 	.v2 a.image-component-title {
 		display:block;
 		font-weight:600;
@@ -48,139 +57,124 @@
 		color:#1c7bd9;
 	}
 	.v2 .image-component-description {
-		padding:15px 20px 40px 20px;
-		font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
 		font-size:14px;
 		font-weight:400;
 		color:#0b1f66;
 		overflow:hidden;
 		text-overflow:ellipsis;
 	}
-	.v2 .image-component-link {
+	.v2 a.image-component-link {
 		position:absolute;
 		right:20px;
 		bottom:20px;
 		display:block;
+		font-size:14px;
 		font-weight:600;
 		color:#0253a4;
+	}
+	.v2 a.image-component-link:hover {
+		color:#1c7bd9;
 	}
 </style>
 
 <div class="v2">
 
+
+
+
+
 	<div class="image-component image-component-w33">
 
-    	<!--// Add AEM property to switch heights from 120px to 100px //-->
+		<!--// Add AEM property to switch heights from 120px to 100px //-->
 		<img class="image-component-image" src="http://placekitten.com/300/120" width="300" height="120" />
-		<div class="image-component-description">
+
+		<div class="image-component-content">
 
         	<!--// AEM property limit of 30 characters //-->
-			<a href="#" class="image-component-title">Lorem Ipsum Dolar Amit</a>
+			<a href="#" class="image-component-title">LOREM IPSUM DOLAR AMIT</a>
 
-            <!--// AEM property limit of 190 characters //-->
-			Lorem ipsum dolor sit amet, sit em consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-
-			<a href="#" class="image-component-link">Learn More &gt;</a>
+      <!--// AEM property limit of 110 characters //-->
+			<div class="image-component-description">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			</div>
 
 		</div>
+
+		<a href="#" class="image-component-link">Learn More&nbsp;&gt;</a>
+
 	</div>
 
-	<br/><br/>
+
+
+
+<br><br>
+
+
+
+
 
 	<div class="image-component image-component-w50">
 
 		<!--// Add AEM property to switch heights from 120px to 100px //-->
 		<img class="image-component-image" src="http://placekitten.com/465/120" width="465" height="120" />
-		<div class="image-component-description">
+
+		<div class="image-component-content">
 
         	<!--// AEM property limit of 60 characters //-->
-			<a href="#" class="image-component-title">Lorem Ipsum Dolar Amit</a>
+			<a href="#" class="image-component-title">LOREM IPSUM DOLAR AMIT</a>
 
-            <!--// AEM property limit of 900 characters //-->
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-
-			<a href="#" class="image-component-link">Learn More &gt;</a>
+					<div class="image-component-description">
+            <!--// AEM property limit of 550 characters //-->
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+					</div>
 
 		</div>
+
+		<a href="#" class="image-component-link">Learn More &nbsp;&gt;</a>
+
 	</div>
 
+
+
+
 	<br/><br/>
+
+
+
 
 	<div class="image-component image-component-w66">
 
 		<!--// Add AEM property to switch heights from 120px to 100px //-->
 		<img class="image-component-image" src="http://placekitten.com/630/120" width="630" height="120" />
-		<div class="image-component-description">
 
-        	<!--// AEM property limit of 70 characters //-->
-			<a href="#" class="image-component-title">Lorem Ipsum Dolar Amit</a>
+		<div class="image-component-content">
 
-            <!--// AEM property limit of 1300 characters //-->
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+        	<!--// AEM property limit of 40 characters //-->
+			<a href="#" class="image-component-title">LOREM IPSUM DOLAR AMIT</a>
 
-			<a href="#" class="image-component-link">Learn More &gt;</a>
+			<div class="image-component-description">
+            <!--// AEM property limit of 1400 characters //-->
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			</div>
 
 		</div>
+
+		<a href="#" class="image-component-link">Learn More &nbsp;&gt;</a>
+
 	</div>
+
+
+
+
 
 </div>
