@@ -3,3 +3,19 @@
 	background-image:none !important;
 	background-color:#fff !important;	
 }
+
+.v2 .red {
+	color: #E3132C;
+}
+
+.v2 .primaryButton {
+	background-color: #E3132C;
+}
+
+.v2 .primaryButton:hover {
+	background-color: #CB1127;
+}
+
+.v2 p {
+	font-size: 12px;	
+}
