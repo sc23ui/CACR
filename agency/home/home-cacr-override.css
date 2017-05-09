@@ -1,1 +1,20 @@
 /* home-cacr-override.css */
+.v2 .streamComponentButtonDiv {
+	height:45px;
+}
+
+.v2 .streamComponentContentDiv {
+	background-color: #f6f6f7;
+}
+
+.v2 .loadMoreDiv {
+	background-color: rgba(0,0,0,.7);
+}
+
+.v2 .newsPaneltdLeft {
+	font-size:14px;
+}
+
+.v2 .newsPaneltdRight {
+	font-size:14px;
+}
