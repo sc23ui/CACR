@@ -86,16 +86,12 @@
 }
 .v2 #account_menu > li a {
 	padding:6px 17px 0px 17px;
-	font-size:1.4em;
+	font-size:16px;
 }
 .v2 #account_menu > li:hover {
 	background-color: #f6f6f7 !important;
 }
-.v2 #menu a {
-	font-size:1.5em;
-	font-weight:600;
-	color:#fff;
-}
+
 .v2 #account_menu .navigationLink {
 	height:48px;
 	font-size:1.4em;
@@ -107,6 +103,11 @@
 .v2 #account_menu > li a {
 	background:none !important;
 	color: #0B1F66;
+}
+.v2 #menu a {
+	font-size:16px;
+	font-weight:600;
+	color:#fff;
 }
 .v2 #menu li.active, .v2 #menu li.active a, .v2 #account_menu > li.active > a, .v2 #account_menu li.active {
     background:#fff !important;
@@ -135,9 +136,10 @@
 	background-color: #f6f6f7 !important
 }
 .v2 .dashboard-dropdown-item-level-2 a {
+	display:block;
 	background: none !important;
 	border: none !important;
-	font-size:1.4em !important;
+	font-size:15px !important;
 }
 
 .v2 .loginMessageDiv {
@@ -145,5 +147,5 @@
 }
 
 .v2 .label , .v2 .linkStyle ,.v2 input {
-    font-size: 1.4em;
+    font-size: 16px;
 }
