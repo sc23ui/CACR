@@ -76,7 +76,8 @@
 
 .v2 #report_menu {
 	box-shadow: none !important;
-	margin-top:-19px;
+	top:90px !important;
+	margin-top:-19px !important;
 	left:-50px;
 }
 .v2 #account_menu > li {
@@ -116,8 +117,8 @@
 .v2 #dashboard {
 	width:205px !important;
 }
-.v2 #dashboardTab {
-	padding-top: 16px !important;
+.v2 #dashboardTab , .v2 #adminMenu {
+	padding-top: 14px !important;
 }
 .v2 #account_menu .icon-down {
 	padding-bottom:5px;
