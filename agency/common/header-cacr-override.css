@@ -118,10 +118,13 @@
 	width:205px !important;
 }
 .v2 #dashboardTab {
-	padding-top: 11px !important;
+	padding-top: 12px !important;
 }
 .v2 #adminMenu {
 	padding-top: 11px !important;
+}
+.v2 #adminMenu a {
+	padding-top: 14px !important;
 }
 .v2 #account_menu .icon-down {
 	padding-bottom:5px;
