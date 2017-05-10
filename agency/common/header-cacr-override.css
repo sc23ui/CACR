@@ -76,8 +76,8 @@
 
 .v2 #report_menu {
 	box-shadow: none !important;
-	top:18px;
-	left:-28px;
+	top:90px;
+	left:-50px;
 }
 .v2 #account_menu > li {
 	background-color: #fff;
@@ -140,6 +140,7 @@
 	background: none !important;
 	border: none !important;
 	font-size:15px !important;
+	line-height:17px;
 	padding-bottom:10px;
 }
 
