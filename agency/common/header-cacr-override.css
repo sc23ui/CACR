@@ -110,8 +110,14 @@
 	color:#fff;
 }
 .v2 #menu li.active, .v2 #menu li.active a, .v2 #account_menu > li.active > a, .v2 #account_menu li.active {
-    background:#fff !important;
+  background:#fff !important;
 	color: #0B1F66 !important;
+}
+.v2 #dashboard {
+	width:205px;
+}
+.v2 #dashboardTab {
+		padding-top: 23px !important;
 }
 .v2 #account_menu .icon-down {
 	padding-bottom:5px;
