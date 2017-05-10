@@ -114,7 +114,7 @@
 	color: #0B1F66 !important;
 }
 .v2 #dashboard {
-	width:205px;
+	width:205px !important;
 }
 .v2 #dashboardTab {
 		padding-top: 23px !important;
