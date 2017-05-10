@@ -76,7 +76,7 @@
 
 .v2 #report_menu {
 	box-shadow: none !important;
-	top:90px;
+	margin-top:-19px;
 	left:-50px;
 }
 .v2 #account_menu > li {
