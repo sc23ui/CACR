@@ -52,17 +52,17 @@
 	background-color: #F6F6F6;
 }
 .v2 .logoutLogo, .logoutLogo {
-	background-image: url("http://dlkd3.delta.com:17021/etc/designs/deltapro/images/logout.png");
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/deltaPro/images/logout.png");
 }
 .v2 .myProfileLogo, .myProfileLogo {
-	background-image: url("http://dlkd3.delta.com:17021/etc/designs/deltapro/images/profile.png");
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/deltaPro/images/profile.png");
 }
 .v2 .logoutLogo:hover, .logoutLogo:hover {
-	background-image: url("http://dlkd3.delta.com:17021/etc/designs/deltapro/images/logout_hover.png");
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/deltaPro/images/logout_hover.png");
 	background-position: 0 0 !important;
 }
 .v2 .myProfileLogo:hover, .myProfileLogo:hover {
-	background-image: url("http://dlkd3.delta.com:17021/etc/designs/deltapro/images/profile_hover.png");
+	background-image: url("http://dlkd3.delta.com:17021/etc/designs/deltaPro/images/profile_hover.png");
 	background-position: 0 0 !important;
 }
 .v2 #gotoLoginAltBtnID {
