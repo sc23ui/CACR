@@ -2,11 +2,11 @@
 
 <style>
   /* for demo only - remove at CMS implementation */
-  body{
+  body {
     font-family:'Open Sans','Trebuchet MS',Verdana,Tahoma,sans-serif;
     padding-top: 100px;
   }
-  .section-title {
+  .v2 .section-title {
     margin-bottom: 100px;
   }
 </style>
@@ -14,14 +14,14 @@
 <style>
   /* This component will resize horizontally to fit any container */
   /* This componet will resize vertically to fit short and long content */
-  .section-title {
+  .v2 .section-title {
     text-align:center;
     max-width: 660px;
     margin-right: auto;
     margin-left: auto;
     position: relative;
   }
-  .section-title::before {
+  .v2 .section-title::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -30,7 +30,7 @@
     height: 1px;
     background-color: #333;
   }
-  .section-title-content {
+  .v2 .section-title-content {
     position: relative;
     z-index: 1;
     display:inline-block;
@@ -50,8 +50,12 @@
   }
 </style>
 
-<div class="section-title">
-  <div class="section-title-content">
-    Section Title
+<div class="v2">
+
+  <div class="section-title">
+    <div class="section-title-content">
+      Section Title
+    </div>
   </div>
+
 </div>
