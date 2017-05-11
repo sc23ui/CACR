@@ -8,7 +8,6 @@
 	background-color: #174873;
 	border-top: 1px solid #c7c7c7;
 }
-
 .v2 .primaryButton {
 	background-color: #E3132C;
 	border-width: 1px;
@@ -43,8 +42,6 @@
 .v2 .corp-headerUserNameLabel {
 	color: #fff !important;
 }
-
-
 .v2 .login {
 	color: #87cdff;
 }
@@ -72,8 +69,6 @@
 .v2 #gotoLoginAltBtnID:hover {
 	color: #A9DBFF;
 }
-
-
 .v2 #report_menu {
 	box-shadow: none !important;
 	top:18px;
@@ -91,7 +86,6 @@
 .v2 #account_menu > li:hover {
 	background-color: #f6f6f7 !important;
 }
-
 .v2 #account_menu .navigationLink {
 	height:48px;
 	font-size:1.4em;
@@ -110,7 +104,7 @@
 	color:#fff;
 }
 .v2 #menu li.active, .v2 #menu li.active a, .v2 #account_menu > li.active > a, .v2 #account_menu li.active {
-    background:#fff !important;
+  background:#fff !important;
 	color: #0B1F66 !important;
 }
 .v2 #account_menu .icon-down {
@@ -146,11 +140,9 @@
 	padding-top:5px !important;
 	padding-bottom:5px !important;
 }
-
 .v2 .loginMessageDiv {
     height: auto!important;
 }
-
 .v2 .label , .v2 .linkStyle ,.v2 input {
     font-size: 16px;
 }

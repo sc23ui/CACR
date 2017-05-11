@@ -1,1 +1,24 @@
 /* components-cacr-override.css */
+.v2 .blueBackground{
+  background-color: #22659c;
+}
+
+.v2 .blueBackground h3{
+  font-size: 25px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  color:#fff;
+  text-transform: uppercase;
+}
+
+.v2 .blueBackground a{
+  font-size: 14px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  color:#87cdff;
+  text-decoration: none;
+}
+
+.v2 .blueBackground a:hover{
+  color:#a9dbff;
+}
