@@ -1,5 +1,5 @@
 /* home-cacr-override.css */
-.v2 .streamComponentButtonDiv {
+.v2 .streamComponentButtonDiv, .v2 .streamComponentButton {
 	height:45px;
 }
 
