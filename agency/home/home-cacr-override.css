@@ -19,7 +19,7 @@
 	font-size:14px;
 }
 
-.v2 .streamComponent {
+.v2 #streamComponent {
  	margin-left: auto;
 	margin-right: auto;
 	width: 960px;
