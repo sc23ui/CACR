@@ -9,7 +9,24 @@
 }
 
 .v2 h1{
-	font-size: 45px;
+    font-weight: 300;
+    font-size: 45px;
+    margin: 0;
+    color: #333333;
+    text-align: center;
+}
+
+.v2 h1:before {
+    margin: 16px 20px 16px 0;
+}
+
+
+.v2 h1:before, .v2 h1:after {
+    content: "";
+    display: inline-block;
+    background-color: #333333;
+    width: 10%;
+    height: 2px;
 }
 
 .v2 p{
