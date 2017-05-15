@@ -74,17 +74,30 @@
 	top:18px;
 	left:-28px;
 }
+.v2 #menu a {
+	font-size:16px;
+	font-weight:600;
+	color:#fff;
+}
+.v2 #menu li.active, .v2 #menu li.active a, .v2 #account_menu li.active {
+  background:#fff !important;
+	color: #0B1F66 !important;
+}
+v2 .loginMessageDiv {
+    height: auto!important;
+}
+.v2 .label , .v2 .linkStyle ,.v2 input {
+    font-size: 16px;
+}
+
+
+
 .v2 #account_menu > li {
-	background-color: #fff;
-	border: 1px solid #c7c7c7 !important;
 	padding:none !important;
 }
 .v2 #account_menu > li a {
 	padding:10px 17px 0px 17px;
 	font-size:16px;
-}
-.v2 #account_menu > li:hover {
-	background-color: #f6f6f7 !important;
 }
 .v2 #account_menu .navigationLink {
 	height:48px;
@@ -96,16 +109,6 @@
 }
 .v2 #account_menu > li a {
 	background:none !important;
-	color: #0B1F66;
-}
-.v2 #menu a {
-	font-size:16px;
-	font-weight:600;
-	color:#fff;
-}
-.v2 #menu li.active, .v2 #menu li.active a, .v2 #account_menu > li.active > a, .v2 #account_menu li.active {
-  background:#fff !important;
-	color: #0B1F66 !important;
 }
 .v2 #account_menu .icon-down {
 	padding-bottom:5px;
@@ -140,9 +143,16 @@
 	padding-top:5px !important;
 	padding-bottom:5px !important;
 }
-.v2 .loginMessageDiv {
-    height: auto!important;
+
+ 
+/* active dashboard tabs */
+.v2 #account_menu > li.active {
+	background-color: #fff;
+	border: 1px solid #c7c7c7 !important;
 }
-.v2 .label , .v2 .linkStyle ,.v2 input {
-    font-size: 16px;
+.v2 #account_menu > li.active:hover {
+	background-color: #f6f6f7 !important;
+}
+.v2 #account_menu > li.active a {
+	color: #0B1F66;
 }
