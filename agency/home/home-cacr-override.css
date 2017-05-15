@@ -18,3 +18,9 @@
 .v2 .newsPaneltdRight {
 	font-size:14px;
 }
+
+.v2 .marginTop20 {
+ 	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
