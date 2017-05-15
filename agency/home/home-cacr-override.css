@@ -7,6 +7,10 @@
 	background-color: #f6f6f7;
 }
 
+.v2 .buttonDiv{
+	padding: 14px 20px 14px 20px;
+}
+
 .v2 .loadMoreDiv {
 	background-color: rgba(0,0,0,.7);
 }
