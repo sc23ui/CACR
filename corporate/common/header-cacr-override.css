@@ -107,9 +107,7 @@ v2 .loginMessageDiv {
 .v2 #account_menu .navigationLink li {
 	border:none !important;
 }
-.v2 #account_menu > li a {
-	background:none !important;
-}
+
 .v2 #account_menu .icon-down {
 	padding-bottom:5px;
 }
@@ -144,8 +142,11 @@ v2 .loginMessageDiv {
 	padding-bottom:5px !important;
 }
 
- 
+
 /* active dashboard tabs */
+.v2 #account_menu > li.active a {
+	background:none !important;
+}
 .v2 #account_menu > li.active {
 	background-color: #fff;
 	border: 1px solid #c7c7c7 !important;
