@@ -19,8 +19,9 @@
 	font-size:14px;
 }
 
-.v2 .marginTop20 {
+.v2 .streamComponent {
  	margin-left: auto;
 	margin-right: auto;
 	width: 960px;
+	margin-bottom: 30px;
 }
