@@ -143,6 +143,24 @@ v2 .loginMessageDiv {
 }
 
 
+/* default dashboard tabs */
+.v2 #account_menu > li a {
+	background:none !important;
+}
+.v2 #account_menu > li {
+	background-color: #22659c;
+	border: 1px solid #174873 !important;
+}
+.v2 #account_menu > li:hover {
+	background-color: #2a76ab !important;
+}
+.v2 #account_menu > li a {
+	color: #fff;
+}
+
+
+
+
 /* active dashboard tabs */
 .v2 #account_menu > li.active a {
 	background:none !important;
