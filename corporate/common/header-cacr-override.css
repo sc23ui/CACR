@@ -73,6 +73,7 @@
 	box-shadow: none !important;
 	top:18px;
 	left:-28px;
+	margin-left:10px !important;
 }
 .v2 #account_menu > li {
 	background-color: #fff;
