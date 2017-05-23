@@ -1,0 +1,660 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+</head>
+<style>
+
+		
+	.v2 .accordion {
+        height: 42px;
+        display: inline-block;
+        background-color: #02132d;
+        color: #ffffff;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        margin-left: -5px;
+    }
+
+    .v2 .showtable {
+        display: block;
+        border-bottom: none;
+		margin-left: -5px;
+		border: 1px solid #c7c7c7;
+		width: 958px;
+    }
+
+    .v2 .hidetable {
+        display: none;
+    }
+
+    .v2 .viewdetails {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        color: #87cdff;
+        text-align: right;
+    }
+
+    .v2 div.panel {
+        background-color: white;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .v2 .exception-policy-header {
+        display: inline-block;
+        margin-left: auto;
+		margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .v2 .exception-policy-content {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .v2 hr {
+        width: 118px;
+    }
+	
+	.v2 .active-exception-header {
+		width: 960px;
+		margin-left: 45px;
+		margin-bottom: 20px;
+	}
+	
+	.v2 .active-exception-content{
+		display:none;
+		border: 1px solid #c7c7c7;
+		margin-left:40px;
+		border-top:none;
+		width:958px;
+		margin-bottom: 20px;
+		
+	}
+	
+	
+	.v2 .active-exception-content table tr:nth-child(4n), .v2 .active-exception-content table tr:nth-child(4n-1) {
+		background: #ffffff;
+	}
+	
+	.v2 .active-exception-content table tr:nth-child(4n-2), .v2 .active-exception-content table tr:nth-child(4n-3) {
+		background: #f6f6f7;;
+	}
+	
+	.v2 .borderbottom{
+		border-bottom:none;
+	}
+	
+	.v2 .marginbottom{
+		margin-bottom:0;
+	}
+
+    .v2 .asteriskcopy {
+		display:none;
+        height: 42px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Open Sans';
+        color: #ffffff;
+        background-color: #707070;
+        width: 950px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-left: -5px;
+    }
+
+    .v2 .activediv,
+    .v2 .pastdiv {
+        float: left;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Open Sans';
+        height: 45px;
+        width: 200px;
+        text-align: center;
+    }
+
+    .v2 .inactivetab {
+        background-color: #ffffff;
+        border: 1px solid #c7c7c7;
+        color: #0253a4;
+    }
+
+    .v2 .activebutton {
+        color: #ffffff;
+        background-color: #e3132c;
+        border: 1px solid #e3132c
+    }
+
+
+    td {
+        width: 254px;
+        padding-left: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .v2 .right {
+        float: right;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .v2 .left {
+        float: left;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .v2 .viewdetails:hover {
+        color: #a9dbff;
+    }
+
+    
+	
+	.v2 .inner {
+		   
+		
+	}
+	
+	.v2 .inner .active-exception-header{
+			width:935px;
+			margin-top: 20px;
+			margin-bottom: 0;
+			margin-left: 17px;
+	}
+	
+	.v2 .inner .active-exception-content {
+		margin-left: 0px;
+	}
+	
+	.v2 .inner .showtable {
+		border:none;
+	}
+
+    .v2 .theading {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        color: #333333;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 5px;
+		width:164px;
+    }
+
+    .v2 .tdata {
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        font-size: 20px;
+        color: #0b1f66;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .v2 ul.ulist {
+        list-style: disc;
+		padding-left: 16px;
+		font-weight: 700;
+		text-transform: none;
+		font-size: 16px;
+		color: #0b1f66;
+    }
+	
+	.v2 .timetext{
+		font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #0b1f66;
+		text-align:left;
+	}
+
+    
+
+    .v2 #viewmore {
+        margin: 10px 10px;
+        background-color: #E3132C;
+        border-width: 1px;
+        border-color: #E3132C;
+        color: #FFFFFF;
+        font-weight: 600;
+        text-transform: Uppercase;
+        cursor: default !important;
+        padding: 10px 20px 10px 20px;
+        font-size: 14px;
+        text-align: center;
+        width: 136px;
+    }
+
+    .v2 #viewmore:hover {
+        background-color: #cb1127;
+    }
+
+    .v2 .refundrequest {
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #0253a4;
+    }
+
+    .v2 .refundrequest:hover {
+        color: #1c7bd9;
+    }
+
+    .v2 .activetabcolor {
+        background-color: #02132d;
+    }
+
+    .v2 .inactivetabcolor {
+        background-color: #22659c;
+    }
+	
+	.v2 .cabintext {
+		font-size: 11px;
+		color: #333333;
+		text-transform: inherit;
+		padding-bottom: 4px;
+	}
+
+    .v2 .exclaim {
+        color: #ffffff;
+        background-color: #e3132c;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 22px;
+        float: left;
+    }
+
+    .v2 .osifieldblock {
+        height: auto;
+        background-color: #22659c;
+        padding: 10px;
+    }
+
+    .v2 .fieldheader {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Open Sans";
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .v2 .fieldcontent {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Open Sans";
+        text-align: center;
+        text-transform: none;
+        color: #87cdff;
+    }
+
+    .v2 .osifield {
+
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "Open Sans";
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+</style>
+
+<div class="v2">
+
+	<div class="exception-policy-header">
+        <div class="activediv activebutton">ACTIVE</div>
+        <div class="pastdiv inactivetab">PAST</div>
+    </div>
+    <div class="exception-policy-content">
+        <div class="activecontent">
+
+	<!--Section 1: Demonstrations in French Guiana !-->
+            <div class="active-exception">
+			<div class='exclaim'>!</div>
+                <div class="active-exception-header">
+                    <div class="accordion active">
+                        
+                        <div class="left">Demonstrations in French Guiana</div>
+                        <a class="right viewdetails" href="#">View Details +</a>
+                    </div>
+                    <table class="showtable">
+                        <tr>
+                            <th class="theading">Date of Issue</th>
+                            <th class="theading">Date(s) of Impacted travel</th>
+                            <th class="theading">Ticket must be reissued on or before</th>
+                            <th class="theading">Cabin to Cabin</th>
+                        </tr>
+                        <tr>
+                            <td class="tdata">April 13, 2017<br><div class="timetext">3.30PM</div></td>
+                            <td class="tdata">March 23, 2017 - April 21, 2017</td>
+                            <td class="tdata">April 21, 2017</td>
+                            <td class="tdata">Z5C4G</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="active-exception-content">
+                    <div class="panel">
+
+                    </div>
+                </div>
+            </div>
+			
+	<!-- Section 2:Atlanta Operations!-->
+	<div class="active-exception">
+		<div class='exclaim'>!</div>
+		<div class="active-exception-header">
+            <div class="accordion active">
+                <div class="left">Atlanta Operations</div>
+                <a class="right viewdetails" href="#">View Details +</a>
+            </div>
+			<div class="asteriskcopy">All sections in the waiver that have been updated are indicated by asterisk</div>
+            <table class="showtable">
+                <tr>
+                    <th class="theading">Date of Issue</th>
+                    <th class="theading">Date(s) of Impacted travel</th>
+                    <th class="theading">Ticket must be reissued on or before</th>
+                    <th class="theading">Cabin to Cabin</th>
+                </tr>
+                <tr>
+                    <td class="tdata">April 13, 2017</td>
+                    <td class="tdata">March 23, 2017 - April 21, 2017</td>
+                    <td class="tdata">April 21, 2017</td>
+                    <td class="tdata">Z5C4G</td>
+                </tr>
+            </table>
+		</div>
+		<div class="active-exception-content">
+            
+            <div class="panel">
+                <table cellspacing=0>
+                    <tr>
+                        <th class="theading">Applies to ticket issued on</th>
+                        <th class="theading">New travel must originate on/before</th>
+                        <th class="theading">New travel must be rebooked on/before</th>
+                        <th class="theading">Applies to tickets issue don/before</th>
+                    </tr>
+                    <tr>
+                        <td class="tdata">DL 006/KL 074</td>
+                        <td class="tdata">March 23, 2017 - April 21, 2017</td>
+                        <td class="tdata">April 21, 2017</td>
+                        <td class="tdata">Z5C4G</td>
+                    </tr>
+                    <tr>
+                        <th class="theading">Applies to travel on</th>
+                        <th class="theading">Affected areas</th>
+                        <td class="tdata"></td>
+                        <td rowspan="4">
+                            <div class=" osifieldblock">
+                                <div class="fieldheader"> RAPID REPRICE APPLIES</div>
+                                <hr>
+                                <div class="fieldcontent">WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New itenarary is rebooked/ticketed within all parameters of this policy <br> 2. New itenarary is priced at current applicable fares and rules
+                                </div>
+
+                                <div class="fieldheader"> J5Q7G</div>
+                                <hr>
+                                <div class="fieldcontent">OSI</div>
+                                <div class="osifield"> OSI DL REFUNDED PER ATL OPS 06aAPR2017</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdata">
+                            <ul class="ulist">
+                                <li class="ldata">Delta</li>
+                                <li class="ldata">Delta connection</li>
+                                <li class="ldata">Delta coded AF operated</li>
+                                <li class="ldata">AF coded AF operated</li>
+                                <li class="ldata">KL coded AF operated</li>
+                            </ul>
+                        </td>
+                        <td class="tdata">
+                            <ul class="ulist">
+                                <li class="ldata">Atlanta (ATL)</li>
+                                <li class="ldata">Boston(BOS) </li>
+                                <li class="ldata">Miami (MIA)</li>
+                                <li class="ldata">San Antonio(SAT)</li>
+                                <li class="ldata">Las Vegas(LAS)</li>
+                            </ul>
+                        </td>
+						<td></td>
+                    </tr>
+                    <tr>
+                        <td class="tdata"><a href="#" class="refundrequest">Refund Request From &gt </td>
+						<td class="tdata"></td>
+						<td class="tdata"><button id="viewmore">VIEW MORE</button></td>
+					</tr>
+				</table>
+				<div class="inner">
+					<div class="active-exception-header">
+						<div class="accordion active">
+							<div class="left">Atlanta Operations(2)</div>
+							<a class="right viewdetails" href="#">View Details +</a>
+							<table class="showtable">
+
+							</table>
+						</div>
+					</div>
+					<div class="active-exception-content">
+						<div class="panel">
+
+						</div>
+					</div>
+				</div>
+				<div class="inner">
+					<div class="active-exception-header">
+						<div class="accordion active">
+							<div class="left">Atlanta Operations(1)</div>
+							<a class="right viewdetails" href="#">View Details +</a>
+							<table class="showtable">
+
+							</table>
+						</div>
+					</div>
+					<div class="active-exception-content">
+						<div class="panel">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+     </div>
+	 
+	 
+	<!--Section 3 : Industrial actions by air france pilots unions !-->
+	<div class="active-exception">
+		<div class='exclaim'>!</div>
+		<div class="active-exception-header">
+			<div class="accordion active">
+				<div class="left">Industrial actions by air france pilots unions</div>
+				<a class="right viewdetails" href="#">View Details +</a>
+			</div>
+			<table class="showtable">
+				<tr>
+					<th class="theading">Date of Issue</th>
+					<th class="theading">Date(s) of Impacted travel</th>
+					<th class="theading">Ticket must be reissued on or before</th>
+					<th class="theading">Cabin to Cabin</th>
+				</tr>
+				
+				<tr>
+					<td class="tdata">April 13, 2017<br><div class="timetext">1.00PM ET</div></td>
+					<td class="tdata">March 23, 2017 - April 21, 2017</td>
+					<td class="tdata">April 21, 2017</td>
+					<td class="tdata">Z5C4G<br><div class="cabintext">If new travel originates April 20,2017-April 30,2017</div><hr align="left"></td>
+				</tr>
+				<tr>
+					<th class="theading"></th>
+					<th class="theading"></th>
+					<th class="theading"></th>
+					<th class="theading">Class to Class</th>
+				</tr>
+				
+				<tr>
+					<td class="tdata"></td>
+					<td class="tdata"></td>
+					<td class="tdata"></td>
+					<td class="tdata">G2Y62F<br><div class="cabintext">If new travel originates May 2,2017 through valid date on original ticket</div></td>
+				</tr>
+			</table>
+		</div>
+		<div class="active-exception-content">
+            
+            <div class="panel">
+                <table cellspacing=0>
+                    <tr>
+                        <th class="theading">Applies to ticket issued on</th>
+                        <th class="theading">New travel must originate on/before</th>
+                        <th class="theading">New travel must be rebooked on/before</th>
+                        <th class="theading">Applies to tickets issue don/before</th>
+                    </tr>
+                    <tr>
+                        <td class="tdata">DL 006/KL 074</td>
+                        <td class="tdata">March 23, 2017 - April 21, 2017</td>
+                        <td class="tdata">April 21, 2017</td>
+                        <td class="tdata">Z5C4G</td>
+                    </tr>
+                    <tr>
+                        <th class="theading">Applies to travel on</th>
+                        <th class="theading">Affected areas</th>
+                        <td class="tdata"></td>
+                        <td rowspan="4">
+                            <div class=" osifieldblock">
+                                <div class="fieldheader"> RAPID REPRICE APPLIES</div>
+                                <hr>
+                                <div class="fieldcontent">WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New itenarary is rebooked/ticketed within all parameters of this policy <br> 2. New itenarary is priced at current applicable fares and rules
+                                </div>
+
+                                <div class="fieldheader"> J5Q7G</div>
+                                <hr>
+                                <div class="fieldcontent">OSI</div>
+                                <div class="osifield"> OSI DL REFUNDED PER ATL OPS 06aAPR2017</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdata">
+                            <ul class="ulist">
+                                <li class="ldata">Delta</li>
+                                <li class="ldata">Delta connection</li>
+                                <li class="ldata">Delta coded AF operated</li>
+                                <li class="ldata">AF coded AF operated</li>
+                                <li class="ldata">KL coded AF operated</li>
+                            </ul>
+                        </td>
+                        <td class="tdata">
+                            <ul class="ulist">
+                                <li class="ldata">Atlanta (ATL)</li>
+                                <li class="ldata">Boston(BOS) </li>
+                                <li class="ldata">Miami (MIA)</li>
+                                <li class="ldata">San Antonio(SAT)</li>
+                                <li class="ldata">Las Vegas(LAS)</li>
+                            </ul>
+                        </td>
+						<td></td>
+                    </tr>
+                    <tr>
+                        <td class="tdata"><a href="#" class="refundrequest">Refund Request From &gt </td>
+						<td class="tdata"></td>
+						<td class="tdata"><button id="viewmore">VIEW MORE</button></td>
+					</tr>
+				</table>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	 
+	<!--Section 4 : EarthQuake and Tsunami !-->
+	<div class="active-exception">
+		<div class='exclaim'>!</div>
+		<div class="active-exception-header">
+			<div class="accordion active">
+				<div class="left">Earthquake and Tsunami</div>
+				
+			</div>
+			<table class="showtable">
+				<tr>
+					<th class="theading">Date of Issue</th>
+				</tr>
+				<tr>
+					<td class="tdata">April 1,2017</td>
+					<td></td>
+					<td></td>
+					<td class="tdata" rowspan="3"><button id="viewmore">VIEW MORE</button>
+				</tr>
+			</table>
+		</div>
+		<div class="active-exception-content">
+			<div class="panel">
+
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="pastcontent">
+    PAST EXCEPTION POLICY GOES HERE
+</div>
+	</div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $(".pastcontent").hide();
+    $(".activediv").on("click", function() {
+      $(".activecontent").show();
+      $(".pastcontent").hide();
+      $(".pastdiv").removeClass("activebutton").addClass("inactivetab");
+      $(".activediv").removeClass("inactivetab").addClass("activebutton");
+    });
+
+    $(".pastdiv").on("click", function() {
+      $(".pastcontent").show();
+      $(".activecontent").hide();
+      $(".activediv").removeClass("activebutton").addClass("inactivetab");
+      $(".pastdiv").removeClass("inactivetab").addClass("activebutton");
+    });
+
+    });
+</script>
+
+<script>
+    
+     $(".accordion").click(function() {
+			if ($(this).hasClass("active")) {
+				$(this).removeClass("active");
+				$(this).find(".viewdetails").html("Close -");
+				$(this).addClass("inactivetabcolor");
+            } else {
+                $(this).addClass('active');
+				$(this).find(".viewdetails").html("View Details +");
+                $(this).addClass("activetabcolor").removeClass("inactivetabcolor");
+            }
+     })
+	$('.active-exception-header').each(function() {
+		$(this).click(function() {
+		
+			$(this).toggleClass("marginbottom");// For removing the margin bottom from header when view details is clicked
+			$(this).children( ".showtable" ).toggleClass("borderbottom");// For removing the border bottom from header(show table_) when view details is clicked
+			$(this).nextAll(".active-exception-content").eq(0).toggle();// to show corresponding content when view details is clicked
+			$(this).children(".asteriskcopy").toggle();// to show/hide asterisk copy
+			
+		})
+    })
+</script>
