@@ -4,6 +4,10 @@
     background-color: #F6F6F7;
   }
 
+.v2 .label, .v2 .linkStyle, .v2 input {
+    font-size: 14px!important;
+}
+
 .v2 .corpLoginHeader {
     color: #0B1F66;
   }
