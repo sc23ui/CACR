@@ -207,3 +207,16 @@
 	padding-bottom:5px !important;
 	color:#0b1f66 !important;
 }
+
+/* Admin Sub-menu */
+.v2 #deltalinkAdminHeader, .v2 .adminMenuDiv, .v2 .adminSubMenuDiv {
+	background:#fff;
+	border-bottom:1px solid #c7c7c7;
+}
+.v2 #deltalinkAdminHeader a, .v2 .adminMenuDiv a {
+	font-size:16px;
+	color:#707070;
+}
+.v2 #deltalinkAdminHeader a.active, .v2 .adminMenuDiv a.active {
+	color:#0b1f66 !important;
+}
