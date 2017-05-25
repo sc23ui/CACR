@@ -1,1 +1,17 @@
 /* generalheader-cacr-override.css */
+
+.v2 #mainHeaderStatic {
+  background-color: #174873;
+}
+
+.v2 .switchLangLinkText {
+  color: #87cdff;
+}
+
+.v2 .switchLangLinkText:hover {
+    color: #a9dbff;
+}
+
+.v2 .switchLangActiveText {
+  color: #fff;
+}
