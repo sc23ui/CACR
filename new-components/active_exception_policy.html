@@ -198,7 +198,7 @@ body.v2 {
 	font-weight: 700;
 	text-align: left;
 	width: 225px;
-   	padding-left: 10px;
+    padding-left: 10px;
 }
 
 .v2 .ulist {
@@ -493,7 +493,7 @@ body.v2 {
 													<td class="tdata">Z5C4G<br>
 														<div class="cabintext">If new travel originates
 															April 20,2017-April 30,2017</div>
-														<hr align="left"></td>
+														
 												</tr>
 												<tr>
 													<th class="active-exceptions-table-head">Applies to
@@ -733,8 +733,8 @@ body.v2 {
 								</tr>
 								<tr>
 									<td class="tdata">April 1,2017</td>
-									<td></td>
-									<td></td>
+									<td class="tdata"></td>
+									<td class="tdata"></td>
 									<td class="tdata" rowspan="3"><button id="viewmore">VIEW
 											MORE</button>
 								</tr>
@@ -778,11 +778,11 @@ body.v2 {
 				$(this).removeClass("active");
 				$(this).find(".active-exception-header-link").html("Close -");
 				$(this).addClass("inactivetabcolor");
-			  } else {
-				$(this).addClass('active');
-						$(this).find(".active-exception-header-link").html("View Details +");
-				$(this).addClass("activetabcolor").removeClass("inactivetabcolor");
-			    }
+            } else {
+                $(this).addClass('active');
+				$(this).find(".active-exception-header-link").html("View Details +");
+                $(this).addClass("activetabcolor").removeClass("inactivetabcolor");
+            }
      })
      //This snipper is to show corresponding content when each exceptions-accordion header is clicked
 	$('.active-exception-header').each(function() {
