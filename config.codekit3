@@ -551,17 +551,7 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/images\/Delta-Professional.png": {
-		"ft": 32768,
-		"iS": 2558,
-		"oA": 0,
-		"oAP": "\/images\/Delta-Professional.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
+
 	"\/manifest.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -570,12 +560,7 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"\/new-components\/active_exception_policy-comments.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/new-components\/active_exception_policy-comments.html",
-		"oF": 0
-		},
+
 	"\/new-components\/active_exception_policy.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -588,12 +573,7 @@
 		"oAP": "\/new-components\/agency-dashboard-files-links.html",
 		"oF": 0
 		},
-	"\/new-components\/agency-dashboard-tiles.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/new-components\/agency-dashboard-tiles.html",
-		"oF": 0
-		},
+
 	"\/new-components\/agency-partner-links.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -684,6 +664,7 @@
 		"oAP": "\/new-components\/terms-conditions.html",
 		"oF": 0
 		},
+
 	"\/new-components\/video-text.html": {
 		"ft": 8192,
 		"oA": 2,
