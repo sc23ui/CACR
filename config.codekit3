@@ -551,6 +551,7 @@
 		"oT": 1,
 		"q": 100
 		},
+
 	"\/manifest.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -559,6 +560,7 @@
 		"oO": 0,
 		"oS": 1
 		},
+
 	"\/new-components\/active_exception_policy.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -571,6 +573,7 @@
 		"oAP": "\/new-components\/agency-dashboard-files-links.html",
 		"oF": 0
 		},
+
 	"\/new-components\/agency-partner-links.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -661,12 +664,7 @@
 		"oAP": "\/new-components\/terms-conditions.html",
 		"oF": 0
 		},
-	"\/new-components\/truncate-ellipsis-example.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/new-components\/truncate-ellipsis-example.html",
-		"oF": 0
-		},
+
 	"\/new-components\/video-text.html": {
 		"ft": 8192,
 		"oA": 2,

@@ -1,7 +1,7 @@
 /* common-cacr-override.css */
 .v2 #contentBody {
 	background-image:none !important;
-	background-color:#fff !important;	
+	background-color:#fff !important;
 }
 
 .v2 .red {
@@ -17,10 +17,29 @@
 }
 
 .v2 p {
-	font-size: 14px;	
+	font-size: 14px;
 }
 
 .v2 .regularText
  {
-	font-size: 14px;	
+	font-size: 14px;
+}
+
+.v2 .landingboxcontent {
+	background-color: #f6f6f7;
+	height: 225px;
+}
+
+.v2 .landingboximage {
+	margin-left: -22px;
+	width: 312px;
+}
+
+.v2 .landingboximage img {
+	width: 334px;
+}
+
+.v2 .landingboxtext {
+	background-color: #f6f6f7;
+	font-size: 14px;
 }

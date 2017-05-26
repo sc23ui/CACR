@@ -1,5 +1,5 @@
 /* login-cacr-override.css */
-.v2 .loginContent{
+.v2 .loginContent, .v2 .loginContent1{
    background-color: #f6f6f7;
 }
 
@@ -13,4 +13,12 @@
 
 .v2 .loginHeader h4{
    font-size: 16px !important;
+}
+
+.v2 #loginContent .label, .v2 #loginContent .linkStyle, .v2 #loginContent input {
+    font-size: 14px !important;
+}
+
+.v2 .loginContent1 .darkBGText{
+   color: #333333 !important;
 }
