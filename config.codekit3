@@ -540,6 +540,28 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/images\/arrow.png": {
+		"ft": 32768,
+		"iS": 1927,
+		"oA": 0,
+		"oAP": "\/images\/arrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/Delta-Professional.png": {
+		"ft": 32768,
+		"iS": 2558,
+		"oA": 0,
+		"oAP": "\/images\/Delta-Professional.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/manifest.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -548,10 +570,118 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/new-components\/active_exception_policy-comments.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/active_exception_policy-comments.html",
+		"oF": 0
+		},
+	"\/new-components\/active_exception_policy.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/active_exception_policy.html",
+		"oF": 0
+		},
+	"\/new-components\/agency-dashboard-files-links.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/agency-dashboard-files-links.html",
+		"oF": 0
+		},
+	"\/new-components\/agency-dashboard-tiles.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/agency-dashboard-tiles.html",
+		"oF": 0
+		},
+	"\/new-components\/agency-partner-links.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/agency-partner-links.html",
+		"oF": 0
+		},
+	"\/new-components\/banner-text.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/banner-text.html",
+		"oF": 0
+		},
+	"\/new-components\/company-name-agency.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/company-name-agency.html",
+		"oF": 0
+		},
+	"\/new-components\/company-name.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/company-name.html",
+		"oF": 0
+		},
+	"\/new-components\/corporate-dashboard-files-links.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/corporate-dashboard-files-links.html",
+		"oF": 0
+		},
+	"\/new-components\/corporate-dashboard-message.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/corporate-dashboard-message.html",
+		"oF": 0
+		},
+	"\/new-components\/corporate-homepage-advisory.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/corporate-homepage-advisory.html",
+		"oF": 0
+		},
+	"\/new-components\/exception-policies.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/exception-policies.html",
+		"oF": 0
+		},
+	"\/new-components\/headline-component.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/headline-component.html",
+		"oF": 0
+		},
+	"\/new-components\/helpful-tools.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/helpful-tools.html",
+		"oF": 0
+		},
 	"\/new-components\/image-text.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/new-components\/image-text.html",
+		"oF": 0
+		},
+	"\/new-components\/past-exception-policy.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/past-exception-policy.html",
+		"oF": 0
+		},
+	"\/new-components\/performance-statistics.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/performance-statistics.html",
+		"oF": 0
+		},
+	"\/new-components\/section-title.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/section-title.html",
+		"oF": 0
+		},
+	"\/new-components\/terms-conditions.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/new-components\/terms-conditions.html",
 		"oF": 0
 		},
 	"\/new-components\/video-text.html": {
