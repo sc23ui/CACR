@@ -74,6 +74,19 @@
 }
 
 
+.v2 .searchField {
+	background-color:#f6f6f7;
+	border-color:#f6f6f7;
+}
+.v2 .searchButton {
+	background-color:#e3132c;
+	border-color:#e3132c;
+}
+
+
+
+
+
 .v2 #report_menu {
 	box-shadow: none !important;
 	top:90px !important;
@@ -110,17 +123,6 @@
 .v2 .label , .v2 .linkStyle ,.v2 input {
     font-size: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* default dashboard tabs */
