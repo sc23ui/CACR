@@ -45,6 +45,16 @@
 }
 
 
+.v2 a.backFullSite  {
+	font-size:1.4em;
+	color: #87cdff;
+}
+.v2 a.backFullSite:hover {
+	color: #A9DBFF !important;
+}
+
+
+
 .v2 .login {
 	color: #87cdff;
 }
