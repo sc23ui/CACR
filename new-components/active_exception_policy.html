@@ -21,12 +21,17 @@ body.v2 {
 </style>
 </head>
 <body class="v2">
-	<main>
-	<div class="container_12">
-		<!-- start of new component -->
+<main>
+<div class="container_12">
+<!-- start of new component -->
 
-		<!-- new component styles -->
-		<style>
+<!-- new component styles -->
+<style>
+		
+.v2 .active-exceptions-asterisk:after {
+    color: #e3132c;
+    content: "*";
+}
 .v2 .exceptions-accordion {
 	height: 42px;
 	display: inline-block;
@@ -76,6 +81,8 @@ body.v2 {
 
 .v2 .exception-osi-hr {
 	width: 118px;
+	margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .v2 .active-exception-header {
@@ -113,7 +120,7 @@ body.v2 {
 
 .v2 .active-exceptions-disclaimer {
 	display: none;
-	height: 42px;
+	height: 32px;
 	font-size: 14px;
 	font-weight: 500;
 	color: #fff;
@@ -219,7 +226,6 @@ body.v2 {
 }
 
 .v2 #viewmore {
-	margin: 10px 10px;
 	background-color: #E3132C;
 	border-width: 1px;
 	border-color: #E3132C;
@@ -396,7 +402,7 @@ body.v2 {
 											originate on/before</th>
 										<th class="active-exceptions-table-head">New travel must
 											be rebooked on/before</th>
-										<th class="active-exceptions-table-head">Applies to
+										<th class="active-exceptions-table-head active-exceptions-asterisk">Applies to
 											tickets issue don/before</th>
 									</tr>
 									<tr>
@@ -408,7 +414,7 @@ body.v2 {
 									<tr>
 										<th class="active-exceptions-table-head">Applies to
 											travel on</th>
-										<th class="active-exceptions-table-head">Affected areas</th>
+										<th class="active-exceptions-table-head active-exceptions-asterisk">Affected areas</th>
 										<td class="tdata"></td>
 										<td rowspan="4">
 											<div class=" exception-osi-field-content">
@@ -796,7 +802,7 @@ body.v2 {
 		})
     })
 </script>
-	</div>
-	</main>
+</div>
+</main>
 </body>
 </html>
