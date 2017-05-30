@@ -232,3 +232,11 @@
 .v2 #deltalinkAdminHeader a.active, .v2 .adminMenuDiv a.active {
 	color:#0b1f66 !important;
 }
+
+/* Category Pages */
+.v2 .darkGrey2 {
+	color:#0b1f66;
+}
+.v2 .linkListText {
+	font-size:14px;
+}
