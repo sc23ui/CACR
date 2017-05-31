@@ -7,3 +7,5 @@
 *.codekit3
 
 *.codekit3
+
+node_modules/.bin/mime
