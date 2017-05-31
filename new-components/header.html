@@ -79,7 +79,6 @@
         }
         .menu-links {
           display: table;
-          width: 1%;
         }
         .menu-link {
           line-height: 1.4;
@@ -90,6 +89,7 @@
           color: #fff;
           font-weight: 600;
           text-transform: uppercase;
+
         }
         a.menu-link.active, a.menu-link.active:hover {
           background-color:#fff;
@@ -211,7 +211,7 @@
           width:100%;
           width:100%;
         }
-        .sub-menu-link {
+        a.sub-menu-link {
           display: table-cell;
           padding:10px 20px;
           margin: 0;
@@ -222,9 +222,14 @@
           color: #0b1f66;
           text-transform: uppercase;
         }
-        .sub-menu-link:hover {
+        a.sub-menu-link:hover {
           color: #0b1f66;
           background-color: #ebf0f4;
+        }
+
+        a.sub-menu-link.active {
+          background:#dce1e5;
+          color:#134775;
         }
 
         .menu-login {
@@ -238,6 +243,14 @@
           text-transform: uppercase;
         }
       </style>
+
+
+      <!--//
+      Don't forget to:
+       - Provide an example of application name, in place of left menu items.
+       - Provide a sub-menu active state
+       - Provide an
+      //-->
 
     </head>
     <body class="v2">
@@ -312,9 +325,40 @@
             <div class="menu-section">
               <div class="menu-links">
                 <a href="#" class="menu-link">Home</a>
+              </div>
+            </div>
+            <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
+              <div class="menu-dropdown-title">
+                My Dashboard
+              </div>
+              <div class="menu-dropdown-links">
+                <a href="#" class="menu-dropdown-link">Preferred Seats</a>
+                <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
+              </div>
+            </div>
+            <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
+          </menu>
+          <div class="sub-menu">
+            <div class="sub-menu-links">
+              <a href="#" class="sub-menu-link">Users</a>
+              <a href="#" class="sub-menu-link active">Admin User Management</a>
+              <a href="#" class="sub-menu-link">Agency Details</a>
+              <a href="#" class="sub-menu-link">Application Settings</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="testing-header testing-header-logged-in">
+        <div class="testing-header-container">
+          <menu class="menu">
+            <div class="menu-section">
+              <div class="menu-links">
+                <a href="#" class="menu-link">Home</a>
                 <a href="#" class="menu-link">Agent Resources</a>
                 <a href="#" class="menu-link">Policy Library</a>
-                <a href="#" class="menu-link">Products &amp;&nbsp;Services</a>
+                <a href="#" class="menu-link">Products &amp; Services</a>
                 <a href="#" class="menu-link">News</a>
               </div>
             </div>
@@ -341,7 +385,7 @@
                 <a href="#" class="menu-link">Home</a>
                 <a href="#" class="menu-link">Agent Resources</a>
                 <a href="#" class="menu-link">Policy Library</a>
-                <a href="#" class="menu-link">Products &amp;&nbsp;Services</a>
+                <a href="#" class="menu-link">Products &amp; Services</a>
                 <a href="#" class="menu-link">News</a>
               </div>
             </div>
@@ -367,7 +411,7 @@
                 <a href="#" class="menu-link">Home</a>
                 <a href="#" class="menu-link">Agent Resources</a>
                 <a href="#" class="menu-link">Policy Library</a>
-                <a href="#" class="menu-link">Products &amp;&nbsp;Services</a>
+                <a href="#" class="menu-link">Products &amp; Services</a>
                 <a href="#" class="menu-link">News</a>
               </div>
             </div>
@@ -386,7 +430,7 @@
                 <a href="#" class="menu-link">Home</a>
                 <a href="#" class="menu-link">Agent Resources</a>
                 <a href="#" class="menu-link">Policy Library</a>
-                <a href="#" class="menu-link">Products &amp;&nbsp;Services</a>
+                <a href="#" class="menu-link">Products &amp; Services</a>
                 <a href="#" class="menu-link">News</a>
               </div>
             </div>
@@ -404,9 +448,9 @@
             <div class="menu-section">
               <div class="menu-links">
                 <a href="#" class="menu-link">Home</a>
-                <a href="#" class="menu-link">Agent Resources That Are Really Long</a>
+                <a href="#" class="menu-link">Agent Resources That Are Really Really Really Really Long</a>
                 <a href="#" class="menu-link">Policy Library</a>
-                <a href="#" class="menu-link">Products &amp;&nbsp;Services</a>
+                <a href="#" class="menu-link">Products &amp; Services</a>
                 <a href="#" class="menu-link">News</a>
               </div>
             </div>
@@ -417,6 +461,24 @@
         </div>
       </div>
 
+      <div class="testing-header testing-header-login">
+        <div class="testing-header-container">
+          <menu class="menu">
+            <div class="menu-section">
+              <div class="menu-links">
+                <a href="#" class="menu-link">旅行会向け情報</a>
+                <a href="#" class="menu-link">旅行会社向報</a>
+                <a href="#" class="menu-link">旅行会社ま向け情報</a>
+                <a href="#" class="menu-link">旅行さま向け情報</a>
+                <a href="#" class="menu-link">旅行さま向け情報</a>
+              </div>
+            </div>
+            <div class="menu-section menu-tab menu-login active">
+              <div class="menu-login-title">Log In</div>
+            </div>
+          </menu>
+        </div>
+      </div>
 
 
     </body>
