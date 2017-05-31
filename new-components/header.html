@@ -72,12 +72,6 @@
           padding: 0;
           font-size: 16px;
         }
-        .menu-tab {
-          width: 300px;
-          position: relative;
-          background-color: #22699c;
-          color: #fff;
-        }
         .menu-section {
           display: table-cell;
           margin: 0;
@@ -103,6 +97,12 @@
           opacity:1;
         }
 
+        .menu-tab {
+          width: 300px;
+          position: relative;
+          background-color: #22699c;
+          color: #fff;
+        }
         .menu-tab-link {
           padding: 0 24px;
           text-align: center;
@@ -114,14 +114,7 @@
           color: #0b1f66;
           background-color: #fff;
         }
-        .menu-title {
-          font-weight: 600;
-          font-size: 14px;
-          padding: 0 24px;
-          display: block;
-          text-transform: uppercase;
-        }
-        .menu-text {
+        .menu-dropdown-title {
           text-align: center;
           font-weight: 600;
           text-transform: uppercase;
@@ -129,25 +122,22 @@
           box-sizing: border-box;
         }
 
-        .menu-tab.active .menu-title {
+        .menu-tab.active .menu-login-title {
           font-size:22px;
         }
         .menu-tab.active {
           background-color: #fff;
         }
-        .menu-tab.active .menu-text, .menu-tab.active .menu-title, a.menu-tab-link.active {
+        .menu-tab.active .menu-dropdown-title, .menu-tab.active .menu-login-title, a.menu-tab-link.active {
           color:#134775;
           opacity:1;
         }
 
-        .menu-login {
-          width: 300px;
-        }
         .menu-dropdown {
           cursor: default;
           position: relative;
         }
-        .menu-dropdown-menu {
+        .menu-dropdown-links {
           display: none;
           position: absolute;
           top: 100%;
@@ -168,7 +158,7 @@
         .menu-dropdown-link + .menu-dropdown-link {
           border-top: 1px solid #e6e7e8;
         }
-        .menu-dropdown .menu-text::after {
+        .menu-dropdown .menu-dropdown-title::after {
           content: "\2228";
           position: relative;
           top: -2px;
@@ -176,14 +166,14 @@
         .menu-dropdown:hover {
           background-color: #fff;
         }
-        .menu-dropdown:hover .menu-text {
+        .menu-dropdown:hover .menu-dropdown-title {
           color: #0b1f66;
         }
-        .menu-dropdown:hover .menu-text::after {
+        .menu-dropdown:hover .menu-dropdown-title::after {
           content: "\2227";
           color:#999;
         }
-        .menu-dropdown:hover .menu-dropdown-menu {
+        .menu-dropdown:hover .menu-dropdown-links {
           display: block;
         }
         .menu-dashboard {
@@ -197,14 +187,15 @@
         .menu-dashboard:hover {
           border-right: 1px solid #e6e7e8;
         }
-        .menu-dashboard .menu-dropdown-menu {
+        .menu-dashboard .menu-dropdown-links {
           width: 240px;
           margin-left:-41px;
         }
+
+
         .menu-admin {
           width: 100px;
         }
-
         .sub-menu {
           display:block;
           background:#fff;
@@ -231,9 +222,20 @@
           color: #0b1f66;
           background-color: #ebf0f4;
         }
-      </style>
-    </head>
 
+        .menu-login {
+          width: 300px;
+        }
+        .menu-login-title {
+          font-weight: 600;
+          font-size: 14px;
+          padding: 0 24px;
+          display: block;
+          text-transform: uppercase;
+        }
+      </style>
+
+    </head>
     <body class="v2">
 
 
@@ -263,10 +265,10 @@
               </div>
             </div>
             <div class="menu-section menu-tab menu-dropdown menu-dashboard">
-              <div class="menu-text">
+              <div class="menu-dropdown-title">
                 My Dashboard
               </div>
-              <div class="menu-dropdown-menu">
+              <div class="menu-dropdown-links">
                 <a href="#" class="menu-dropdown-link">Preferred Seats</a>
                 <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
               </div>
@@ -298,10 +300,10 @@
               </div>
             </div>
             <div class="menu-section menu-tab menu-dropdown menu-dashboard active">
-              <div class="menu-text">
+              <div class="menu-dropdown-title">
                 My Dashboard
               </div>
-              <div class="menu-dropdown-menu">
+              <div class="menu-dropdown-links">
                 <a href="#" class="menu-dropdown-link">Preferred Seats</a>
                 <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
               </div>
@@ -325,10 +327,10 @@
               </div>
             </div>
             <div class="menu-section menu-tab menu-dropdown menu-dashboard">
-              <div class="menu-text">
+              <div class="menu-dropdown-title">
                 My Dashboard
               </div>
-              <div class="menu-dropdown-menu">
+              <div class="menu-dropdown-links">
                 <a href="#" class="menu-dropdown-link">Preferred Seats</a>
                 <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
               </div>
@@ -369,11 +371,12 @@
               </div>
             </div>
             <div class="menu-section menu-tab menu-login active">
-              <div class="menu-title">Log In</div>
+              <div class="menu-login-title">Log In</div>
             </div>
           </menu>
         </div>
       </div>
-    </body>
 
+
+    </body>
   </html>
