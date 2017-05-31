@@ -184,3 +184,9 @@ v2 .loginMessageDiv {
 .v2 .linkListText {
 	font-size:14px;
 }
+
+
+/* Search Button */
+.v2 input.searchBtn {
+	background-color:#e3132c;
+}
