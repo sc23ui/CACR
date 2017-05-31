@@ -109,10 +109,11 @@
           text-transform: uppercase;
           box-sizing: border-box;
         }
-        .menu-link:hover,
-        .menu-tab-link:hover {
+        a.menu-link:hover,
+        a.menu-tab-link:hover {
           color: #0b1f66;
           background-color: #fff;
+          opacity:0.9;
         }
         .menu-dropdown-title {
           text-align: center;
@@ -176,26 +177,29 @@
         .menu-dropdown:hover .menu-dropdown-links {
           display: block;
         }
-        .menu-dashboard {
-          width: 199px;
+
+        .menu-dropdown {
           border-right: 1px solid #134775;
           padding-top:2px;
         }
-        .menu-dashboard.active {
+        .menu-dropdown.active {
           border-right: 1px solid #fff;
         }
-        .menu-dashboard:hover {
+        .menu-dropdown:hover {
           border-right: 1px solid #e6e7e8;
         }
-        .menu-dashboard .menu-dropdown-links {
+        .menu-dropdown .menu-dropdown-links {
           width: 240px;
           margin-left:-41px;
         }
 
-
-        .menu-admin {
+        #menu-tab-admin{
           width: 100px;
         }
+        #menu-tab-dashboard {
+          width: 199px;
+        }
+
         .sub-menu {
           display:block;
           background:#fff;
@@ -238,22 +242,37 @@
     </head>
     <body class="v2">
 
+    <br/><br/>
 
-      <div class="testing-header testing-header-only-links">
-        <div class="testing-header-container">
-          <menu class="menu">
-            <div class="menu-section">
-              <div class="menu-links">
-                <a href="#" class="menu-link">Home</a>
-                <a href="#" class="menu-link active">Agent Resources</a>
-                <a href="#" class="menu-link">Policy Library</a>
-                <a href="#" class="menu-link">Products &amp;&nbsp;Services</a>
-                <a href="#" class="menu-link">News</a>
-              </div>
+    <div class="testing-header testing-header-only-links">
+      <div class="testing-header-container">
+        <menu class="menu">
+          <div class="menu-section">
+            <div class="menu-links">
+              <a href="#" class="menu-link">Home</a>
+              <a href="#" class="menu-link">News</a>
             </div>
-          </menu>
-        </div>
+          </div>
+        </menu>
       </div>
+    </div>
+
+
+    <div class="testing-header testing-header-only-links">
+      <div class="testing-header-container">
+        <menu class="menu">
+          <div class="menu-section">
+            <div class="menu-links">
+              <a href="#" class="menu-link">Home</a>
+              <a href="#" class="menu-link active">Agent Resources</a>
+              <a href="#" class="menu-link">Policy Library</a>
+              <a href="#" class="menu-link">Products &amp;&nbsp;Services</a>
+              <a href="#" class="menu-link">News</a>
+            </div>
+          </div>
+        </menu>
+      </div>
+    </div>
 
 
       <div class="testing-header testing-header-logged-in">
@@ -264,7 +283,7 @@
                 <a href="#" class="menu-link">Home</a>
               </div>
             </div>
-            <div class="menu-section menu-tab menu-dropdown menu-dashboard">
+            <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
               <div class="menu-dropdown-title">
                 My Dashboard
               </div>
@@ -273,7 +292,7 @@
                 <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
               </div>
             </div>
-            <a href="#" class="menu-section menu-tab menu-tab-link menu-admin active">Admin</a>
+            <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
           </menu>
           <div class="sub-menu">
             <div class="sub-menu-links">
@@ -299,7 +318,7 @@
                 <a href="#" class="menu-link">News</a>
               </div>
             </div>
-            <div class="menu-section menu-tab menu-dropdown menu-dashboard active">
+            <div class="menu-section menu-tab menu-dropdown active" id="menu-tab-dashboard">
               <div class="menu-dropdown-title">
                 My Dashboard
               </div>
@@ -308,7 +327,7 @@
                 <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
               </div>
             </div>
-            <a href="#" class="menu-section menu-tab menu-tab-link menu-admin">Admin</a>
+            <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
           </menu>
         </div>
       </div>
@@ -326,7 +345,7 @@
                 <a href="#" class="menu-link">News</a>
               </div>
             </div>
-            <div class="menu-section menu-tab menu-dropdown menu-dashboard">
+            <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
               <div class="menu-dropdown-title">
                 My Dashboard
               </div>
@@ -352,7 +371,28 @@
                 <a href="#" class="menu-link">News</a>
               </div>
             </div>
-            <a href="#" class="menu-section menu-tab menu-tab-link menu-admin">Admin</a>
+            <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
+          </menu>
+        </div>
+      </div>
+
+
+
+      <div class="testing-header testing-header-login">
+        <div class="testing-header-container">
+          <menu class="menu">
+            <div class="menu-section">
+              <div class="menu-links">
+                <a href="#" class="menu-link">Home</a>
+                <a href="#" class="menu-link">Agent Resources</a>
+                <a href="#" class="menu-link">Policy Library</a>
+                <a href="#" class="menu-link">Products &amp;&nbsp;Services</a>
+                <a href="#" class="menu-link">News</a>
+              </div>
+            </div>
+            <div class="menu-section menu-tab menu-login active">
+              <div class="menu-login-title">Log In</div>
+            </div>
           </menu>
         </div>
       </div>
@@ -376,6 +416,7 @@
           </menu>
         </div>
       </div>
+
 
 
     </body>
