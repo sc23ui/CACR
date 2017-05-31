@@ -1,6 +1,5 @@
 <!DOCTYPE html>
   <html>
-
   <head>
     <title>Home - Delta Professional Travel Agency Website</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +10,7 @@
     <meta name="description" content="Connects travel agency professionals to Delta news and travel exception policies, information about Delta products and services and policies and procedures." />
     <meta name="robots" content="noodp,noydir" />
     <link rel="icon" type="https://pro-si.delta.com/image/vnd.microsoft.icon" href="https://pro-si.delta.com/etc/designs/deltaPro/favicon.ico" />
-    <link rel="shortcut icon" type="https://pro-si.delta.com/image/vnd.microsoft.icon" href="/etc/designs/deltaPro/favicon.ico" />
+    <link rel="shortcut icon" type="https://pro-si.delta.com/image/vnd.microsoft.icon" href="https://pro-si.delta.com/etc/designs/deltaPro/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="https://pro-si.delta.com/etc/designs/deltaPro/homeLib.20170330.css" media="all" />
     <!--[if gt IE 6]>
       <link rel="stylesheet" type="text/css" media="all" href="/etc/designs/deltaPro/ieLib.0.css"/>
@@ -36,14 +35,13 @@
     <link rel="stylesheet" type="text/css" media="all" href="../agency/css/myDashboardAppsPage-cacr-override.css" />
     <link rel="stylesheet" type="text/css" media="all" href="../agency/css/navDisplayAndDetailsPages-cacr-override.css" />
     <link rel="stylesheet" type="text/css" media="all" href="../agency/home/home-cacr-override.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="../agency/ie/ie10-cacr-override.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="../agency/css/ieHeader-cacr-override.css" />
     <script type="text/javascript">
       if (navigator.appVersion.indexOf("MSIE 10") !== -1 || navigator.userAgent.indexOf("Trident") !== -1 && navigator.userAgent.indexOf("rv:11") !== -1) {
         document.write(' <link rel="stylesheet" type="text/css" href="https://pro-si.delta.com/etc/designs/deltaPro/css/ie/ie10.css">');
       }
     </script>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css' />
+    <script src="https://pro.delta.com/etc/clientlibs/granite/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://pro-si.delta.com/etc/designs/deltaPro/js/sitemaintenance.js"></script>
     <script type="text/javascript">
       sitemaintenance("https://pro-si.delta.com/content/agency/us/en/home");
@@ -55,86 +53,69 @@
         padding: 0;
         margin: 0;
       }
-
       .prototype-header {
         background: #134775;
         margin-bottom: 80px;
       }
-
       .prototype-header-container {
         width: 960px;
         margin: 0 auto;
       }
+      </style>
 
-      .nav-next {
+      <style>
+      .nav {
         display: table;
         width: 100%;
         margin: 0;
         padding: 0;
         font-size: 1.5em;
       }
-
-      .nav-next-extra {
+      .nav-tab {
         width: 300px;
         position: relative;
         background-color: #22699c;
         color: #fff;
       }
 
-      .nav-next-extra-active {
-        background-color: #fff;
-      }
-
-      .nav-next-section {
+      .nav-section {
         display: table-cell;
         margin: 0;
         vertical-align: middle;
       }
-
-      .nav-next-links {
+      .nav-links {
         display: table;
         width: 1%;
       }
-
-      .nav-next-text {
-
-      }
-
-      .nav-next-link {
-        line-height: 1.2;
-        padding: 12px 25px;
+      .nav-link {
+        line-height: 1.4;
+        padding: 16px 25px;
         margin: 0;
-
         display: table-cell;
         vertical-align: middle;
-
         color: #fff;
         font-weight: 600;
         text-transform: uppercase;
       }
-
-      .nav-next-extra-link {
+      .nav-tab-link {
         padding: 0 24px;
         text-align: center;
         text-transform: uppercase;
         box-sizing: border-box;
       }
-
-      .nav-next-link:hover,
-      .nav-next-extra-link:hover {
+      .nav-link:hover,
+      .nav-tab-link:hover {
         color: #0b1f66;
         background-color: #fff;
       }
-
-      .nav-next-title {
+      .nav-title {
         font-weight: 600;
         font-size: 1.3em;
         padding: 0 24px;
         display: block;
         text-transform: uppercase;
       }
-
-      .nav-next-text {
+      .nav-text {
         text-align: center;
         font-weight: 600;
         text-transform: uppercase;
@@ -142,20 +123,29 @@
         box-sizing: border-box;
       }
 
-      .nav-next-extra-active .nav-next-title {
-        color: #0b1f66;
+      .nav-tab.active {
+        background-color: #fff;
+      }
+      .nav-tab.active .nav-text, .nav-tab.active .nav-title, a.nav-tab-link.active {
+        color:#134775;
+      }
+      .nav-tab.active .nav-title {
+        font-size:22px;
+      }
+      a.nav-link.active, a.nav-link.active:hover {
+        background-color:#fff;
+        color:#134775;
+        opacity:1;
       }
 
-      .nav-next-login {
+      .nav-login {
         width: 300px;
       }
-
-      .nav-next-dropdown {
+      .nav-dropdown {
         cursor: default;
         position: relative;
       }
-
-      .nav-next-dropdown-menu {
+      .nav-dropdown-menu {
         display: none;
         position: absolute;
         top: 100%;
@@ -165,140 +155,176 @@
         background: #fff;
         border: 1px solid #c7c7c7;
       }
-
-      .nav-next-dropdown-link {
+      .nav-dropdown-link {
         display: block;
-        padding: 14px 16px;
+        padding: 17px 16px;
       }
-
-      .nav-next-dropdown-link + .nav-next-dropdown-link {
+      .nav-dropdown-link:hover {
+        background-color:#ebf0f4;
+        color:#054276;
+      }
+      .nav-dropdown-link + .nav-dropdown-link {
         border-top: 1px solid #c7c7c7;
       }
-
-      .nav-next-dropdown .nav-next-text::after {
+      .nav-dropdown .nav-text::after {
         content: "\2228";
         position: relative;
         top: -2px;
       }
-
-      .nav-next-dropdown:hover {
+      .nav-dropdown:hover {
         background-color: #fff;
       }
-
-      .nav-next-dropdown:hover .nav-next-text {
+      .nav-dropdown:hover .nav-text {
         color: #0b1f66;
       }
-
-      .nav-next-dropdown:hover .nav-next-text::after {
+      .nav-dropdown:hover .nav-text::after {
         content: "\2227";
       }
-
-      .nav-next-dropdown:hover .nav-next-dropdown-menu {
+      .nav-dropdown:hover .nav-dropdown-menu {
         display: block;
       }
-
-      .nav-next-dashboard {
+      .nav-dashboard {
         width: 199px;
         border-right: 1px solid #134775;
+        padding-top:2px;
       }
-
-      .nav-next-dashboard .nav-next-dropdown-menu {
+      .nav-dashboard .nav-dropdown-menu {
         width: 199px;
       }
-
-      .nav-next-admin {
+      .nav-admin {
         width: 100px;
       }
-
     </style>
   </head>
 
   <body class="v2">
+
+
     <div class="prototype-header prototype-header-only-links">
       <div class="prototype-header-container">
-        <nav class="nav-next">
-          <div class="nav-next-section">
-            <div class="nav-next-links">
-              <a href="#" class="nav-next-link">Home</a>
-              <a href="#" class="nav-next-link">Agent Resources</a>
-              <a href="#" class="nav-next-link">Policy Library</a>
-              <a href="#" class="nav-next-link">Products &amp;&nbsp;Services</a>
-              <a href="#" class="nav-next-link">News</a>
+        <nav class="nav">
+          <div class="nav-section">
+            <div class="nav-links">
+              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link active">Agent Resources</a>
+              <a href="#" class="nav-link">Policy Library</a>
+              <a href="#" class="nav-link">Products &amp;&nbsp;Services</a>
+              <a href="#" class="nav-link">News</a>
             </div>
           </div>
         </nav>
       </div>
     </div>
+
 
     <div class="prototype-header prototype-header-logged-in">
       <div class="prototype-header-container">
-        <nav class="nav-next">
-          <div class="nav-next-section">
-            <div class="nav-next-links">
-              <a href="#" class="nav-next-link">Home</a>
-              <a href="#" class="nav-next-link">Agent Resources</a>
-              <a href="#" class="nav-next-link">Policy Library</a>
-              <a href="#" class="nav-next-link">Products &amp;&nbsp;Services</a>
-              <a href="#" class="nav-next-link">News</a>
+        <nav class="nav">
+          <div class="nav-section">
+            <div class="nav-links">
+              <a href="#" class="nav-link">Home</a>
             </div>
           </div>
-          <div class="nav-next-section nav-next-extra nav-next-dropdown nav-next-dashboard">
-            <div class="nav-next-text">
+          <div class="nav-section nav-tab nav-dropdown nav-dashboard">
+            <div class="nav-text">
               My Dashboard
             </div>
-            <div class="nav-next-dropdown-menu">
-              <a href="#" class="nav-next-dropdown-link">Preferred Seats</a>
-              <a href="#" class="nav-next-dropdown-link">Travel Exceptions</a>
+            <div class="nav-dropdown-menu">
+              <a href="#" class="nav-dropdown-link">Preferred Seats</a>
+              <a href="#" class="nav-dropdown-link">Travel Exceptions</a>
             </div>
           </div>
-          <a href="#" class="nav-next-section nav-next-extra nav-next-extra-link nav-next-admin">Admin</a>
+          <a href="#" class="nav-section nav-tab nav-tab-link nav-admin active">Admin</a>
         </nav>
       </div>
     </div>
+
 
     <div class="prototype-header prototype-header-logged-in">
       <div class="prototype-header-container">
-        <nav class="nav-next">
-          <div class="nav-next-section">
-            <div class="nav-next-links">
-              <a href="#" class="nav-next-link">Home</a>
-              <a href="#" class="nav-next-link">Agent Resources</a>
-              <a href="#" class="nav-next-link">Policy Library</a>
-              <a href="#" class="nav-next-link">Products &amp;&nbsp;Services</a>
-              <a href="#" class="nav-next-link">News</a>
+        <nav class="nav">
+          <div class="nav-section">
+            <div class="nav-links">
+              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link">Agent Resources</a>
+              <a href="#" class="nav-link">Policy Library</a>
+              <a href="#" class="nav-link">Products &amp;&nbsp;Services</a>
+              <a href="#" class="nav-link">News</a>
             </div>
           </div>
-          <div class="nav-next-section nav-next-extra nav-next-dropdown nav-next-dashboard">
-            <div class="nav-next-text">
+          <div class="nav-section nav-tab nav-dropdown nav-dashboard active">
+            <div class="nav-text">
               My Dashboard
             </div>
-            <div class="nav-next-dropdown-menu">
-              <a href="#" class="nav-next-dropdown-link">Preferred Seats</a>
-              <a href="#" class="nav-next-dropdown-link">Travel Exceptions</a>
+            <div class="nav-dropdown-menu">
+              <a href="#" class="nav-dropdown-link">Preferred Seats</a>
+              <a href="#" class="nav-dropdown-link">Travel Exceptions</a>
             </div>
           </div>
-          <a href="#" class="nav-next-section nav-next-extra nav-next-extra-link nav-next-admin">Admin</a>
+          <a href="#" class="nav-section nav-tab nav-tab-link nav-admin">Admin</a>
         </nav>
       </div>
     </div>
-    <div class="subnav-next">
 
+
+    <div class="prototype-header prototype-header-logged-in">
+      <div class="prototype-header-container">
+        <nav class="nav">
+          <div class="nav-section">
+            <div class="nav-links">
+              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link">Agent Resources</a>
+              <a href="#" class="nav-link">Policy Library</a>
+              <a href="#" class="nav-link">Products &amp;&nbsp;Services</a>
+              <a href="#" class="nav-link">News</a>
+            </div>
+          </div>
+          <div class="nav-section nav-tab nav-dropdown nav-dashboard">
+            <div class="nav-text">
+              My Dashboard
+            </div>
+            <div class="nav-dropdown-menu">
+              <a href="#" class="nav-dropdown-link">Preferred Seats</a>
+              <a href="#" class="nav-dropdown-link">Travel Exceptions</a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
+
+
+    <div class="prototype-header prototype-header-logged-in">
+      <div class="prototype-header-container">
+        <nav class="nav">
+          <div class="nav-section">
+            <div class="nav-links">
+              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link">Agent Resources</a>
+              <a href="#" class="nav-link">Policy Library</a>
+              <a href="#" class="nav-link">Products &amp;&nbsp;Services</a>
+              <a href="#" class="nav-link">News</a>
+            </div>
+          </div>
+          <a href="#" class="nav-section nav-tab nav-tab-link nav-admin">Admin</a>
+        </nav>
+      </div>
+    </div>
+
 
     <div class="prototype-header prototype-header-login">
       <div class="prototype-header-container">
-        <nav class="nav-next">
-          <div class="nav-next-section">
-            <div class="nav-next-links">
-              <a href="#" class="nav-next-link">Home</a>
-              <a href="#" class="nav-next-link">Agent Resources That Are Really Long</a>
-              <a href="#" class="nav-next-link">Policy Library</a>
-              <a href="#" class="nav-next-link">Products &amp;&nbsp;Services</a>
-              <a href="#" class="nav-next-link">News</a>
+        <nav class="nav">
+          <div class="nav-section">
+            <div class="nav-links">
+              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link">Agent Resources That Are Really Long</a>
+              <a href="#" class="nav-link">Policy Library</a>
+              <a href="#" class="nav-link">Products &amp;&nbsp;Services</a>
+              <a href="#" class="nav-link">News</a>
             </div>
           </div>
-          <div class="nav-next-section nav-next-extra nav-next-extra-active nav-next-login">
-            <div class="nav-next-title">Login</div>
+          <div class="nav-section nav-tab nav-login active">
+            <div class="nav-title">Log In</div>
           </div>
         </nav>
       </div>
