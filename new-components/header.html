@@ -1,3 +1,5 @@
+<meta charset="UTF-8">
+
   <style>
 
     /* For testing purposes only - do not include during integrtation */
@@ -14,7 +16,7 @@
       width: 960px;
       margin: 0 auto;
     }
-
+    
   </style>
 
   <style>
@@ -47,6 +49,7 @@
       font-weight: 600;
       text-transform: uppercase;
       text-decoration: none;
+      min-width:2em;
     }
     a.menu-link.active, a.menu-link.active:hover {
       background-color:#fff;
@@ -220,7 +223,7 @@
 
   </style>
 
-  <!--///////////////////////////////////////////
+   <!--///////////////////////////////////////////
    INTEGRATIN GUIDELINES
 
    How to apply active states to menu elements:
@@ -236,8 +239,8 @@
 
    Notes:
     - Never use inline styles.
-    - Do not integrate DIVs with classes that have 'testing' in their name.
-  ///////////////////////////////////////////-->
+    - During integration, ignore DIVs with classes that have 'testing' in their name.
+   ///////////////////////////////////////////-->
 
   <body class="v2">
 
@@ -476,6 +479,26 @@
               <a href="#" class="menu-link">B2뉴스  제공하는  온라인 報</a>
               <a href="#" class="menu-link">스 및 여행 온라인 </a>
               <a href="#" class="menu-link">뉴스 및 여하는  온라인 </a>
+            </div>
+          </div>
+          <div class="menu-section menu-tab active" id="menu-login">
+            <div class="menu-login-title">Log In</div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+
+    <div class="testing-header testing-header-login">
+      <div class="testing-header-container">
+        <nav class="menu">
+          <div class="menu-section">
+            <div class="menu-links">
+              <a href="#" class="menu-link">成合中国人的航成最中国人航中国人航中国人航</a>
+              <a href="#" class="menu-link">成为国人的美国为最中国人航中国人航中国人航适</a>
+              <a href="#" class="menu-link">成为最适合美国中国人航中国人航为国</a>
+              <a href="#" class="menu-link">最适合中国人中国人航中国人航国航</a>
+              <a href="#" class="menu-link">成适合中航中国航</a>
             </div>
           </div>
           <div class="menu-section menu-tab active" id="menu-login">
