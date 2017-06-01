@@ -56,6 +56,19 @@
       text-decoration: none;
     }
 
+    /* Application context label */
+    .menu-link.menu-app-label {
+      padding: 10px 25px;
+      font-size:24px;
+      font-weight:300;
+      cursor:default;
+    }
+    a.menu-link.menu-app-label:hover {
+      background:#134775;
+      color:#fff;
+      opacity:1;
+    }
+
     /* Tabs seen after user authentication (located on right) */
     .menu-tab {
       width: 300px;
@@ -265,7 +278,7 @@
         <nav class="menu">
           <div class="menu-section">
             <div class="menu-links">
-              <a href="#" class="menu-link">Home</a>
+              <a href="#" class="menu-link menu-app-label">Preferred Seats</a>
             </div>
           </div>
           <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
