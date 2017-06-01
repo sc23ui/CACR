@@ -1,60 +1,13 @@
-<!DOCTYPE html>
-  <html>
-    <head>
-      <title>Home - Delta Professional Travel Agency Website</title>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta charset="utf-8">
-      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-      <meta http-equiv="content-language" content="en" />
-      <meta name="keywords" content="" />
-      <meta name="description" content="Connects travel agency professionals to Delta news and travel exception policies, information about Delta products and services and policies and procedures." />
-      <meta name="robots" content="noodp,noydir" />
-      <link rel="icon" type="https://pro-si.delta.com/image/vnd.microsoft.icon" href="https://pro-si.delta.com/etc/designs/deltaPro/favicon.ico" />
-      <link rel="shortcut icon" type="https://pro-si.delta.com/image/vnd.microsoft.icon" href="https://pro-si.delta.com/etc/designs/deltaPro/favicon.ico" />
-      <link rel="stylesheet" type="text/css" href="https://pro-si.delta.com/etc/designs/deltaPro/homeLib.20170330.css" media="all" />
-      <!--[if gt IE 6]>
-        <link rel="stylesheet" type="text/css" media="all" href="/etc/designs/deltaPro/ieLib.0.css"/>
-      <![endif]-->
-      <!--[if lt IE 9]>
-        <link rel="stylesheet" type="text/css" media="all" href="/etc/designs/deltaPro/css/ie/ie8down.css"></link>
-      <![endif]-->
-      <!-- V2 Overwrites -->
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/common/common-cacr-new.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/common/common-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/common/commonElements-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/common/components-cacr-new.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/common/components-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/common/footer-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/common/generalheader-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/common/header-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/common/unsupportedBrowserMessageModal-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/css/components-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/css/landing-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/css/login-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/css/loginAlternate-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/css/myDashboardAppsPage-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/css/menuDisplayAndDetailsPages-cacr-override.css" />
-      <link rel="stylesheet" type="text/css" media="all" href="../agency/home/home-cacr-override.css" />
-      <script type="text/javascript">
-        if (menuigator.appVersion.indexOf("MSIE 10") !== -1 || menuigator.userAgent.indexOf("Trident") !== -1 && menuigator.userAgent.indexOf("rv:11") !== -1) {
-          document.write(' <link rel="stylesheet" type="text/css" href="https://pro-si.delta.com/etc/designs/deltaPro/css/ie/ie10.css">');
-        }
-      </script>
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css' />
-      <script src="https://pro.delta.com/etc/clientlibs/granite/jquery.min.js" crossorigin="anonymous"></script>
-      <script src="https://pro-si.delta.com/etc/designs/deltaPro/js/sitemaintenance.js"></script>
-      <script type="text/javascript">
-        sitemaintenance("https://pro-si.delta.com/content/agency/us/en/home");
-      </script>
+
 
       <style>
         body {
           background: #efefef;
-          padding: 0;
+          padding: 50px 0;
           margin: 0;
+          font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
         }
         .testing-header {
-
           margin-bottom: 80px;
         }
         .testing-header-container {
@@ -62,6 +15,7 @@
           margin: 0 auto;
         }
         </style>
+
 
         <style>
         .menu {
@@ -83,18 +37,21 @@
         }
         .menu-link {
           line-height: 1.4;
-          padding: 16px 25px;
+          padding: 17px 25px;
           margin: 0;
           display: table-cell;
           vertical-align: middle;
           color: #fff;
           font-weight: 600;
           text-transform: uppercase;
+          text-decoration: none;
         }
         a.menu-link.active, a.menu-link.active:hover {
           background-color:#fff;
+          font-weight:600;
           color:#134775;
           opacity:1;
+          text-decoration: none;
         }
 
         .menu-tab {
@@ -108,6 +65,7 @@
           text-align: center;
           text-transform: uppercase;
           box-sizing: border-box;
+          text-decoration: none;
         }
         a.menu-link:hover,
         a.menu-tab-link:hover {
@@ -143,14 +101,16 @@
           position: absolute;
           top: 100%;
           left: -1px;
-          margin-top: -1px;
-          z-index: 100;
           background: #fff;
           border: 1px solid #e6e7e8;
+          margin-top: -1px;
+          z-index: 100;
         }
         .menu-dropdown-link {
           display: block;
           padding: 17px 16px;
+          color: #153f64;
+          text-decoration: none;
         }
         .menu-dropdown-link:hover {
           background-color:#ebf0f4;
@@ -217,10 +177,11 @@
           margin: 0;
           vertical-align: middle;
           font-size:16px;
-          font-weight: 600;
+          font-weight: 300;
           line-height: 1.4;
           color: #0b1f66;
           text-transform: uppercase;
+          text-decoration: none;
         }
         a.sub-menu-link:hover {
           color: #0b1f66;
@@ -229,7 +190,8 @@
 
         a.sub-menu-link.active {
           background:#dce1e5;
-          color:#134775;
+          font-weight:600;
+          color:#114069;
         }
 
         .menu-login {
@@ -249,10 +211,9 @@
        - Provide an example of application name, in place of left menu items.
       //-->
 
-    </head>
     <body class="v2">
 
-      <br/><br/>
+
 
       <div class="testing-header testing-header-only-links">
         <div class="testing-header-container">
@@ -476,7 +437,3 @@
           </menu>
         </div>
       </div>
-
-
-    </body>
-  </html>
