@@ -1,5 +1,7 @@
 <meta charset="UTF-8">
-
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+</head>
 <style>
 
   /* For testing purposes only - do not include during integrtation */
@@ -63,7 +65,7 @@
   .menu-link.menu-app-label {
     padding: 10px 25px;
     font-size:24px;
-    font-weight:300;
+    font-weight:400;
     cursor:default;
   }
   .menu-link.menu-app-label:hover {
@@ -77,6 +79,7 @@
     width: 300px;
     position: relative;
     background-color: #22699c;
+    font-weight:300;
     color: #fff;
   }
   .menu-tab.active .menu-login-title {
@@ -84,6 +87,7 @@
   }
   .menu-tab.active {
     background-color: #fff;
+    font-weight:600;
   }
   .menu-tab.active .menu-dropdown-title, .menu-tab.active .menu-login-title, a.menu-tab-link.active {
     color:#134775;
@@ -117,6 +121,28 @@
     background-color: #fff;
     border-right: 1px solid #e6e7e8;
   }
+  .menu-dropdown .menu-dropdown-title::after {
+    content: "\2228";
+    position: relative;
+    top: -2px;
+  }
+  .menu-dropdown-title {
+    box-sizing: border-box;
+    padding: 0 24px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .active .menu-dropdown-title {
+    font-weight: 600;
+  }
+  .menu-dropdown:hover .menu-dropdown-title {
+    color: #0b1f66;
+  }
+  .menu-dropdown:hover .menu-dropdown-title::after {
+    content: "\2227";
+    color:#999;
+  }
   .menu-dropdown-links {
     display: none;
     position: absolute;
@@ -137,6 +163,7 @@
   .menu-dropdown-link {
     display: block;
     padding: 17px 16px;
+    font-weight:400;
     color: #153f64;
     text-decoration: none;
   }
@@ -147,25 +174,7 @@
   .menu-dropdown-link + .menu-dropdown-link {
     border-top: 1px solid #e6e7e8;
   }
-  .menu-dropdown .menu-dropdown-title::after {
-    content: "\2228";
-    position: relative;
-    top: -2px;
-  }
-  .menu-dropdown-title {
-    box-sizing: border-box;
-    padding: 0 24px;
-    text-align: center;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  .menu-dropdown:hover .menu-dropdown-title {
-    color: #0b1f66;
-  }
-  .menu-dropdown:hover .menu-dropdown-title::after {
-    content: "\2227";
-    color:#999;
-  }
+
 
   /* Secondary Menu "Sub Menu" */
   .sub-menu {
@@ -347,6 +356,33 @@
           </div>
         </div>
         <div class="menu-section menu-tab menu-dropdown active" id="menu-tab-dashboard">
+          <div class="menu-dropdown-title">
+            My Dashboard
+          </div>
+          <div class="menu-dropdown-links">
+            <a href="#" class="menu-dropdown-link">Preferred Seats</a>
+            <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
+          </div>
+        </div>
+        <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <div class="testing-header testing-header-logged-in">
+    <div class="testing-header-container">
+      <nav class="menu">
+        <div class="menu-section">
+          <div class="menu-links">
+            <a href="#" class="menu-link">Home</a>
+            <a href="#" class="menu-link">Agent Resources</a>
+            <a href="#" class="menu-link">Policy Library</a>
+            <a href="#" class="menu-link">Products &amp; Services</a>
+            <a href="#" class="menu-link">News</a>
+          </div>
+        </div>
+        <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
           <div class="menu-dropdown-title">
             My Dashboard
           </div>
