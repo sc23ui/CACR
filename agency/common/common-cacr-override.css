@@ -25,6 +25,10 @@
 	font-size: 14px;
 }
 
+.v2 .backtoNavPage{
+	font-size: 14px;
+}
+
 .v2 .landingboxcontent {
 	background-color: #f6f6f7;
 	height: 225px;
@@ -39,7 +43,23 @@
 	width: 334px;
 }
 
+.v2 .mainComponentDiv ul{
+	font-size: 14px;
+}
+
+.v2 .mainComponentDiv ol{
+	font-size: 14px;
+}
+
 .v2 .landingboxtext {
 	background-color: #f6f6f7;
 	font-size: 14px;
+}
+
+.v2 h1{
+    font-weight: 300;
+    font-size: 45px;
+    margin: 0;
+    color: #333333;
+    text-align: left;
 }
