@@ -25,12 +25,17 @@
 	font-size: 14px;
 }
 
+
+.v2 .backtoNavPage{
+	font-size: 14px;
+
 .v2 #backtoNavPage{
 	font-size: 14px!important;
 }
 
 .v2 .backToNewsLink{
 	font-size: 14px!important;
+
 }
 
 .v2 .landingboxcontent {
@@ -68,6 +73,8 @@
     text-align: left;
 }
 
+
 .v2 h6{
 	font-size: 14px !important;
 }
+
