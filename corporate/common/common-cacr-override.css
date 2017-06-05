@@ -31,3 +31,15 @@
 .v2 .mainComponentDiv ol{
 	font-size: 14px;
 }
+
+.v2 h6{
+	font-size: 14px !important;
+}
+
+.v2 #backtoNavPage{
+	font-size: 14px!important;
+}
+
+.v2 .backToNewsLink{
+	font-size: 14px!important;
+}
