@@ -34,3 +34,11 @@
 	width: 960px;
 	margin-bottom: 30px;
 }
+
+.v2 .featuredBox, .v2 .featuredVerticalPromo{
+    background-color: #f6f6f7;
+}
+
+.v2 .featuredBoxDesc{
+	font-size:14px! important;
+}
