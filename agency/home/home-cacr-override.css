@@ -39,6 +39,14 @@
     background-color: #f6f6f7;
 }
 
+.v2 .events66Date{
+	padding-bottom:5px;
+}
+
+.v2 .events66Title{
+	padding-top:15px;
+}
+
 .v2 .featuredBoxDesc{
 	font-size:14px! important;
 }
