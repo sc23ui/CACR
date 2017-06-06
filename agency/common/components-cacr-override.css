@@ -5,3 +5,15 @@
   font-size:14px!important;
   height: 20px;
 }
+
+.v2 .whiteBackground {
+    background-color: #f6f6f7;
+}
+
+.v2 .accordionFont {
+    font-size: 14px;
+}
+
+.v2 .tabFont{
+  font-size:14px;
+}
