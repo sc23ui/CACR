@@ -43,6 +43,7 @@
 .v2 .landingboximage {
 	margin-left: -22px;
 	width: 312px;
+	height: 161px;
 }
 
 .v2 .landingboximage img {
@@ -55,6 +56,10 @@
 
 .v2 .mainComponentDiv ol{
 	font-size: 14px;
+}
+
+.v2 .landingboxtitle {
+	font-size: 32px;
 }
 
 .v2 .landingboxtext {
@@ -82,5 +87,3 @@
 .v2 #blueComponentVerticalMainDiv{
 background-color: #22659c;
 }
-
-
