@@ -37,7 +37,8 @@
 
 .v2 .landingboxcontent {
 	background-color: #f6f6f7;
-	height: 225px;
+	height: auto;
+	padding-bottom: 0;
 }
 
 .v2 .landingboximage {
