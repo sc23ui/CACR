@@ -11,9 +11,9 @@
 }
 
 .v2 .accordionFont {
-    font-size: 14px;
+    font-size: 14px!important;
 }
 
 .v2 .tabFont{
-  font-size:14px;
+  font-size:14px!important;
 }
