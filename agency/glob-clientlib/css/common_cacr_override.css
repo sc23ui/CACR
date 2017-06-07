@@ -11,10 +11,10 @@
     background: #174873;
 }
 
-.v2 .default-text-color{
+.v2 .link-color-dark-blue{
     color: #fff;
 }
 
-.v2 .link-color-blue-1{
-    color: #87cdff;
+.v2 .current-language-position{
+    color: #87cdff !important;
 }
