@@ -10,3 +10,11 @@
 .v2 #main-header-id, .v2 #header{
     background: #174873;
 }
+
+.v2 .default-text-color{
+    color: #fff;
+}
+
+.v2 .link-color-blue-1{
+    color: #87cdff;
+}
