@@ -11,6 +11,10 @@
   background-color: transparent;
 }
 
+.v2 .greyBackground {
+  background-color: #f6f6f7;
+}
+
 .v2 .accordionFont {
     font-size: 14px!important;
 }
