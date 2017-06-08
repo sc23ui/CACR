@@ -7,7 +7,8 @@ height: 20px;
 }
 
 .v2 .whiteBackground {
-    background-color: #f6f6f7;
+  /*  background-color: #f6f6f7; This is causing some problems throughout the site. */
+  background-color: transparent;
 }
 
 .v2 .accordionFont {
