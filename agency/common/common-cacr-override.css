@@ -2,7 +2,8 @@
 .v2 #contentBody {
 	background-image:none !important;
 	background-color:#fff !important;
-	height: 100vh;
+	height: 100vh!important;
+	min-height: 600px!important;
 }
 
 .v2 .red {
@@ -34,6 +35,10 @@
 .v2 .backToNewsLink{
 	font-size: 14px!important;
 
+}
+
+.v2 .landingboxgroupMainDiv {
+	margin-bottom: 90px;
 }
 
 .v2 .landingboxcontent {
