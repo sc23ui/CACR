@@ -38,6 +38,10 @@
 	font-size: 14px !important;
 }
 
+.v2 a{
+	font-weight:600;
+}
+
 .v2 .delta-blue-background-color{
 	background-color: #22659c;
 }
