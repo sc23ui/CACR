@@ -2,6 +2,7 @@
 .v2 #contentBody {
 	background-image:none !important;
 	background-color:#fff !important;
+	height: 100vh;
 }
 
 .v2 .red {
