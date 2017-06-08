@@ -22,3 +22,21 @@
 .v2 .loginContent1 .darkBGText{
    color: #333333 !important;
 }
+
+.v2 .horizantalloginDiv{
+   background-color: #f6f6f7;
+}
+.v2 .horizantalErrorMsg {
+    background-color: #e3132c;
+}
+.v2 #loginBtnID {
+    margin-top: 16px!important;
+}
+
+.v2 .forgotUserAccountLink {
+    margin-right: 186px;
+}
+
+.v2 .horizantalErrorBox{
+   margin-left:0px
+}
