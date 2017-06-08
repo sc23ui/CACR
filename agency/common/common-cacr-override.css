@@ -39,6 +39,10 @@
 	margin-bottom: 90px;
 }
 
+.v2 a{
+	font-weight:600;
+}
+
 .v2 .landingboxcontent {
 	background-color: #f6f6f7;
 	height: auto;
