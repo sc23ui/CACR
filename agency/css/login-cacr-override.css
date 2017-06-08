@@ -23,7 +23,7 @@
    color: #333333 !important;
 }
 
-.v2 .horizantalloginDiv{
+.v2 .horizantalloginDiv, .v2 .horizantalloginContent{
    background-color: #f6f6f7;
 }
 .v2 .horizantalErrorMsg {
