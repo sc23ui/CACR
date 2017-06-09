@@ -2,6 +2,8 @@
 .v2 #contentBody {
 	background-image:none !important;
 	background-color:#fff !important;
+	min-height: 650px !important;
+	height: auto !important;
 }
 
 .v2 .red {
