@@ -136,6 +136,7 @@ body.v2 {
 	padding-left: 10px;
 	padding-top: 10px;
 	margin-left: -5px;
+	margin-top: -3px;
 }
 
 .v2 .activediv, .v2 .pastdiv {
@@ -456,19 +457,23 @@ body.v2 {
 										</td>
 									</tr>
 									<tr>
-										<td class="tdata">
-											<div class="ulist">
-												Delta<br> Delta connection<br> Delta coded AF
-												operated<br> AF coded AF operated<br> KL coded AF
-												operated
-											</div>
+										<td class="tdata ulist">
+											<ul>
+													<li class="ldata">Delta</li>
+														<li class="ldata">Delta connection</li>
+														<li class="ldata">Delta coded AF operated</li>
+														<li class="ldata">AF coded AF operated</li>
+														<li class="ldata">KL coded AF operated</li>
+											</ul>
 										</td>
-										<td class="tdata">
-											<div class="ulist">
-												Atlanta(ATL)<br> San Antonio(SAT)<br> Miami(MIA)<br>
-												Chennai(MAS)<br> Las Vegas(LAS)
-											</div>
-
+										<td class="tdata ulist">
+											<ul>
+													<li class="ldata">Atlanta(ATL)</li>
+														<li class="ldata">Las Vegas(LAS)</li>
+														<li class="ldata">San Antonio(SAT)</li>
+														<li class="ldata">Miami(MIA)</li>
+														<li class="ldata">New York(JFK)</li>
+											</ul>
 										</td>
 										<td></td>
 
@@ -559,19 +564,23 @@ body.v2 {
 													</td>
 												</tr>
 												<tr>
-													<td class="tdata">
-														<div class="ulist">
-															Delta<br> Delta connection<br> Delta coded AF
-															operated<br> AF coded AF operated<br> KL coded
-															AF operated
-														</div>
+													<td class="tdata ulist">
+														<ul>
+															<li class="ldata">Delta</li>
+															<li class="ldata">Delta connection</li>
+															<li class="ldata">Delta coded AF operated</li>
+															<li class="ldata">AF coded AF operated</li>
+															<li class="ldata">KL coded AF operated</li>
+-														</ul>
 													</td>
-													<td class="tdata">
-														<div class="ulist">
-															Atlanta(ATL)<br> San Antonio(SAT)<br>
-															Miami(MIA)<br> Chennai(MAS)<br> Las Vegas(LAS)
-														</div>
-
+													<td class="tdata ulist">
+														<ul>
+																<li class="ldata">Atlanta(ATL)</li>
+																	<li class="ldata">Las Vegas(LAS)</li>
+																	<li class="ldata">San Antonio(SAT)</li>
+																	<li class="ldata">Miami(MIA)</li>
+																	<li class="ldata">New York(JFK)</li>
+														</ul>
 													</td>
 													<td></td>
 												</tr>
@@ -702,19 +711,23 @@ body.v2 {
 										</td>
 									</tr>
 									<tr>
-										<td class="tdata">
-											<div class="ulist">
-												Delta<br> Delta connection<br> Delta coded AF
-												operated<br> AF coded AF operated<br> KL coded AF
-												operated
-											</div>
+										<td class="tdata ulist">
+											<ul>
+														<li class="ldata">Delta</li>
+														<li class="ldata">Delta connection</li>
+														<li class="ldata">Delta coded AF operated</li>
+														<li class="ldata">AF coded AF operated</li>
+														<li class="ldata">KL coded AF operated</li>
+											</ul>
 										</td>
-										<td class="tdata">
-											<div class="ulist">
-												Atlanta(ATL)<br> San Antonio(SAT)<br> Miami(MIA)<br>
-												Chennai(MAS)<br> Las Vegas(LAS)
-											</div>
-
+										<td class="tdata ulist">
+											<ul>
+													<li class="ldata">Atlanta(ATL)</li>
+														<li class="ldata">Las Vegas(LAS)</li>
+														<li class="ldata">San Antonio(SAT)</li>
+														<li class="ldata">Miami(MIA)</li>
+														<li class="ldata">New York(JFK)</li>
+											</ul>
 										</td>
 										<td></td>
 									</tr>
@@ -797,13 +810,24 @@ body.v2 {
             }
      })
      //This snipper is to show corresponding content when each exceptions-accordion header is clicked
-	$('.active-exception-header').each(function() {
+	//$('.active-exception-header').each(function() {
+		//$(this).click(function() {
+		
+			//$(this).toggleClass("marginbottom");// For removing the margin bottom from header when view details is clicked
+			//$(this).children( ".showtable" ).toggleClass("borderbottom");// For removing the border bottom from header(show table_) when view details is clicked
+			//$(this).nextAll(".active-exception-content").eq(0).toggle();// to show corresponding content when view details is clicked
+			//$(this).children(".active-exceptions-disclaimer").toggle();// to show/hide asterisk copy
+			
+		//})
+    //})
+	//This snipper is to show corresponding content when each exceptions-accordion header is clicked
+	$('.exceptions-accordion').each(function() {
 		$(this).click(function() {
 		
-			$(this).toggleClass("marginbottom");// For removing the margin bottom from header when view details is clicked
-			$(this).children( ".showtable" ).toggleClass("borderbottom");// For removing the border bottom from header(show table_) when view details is clicked
-			$(this).nextAll(".active-exception-content").eq(0).toggle();// to show corresponding content when view details is clicked
-			$(this).children(".active-exceptions-disclaimer").toggle();// to show/hide asterisk copy
+			$(this).closest('.active-exception-header').toggleClass("marginbottom");// For removing the margin bottom from header when view details is clicked
+			$(this).nextAll( ".showtable" ).eq(0).toggleClass("borderbottom");// For removing the border bottom from header(show table_) when view details is clicked
+			$(this).parent().siblings(".active-exception-content").toggle();// to show corresponding content when view details is clicked
+			$(this).nextAll(".active-exceptions-disclaimer").eq(0).toggle();// to show/hide asterisk copy
 			
 		})
     })
