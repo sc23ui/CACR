@@ -45,10 +45,10 @@
 		height:354px;
 	}
 	.v2 .video-w33 .video-description {
-		height:58px;
+		height:80px;
 	}
 	.v2 .video-w50 .video-description {
-		height:171px;
+		height:163px;
 	}
 	.v2 .video-w66 .video-description {
 		height:80px;
@@ -90,6 +90,10 @@
 		color:#1c7bd9;
 	}
 
+	.v2 .video-thumb {
+		background-size: cover;
+	}
+
 
 	.v2 .video-carousel {
 		font-size:14px;
@@ -97,14 +101,36 @@
 		color:#0b1f66;
 	}
 	.v2 .owl-carousel .owl-stage {
-		height:100px;
+		min-height:85px;
 	}
 	.v2 .owl-carousel .owl-stage-outer {
 		width:100%;
 	}
+
+
+
+	.v2 .video-w33 .owl-carousel .owl-item {
+		height:88px;
+	}
+	.v2 .video-w50 .owl-carousel .owl-item {
+		height:170px;
+	}
+	.v2 .video-w66 .owl-carousel .owl-item {
+		height:84px;
+	}
+
+	.v2 .video-w33 .video-thumb {
+		height:60px;
+	}
+	.v2 .video-w50 .video-thumb {
+		height:140px;
+	}
+	.v2 .video-w66 .video-thumb {
+		height:55px;
+	}
+
 	.v2 .owl-carousel .owl-item {
 		background:#174873;
-		height:88px;
 		border-radius:5px;
 	}
 	.v2 .owl-carousel .owl-item:hover {
@@ -124,7 +150,7 @@
 		text-align:center;
 	}
 	.v2 .owl-carousel .owl-dots {
-		margin-top:0px !important;
+		margin-top:5px !important;
 	}
 </style>
 
@@ -133,6 +159,35 @@
 
 
 
+
+	<div class="video video-w33">
+
+		<!--// Example of non-Youtube video link
+		For YouTube and Non-YouTube videos - have the content manager paste the entire video resource URL (for any service)
+		and then output that URL into the existing iframe's src parameter //-->
+		<iframe class="video-embed" src="https://player.vimeo.com/video/100760192" frameborder="0" allowfullscreen></iframe>
+
+		<div class="video-content">
+
+    <!--// AEM property limit of 30 characters //-->
+		<a href="#" class="video-title">Lorem Ipsum Dola</a>
+
+      <!--// AEM property limit of 110 characters //-->
+			<div class="video-description ellipsis">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			</div>
+
+		</div>
+
+		<!--// Using inline style to toggle hide and display multi-video carousel instead //-->
+		<a href="#" class="video-link">Learn More&nbsp;&gt;</a>
+
+	</div>
+
+
+
+	<br/><br/>
 
 	<div class="video video-w33">
 
@@ -159,31 +214,31 @@
 				  <div>
 						<!--// Convert to bg image instead //-->
 						<a href="#">
-							<img class="video-thumb" src="http://placekitten.com/g/80/60" width="80" height="60" />
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
 							<div class="video-thumb-title">Intro</div>
 						</a>
 					</div>
 					<div>
 						<a href="#">
-							<img class="video-thumb" src="http://placekitten.com/g/80/60" width="80" height="60" />
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
 							<div class="video-thumb-title">Step 1</div>
 						</a>
 					</div>
 					<div>
 						<a href="#">
-							<img class="video-thumb" src="http://placekitten.com/g/80/60" width="80" height="60" />
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
 							<div class="video-thumb-title">Step 2</div>
 						</a>
 					</div>
 					<div>
 						<a href="#">
-							<img class="video-thumb" src="http://placekitten.com/g/80/60" width="80" height="60" />
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
 							<div class="video-thumb-title">Step 3</div>
 						</a>
 					</div>
 					<div>
 						<a href="#">
-							<img class="video-thumb" src="http://placekitten.com/g/80/60" width="80" height="60" />
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
 							<div class="video-thumb-title">Step 4</div>
 						</a>
 					</div>
@@ -210,10 +265,39 @@
 
 		<div class="video-content">
 
-    <!--// AEM property limit of 60 characters //-->
+	  <!--// AEM property limit of 60 characters //-->
 		<a href="#" class="video-title">LOREM IPSUM DOLAR AMIT</a>
 
 					<div class="video-description ellipsis">
+	          <!--// AEM property limit of 550 characters //-->
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+					</div>
+
+		</div>
+
+		<a href="#" class="video-link">Learn More&nbsp;&gt;</a>
+
+	</div>
+
+
+
+	<br/><br/>
+
+
+	<div class="video video-w50">
+
+		<iframe class="video-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
+
+		<div class="video-content">
+
+    <!--// AEM property limit of 60 characters //-->
+		<a href="#" class="video-title">LOREM IPSUM DOLAR AMIT</a>
+
+					<div class="video-description ellipsis" style="display:none;">
             <!--// AEM property limit of 550 characters //-->
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
@@ -222,9 +306,48 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
 					</div>
 
+					<div class="video-carousel">
+
+						<div class="owl-carousel owl-theme">
+						  <div>
+								<!--// Convert to bg image instead //-->
+								<a href="#">
+									<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+									<div class="video-thumb-title">Intro</div>
+								</a>
+							</div>
+							<div>
+								<a href="#">
+									<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+									<div class="video-thumb-title">Step 1</div>
+								</a>
+							</div>
+							<div>
+								<a href="#">
+									<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+									<div class="video-thumb-title">Step 2</div>
+								</a>
+							</div>
+							<div>
+								<a href="#">
+									<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+									<div class="video-thumb-title">Step 3</div>
+								</a>
+							</div>
+							<div>
+								<a href="#">
+									<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+									<div class="video-thumb-title">Step 4</div>
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+
 		</div>
 
-		<a href="#" class="video-link">Learn More&nbsp;&gt;</a>
+		<a href="#" class="video-link" style="display:none;">Learn More&nbsp;&gt;</a>
 
 	</div>
 
@@ -260,13 +383,72 @@
 
 
 
+	<br/><br/>
 
 
 
+	<div class="video video-w66">
+
+		<iframe class="video-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
+
+		<div class="video-content">
+
+		<!--// AEM property limit of 40 characters //-->
+		<a href="#" class="video-title">LOREM IPSUM DOLAR AMIT </a>
+
+			<div class="video-description ellipsis" style="display:none;">
+						<!--// AEM property limit of 350 characters //-->
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			</div>
+
+			<div class="video-carousel">
+
+				<div class="owl-carousel owl-theme">
+				  <div>
+						<!--// Convert to bg image instead //-->
+						<a href="#">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">Intro</div>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">Step 1</div>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">Step 2</div>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">Step 3</div>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img class="video-thumb" src="http://placekitten.com/g/80/60" height="60" />
+							<div class="video-thumb-title">Step 4</div>
+						</a>
+					</div>
+				</div>
+
+			</div>
 
 
+		</div>
 
+		<a href="#" class="video-link" style="display:none;">Learn More&nbsp;&gt;</a>
 
+	</div>
 
 
 
@@ -282,18 +464,7 @@
 		    margin:10,
 		    nav:false,
 				dots:true,
-				stagePadding:0,
-		    responsive:{
-		        0:{
-		            items:3
-		        },
-		        600:{
-		            items:3
-		        },
-		        1000:{
-		            items:3
-		        }
-		    }
+				stagePadding:0
 		});
 	});
 </script>
