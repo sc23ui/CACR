@@ -1,3 +1,13 @@
+
+<!--// Add these files to <head> section to enable jQuery Owl2 Carousel //-->
+<head>
+	<link rel="stylesheet" href="../plugins/owl-carousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="../plugins/owl-carousel/assets/owl.theme.default.min.css">
+
+	<!--// This jquery script source should already exist in AEM project, no need to add twice //-->
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
 <style>
 	.v2 .video {
 		position:relative;
@@ -74,6 +84,33 @@
 	.v2 a.video-link:hover {
 		color:#1c7bd9;
 	}
+
+
+	.v2 .video-carousel {
+		font-size:14px;
+		font-weight:400;
+		color:#0b1f66;
+	}
+	.v2 .owl-carousel .owl-item {
+		background:#fff;
+		margin-right:5px;
+		padding:5px;
+		border:1px solid #ccc;
+		min-height:80px;
+		border-radius:5px;
+	}
+	.v2 .owl-carousel .owl-item:hover {
+		background:#eaeaea;
+		border:1px solid #a7b9db;
+	}
+	.v2 .owl-carousel .owl-item a {
+		text-decoration:none;
+		color:#000
+	}
+	.v2 .owl-carousel .video-thumb-title {
+		padding:5px 2px 2px 2px;
+		text-align:center;
+	}
 </style>
 
 <div class="v2">
@@ -95,14 +132,54 @@
 		<a href="#" class="video-title">Lorem Ipsum Dola</a>
 
       <!--// AEM property limit of 110 characters //-->
-			<div class="video-description ellipsis">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			<!--// Using inline style to toggle hide and display multi-video carousel instead //-->
+			<div class="video-description ellipsis" style="display:none;">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			</div>
+
+			<div class="video-carousel">
+
+				<div class="owl-carousel owl-theme">
+				  <div>
+						<!--// Convert to bg image instead //-->
+						<a href="#">
+							<img class="video-thumb" src="http://placekitten.com/80/60" width="80" height="60" />
+							<div class="video-thumb-title">Intro</div>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img class="video-thumb" src="http://placekitten.com/80/60" width="80" height="60" />
+							<div class="video-thumb-title">Step 1</div>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img class="video-thumb" src="http://placekitten.com/80/60" width="80" height="60" />
+							<div class="video-thumb-title">Step 2</div>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img class="video-thumb" src="http://placekitten.com/80/60" width="80" height="60" />
+							<div class="video-thumb-title">Step 3</div>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img class="video-thumb" src="http://placekitten.com/80/60" width="80" height="60" />
+							<div class="video-thumb-title">Step 4</div>
+						</a>
+					</div>
+				</div>
+
 			</div>
 
 		</div>
 
-		<a href="#" class="video-link">Learn More&nbsp;&gt;</a>
+		<!--// Using inline style to toggle hide and display multi-video carousel instead //-->
+		<a href="#" class="video-link" style="display:none;">Learn More&nbsp;&gt;</a>
 
 	</div>
 
@@ -179,3 +256,27 @@
 
 
 </div>
+
+
+<!--// Add this file to footer section to enable jQuery Owl2 Carousel //-->
+<script src="../plugins/owl-carousel/owl.carousel.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.owl-carousel').owlCarousel({
+		    loop:true,
+		    margin:10,
+		    nav:false,
+		    responsive:{
+		        0:{
+		            items:3
+		        },
+		        600:{
+		            items:3
+		        },
+		        1000:{
+		            items:3
+		        }
+		    }
+		});
+	});
+</script>
