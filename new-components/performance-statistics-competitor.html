@@ -32,15 +32,16 @@
 }
 
 .v2 .performance-statistics-component-overlay-content {
-	background-color: #000;
-	height: 150px;
-	width: 300px;
-	opacity: 0.8;
-	font-family: Verdana, Geneva, sans-serif;
-	color: #FFF;
-	bottom: 0px;
-	z-index: 1;
-	text-align: center;
+	background: rgba(0,0,0,0.8);
+    height: 150px;
+    width: 300px;
+    opacity: 1;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #FFF;
+    bottom: 0px;
+    z-index: 1;
+    text-align: center;
+    position: relative;
 }
 
 .v2 .performance-statistics-competitor-content {
@@ -50,6 +51,7 @@
 	font-family: 'Open Sans';
 	padding: 10px;
 	margin-bottom:30px;
+	position:relative;
 }
 
 .v2 .performance-statistics-competitor-header {
@@ -76,7 +78,7 @@
 
 .v2 .performance-statistics-competitor-one {
 	float: left;
-	padding-left: 65px;
+	padding-left: 60px;
 	padding-right: 60px;
 	text-align: center;
 }
@@ -85,9 +87,9 @@
 	content: "";
 	height: 47px;
 	border: 1px solid #fff;
-	float: right;
-	margin-top: -62px;
-    	margin-right: 85px;
+	position: absolute;
+   	margin-top: 5px;
+    	left: 50%;
 }
 
 .v2 .performance-statistics-competitor-two {
