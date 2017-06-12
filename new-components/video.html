@@ -9,9 +9,14 @@
 </head>
 
 <style>
+	body.v2 {
+			font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
+	}
+</style>
+
+<style>
 	.v2 .video {
 		position:relative;
-		font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
 		background:#f6f6f7;
 	}
 
@@ -91,29 +96,39 @@
 		font-weight:400;
 		color:#0b1f66;
 	}
+	.v2 .owl-carousel .owl-stage {
+		height:100px;
+	}
+	.v2 .owl-carousel .owl-stage-outer {
+		width:100%;
+	}
 	.v2 .owl-carousel .owl-item {
-		background:#fff;
-		margin-right:5px;
-		padding:5px;
-		border:1px solid #ccc;
-		min-height:80px;
+		background:#174873;
+		height:88px;
 		border-radius:5px;
 	}
 	.v2 .owl-carousel .owl-item:hover {
-		background:#eaeaea;
-		border:1px solid #a7b9db;
+		background:#22659c;
 	}
 	.v2 .owl-carousel .owl-item a {
+		font-size:11px;
+		font-weight:300;
+		color:#fff;
 		text-decoration:none;
-		color:#000
+	}
+	.v2 .owl-carousel .owl-item a:hover {
+		color:#fff;
 	}
 	.v2 .owl-carousel .video-thumb-title {
-		padding:5px 2px 2px 2px;
+		padding:8px 2px 2px 2px;
 		text-align:center;
+	}
+	.v2 .owl-carousel .owl-dots {
+		margin-top:0px !important;
 	}
 </style>
 
-<div class="v2">
+<body class="v2">
 
 
 
@@ -144,31 +159,31 @@
 				  <div>
 						<!--// Convert to bg image instead //-->
 						<a href="#">
-							<img class="video-thumb" src="http://placekitten.com/80/60" width="80" height="60" />
+							<img class="video-thumb" src="http://placekitten.com/g/80/60" width="80" height="60" />
 							<div class="video-thumb-title">Intro</div>
 						</a>
 					</div>
 					<div>
 						<a href="#">
-							<img class="video-thumb" src="http://placekitten.com/80/60" width="80" height="60" />
+							<img class="video-thumb" src="http://placekitten.com/g/80/60" width="80" height="60" />
 							<div class="video-thumb-title">Step 1</div>
 						</a>
 					</div>
 					<div>
 						<a href="#">
-							<img class="video-thumb" src="http://placekitten.com/80/60" width="80" height="60" />
+							<img class="video-thumb" src="http://placekitten.com/g/80/60" width="80" height="60" />
 							<div class="video-thumb-title">Step 2</div>
 						</a>
 					</div>
 					<div>
 						<a href="#">
-							<img class="video-thumb" src="http://placekitten.com/80/60" width="80" height="60" />
+							<img class="video-thumb" src="http://placekitten.com/g/80/60" width="80" height="60" />
 							<div class="video-thumb-title">Step 3</div>
 						</a>
 					</div>
 					<div>
 						<a href="#">
-							<img class="video-thumb" src="http://placekitten.com/80/60" width="80" height="60" />
+							<img class="video-thumb" src="http://placekitten.com/g/80/60" width="80" height="60" />
 							<div class="video-thumb-title">Step 4</div>
 						</a>
 					</div>
@@ -255,7 +270,7 @@
 
 
 
-</div>
+</body>
 
 
 <!--// Add this file to footer section to enable jQuery Owl2 Carousel //-->
@@ -263,9 +278,11 @@
 <script>
 	$(document).ready(function(){
 		$('.owl-carousel').owlCarousel({
-		    loop:true,
+		    loop:false,
 		    margin:10,
 		    nav:false,
+				dots:true,
+				stagePadding:0,
 		    responsive:{
 		        0:{
 		            items:3
