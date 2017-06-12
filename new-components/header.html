@@ -252,36 +252,59 @@
   - During integration, ignore DIVs with classes that have 'testing' in their name.
  ///////////////////////////////////////////-->
 
-  <div class="testing-header testing-header-only-links">
-    <div class="testing-header-container">
-      <nav class="menu">
-        <div class="menu-section">
-          <div class="menu-links">
-            <a href="#" class="menu-link">Home</a>
-            <a href="#" class="menu-link">News</a>
-          </div>
+
+
+<!--// User this menu as a template //-->
+
+<div class="testing-header testing-header-logged-in">
+  <div class="testing-header-container">
+    <nav class="menu">
+      <div class="menu-section">
+        <div class="menu-links">
+          <a href="#" class="menu-link">Home</a>
+          <!--// Display 'menu-app-label' when used with our app container page //-->
+          <a href="#" class="menu-link menu-app-label" style="display:none;">Preferred Seats</a>
         </div>
-      </nav>
+      </div>
+      <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
+        <div class="menu-dropdown-title">
+          My Dashboard
+        </div>
+        <div class="menu-dropdown-links">
+          <a href="#" class="menu-dropdown-link">Preferred Seats</a>
+          <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
+        </div>
+      </div>
+      <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
+    </nav>
+    <div class="sub-menu">
+      <div class="sub-menu-links">
+        <a href="#" class="sub-menu-link">Users</a>
+        <a href="#" class="sub-menu-link active">Admin User Management</a>
+        <a href="#" class="sub-menu-link">Agency Details</a>
+        <a href="#" class="sub-menu-link">Application Settings</a>
+      </div>
     </div>
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-only-links">
-    <div class="testing-header-container">
-      <nav class="menu">
-        <div class="menu-section">
-          <div class="menu-links">
-            <a href="#" class="menu-link">Home</a>
-            <a href="#" class="menu-link active">Agent Resources</a>
-            <a href="#" class="menu-link">Policy Library</a>
-            <a href="#" class="menu-link">Products &amp; Services</a>
-            <a href="#" class="menu-link">News</a>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--////////////////// Use these examples for reference of how different states should look /////
 
   <div class="testing-header testing-header-logged-in">
     <div class="testing-header-container">
@@ -314,36 +337,35 @@
   </div>
 
 
-  <div class="testing-header testing-header-logged-in">
+  <div class="testing-header testing-header-only-links">
     <div class="testing-header-container">
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
             <a href="#" class="menu-link">Home</a>
+            <a href="#" class="menu-link">News</a>
           </div>
         </div>
-        <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
-          <div class="menu-dropdown-title">
-            My Dashboard
-          </div>
-          <div class="menu-dropdown-links">
-            <a href="#" class="menu-dropdown-link">Preferred Seats</a>
-            <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
-          </div>
-        </div>
-        <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
       </nav>
-      <div class="sub-menu">
-        <div class="sub-menu-links">
-          <a href="#" class="sub-menu-link">Users</a>
-          <a href="#" class="sub-menu-link active">Admin User Management</a>
-          <a href="#" class="sub-menu-link">Agency Details</a>
-          <a href="#" class="sub-menu-link">Application Settings</a>
-        </div>
-      </div>
     </div>
   </div>
 
+
+  <div class="testing-header testing-header-only-links">
+    <div class="testing-header-container">
+      <nav class="menu">
+        <div class="menu-section">
+          <div class="menu-links">
+            <a href="#" class="menu-link">Home</a>
+            <a href="#" class="menu-link active">Agent Resources</a>
+            <a href="#" class="menu-link">Policy Library</a>
+            <a href="#" class="menu-link">Products &amp; Services</a>
+            <a href="#" class="menu-link">News</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
 
   <div class="testing-header testing-header-logged-in">
     <div class="testing-header-container">
@@ -541,3 +563,5 @@
       </nav>
     </div>
   </div>
+
+  /////////////////////////////////////////////////////////////////////////////////////-->
