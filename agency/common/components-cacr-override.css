@@ -32,3 +32,7 @@
   margin: 0;
   padding: 10px;
 }
+
+.v2 .siteMapHeader > a {
+  font-size: 25px;
+}

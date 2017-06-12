@@ -1,24 +1,26 @@
 /* home-cacr-override.css */
-.v2 .featuredBox, .v2 .featuredVerticalPromo{
+.v2 .featuredBox,
+.v2 .featuredVerticalPromo {
     background-color: #f6f6f7;
 }
 
-.v2 .events66Date{
-	padding-bottom:5px;
+.v2 .events66Date {
+	padding-bottom: 5px;
 }
 
-.v2 .events66Title{
-	padding-top:15px;
+.v2 .events66Title {
+	padding-top: 15px;
 }
 
-.v2 .featuredBoxDesc{
-	font-size:14px! important;
+.v2 .featuredBoxDesc {
+	font-size: 14px !important;
 }
 
-.v2 .featuredHeader{
-color:#22659c;
+.v2 .featuredHeader {
+  color: #22659c;
+  font-size: 20px;
 }
 
-.v2 .blueComponentHeader{
-font-size:20px;
+.v2 .blueComponentHeader {
+  font-size: 20px;
 }
