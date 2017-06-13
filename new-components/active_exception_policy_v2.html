@@ -976,7 +976,7 @@ body.v2 {
 		
 			$(this).closest('.active-exception-header').toggleClass("marginbottom");// For removing the margin bottom from header when view details is clicked
 			$(this).nextAll( ".showtable" ).eq(0).toggleClass("borderbottom");// For removing the border bottom from header(show table_) when view details is clicked
-			$(this).parent().siblings(".active-exception-content").toggle();// to show corresponding content when view details is clicked
+			$(this).parent().parent().siblings(".exceptions-panel-inner").css("display","block");
 			$(this).nextAll(".active-exceptions-disclaimer").eq(0).toggle();// to show/hide asterisk copy
 			
 		})
