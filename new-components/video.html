@@ -1,7 +1,34 @@
 <head>
 
-	<!--// Add these to our plugin assets and only include on pages when a video arousel component is being used. //-->
+	<!--///////////////////////////////////////////
+  INTEGRATIN GUIDELINES
 
+  This component supports 3rd party hosted embedded videos.
+
+	YouTube:
+
+	 - Author should be able to copy/paste an 'embed URL' from YouTube, not the same as page URL.
+   - AEM should always add an autoplay parameter to the end of a Vimeo query string i.e. ?autoplay=1 or &autoplay=1 (if a '?' has already been used in the supplied URL)
+
+	Vimeo:
+
+	 - Author should be able to copy/paste an 'embed URL' from Vimeo, not the same as page URL.
+	 - Author can optionally add time markers to start a video at a specific time.  i.e. #t=1m30s
+	 - AEM should always add an autoplay parameter to the end of a Vimeo query string i.e. ?autoplay=1
+
+	Piksel
+
+	 - Author should be able to copy/paste an 'embed URL' from Vimeo, not the same as page URL.
+	 - AEM should always add width and height parameters to the end of a Piksel video embed URL
+	 			i.e. w=300&h=165 for w33
+				i.e. w=465&h=250 for w50
+				i.e. w=630&h=350 for w66
+
+	 - autoplay is not an option for Piksel videos
+
+  ///////////////////////////////////////////-->
+
+	<!--// Add these to our plugin assets and only include on pages when a video arousel component is being used. //-->
 	<!--// Plugin files are located in /CACR/plugins/owl-carousel -->
 	<link rel="stylesheet" href="../plugins/owl-carousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="../plugins/owl-carousel/assets/owl.theme.default.min.css">
@@ -235,8 +262,11 @@
 
 
 
+
+
 	<!--// Do not use these <br> tags //-->
 	<br/><br/>
+
 
 
 
@@ -300,6 +330,7 @@
 
 	</div>
 	<!--// END W33 VIDEO COMPONENT //-->
+
 
 
 
@@ -446,7 +477,7 @@
 
 						<div class="owl-carousel owl-theme">
 
-							<!--// They playerID must match the iFrame id used to display video.  THis is unique to each instance of a video component used on a page.  //-->
+							<!--// The playerID must match the iFrame id used to display video.  THis is unique to each instance of a video component used on a page.  //-->
 							<div class="video-thumb-container" playerID="2" videoURL="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0">
 								<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
 								<div class="video-thumb-title">Intro</div>
@@ -457,7 +488,7 @@
 								<div class="video-thumb-title">Step 1</div>
 							</div>
 
-							<div class="video-thumb-container" playerID="2" videoURL="https://www.youtube.com/embed/VRZNLBL7Px4">
+							<div class="video-thumb-container" playerID="2" videoURL="https://player.piksel.com/v/w5d2c0z2?w=630&h=350">
 								<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
 								<div class="video-thumb-title">Step 2</div>
 							</div>
