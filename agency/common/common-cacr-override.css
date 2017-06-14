@@ -100,7 +100,7 @@ background-color: #22659c;
 }
 
 .v2 .iconNewWindow {
-    background: url(../deltaPro/images/ui-icons_0253a4_256x240.png) -36px -83px;
+    background: url(/etc/designs/deltaPro/images/ui-icons_0253a4_256x240.png) -36px -83px;
     display: inline-block;
     width: 10px;
     height: 10px;
