@@ -1,6 +1,7 @@
 <head>
 
 	<!--// Add these to our plugin assets and only include on pages when a video arousel component is being used. //-->
+
 	<!--// Plugin files are located in /CACR/plugins/owl-carousel -->
 	<link rel="stylesheet" href="../plugins/owl-carousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="../plugins/owl-carousel/assets/owl.theme.default.min.css">
@@ -173,6 +174,7 @@
 	.v2 .owl-next {
 		position:absolute;
 		right:-22px;
+
 		background:#c4c4c4 !important;
 		font-family:Georgia, "Apple Symbols", serif;
 		font-size:20px !important;
@@ -187,6 +189,7 @@
 		font-weight:900;
 	}
 	.v2 .video-w33 .owl-prev, .v2 .video-w33 .owl-next {
+
 		top:18px;
 		padding:10px 3px !important;
 	}
@@ -411,10 +414,82 @@
 
 
 
+	<!--// Do not use these <br> tags //-->
+	<br/><br/>
+
+
+
+
+
+
+	<!--// W50 VIDEO COMPONENT WITH MULTI-VIDEO CAROUSEL //-->
+	<div class="video video-w50">
+
+		<!--// iFrames must have a unique numerical id, prefixed with 'player"  Increment the id number for each instance of a video component used on a page. //-->
+		<iframe class="video-embed" id="player2" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
+
+		<div class="video-content">
+
+		    <!--// AEM property limit of 60 characters //-->
+				<a href="#" class="video-title">Different Videos</a>
+
+				<!--// AEM property limit of 550 characters //-->
+				<div class="video-description ellipsis" style="display:none;">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+				</div>
+
+				<div class="video-carousel">
+
+						<div class="owl-carousel owl-theme">
+
+							<!--// They playerID must match the iFrame id used to display video.  THis is unique to each instance of a video component used on a page.  //-->
+							<div class="video-thumb-container" playerID="2" videoURL="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0">
+								<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+								<div class="video-thumb-title">Intro</div>
+							</div>
+
+							<div class="video-thumb-container" playerID="2" videoURL="https://www.youtube.com/embed/ptciFcVQPik">
+								<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+								<div class="video-thumb-title">Step 1</div>
+							</div>
+
+							<div class="video-thumb-container" playerID="2" videoURL="https://www.youtube.com/embed/VRZNLBL7Px4">
+								<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+								<div class="video-thumb-title">Step 2</div>
+							</div>
+
+							<div class="video-thumb-container" playerID="2" videoURL="https://www.youtube.com/embed/hD4hz8TFSAI">
+								<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+								<div class="video-thumb-title">Step 3</div>
+							</div>
+
+							<div class="video-thumb-container" playerID="2" videoURL="https://www.youtube.com/embed/CT5uwLZQRfk">
+								<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+								<div class="video-thumb-title">Step 4</div>
+							</div>
+
+						</div>
+
+				</div>
+
+		</div>
+
+		<a href="#" class="video-link" style="display:none;">Learn More&nbsp;&gt;</a>
+
+	</div>
+	<!--// END W50 VIDEO COMPONENT //-->
+
+
+
 
 
 	<!--// Do not use these <br> tags //-->
 	<br/><br/>
+
 
 
 

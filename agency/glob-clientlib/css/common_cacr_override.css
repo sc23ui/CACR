@@ -1,5 +1,5 @@
 /* common-cacr-override.css */
-.v2 .delta-blue-background-color{
+.v2 .delta-blue-background-color {
     background-color: #22659c;
 }
 
@@ -7,14 +7,15 @@
     background: #123c64!important;
 }
 
-.v2 #main-header-id, .v2 #header{
+.v2 #main-header-id,
+.v2 #header {
     background: #174873;
 }
 
-.v2 .link-color-white{
+.v2 .link-color-white {
     color: #fff;
 }
 
-.v2 .current-language-position{
+.v2 .current-language-position {
     color: #87cdff !important;
 }

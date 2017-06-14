@@ -2,23 +2,37 @@
 .v2 .exceptionPolicyBlock {
   background-color: #e3132c;
   border-color: #e3132c;
-  font-size:14px!important;
+  font-size: 14px!important;
   height: 20px;
-}
-
-.v2 .whiteBackground {
-  /*  background-color: #f6f6f7; This is causing some problems throughout the site. */
-  background-color: transparent;
 }
 
 .v2 .greyBackground {
   background-color: #f6f6f7;
 }
 
-.v2 .accordionFont {
-    font-size: 14px!important;
+.v2 .arrowIconPosition {
+  padding-top: 6px;
 }
 
-.v2 .tabFont{
-  font-size:14px!important;
+.v2 .arrowIconPosition.arrowDown {
+  padding-top: 9px;
+}
+
+.v2 .accordionComponentHeader .linkStyle,
+.v2 .accordionFont,
+.v2 .tabFont {
+  font-size: 14px!important;
+}
+
+.v2 .component-image {
+  background-color: #f6f6f7;
+}
+
+.v2 .component-image p {
+  margin: 0;
+  padding: 10px;
+}
+
+.v2 .siteMapHeader > a {
+  font-size: 25px;
 }

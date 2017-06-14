@@ -32,15 +32,16 @@
 }
 
 .v2 .performance-statistics-component-overlay-content {
-	background-color: #000;
-	height: 150px;
-	width: 300px;
-	opacity: 0.8;
-	font-family: Verdana, Geneva, sans-serif;
-	color: #FFF;
-	bottom: 0px;
-	z-index: 1;
-	text-align: center;
+	background: rgba(0,0,0,0.8);
+    height: 150px;
+    width: 300px;
+    opacity: 1;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #FFF;
+    bottom: 0px;
+    z-index: 1;
+    text-align: center;
+    position: relative;
 }
 
 .v2 .performance-statistics-competitor-content {
@@ -50,6 +51,7 @@
 	font-family: 'Open Sans';
 	padding: 10px;
 	margin-bottom:30px;
+	position:relative;
 }
 
 .v2 .performance-statistics-competitor-header {
@@ -76,22 +78,23 @@
 
 .v2 .performance-statistics-competitor-one {
 	float: left;
-	padding-left: 60px;
-	padding-right: 60px;
+	padding-left: 46px;
+	text-align: center;
 }
 
 .v2 .performance-statistics-competitor-two:before {
 	content: "";
 	height: 47px;
 	border: 1px solid #fff;
-	float: right;
-	margin-top: -45px;
-    	margin-right: 93px;
+	position: absolute;
+   	margin-top: 5px;
+    	left: 50%;
 }
 
 .v2 .performance-statistics-competitor-two {
-	padding-left: 50px;
-	padding-right: 50px;
+	float: right;
+	padding-right: 46px;
+	text-align : center;
 }
 
 .v2 .performance-statistics-component-title-content {
@@ -110,12 +113,13 @@
 	font-weight: 400;
 	Text-transform: uppercase;
 	color: #FFF;
+	padding-top: 4px;
 }
 
 .v2  .performance-statistics-component-title-content sup {
 	margin-left: 2px;
     	vertical-align: super;
-    	line-height: normal;
+    	/*line-height: normal;*/
 }
 </style>
 <div class="v2">
