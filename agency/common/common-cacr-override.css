@@ -61,11 +61,11 @@
 	width: 334px;
 }
 
-.v2 .mainComponentDiv ul{
+.v2 .mainComponentDiv ul {
 	font-size: 14px;
 }
 
-.v2 .mainComponentDiv ol{
+.v2 .mainComponentDiv ol {
 	font-size: 14px;
 }
 
@@ -78,29 +78,29 @@
 	font-size: 14px;
 }
 
-.v2 h1{
+.v2 h1 {
     font-weight: 300;
     font-size: 45px;
     margin: 0;
-    color: #333333;
+    color: #333;
     text-align: left;
 }
 
 
-.v2 h6{
+.v2 h6 {
 	font-size: 14px !important;
 }
 
-.v2 .delta-blue-background-color{
+.v2 .delta-blue-background-color {
 	background-color: #22659c;
 }
 
-.v2 #blueComponentVerticalMainDiv{
+.v2 #blueComponentVerticalMainDiv {
 background-color: #22659c;
 }
 
 .v2 .iconNewWindow {
-    background: url(/etc/designs/deltaPro/images/ui-icons_0253a4_256x240.png) -36px -83px;
+    background: url('/etc/designs/deltaPro/images/ui-icons_0253a4_256x240.png') -36px -83px; /* Added single quotes around image path */
     display: inline-block;
     width: 10px;
     height: 10px;
