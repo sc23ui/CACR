@@ -63,6 +63,7 @@ body.v2 {
 	width: 960px;
 	margin-bottom: 20px;
 	margin-left: 40px;
+	border-top:none ;
 }
 
 .v2 .active-exception-header-link {
@@ -97,6 +98,9 @@ body.v2 {
 	width: 118px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	color: #fff;
+    background-color: #fff;
+    height: 0px;
 }
 
 .v2 .active-exception-header {
@@ -150,9 +154,10 @@ body.v2 {
 	float: left;
 	font-size: 20px;
 	font-weight: 500;
-	height: 45px;
-	width: 200px;
-	text-align: center;
+	height: 35px;
+    width: 200px;
+    text-align: center;
+    padding-top: 8px;
 }
 
 .v2 .inactivetab {
@@ -184,7 +189,10 @@ body.v2 {
 }
 
 .v2 .exceptions-panel-inner table {
-	margin: 12px;
+	margin-top: 12px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom: 0px!important;
 }
 
 .v2 .exceptions-panel-inner{
@@ -198,10 +206,16 @@ body.v2 {
 	margin-left: 18px;
 }
 
+.v2 .exceptions-panel-inner .exceptions-panel{
+	margin-bottom: 0px;
+}
+
 .v2 .exceptions-panel-inner .active-exception-content {
-	margin-left: 0px;
-	width: 960px;
-	margin-top: -24px;
+	margin-left: 13px;
+    width: 933px;
+    margin-top: -24px;
+    /* margin-right: 5px; */
+    border: 1px solid #c7c7c7;
 }
 
 .v2 .exceptions-panel-inner .showtable {
@@ -215,8 +229,10 @@ body.v2 {
 	color: #333333;
 	text-align: left;
 	padding-left: 10px;
-	padding-top: 25px;
-	width: 164px;
+	padding-top: 20px;
+	width: 240px;
+	padding-bottom:0px;
+	vertical-align: top;
 }
 
 .v2 .tdata {
@@ -225,9 +241,11 @@ body.v2 {
 	color: #0b1f66;
 	font-weight: 700;
 	text-align: left;
-	width: 225px;
+	width: 40px;
 	padding-left: 10px;
-	padding-bottom: 25px;
+	padding-bottom: 20px;
+	vertical-align: top;
+	height:100%;
 }
 
 .v2 .nopaddingbottom {
@@ -245,6 +263,11 @@ body.v2 {
 	text-transform: none;
 	font-size: 16px;
 	color: #0b1f66;
+	columns: 2;
+}
+
+.v2 .ulist ul {
+    margin-left: -27px;
 }
 
 .v2 .timetext {
@@ -262,11 +285,12 @@ body.v2 {
 	color: #fff;
 	font-weight: 600;
 	text-transform: Uppercase;
-	cursor: default !important;
+	cursor: pointer!important;
 	padding: 10px 20px 10px 20px;
 	font-size: 14px;
 	text-align: center;
 	width: 136px;
+	font-family:"open sans";
 }
 
 .v2 #viewmore:hover {
@@ -303,7 +327,7 @@ body.v2 {
 	color: #fff;
 	background-color: #e3132c;
 	width: 40px;
-	height: 40px;
+	height: 42px;
 	text-align: center;
 	font-weight: 800;
 	font-size: 22px;
@@ -311,10 +335,10 @@ body.v2 {
 }
 
 .v2 .exception-osi-field-content {
-	height: auto;
+	height: 100%;
 	background-color: #22659c;
 	padding: 10px;
-	width: 213px
+	width: auto;
 }
 
 .v2 .fieldheader {
@@ -340,6 +364,32 @@ body.v2 {
 	text-transform: uppercase;
 	color: #fff;
 }
+
+.v2 .exception-osi-ordered {
+    margin: 0px;
+}
+
+.v2 .exception-osi-ordered li {
+    text-align: left;
+    margin-left: -21px;
+}
+
+.v2 .vertical-align-middle {
+    vertical-align: middle;
+}
+
+.v2 .align-right{
+	padding-left: 100px;
+}
+
+.v2 .noactivewaivers{
+	display: none;
+	color:#000;
+	font-family:"Open Sans";
+	font-weight: 600;
+	font-size:20px;
+	text-align: Center;
+}
 </style>
 
 	<div class="v2">
@@ -351,7 +401,7 @@ body.v2 {
 		<div class="exception-policy-content">
 			<!-- Active Content goes here -->
 			<div class="activecontent">
-
+				<div class="noactivewaivers">No active event waivers</div>
 				<!--Active Content starts here-->
 				<div class="exclaim">!</div>
 				<div class="group1">
@@ -416,10 +466,10 @@ body.v2 {
 													<div class="fieldheader">Rapid Reprice Applies</div>
 													<hr class="exception-osi-hr">
 													<div class="fieldcontent">
-															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New
+															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: <ol class="exception-osi-ordered"> <li> New
 															itenarary is rebooked/ticketed within all parameters of
-															this policy <br> 2. New itenarary is priced at
-															current applicable fares and rules
+															this policy</li><li> New itenarary is priced at
+															current applicable fares and rules</li></ol>
 													</div>
 
 													<div class="fieldheader">NPAP9</div>
@@ -456,10 +506,10 @@ body.v2 {
 											<td></td>
 										</tr>
 										<tr class="greybackground">
-											<td class="tdata nopaddingbottom"><a href="#"
+											<td class="tdata nopaddingbottom vertical-align-middle"><a href="#"
 													class="refundrequest">Refund Request From &gt; </a></td>
 											<td class="tdata"></td>
-											<td class="tdata nopaddingbottom"><button id="viewmore">VIEW
+											<td class="tdata nopaddingbottom vertical-align-middle align-right"><button id="viewmore">VIEW
 														MORE</button></td>
 										</tr>
 									</tbody>
@@ -528,10 +578,10 @@ body.v2 {
 													<div class="fieldheader">Rapid Reprice Applies</div>
 													<hr class="exception-osi-hr">
 													<div class="fieldcontent">
-															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New
+															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: <ol class="exception-osi-ordered"> <li> New
 															itenarary is rebooked/ticketed within all parameters of
-															this policy <br> 2. New itenarary is priced at
-															current applicable fares and rules
+															this policy</li><li> New itenarary is priced at
+															current applicable fares and rules</li></ol>
 													</div>
 
 													<div class="fieldheader">NPAP9</div>
@@ -566,9 +616,9 @@ body.v2 {
 											<td></td>
 										</tr>
 										<tr class="greybackground">
-											<td class="tdata nopaddingbottom"><a href="#" class="refundrequest">Refund Request From &gt; </a></td>
+											<td class="tdata nopaddingbottom vertical-align-middle"><a href="#" class="refundrequest">Refund Request From &gt; </a></td>
 											<td class="tdata"></td>
-											<td class="tdata nopaddingbottom"><button id="viewmore">VIEW
+											<td class="tdata nopaddingbottom vertical-align-middle align-right"><button id="viewmore">VIEW
 														MORE</button></td>
 										</tr>
 									</tbody>
@@ -636,10 +686,10 @@ body.v2 {
 													<div class="fieldheader">Rapid Reprice Applies</div>
 													<hr class="exception-osi-hr">
 													<div class="fieldcontent">
-															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New
+															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: <ol class="exception-osi-ordered"> <li> New
 															itenarary is rebooked/ticketed within all parameters of
-															this policy <br> 2. New itenarary is priced at
-															current applicable fares and rules
+															this policy</li><li> New itenarary is priced at
+															current applicable fares and rules</li></ol>
 													</div>
 
 													<div class="fieldheader">NPAP9</div>
@@ -675,10 +725,10 @@ body.v2 {
 											<td></td>
 										</tr>
 										<tr class="greybackground">
-											<td class="tdata nopaddingbottom"><a href="#"
+											<td class="tdata nopaddingbottom vertical-align-middle"><a href="#"
 													class="refundrequest">Refund Request From &gt; </a></td>
 											<td class="tdata"></td>
-											<td class="tdata nopaddingbottom"><button id="viewmore">VIEW
+											<td class="tdata nopaddingbottom vertical-align-middle align-right"><button id="viewmore">VIEW
 														MORE</button></td>
 										</tr>
 									</tbody>
@@ -763,24 +813,7 @@ body.v2 {
 													to travel on</th>
 										<th class="active-exceptions-table-head active-exceptions-asterisk">Affected
 													areas</th>
-										<td class="tdata"></td>
-										<td rowspan="4">
-											<div class=" exception-osi-field-content">
-												<div class="fieldheader">Rapid Reprice Applies</div>
-												<hr class="exception-osi-hr">
-												<div class="fieldcontent">
-															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New
-															itenarary is rebooked/ticketed within all parameters of
-															this policy <br> 2. New itenarary is priced at
-															current applicable fares and rules
-												</div>
-												<div class="fieldheader">J5Q7G</div>
-												<hr class="exception-osi-hr">
-												<div class="fieldcontent">OSI</div>
-												<div class="exception-osi-field">OSI DL REFUNDED PER
-															ATL OPS 06aAPR2017</div>
-											</div>			
-										</td>
+										
 									</tr>
 									<tr>
 										<td class="tdata ulist">
@@ -794,16 +827,37 @@ body.v2 {
 										</td>
 										<td class="tdata ulist">
 											<ul>
-												<li>All flights operated by Air France</li>
+												<li>Atlanta(ATL)</li>
+												<li>Atlanta(ATL)</li>
+												<li>Atlanta(ATL)</li>
+												<li>Atlanta(ATL)</li>
+												
 											</ul>
 										</td>
 										<td></td>
+										<td class="tdata nopaddingbottom" rowspan="4">
+											<div class=" exception-osi-field-content">
+												<div class="fieldheader">Rapid Reprice Applies</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">
+															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: <ol class="exception-osi-ordered"> <li> New
+															itenarary is rebooked/ticketed within all parameters of
+															this policy</li><li> New itenarary is priced at
+															current applicable fares and rules</li></ol>
+												</div>
+												<div class="fieldheader">J5Q7G</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">OSI</div>
+												<div class="exception-osi-field">OSI DL REFUNDED PER
+															ATL OPS 06aAPR2017</div>
+											</div>			
+										</td>
 									</tr>
 									<tr class="greybackground">
-										<td class="tdata nopaddingbottom"><a href="#"
+										<td class="tdata nopaddingbottom vertical-align-middle"><a href="#"
 													class="refundrequest">Refund Request From &gt; </a></td>
 										<td class="tdata"></td>
-										<td class="tdata nopaddingbottom"><button id="viewmore">VIEW
+										<td class="tdata nopaddingbottom vertical-align-middle align-right"><button id="viewmore">VIEW
 														MORE</button></td>
 									</tr>
 								</tbody>
@@ -881,25 +935,7 @@ body.v2 {
 													travel on</th>
 										<th class="active-exceptions-table-head   ">Affected
 													areas</th>
-										<td class="tdata"></td>
-										<td rowspan="4">
-											<div class=" exception-osi-field-content">
-												<div class="fieldheader">Rapid Reprice Applies</div>
-												<hr class="exception-osi-hr">
-												<div class="fieldcontent">
-															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New
-															itenarary is rebooked/ticketed within all parameters of
-															this policy <br> 2. New itenarary is priced at
-															current applicable fares and rules
-												</div>
-
-												<div class="fieldheader">J5Q7G</div>
-												<hr class="exception-osi-hr">
-												<div class="fieldcontent">OSI</div>
-												<div class="exception-osi-field">OSI DL REFUNDED PER
-															ATL OPS 06aAPR2017</div>
-											</div>
-										</td>
+										
 									</tr>
 									<tr>
 										<td class="tdata ulist">
@@ -917,12 +953,29 @@ body.v2 {
 											</ul>
 										</td>
 										<td></td>
+										<td class="tdata nopaddingbottom" rowspan="4">
+											<div class=" exception-osi-field-content">
+												<div class="fieldheader">Rapid Reprice Applies</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">
+															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: <ol class="exception-osi-ordered"> <li> New
+															itenarary is rebooked/ticketed within all parameters of
+															this policy</li><li> New itenarary is priced at
+															current applicable fares and rules</li></ol>
+												</div>
+												<div class="fieldheader">J5Q7G</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">OSI</div>
+												<div class="exception-osi-field">OSI DL REFUNDED PER
+															ATL OPS 06aAPR2017</div>
+											</div>			
+										</td>
 									</tr>
 									<tr class="greybackground" sss>
-										<td class="tdata nopaddingbottom"><a href="#"
+										<td class="tdata nopaddingbottom vertical-align-middle"><a href="#"
 												class="refundrequest">Refund Request From &gt; </a></td>
 										<td class="tdata"></td>
-										<td class="tdata nopaddingbottom"><button id="viewmore">VIEW
+										<td class="tdata nopaddingbottom vertical-align-middle align-right"><button id="viewmore">VIEW
 														MORE</button></td>
 									</tr>
 								</tbody>
@@ -1002,24 +1055,7 @@ body.v2 {
 													travel on</th>
 											<th class="active-exceptions-table-head   ">Affected
 													areas</th>
-											<td class="tdata"></td>
-											<td rowspan="4">
-												<div class=" exception-osi-field-content">
-													<div class="fieldheader">Rapid Reprice Applies</div>
-													<hr class="exception-osi-hr">
-													<div class="fieldcontent">
-															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New
-															itenarary is rebooked/ticketed within all parameters of
-															this policy <br> 2. New itenarary is priced at
-															current applicable fares and rules
-													</div>
-													<div class="fieldheader">J5Q7G</div>
-													<hr class="exception-osi-hr">
-													<div class="fieldcontent">OSI</div>
-													<div class="exception-osi-field">OSI DL REFUNDED PER
-															ATL OPS 06aAPR2017</div>
-												</div>
-											</td>
+											
 										</tr>
 										<tr>
 											<td class="tdata ulist">
@@ -1033,16 +1069,64 @@ body.v2 {
 											</td>
 											<td class="tdata ulist">
 												<ul>
-													<li>All flights operated by Air France</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
 												</ul>
 											</td>
 											<td></td>
+											<td class="tdata nopaddingbottom" rowspan="4">
+											<div class=" exception-osi-field-content">
+												<div class="fieldheader">Rapid Reprice Applies</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">
+															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: <ol class="exception-osi-ordered"> <li> New
+															itenarary is rebooked/ticketed within all parameters of
+															this policy</li><li> New itenarary is priced at
+															current applicable fares and rules</li></ol>
+												</div>
+												<div class="fieldheader">J5Q7G</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">OSI</div>
+												<div class="exception-osi-field">OSI DL REFUNDED PER
+															ATL OPS 06aAPR2017</div>
+											</div>			
+										</td>
 										</tr>
 										<tr class="greybackground" sss>
-											<td class="tdata nopaddingbottom"><a href="#"
-													class="refundrequest">Refund Request From &gt; </a></td>
+											<td class="tdata nopaddingbottom vertical-align-middle"><a href="#"
+													class="refundrequest vertical-align-middle">Refund Request From &gt; </a></td>
 											<td class="tdata"></td>
-											<td class="tdata nopaddingbottom"><button id="viewmore">VIEW
+											<td class="tdata nopaddingbottom vertical-align-middle align-right"><button id="viewmore">VIEW
 														MORE</button></td>
 										</tr>
 									</tbody>
