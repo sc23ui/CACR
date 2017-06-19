@@ -98,3 +98,7 @@
 .v2 #blueComponentVerticalMainDiv {
 background-color: #22659c;
 }
+
+.DLcarousel .iconNewWindow{
+    background: rgba(0, 0, 0, 0) url("/images/external_link.png") repeat scroll 0 0;
+}
