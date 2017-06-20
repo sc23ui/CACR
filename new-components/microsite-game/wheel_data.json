@@ -3,11 +3,11 @@
 
 "segmentValuesArray" : [
   {"probability":1, "type": "string", "value": "HOLIDAY FOR^TWO", "win": true, "resultText": "You won a holiday!", "userData": {"score":1000000}},
-  {"probability":16, "type": "string", "value": "Raffle Tix^1", "win": true, "resultText": "You/'ve been entered into the grand prize drawing.", "userData": {"score":1}},
+  {"probability":16, "type": "string", "value": "Raffle Tix^1", "win": true, "resultText": "You've been entered into the grand prize drawing.", "userData": {"score":1}},
   {"probability":16, "type": "string", "value": "Raffle Tix^5", "win": true, "resultText": "You have 5 entries for the grand prize drawing.", "userData": {"score":5}},
-  {"probability":16, "type": "string", "value": "Raffle Tix^1", "win": true, "resultText": "You/'ve been entered into the grand prize drawing.", "userData": {"score":1}},
+  {"probability":16, "type": "string", "value": "Raffle Tix^1", "win": true, "resultText": "You've been entered into the grand prize drawing.", "userData": {"score":1}},
   {"probability":16, "type": "string", "value": "Raffle Tix^2", "win": true, "resultText": "You have 2 entries for the grand prize drawing.", "userData": {"score":2}},
-  {"probability":16, "type": "string", "value": "Raffle Tix^1", "win": true, "resultText": "You/'ve been entered into the grand prize drawing.", "userData": {"score":1}},
+  {"probability":16, "type": "string", "value": "Raffle Tix^1", "win": true, "resultText": "You've been entered into the grand prize drawing.", "userData": {"score":1}},
   {"probability":19, "type": "string", "value": "LOSE ALL", "win": false, "resultText": "Try agian tomorrow.", "userData": {"score":0}}
 ],
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Spin2Win Wheel</title>
+    <title>Delta Pro - Summer Trivia Banaza!!!!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/Spin2Win-style.css">
@@ -11,37 +11,41 @@
 
 <body>
   <div class="trivia-container">
-    <h2 class="trivia-question">Is this where the trvia question will go?</h2>
+    <h2 class="trivia-question">Is this where the trivia question will go?</h2>
     <div class="trivia-answer">
       <input class="trivia-answer-input" type="radio" id="triviaAnswerOne" name="selector">
       <label class="trivia-answer-label" for="triviaAnswerOne">I'm the correct answer.</label>
-      <div class="check"></div>
+      <div class="trivia-answer-radio"></div>
     </div>
     <div class="trivia-answer">
       <input class="trivia-answer-input" type="radio" id="triviaAnswerTwo" name="selector">
       <label class="trivia-answer-label" for="triviaAnswerTwo">No, I'm the correct answer.</label>
-      <div class="check"></div>
+      <div class="trivia-answer-radio"></div>
     </div>
     <div class="trivia-answer">
       <input class="trivia-answer-input" type="radio" id="triviaAnswerThree" name="selector">
-      <label class="trivia-answer-label" for="triviaAnswerThree">You got it all wrong, I'm the one true answer.</label>
-      <div class="check"></div>
+      <label class="trivia-answer-label" for="triviaAnswerThree">You're all wrong. I'm the one true answer.</label>
+      <div class="trivia-answer-radio"></div>
     </div>
     <div class="trivia-answer">
       <input class="trivia-answer-input" type="radio" id="triviaAnswerFour" name="selector">
-      <label class="trivia-answer-label" for="triviaAnswerFour">Don't beleive those other answers, I'm the real deal.</label>
-      <div class="check"></div>
+      <label class="trivia-answer-label" for="triviaAnswerFour">Don't beleive those other answers. I'm the real deal.</label>
+      <div class="trivia-answer-radio"></div>
     </div>
     <div class="trivia-answer">
       <input class="trivia-answer-input" type="radio" id="triviaAnswerFive" name="selector">
       <label class="trivia-answer-label" for="triviaAnswerFive">Psst. If you're smart you'll choose me.</label>
-      <div class="check"></div>
+      <div class="trivia-answer-radio"></div>
+    </div>
+
+    <div class="trivia-button">
+      <button class="">Submit Answer</button>
     </div>
   </div>
 
 
 
-  <div class="wheelContainer">
+  <div class="wheelContainer" style="display: none;">
     <svg class="wheelSVG" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" text-rendering="optimizeSpeed">
       <defs>
         <filter id="shadow" x="-100%" y="-100%" width="550%" height="550%">
