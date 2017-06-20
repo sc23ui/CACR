@@ -1,7 +1,9 @@
 <head>
 <link
-	href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
-	rel="stylesheet">
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<!-- Include common (global/reusable) classes for components //-->
+	<link rel="stylesheet" type="text/css" media="all" href="common-to-components.css" />
 </head>
 
 <style>
@@ -118,27 +120,25 @@
 
 .v2  .performance-statistics-component-title-content sup {
 	margin-left: 2px;
-    	vertical-align: super;
-    	/*line-height: normal;*/
+  vertical-align: super;
+  /*line-height: normal;*/
 }
 </style>
 <div class="v2">
+
 	<div class="performance-statistics-component-title-content">
-		<div class="performance-statistics-component-title">
-			Mishandled bags <sup>1</sup>
-		</div>
-		<div class="performance-statistics-competitor-subheader">
-			Per 1000 Passengers <sup>2</sup> - DOT
-		</div>
+		<div class="performance-statistics-component-title">Mishandled bags <sup>1</sup>	</div>
+		<div class="performance-statistics-competitor-subheader">	Per 1000 Passengers <sup>2</sup> - DOT	</div>
 	</div>
 	<div class="performance-statistics-component">
-		<img class="performance-statistics-component-image"
-			src="http://placekitten.com/300/330" />
+
+		<!-- Dynamic element -->
+		<div class="bkg-img performance-statistics-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
+
 	</div>
 	<div class="performance-statistics-component-overlay-content">
 		<div class="performance-statistics-component-header">2.55</div>
-		<div class="performance-statistics-component-subheader">per 1000
-			Passengers-DOT</div>
+		<div class="performance-statistics-component-subheader">per 1000 Passengers-DOT</div>
 	</div>
 	<div class="performance-statistics-competitor-content">
 		<div class="performance-statistics-competitor-one">
