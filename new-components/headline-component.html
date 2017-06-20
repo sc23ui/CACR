@@ -1,6 +1,8 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Include common (global/reusable) classes for components //-->
+  <link rel="stylesheet" type="text/css" media="all" href="common-to-components.css" />
 </head>
 
 <style>
@@ -194,7 +196,10 @@ $(document).ready( function() {
 
         <!--// AEM author adjusts heights for components using height property of class headline-component-w33//-->
         <div class="headline-component headline-component-w33">
-                <img class="headline-component-image" src="http://placekitten.com/300/532" />
+
+                <!-- Dynamic element -->
+                <div class="bkg-img headline-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
+
                 <div class="headline-component-overlay-content">
                         <!--// AEM author has ability to show/hide one of the below options by adding or removing headline-component-hide class//-->
                         <div class="headline-component-heading-description-button">
@@ -225,37 +230,43 @@ $(document).ready( function() {
         <br/><br/>
 
 <div class="headline-component headline-component-w50">
-                <img class="headline-component-image" src="http://placekitten.com/465/357" />
-                <div class="headline-component-overlay-content">
-                        <div class="headline-component-heading-description-button">
-                                <div class="headline-component-heading">Customize the Ideal Vacation</div>
-                                <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
-                                <button class="headline-component-learn-more"> Learn More</button>
-                        </div>
-                        <div class="headline-component-heading-description-arrow headline-component-hide">
-                                <div class="headline-component-heading">Customize the Ideal Vacation</div>
-                                <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
-                                <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" /></div>
-                        </div>
-                        <div class="headline-component-heading-button headline-component-hide">
-                                <div class="headline-component-heading">A step up at every step</div>
-                                <button class="headline-component-learn-more"> Learn More</button>
-                        </div>
-                        <div class="headline-component-heading-arrow headline-component-hide">
-                                <div class="headline-component-heading">A step up at every step</div>
-                                <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" align="right" /></div>
-                        </div>
-                        <div class="headline-component-only-heading headline-component-hide">
-                                <div class="headline-component-heading">A step up at every step</div>
-                        </div>
-                </div>
+
+        <!-- Dynamic element -->
+        <div class="bkg-img headline-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
+
+              <div class="headline-component-overlay-content">
+                    <div class="headline-component-heading-description-button">
+                            <div class="headline-component-heading">Customize the Ideal Vacation</div>
+                            <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                            <button class="headline-component-learn-more"> Learn More</button>
+                    </div>
+                    <div class="headline-component-heading-description-arrow headline-component-hide">
+                            <div class="headline-component-heading">Customize the Ideal Vacation</div>
+                            <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                            <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" /></div>
+                    </div>
+                    <div class="headline-component-heading-button headline-component-hide">
+                            <div class="headline-component-heading">A step up at every step</div>
+                            <button class="headline-component-learn-more"> Learn More</button>
+                    </div>
+                    <div class="headline-component-heading-arrow headline-component-hide">
+                            <div class="headline-component-heading">A step up at every step</div>
+                            <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" align="right" /></div>
+                    </div>
+                    <div class="headline-component-only-heading headline-component-hide">
+                            <div class="headline-component-heading">A step up at every step</div>
+                    </div>
+              </div>
         </div>
 
 
         <br/><br/>
 
         <div class="headline-component headline-component-w66">
-                <img class="headline-component-image" src="https://placekitten.com/630/270" />
+
+          <!-- Dynamic element -->
+          <div class="bkg-img headline-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
+
                 <div class="headline-component-overlay-content">
                         <div class="headline-component-heading-description-button">
                                 <div class="headline-component-heading">Customize the Ideal Vacation</div>
