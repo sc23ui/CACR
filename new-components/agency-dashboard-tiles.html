@@ -16,6 +16,9 @@
     <!-- V2 Agency Override -->
     <link rel="stylesheet" type="text/css" media="all" href="../agency/common/common-cacr-override.css" />
 
+    <!-- Include common (global/reusable) classes for components //-->
+    <link rel="stylesheet" type="text/css" media="all" href="common-to-components.css" />
+
     <style>
       body.v2 {
         background-color: #fff;
@@ -34,272 +37,280 @@
 	      <!-- start of new component -->
 
 	      <!-- new component styles -->
-	<style>
-		.v2 .apps-dashboard,
-		.v2 .apps-dashboard-tile,
-		.v2 .apps-dashboard-tile-img,
-		.v2 .apps-dashboard-tile-content,
-		.v2 .apps-dashboard-tile-actions,
-		.v2 .apps-dashboard-tile-link,
-		.v2 .apps-dashboard-tile-resource,
-		.v2 .apps-dashboard-tile-button,
-		.v2 .apps-dashboard-tile-status-new,
-		.v2 .apps-dashboard-tile-status-maintanence {
-			box-sizing: border-box;
-		}
+        	<style>
+        		.v2 .apps-dashboard,
+        		.v2 .apps-dashboard-tile,
+        		.v2 .apps-dashboard-tile-img,
+        		.v2 .apps-dashboard-tile-content,
+        		.v2 .apps-dashboard-tile-actions,
+        		.v2 .apps-dashboard-tile-link,
+        		.v2 .apps-dashboard-tile-resource,
+        		.v2 .apps-dashboard-tile-button,
+        		.v2 .apps-dashboard-tile-status-new,
+        		.v2 .apps-dashboard-tile-status-maintanence {
+        			box-sizing: border-box;
+        		}
 
-		.v2 .apps-dashboard {
-			background-color: #02132d;
-			color: #fff;
-			padding: 20px;
-			width: 960px;
-		}
+        		.v2 .apps-dashboard {
+        			background-color: #02132d;
+        			color: #fff;
+        			padding: 20px;
+        			width: 960px;
+        		}
 
-		.v2 .apps-dashboard-headline {
-			color: #fff;
-			font-size: 30px;
-			font-weight: 600;
-			text-transform: uppercase;
-		}
+        		.v2 .apps-dashboard-headline {
+        			color: #fff;
+        			font-size: 30px;
+        			font-weight: 600;
+        			text-transform: uppercase;
+        		}
 
-		.v2 .apps-dashboard-description {
-			color: #fff;
-			font-size: 16px;
-			font-weight: 300;
-		}
+        		.v2 .apps-dashboard-description {
+        			color: #fff;
+        			font-size: 16px;
+        			font-weight: 300;
+        		}
 
-		.v2 .apps-dashboard-tile {
-			background-color: #fff;
-			color: #333;
-			display: table;
-			height: 100px;
-			margin-top: 20px;
-			position: relative;
-			width: 100%;
-		}
+        		.v2 .apps-dashboard-tile {
+        			background-color: #fff;
+        			color: #333;
+        			display: table;
+        			height: 100px;
+        			margin-top: 20px;
+        			position: relative;
+        			width: 100%;
+        		}
 
-		.v2 .apps-dashboard-tile-link {
-			color: #333;
-			display: block;
-		}
+        		.v2 .apps-dashboard-tile-link {
+        			color: #333;
+        			display: block;
+        		}
 
-		.v2 .apps-dashboard-tile-link:hover {
-			color: #333;
-			opacity: 1;
-		}
+        		.v2 .apps-dashboard-tile-link:hover {
+        			color: #333;
+        			opacity: 1;
+        		}
 
-		.v2 .apps-dashboard-tile-img {
-			float: left;
-			height: 100px;
-			width: 185px;
-		}
+        		.v2 .apps-dashboard-tile-img {
+        			float: left;
+        			height: 100px;
+        			width: 185px;
+        		}
 
-		.v2 .apps-dashboard-tile-content {
-			display: table-cell;
-			height: 100px;
-			padding-left: 20px;
-			padding-right: 280px;
-			vertical-align: middle;
-			width: 100%;
-		}
+        		.v2 .apps-dashboard-tile-content {
+        			display: table-cell;
+        			height: 100px;
+        			padding-left: 20px;
+        			padding-right: 280px;
+        			vertical-align: middle;
+        			width: 100%;
+        		}
 
-		.v2 .apps-dashboard-tile-title {
-			color: #333;
-			font-size: 25px;
-			font-weight: 600;
-		}
+        		.v2 .apps-dashboard-tile-title {
+        			color: #333;
+        			font-size: 25px;
+        			font-weight: 600;
+        		}
 
-		.v2 .apps-dashboard-tile-description {
-			font-size: 14px;
-			font-weight: 300;
-			margin-bottom: 0;
-			margin-top: 0;
-		}
+        		.v2 .apps-dashboard-tile-description {
+        			font-size: 14px;
+        			font-weight: 300;
+        			margin-bottom: 0;
+        			margin-top: 0;
+        		}
 
-		.v2 .apps-dashboard-tile-actions {
-			bottom: 45px;
-			float: right;
-			margin-bottom: -45px;
-			position: relative;
-			right: 0;
-			width: 280px
-		}
+        		.v2 .apps-dashboard-tile-actions {
+        			bottom: 45px;
+        			float: right;
+        			margin-bottom: -45px;
+        			position: relative;
+        			right: 0;
+        			width: 280px
+        		}
 
-		.v2 .apps-dashboard-tile-resource,
-		.v2 .apps-dashboard-tile-button {
-			float: right;
-			font-size: 18px;
-			font-weight: 600;
-			height: 45px;
-			padding-top: 10px;
-			text-align: center;
-			text-transform: uppercase;
-			width: 140px;
-		}
+        		.v2 .apps-dashboard-tile-resource,
+        		.v2 .apps-dashboard-tile-button {
+        			float: right;
+        			font-size: 18px;
+        			font-weight: 600;
+        			height: 45px;
+        			padding-top: 10px;
+        			text-align: center;
+        			text-transform: uppercase;
+        			width: 140px;
+        		}
 
-		.v2 .apps-dashboard-tile-resource {
-			background-color: #f6f6f7;
-			color: #0253a4;
-		}
+        		.v2 .apps-dashboard-tile-resource {
+        			background-color: #f6f6f7;
+        			color: #0253a4;
+        		}
 
-		.v2 .apps-dashboard-tile-resource:hover {
-			background-color: #f6f6f7;
-			color: #1c7bd9;
-			opacity: 1; /* added this to counteract .v2 a:hover in main stylesheet.. not sure why this is applied universally to all links */
-		}
+        		.v2 .apps-dashboard-tile-resource:hover {
+        			background-color: #f6f6f7;
+        			color: #1c7bd9;
+        			opacity: 1; /* added this to counteract .v2 a:hover in main stylesheet.. not sure why this is applied universally to all links */
+        		}
 
-		.v2 .apps-dashboard-tile-button {
-			background-color: #e3132c;
-			color: #fff;
-		}
+        		.v2 .apps-dashboard-tile-button {
+        			background-color: #e3132c;
+        			color: #fff;
+        		}
 
-		.v2 .apps-dashboard-tile-button:hover {
-			background-color: #cb1127;
-			opacity: 1; /* added this to counteract .v2 a:hover in main stylesheet.. not sure why this is applied universally to all links */
-		}
+        		.v2 .apps-dashboard-tile-button:hover {
+        			background-color: #cb1127;
+        			opacity: 1; /* added this to counteract .v2 a:hover in main stylesheet.. not sure why this is applied universally to all links */
+        		}
 
-		.v2 .apps-dashboard-tile-status-maintanence-bg {
-			background-color: rgba(0, 0, 0, .7);
-			cursor: default;
-			height: 100%;
-			position: absolute;
-			right: 0;
-			top: 0;
-			width: 100%;
-		}
+        		.v2 .apps-dashboard-tile-status-maintanence-bg {
+        			background-color: rgba(0, 0, 0, .7);
+        			cursor: default;
+        			height: 100%;
+        			position: absolute;
+        			right: 0;
+        			top: 0;
+        			width: 100%;
+        		}
 
-		.v2 .apps-dashboard-tile-status-new,
-		.v2 .apps-dashboard-tile-status-maintanence {
-			font-size: 30px;
-			font-weight: 600;
-			height: 55px;
-			padding-top: 5px;
-			text-align: center;
-			text-transform: uppercase;
-			width: 280px;
-		}
+        		.v2 .apps-dashboard-tile-status-new,
+        		.v2 .apps-dashboard-tile-status-maintanence {
+        			font-size: 30px;
+        			font-weight: 600;
+        			height: 55px;
+        			padding-top: 5px;
+        			text-align: center;
+        			text-transform: uppercase;
+        			width: 280px;
+        		}
 
-		.v2 .apps-dashboard-tile-status-new {
-			background-color: #e5f2e2;
-			bottom: 100px;
-			color: #468c37;
-			float: right;
-			margin-bottom: -55px;
-			position: relative;
-		}
+        		.v2 .apps-dashboard-tile-status-new {
+        			background-color: #e5f2e2;
+        			bottom: 100px;
+        			color: #468c37;
+        			float: right;
+        			margin-bottom: -55px;
+        			position: relative;
+        		}
 
-		.v2 .apps-dashboard-tile-status-maintanence {
-			background-color: #c7c7c7;
-			position: absolute;
-			right: 0;
-		}
-	</style>
+        		.v2 .apps-dashboard-tile-status-maintanence {
+        			background-color: #c7c7c7;
+        			position: absolute;
+        			right: 0;
+        		}
+        	</style>
 
-	<div id="ext-appsAndReportsListBoxDiv" class="apps-dashboard">
+        	<div id="ext-appsAndReportsListBoxDiv" class="apps-dashboard">
 
-		<h3 class="apps-dashboard-headline">Delta Edge Applications</h3>
-		<p class="apps-dashboard-description">Delta Edge is an unparelleled suite of beyond-contract services, offering transparency, control, and 11 premium benefits.</p>
+        		<h3 class="apps-dashboard-headline">Delta Edge Applications</h3>
+        		<p class="apps-dashboard-description">Delta Edge is an unparelleled suite of beyond-contract services, offering transparency, control, and 11 premium benefits.</p>
 
-		<div class="apps-dashboard-empty noDisplay">
-			<h4 class="apps-dashboard-description">There are no applications currently assigned at this time.</h4>
-		</div>
+        		<div class="apps-dashboard-empty noDisplay">
+        			<h4 class="apps-dashboard-description">There are no applications currently assigned at this time.</h4>
+        		</div>
 
-		<!-- App Tile with Resouce link -->
-		<div data-bind="foreach: appsAndReportsList" class="apps-dashboard-tile">
-			<a href="#" data-bind="click: urlTextClick, attr: {id: 'urlTextId' + $index()}, visible: maintenanceModeOff"  id="urlTextId0" class="apps-dashboard-tile-link">
-				<img class="apps-dashboard-tile-img" src="http://placehold.it/185x100?text=Image"/><!-- New dynamic element -->
+        		<!-- App Tile with Resouce link -->
+        		<div data-bind="foreach: appsAndReportsList" class="apps-dashboard-tile">
+        			<a href="#" data-bind="click: urlTextClick, attr: {id: 'urlTextId' + $index()}, visible: maintenanceModeOff"  id="urlTextId0" class="apps-dashboard-tile-link">
 
-				<div class="apps-dashboard-tile-content">
-					<h3 data-bind="text: title" class="apps-dashboard-tile-title">Preferred Seats</h3>
-					<p data-bind="text: teaser" class="apps-dashboard-tile-description">View &amp; assign preferred seats based on benefits at any time</p>
-				</div>
+                <!-- New dynamic element -->
+                <div class="bkg-img apps-dashboard-tile-img" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-4.jpg');"></div>
 
-				<div data-bind="visible: isNew" class="apps-dashboard-tile-status-new noDisplay">New</div>
+        				<div class="apps-dashboard-tile-content">
+        					<h3 data-bind="text: title" class="apps-dashboard-tile-title">Preferred Seats</h3>
+        					<p data-bind="text: teaser" class="apps-dashboard-tile-description">View &amp; assign preferred seats based on benefits at any time</p>
+        				</div>
 
-				<div class="apps-dashboard-tile-actions">
-					<div class="apps-dashboard-tile-button">Launch &gt;</div>
-					<a href="" class="apps-dashboard-tile-resource">Resources</a><!-- New dynamic element -->
-				</div>
+        				<div data-bind="visible: isNew" class="apps-dashboard-tile-status-new noDisplay">New</div>
 
-				<div data-bind="css: maintenanceState" class="apps-dashboard-tile-status-maintanence-bg noDisplay">
-					<div data-bind="visible: maintenanceModeOn" class="apps-dashboard-tile-status-maintanence">Maintenance</div>
-				</div>
-			</a>
-		</div>
+        				<div class="apps-dashboard-tile-actions">
+        					<div class="apps-dashboard-tile-button">Launch &gt;</div>
+        					<a href="" class="apps-dashboard-tile-resource">Resources</a><!-- New dynamic element -->
+        				</div>
+
+        				<div data-bind="css: maintenanceState" class="apps-dashboard-tile-status-maintanence-bg noDisplay">
+        					<div data-bind="visible: maintenanceModeOn" class="apps-dashboard-tile-status-maintanence">Maintenance</div>
+        				</div>
+        			</a>
+        		</div>
 
 
-		<!-- App Tile WITHOUT Resouce link -->
-		<div data-bind="foreach: appsAndReportsList" class="apps-dashboard-tile">
-			<a href="#" data-bind="click: urlTextClick, attr: {id: 'urlTextId' + $index()}, visible: maintenanceModeOff"  id="urlTextId0" class="apps-dashboard-tile-link">
-				<img class="apps-dashboard-tile-img" src="http://placehold.it/185x100?text=Image"/><!-- New dynamic element -->
+        		<!-- App Tile WITHOUT Resouce link -->
+        		<div data-bind="foreach: appsAndReportsList" class="apps-dashboard-tile">
+        			<a href="#" data-bind="click: urlTextClick, attr: {id: 'urlTextId' + $index()}, visible: maintenanceModeOff"  id="urlTextId0" class="apps-dashboard-tile-link">
 
-				<div class="apps-dashboard-tile-content">
-					<h3 data-bind="text: title" class="apps-dashboard-tile-title">Preferred Seats</h3>
-					<p data-bind="text: teaser" class="apps-dashboard-tile-description">View &amp; assign preferred seats based on benefits at any time</p>
-				</div>
+                <!-- New dynamic element -->
+                <div class="bkg-img apps-dashboard-tile-img" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-4.jpg');"></div>
 
-				<div data-bind="visible: isNew" class="apps-dashboard-tile-status-new noDisplay">New</div>
+        				<div class="apps-dashboard-tile-content">
+        					<h3 data-bind="text: title" class="apps-dashboard-tile-title">Preferred Seats</h3>
+        					<p data-bind="text: teaser" class="apps-dashboard-tile-description">View &amp; assign preferred seats based on benefits at any time</p>
+        				</div>
 
-				<div class="apps-dashboard-tile-actions">
-					<div class="apps-dashboard-tile-button">Launch &gt;</div>
-					<a href="" class="apps-dashboard-tile-resource noDisplay">Resources</a><!-- New dynamic element -->
-				</div>
+        				<div data-bind="visible: isNew" class="apps-dashboard-tile-status-new noDisplay">New</div>
 
-				<div data-bind="css: maintenanceState" class="apps-dashboard-tile-status-maintanence-bg noDisplay">
-					<div data-bind="visible: maintenanceModeOn" class="apps-dashboard-tile-status-maintanence">Maintenance</div>
-				</div>
-			</a>
-		</div>
+        				<div class="apps-dashboard-tile-actions">
+        					<div class="apps-dashboard-tile-button">Launch &gt;</div>
+        					<a href="" class="apps-dashboard-tile-resource noDisplay">Resources</a><!-- New dynamic element -->
+        				</div>
 
-		<!-- App tile in Maintenance Mode -->
-		<div data-bind="foreach: appsAndReportsList" class="apps-dashboard-tile">
-			<a href="#" data-bind="click: urlTextClick, attr: {id: 'urlTextId' + $index()}, visible: maintenanceModeOn"  id="urlTextId0" class="apps-dashboard-tile-link">
-				<img class="apps-dashboard-tile-img" src="http://placehold.it/185x100?text=Image"/><!-- New dynamic element -->
+        				<div data-bind="css: maintenanceState" class="apps-dashboard-tile-status-maintanence-bg noDisplay">
+        					<div data-bind="visible: maintenanceModeOn" class="apps-dashboard-tile-status-maintanence">Maintenance</div>
+        				</div>
+        			</a>
+        		</div>
 
-				<div class="apps-dashboard-tile-content">
-					<h3 data-bind="text: title" class="apps-dashboard-tile-title">Preferred Seats</h3>
-					<p data-bind="text: teaser" class="apps-dashboard-tile-description">View &amp; assign preferred seats based on benefits at any time</p>
-				</div>
+        		<!-- App tile in Maintenance Mode -->
+        		<div data-bind="foreach: appsAndReportsList" class="apps-dashboard-tile">
+        			<a href="#" data-bind="click: urlTextClick, attr: {id: 'urlTextId' + $index()}, visible: maintenanceModeOn"  id="urlTextId0" class="apps-dashboard-tile-link">
 
-				<div data-bind="visible: isNew" class="apps-dashboard-tile-status-new noDisplay">New</div>
+                <!-- New dynamic element -->
+                <div class="bkg-img apps-dashboard-tile-img" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-4.jpg');"></div>
 
-				<div class="apps-dashboard-tile-actions">
-					<div class="apps-dashboard-tile-button">Launch &gt;</div>
-					<a href="" class="apps-dashboard-tile-resource noDisplay">Resources</a><!-- New dynamic element -->
-				</div>
+        				<div class="apps-dashboard-tile-content">
+        					<h3 data-bind="text: title" class="apps-dashboard-tile-title">Preferred Seats</h3>
+        					<p data-bind="text: teaser" class="apps-dashboard-tile-description">View &amp; assign preferred seats based on benefits at any time</p>
+        				</div>
 
-				<div data-bind="css: maintenanceState" class="apps-dashboard-tile-status-maintanence-bg">
-					<div data-bind="visible: maintenanceModeOn" class="apps-dashboard-tile-status-maintanence">Maintenance</div>
-				</div>
-			</a>
-		</div>
+        				<div data-bind="visible: isNew" class="apps-dashboard-tile-status-new noDisplay">New</div>
 
-		<!-- New App Tile -->
-		<div data-bind="foreach: appsAndReportsList" class="apps-dashboard-tile">
-			<a href="#" data-bind="click: urlTextClick, attr: {id: 'urlTextId' + $index()}, visible: maintenanceModeOff"  id="urlTextId0" class="apps-dashboard-tile-link">
-				<img class="apps-dashboard-tile-img" src="http://placehold.it/185x100?text=Image"/><!-- New dynamic element -->
+        				<div class="apps-dashboard-tile-actions">
+        					<div class="apps-dashboard-tile-button">Launch &gt;</div>
+        					<a href="" class="apps-dashboard-tile-resource noDisplay">Resources</a><!-- New dynamic element -->
+        				</div>
 
-				<div class="apps-dashboard-tile-content">
-					<h3 data-bind="text: title" class="apps-dashboard-tile-title">Preferred Seats</h3>
-					<p data-bind="text: teaser" class="apps-dashboard-tile-description">View &amp; assign preferred seats based on benefits at any time</p>
-				</div>
+        				<div data-bind="css: maintenanceState" class="apps-dashboard-tile-status-maintanence-bg">
+        					<div data-bind="visible: maintenanceModeOn" class="apps-dashboard-tile-status-maintanence">Maintenance</div>
+        				</div>
+        			</a>
+        		</div>
 
-				<div data-bind="visible: isNew" class="apps-dashboard-tile-status-new">New</div>
+        		<!-- New App Tile -->
+        		<div data-bind="foreach: appsAndReportsList" class="apps-dashboard-tile">
+        			<a href="#" data-bind="click: urlTextClick, attr: {id: 'urlTextId' + $index()}, visible: maintenanceModeOff"  id="urlTextId0" class="apps-dashboard-tile-link">
 
-				<div class="apps-dashboard-tile-actions">
-					<div class="apps-dashboard-tile-button">Launch &gt;</div>
-					<a href="" class="apps-dashboard-tile-resource">Resources</a><!-- New dynamic element -->
-				</div>
+                <!-- New dynamic element -->
+                <div class="bkg-img apps-dashboard-tile-img" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-4.jpg');"></div>
 
-				<div data-bind="css: maintenanceState" class="apps-dashboard-tile-status-maintanence-bg noDisplay">
-					<div data-bind="visible: maintenanceModeOn" class="apps-dashboard-tile-status-maintanence">Maintenance</div>
-				</div>
-			</a>
-		</div>
+        				<div class="apps-dashboard-tile-content">
+        					<h3 data-bind="text: title" class="apps-dashboard-tile-title">Preferred Seats</h3>
+        					<p data-bind="text: teaser" class="apps-dashboard-tile-description">View &amp; assign preferred seats based on benefits at any time</p>
+        				</div>
 
-	</div>
+        				<div data-bind="visible: isNew" class="apps-dashboard-tile-status-new">New</div>
 
-	<!-- end of new component -->
+        				<div class="apps-dashboard-tile-actions">
+        					<div class="apps-dashboard-tile-button">Launch &gt;</div>
+        					<a href="" class="apps-dashboard-tile-resource">Resources</a><!-- New dynamic element -->
+        				</div>
+
+        				<div data-bind="css: maintenanceState" class="apps-dashboard-tile-status-maintanence-bg noDisplay">
+        					<div data-bind="visible: maintenanceModeOn" class="apps-dashboard-tile-status-maintanence">Maintenance</div>
+        				</div>
+        			</a>
+        		</div>
+
+        	</div>
+
+        	<!-- end of new component -->
      </div>
    </main>
  </body>
