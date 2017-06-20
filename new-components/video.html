@@ -683,8 +683,14 @@
 
 		// Video switching code - needed to replace entire iframe element, this is required to resolve iframe URL reload caching issues.
 		$('.video-thumb-container').click(function(){
-			$('#player' + $(this).attr('playerID')).replaceWith('<iframe class="video-embed" id="player' + $(this).attr('playerID') + '" src="' + $(this).attr('videoURL') + '" frameborder="0" allowfullscreen></iframe>');
-  	});
+			changeVideo($(this).attr('playerID'),$(this).attr('videoURL'));
+		});
+
+		// This function can be called by links anywhere on an AEM page, to change the state of a specific video component.
+		// Example usage:  <a href="javascript:changeVideo(1,'https://www.youtube.com/embed/hD4hz8TFSAI')">Change video component in player 1</a>
+		function changeVideo(playerID,videoURL) {
+			$('#player' + playerID).replaceWith('<iframe class="video-embed" id="player' + playerID + '" src="' + videoURL + '" frameborder="0" allowfullscreen></iframe>');
+		}
 
 	});
 </script>
