@@ -219,7 +219,7 @@ function Spin2WinWheel() {
       } else{
         createDraggable();
       }
-      
+
       showIntroText();
     },
     randomBetween = function(min, max) {
@@ -285,7 +285,7 @@ function Spin2WinWheel() {
 
       for (var i = 0; i < numSegments; i++) {
 
-        var l = document.createElementNS(xmlns, 'line');  
+        var l = document.createElementNS(xmlns, 'line');
         l.setAttributeNS(null, 'x1', centerX);
         l.setAttributeNS(null, 'x2', segmentArray[i].x2);
         l.setAttributeNS(null, 'y1', centerY);
@@ -398,9 +398,9 @@ function Spin2WinWheel() {
       // popup.style.visibility = 'hidden';
       toast.style.visibility = 'hidden';
 
-    },    
+    },
     onButtonPress = function() {
-      
+
       toast.style.visibility = 'hidden';
       spinButton.onclick = null;
       spinMultiplier +=2;
@@ -445,15 +445,15 @@ function Spin2WinWheel() {
       var normalizedRotation = Math.round(currentWheelRoation % 360);
       normalizedRotation = (normalizedRotation > 0) ? 360 - normalizedRotation : normalizedRotation;
 
-      normalizedRotation = (normalizedRotation < 0) ? normalizedRotation *= -1 : normalizedRotation;     
-            
+      normalizedRotation = (normalizedRotation < 0) ? normalizedRotation *= -1 : normalizedRotation;
+
       //check to see if spinVelocityTracker exists (only when randomSpins = true)
       if (spinVelocityTracker && spinVelocityTracker.getVelocity('rotation') <= invalidSpinThreshold) {
 
-        enableWheel();        
-        showResult('invalidSpin');        
+        enableWheel();
+        showResult('invalidSpin');
         return;
-        
+
       }
 
 
@@ -464,14 +464,14 @@ function Spin2WinWheel() {
       //console.log(Math.abs(segId), segId, Number(segId))
       //setResultText(Math.abs(segId));
       showResult(Math.abs(segId));
-      
+
 
       //console.log(spinVelocityTracker.getVelocity('rotation'))
       //randomSpins is true if no destinations have been set
       if (randomSpins) {
-        //this means no destinations have been set        
+        //this means no destinations have been set
         if (numSpins > -1) {
-          //this means no destinations have been set AND numSpins has been set to a positive number          
+          //this means no destinations have been set AND numSpins has been set to a positive number
           spinCount++;
         } else {
           //this means no destinations have been set AND numSpins is -1 meaning you can spin randomly forever
@@ -495,14 +495,14 @@ function Spin2WinWheel() {
 
     },
     updateWheelBounds = function(){
-      
+
       if(clickToSpin)return;
-      
+
       wheelDragger[0].applyBounds({
         minRotation: -9999999999999999,
         maxRotation: currentWheelRoation
-      });      
-    },  
+      });
+    },
     getRandomSpinFunction = function(multiplier) {
       var f = function(endValue) {
         //console.log(endValue)
@@ -518,7 +518,7 @@ function Spin2WinWheel() {
       var probId = Math.floor(Math.random() * probabilityArray.length);
       var probSeg = probabilityArray[probId];
       var val = - (rotationStep * probSeg) - numRevsPerDestination * spinMultiplier
-      
+
       return val
 
     },
@@ -533,7 +533,7 @@ function Spin2WinWheel() {
         ease: Back.easeOut.config(0.2),
         snap: (randomSpins) ?  getRandomSpinFunction(0) : [spinDestinationArray[spinCount]],
         throwResistance: 0,
-        minDuration: minSpinDuration,        
+        minDuration: minSpinDuration,
         onThrowComplete: throwComplete,
         onPress: onWheelPress,
         onDrag: throwUpdate,
@@ -545,7 +545,7 @@ function Spin2WinWheel() {
     },
 
     checkHasProbability = function(){
-      
+
       hasProbability = true;
       segmentValuesArray.forEach( function(el, val){
         //console.log(!isNaN(el.probability))
@@ -555,7 +555,7 @@ function Spin2WinWheel() {
           hasProbability = false;
           //return false;
 
-        } 
+        }
       })
 
       if(hasProbability){
@@ -564,7 +564,7 @@ function Spin2WinWheel() {
         numSpins = (dataObj.numSpins == -1) ? 9999999999999999 : parseInt(dataObj.numSpins);
         //console.log( numSpins)
         checkProbabilityValues();
-        
+
       }
       //return true;
 
@@ -594,10 +594,10 @@ function Spin2WinWheel() {
         TweenMax.set(wheelContainer, {
           autoAlpha:0
         })
-           
-        }       
-       
-        
+
+        }
+
+
       }
 
 
@@ -606,11 +606,11 @@ function Spin2WinWheel() {
 
     createProbabilityArray = function(){
 
-      
+
       probabilityArray = [];
 
       segmentValuesArray.forEach( function(el, val){
-        
+
         for(var i = 0; i < el.probability; i++){
 
           probabilityArray.push(val);
@@ -639,10 +639,10 @@ function Spin2WinWheel() {
         spinButton.onclick = getTrigger();
       } else {
         spinButton = wheel;
-        wheel.onclick = getTrigger();        
-      } 
+        wheel.onclick = getTrigger();
+      }
 
-    
+
       },
     getTrigger = function(){
          return function(){
@@ -652,7 +652,7 @@ function Spin2WinWheel() {
           ThrowPropsPlugin.to(wheel, {
             throwProps:{
               rotation:{
-                velocity:randomBetween(-700, -500), 
+                velocity:randomBetween(-700, -500),
                 //if it's random spins then get a random spin but pass in the multiplier to ensure a long spin (plus the right slot id)
                 //if it has destinations set then use those
                 end:getProbabilityClickSpin()
@@ -664,16 +664,16 @@ function Spin2WinWheel() {
             ease: Back.easeOut.config(0.2),
             overshootTolerance:0,
             onComplete:spinComplete
-          });  
-            
+          });
+
           } else {
 
           var dest = -rotationStep * 2;
-         
+
           ThrowPropsPlugin.to(wheel, {
             throwProps:{
               rotation:{
-                velocity:randomBetween(-700, -500), 
+                velocity:randomBetween(-700, -500),
                 //if it's random spins then get a random spin but pass in the multiplier to ensure a long spin (plus the right slot id)
                 //if it has destinations set then use those
                 end:(randomSpins) ? getRandomClickSpin(): [spinDestinationArray[spinCount]]
@@ -685,10 +685,10 @@ function Spin2WinWheel() {
             ease: Back.easeOut.config(0.2),
             overshootTolerance:0,
             onComplete:spinComplete
-          }); 
+          });
 
-          }         
-        }      
+          }
+        }
     },
     spinComplete = function() {
 
@@ -697,20 +697,20 @@ function Spin2WinWheel() {
       var normalizedRotation = Math.round(currentWheelRoation % 360);
       normalizedRotation = (normalizedRotation > 0) ? 360 - normalizedRotation : normalizedRotation;
 
-      normalizedRotation = (normalizedRotation < 0) ? normalizedRotation *= -1 : normalizedRotation;        
-      
+      normalizedRotation = (normalizedRotation < 0) ? normalizedRotation *= -1 : normalizedRotation;
+
       var segId = Math.round(normalizedRotation / rotationStep);
       var winningSegment = segmentArray[segId].path;
 
       showResult(Math.abs(segId));
-      
+
       //randomSpins is true if no destinations have been set
       if (randomSpins) {
-        //this means no destinations have been set        
+        //this means no destinations have been set
         if (numSpins > -1) {
-          //this means no destinations have been set AND numSpins has been set to a positive number          
+          //this means no destinations have been set AND numSpins has been set to a positive number
           spinCount++;
-          
+
         } else {
           //this means no destinations have been set AND numSpins is -1 meaning you can spin randomly forever
           //so stop executing anything else
@@ -726,9 +726,9 @@ function Spin2WinWheel() {
         endGame();
         return;
       }
-      
+
       spinButton.onclick = getTrigger();
-    },      
+    },
     endGame = function() {
 
       //prevent the wheel being dragged once the game has finished
@@ -757,26 +757,26 @@ function Spin2WinWheel() {
       wheelDragger[0].enable();
     },
     showResult = function(e) {
-      
+
       updateWheelBounds();
-      
+
       var resultObj;
-      //if it's an error 
+      //if it's an error
       if (e == "invalidSpin") {
 
         TweenMax.set(wheel, {
             rotation: spinDestinationArray[spinCount]
           })
         showToast(invalidSpinText);
-        //create a result object 
+        //create a result object
         resultObj = {target:thisWheel, type:'error', spinCount:spinCount, win:null, msg:invalidSpinText, gameId:gameId};
 
         //fire the error event
         onError(resultObj);
-        
+
         //add result to gameResultsArray
         gameResultsArray.push(resultObj);
-                   
+
         return;
       }
       //if it's a number then it's a segment
@@ -786,12 +786,12 @@ function Spin2WinWheel() {
         var resultStr2 = segmentValuesArray[e].resultText;
 
         showToast(resultStr2);
-        //create a result object 
+        //create a result object
         resultObj = {target:thisWheel, type:'result', spinCount:spinCount, win:segmentValuesArray[e].win, msg:segmentValuesArray[e].resultText, gameId:gameId, userData:segmentValuesArray[e].userData};
-        
+
         //fire the result event
         onResult(resultObj);
-        
+
         //add result to gameResultsArray
         gameResultsArray.push(resultObj);
       }
@@ -802,13 +802,13 @@ function Spin2WinWheel() {
   showInitError = function(str) {
       TweenMax.set([wheelSVG, peg], {
         visibility: 'hidden'
-      }) 
-      alert(str);     
+      })
+      alert(str);
       //showToast(str);
     },
     showToast = function(str) {
       toast.style.visibility = 'visible';
-      toast.style.backgroundColor = '#E81D62';
+      toast.style.backgroundColor = '#468c37';
       toastText.innerHTML = str;
       TweenMax.fromTo(toast, 0.6, {
         y: 20,
@@ -820,7 +820,7 @@ function Spin2WinWheel() {
         onStart:onresize,
         ease: Elastic.easeOut.config(0.7, 0.7)
       })
-      
+
     },
     checkNumSegments = function() {
 
@@ -831,24 +831,24 @@ function Spin2WinWheel() {
         })
         toast.style.backgroundColor = 'red';
       }
-      
+
 
     },
-    setSpinTrigger = function(){  
-      
+    setSpinTrigger = function(){
+
       if(spinButton){
         clickToSpin = true;
       }
       if(clickToSpin){
-        
+
         if(spinButton){
-          spinButton.onclick = getTrigger(); 
+          spinButton.onclick = getTrigger();
         } else {
-          
-          wheel.onclick = getTrigger(); 
-        }               
+
+          wheel.onclick = getTrigger();
+        }
       } else {
-        
+
       }
   },
     onResult = function(e){
@@ -860,16 +860,16 @@ function Spin2WinWheel() {
    onGameEnd = function(e){
         thisWheel.onGameEnd(e)
       }
- 
- 
+
+
   this.onResult = onResult;
   this.onError = onError;
   this.onGameEnd = onGameEnd;
- 
- 
+
+
   this.getGameProgress = function(){  return gameResultsArray; };
   this.init = function(e) {
-    
+
     if(!e){
       setInitPos();
       showInitError('PLEASE INCLUDE THE INIT OBJECT');
@@ -892,10 +892,10 @@ function Spin2WinWheel() {
     setSpinDestinations();
     checkNumSegments();
 
-    
-    
-    
-  } 
+
+
+
+  }
 window.onresize = function(){
 
     //console.log(parseFloat(getComputedStyle(wheelSVG).height));
@@ -906,7 +906,7 @@ window.onresize = function(){
     var toastHeight = parseFloat(getComputedStyle(toast).height);
     TweenMax.set('.toast', {
       //x:(w/2) - (toastWidth/2),
-      y:((h+ centerDiffY)/2) - (toastHeight/2) 
+      y:((h+ centerDiffY)/2) - (toastHeight/2)
     })
 
     //console.log(centerY, centerDiffY)
@@ -919,15 +919,15 @@ window.onresize = function(){
         TweenMax.to([wheel, valueContainer], 0.3, {
           rotation: '0_short',
           onComplete: createDraggable
-        })      
+        })
     }
-      
+
        TweenMax.set(wheelSVG, {
           alpha: 1
         })
         TweenMax.to([wheel, valueContainer], 0.3, {
           rotation: '0_short'
-        })      
+        })
 
       toast.style.visibility = 'hidden';
       spinCount = 0;
@@ -938,4 +938,3 @@ window.onresize = function(){
       showIntroText();
     }
 }
-

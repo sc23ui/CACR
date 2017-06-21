@@ -75,6 +75,5 @@ function init() {
 
 }
 
-
 //And finally call it
 init();
