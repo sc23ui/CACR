@@ -10,17 +10,20 @@
     margin: 0;
     font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
   }
-  .testing-header {
-    margin-bottom: 80px;
-  }
-  .testing-header-container {
-    width: 960px;
-    margin: 0 auto;
-  }
 </style>
 
 <style>
-  /* Primary Menu "Main Menu" */
+  /* Main Menu */
+  .header-menu {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .header-menu-top {
+    background-color:#134775;
+  }
+  .header-menu-bottom {
+    background-color:#fff;
+  }
   .menu {
     display: table;
     background: #134775;
@@ -126,14 +129,14 @@
     content: "\2228";
     position: relative;
     top: -2px;
-    font-size:12px;
+    font-size:11px;
     color:#fff !important;
   }
   .menu-dropdown.active  .menu-dropdown-title::after {
     content: "\2228";
     position: relative;
     top: -2px;
-    font-size:12px;
+    font-size:11px;
     color:#000 !important;
   }
   .menu-dropdown-title {
@@ -167,7 +170,7 @@
   }
   .menu-dropdown:hover .menu-dropdown-title::after {
     content: "\2227";
-    font-size:12px;
+    font-size:11px;
     color:#999;
   }
   .menu-dropdown-links {
@@ -277,38 +280,45 @@
  ///////////////////////////////////////////-->
 
 
-
 <!--// User this menu as a template //-->
+<div class="header-menu-top">
+  <div class="header-menu">
 
-<div class="testing-header testing-header-logged-in">
-  <div class="testing-header-container">
-    <nav class="menu">
-      <div class="menu-section">
-        <div class="menu-links">
-          <a href="#" class="menu-link">Home</a>
-          <!--// Display 'menu-app-label' when used with our app container page //-->
-          <a href="#" class="menu-link menu-app-label" style="display:none;">Preferred Seats</a>
+      <nav class="menu">
+        <div class="menu-section">
+          <div class="menu-links">
+            <a href="#" class="menu-link">Home</a>
+            <!--// Display 'menu-app-label' when used with our app container page //-->
+            <a href="#" class="menu-link menu-app-label" style="display:none;">Preferred Seats</a>
+          </div>
+        </div>
+        <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
+          <div class="menu-dropdown-title">
+            <a href="#" class="menu-dropdown-title-link">My Dashboard</a>
+          </div>
+          <div class="menu-dropdown-links">
+            <a href="#" class="menu-dropdown-link">Preferred Seats</a>
+            <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
+          </div>
+        </div>
+        <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
+      </nav>
+
+  </div>
+</div>
+
+<div class="header-menu-bottom">
+  <div class="header-menu">
+
+      <div class="sub-menu">
+        <div class="sub-menu-links">
+          <a href="#" class="sub-menu-link">Users</a>
+          <a href="#" class="sub-menu-link active">Admin User Management</a>
+          <a href="#" class="sub-menu-link">Agency Details</a>
+          <a href="#" class="sub-menu-link">Application Settings</a>
         </div>
       </div>
-      <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
-        <div class="menu-dropdown-title">
-          <a href="#" class="menu-dropdown-title-link">My Dashboard</a>
-        </div>
-        <div class="menu-dropdown-links">
-          <a href="#" class="menu-dropdown-link">Preferred Seats</a>
-          <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
-        </div>
-      </div>
-      <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
-    </nav>
-    <div class="sub-menu">
-      <div class="sub-menu-links">
-        <a href="#" class="sub-menu-link">Users</a>
-        <a href="#" class="sub-menu-link active">Admin User Management</a>
-        <a href="#" class="sub-menu-link">Agency Details</a>
-        <a href="#" class="sub-menu-link">Application Settings</a>
-      </div>
-    </div>
+
   </div>
 </div>
 
@@ -317,10 +327,8 @@
 
 
 
-
-
-
-
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
 
 
 
@@ -329,9 +337,9 @@
 
 
 <!--////////////////// Use these examples for reference of how different states should look /////------->
+<div class="header-menu-top">
+  <div class="header-menu">
 
-  <div class="testing-header testing-header-logged-in">
-    <div class="testing-header-container">
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -349,6 +357,13 @@
         </div>
         <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
       </nav>
+
+  </div>
+</div>
+
+<div class="header-menu-bottom">
+  <div class="header-menu">
+
       <div class="sub-menu">
         <div class="sub-menu-links">
           <a href="#" class="sub-menu-link">Users</a>
@@ -357,12 +372,25 @@
           <a href="#" class="sub-menu-link">Application Settings</a>
         </div>
       </div>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-only-links">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -371,12 +399,26 @@
           </div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-only-links">
-    <div class="testing-header-container">
+
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -388,11 +430,27 @@
           </div>
         </div>
       </nav>
-    </div>
-  </div>
 
-  <div class="testing-header testing-header-logged-in">
-    <div class="testing-header-container">
+  </div>
+</div>
+
+
+
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+
+<div class="header-menu-bottom">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -414,12 +472,25 @@
         </div>
         <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-logged-in">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -441,12 +512,25 @@
         </div>
         <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-logged-in">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -467,12 +551,25 @@
           </div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-logged-in">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -485,12 +582,26 @@
         </div>
         <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-login">
-    <div class="testing-header-container">
+
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -505,12 +616,24 @@
           <div class="menu-login-title">Log In</div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-login">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -525,12 +648,26 @@
           <div class="menu-login-title">Log In</div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-login">
-    <div class="testing-header-container">
+
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -545,12 +682,25 @@
           <div class="menu-login-title">Log In</div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-login">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -565,12 +715,25 @@
           <div class="menu-login-title">Log In</div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-login">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -585,5 +748,6 @@
           <div class="menu-login-title">Log In</div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
