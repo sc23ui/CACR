@@ -12,59 +12,72 @@
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/header-cacr-override.css" media="all">
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/common-cacr-override.css" media="all">
     <link rel="stylesheet" href="css/Spin2Win-style.css">
+
+    <script src='js/TweenMax.min.js'></script>
+    <!-- <script src='js/Draggable.min.js'></script> -->
+    <script src='js/ThrowPropsPlugin.min.js'></script>
+    <script src='js/Spin2WinWheel.min.js'></script>
+    <!-- <script src='js/TextPlugin.min.js'></script> -->
+    <script src="js/index.js"></script>
+    <script src="js/trivia.js"></script>
 </head>
 
-<body class="v2">
+<body class="v2" data-user="me@delta.com">
   <div class="spin-to-win">
-
-    <form class="trivia-container" id="triviaForm" action="" method="">
+    <div id="loading">Loading</div>
+    <div id="trivia-message" class="noDisplay"></div>
+    <form class="trivia-container noDisplay" id="triviaForm" action="mock/verify.json" method="POST">
       <h2 class="trivia-question">Is this where the trivia question will go?</h2>
-      <div class="trivia-answer">
-        <input class="trivia-answer-input" type="radio" id="triviaAnswerOne" name="selector">
-        <label class="trivia-answer-label" for="triviaAnswerOne">I'm the correct answer.</label>
-        <div class="trivia-answer-radio"></div>
-      </div>
-      <div class="trivia-answer">
-        <input class="trivia-answer-input" type="radio" id="triviaAnswerTwo" name="selector">
-        <label class="trivia-answer-label" for="triviaAnswerTwo">No, I'm the correct answer.</label>
-        <div class="trivia-answer-radio"></div>
-      </div>
-      <div class="trivia-answer">
-        <input class="trivia-answer-input" type="radio" id="triviaAnswerThree" name="selector">
-        <label class="trivia-answer-label" for="triviaAnswerThree">You're all wrong. I'm the one true answer.</label>
-        <div class="trivia-answer-radio"></div>
-      </div>
-      <div class="trivia-answer">
-        <input class="trivia-answer-input" type="radio" id="triviaAnswerFour" name="selector">
-        <label class="trivia-answer-label" for="triviaAnswerFour">Don't believe those other answers. I'm the real deal.</label>
-        <div class="trivia-answer-radio"></div>
-      </div>
-      <div class="trivia-answer">
-        <input class="trivia-answer-input" type="radio" id="triviaAnswerFive" name="selector">
-        <label class="trivia-answer-label" for="triviaAnswerFive">Psst. If you're smart you'll choose me.</label>
-        <div class="trivia-answer-radio"></div>
+
+      <div class="trivia-answers">
+        <!-- <div class="trivia-answer">
+          <input class="trivia-answer-input" type="radio" id="triviaAnswerOne" name="selector">
+          <label class="trivia-answer-label" for="triviaAnswerOne">I'm the correct answer.</label>
+          <div class="trivia-answer-radio"></div>
+        </div> -->
+
       </div>
 
       <div class="trivia-button">
         <button class="btn primaryButton activeButton trivia-submit" form="triviaForm" >Submit Answer</button>
       </div>
     </form>
+    <div id="spin2Win" class="noDisplay spin-to-win-game">
+      <h2 class="spin-to-win-title">Play to win entries for the Grand Prize drawing!</h2>
 
-    <div id="trivia-message"></div>
+      <div class="wheelContainer">
+        <svg class="wheelSVG" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" text-rendering="optimizeSpeed">
+          <defs>
+            <filter id="shadow" x="-100%" y="-100%" width="550%" height="550%">
+                <feOffset in="SourceAlpha" dx="0" dy="0" result="offsetOut"></feOffset>
+                <feGaussianBlur stdDeviation="9" in="offsetOut" result="drop" />
+                <feColorMatrix in="drop" result="color-out" type="matrix" values="0 0 0 0   0
+                  0 0 0 0   0
+                  0 0 0 0   0
+                  0 0 0 .3 0" />
+                <feBlend in="SourceGraphic" in2="color-out" mode="normal" />
+            </filter>
+          </defs>
 
-    <div id="spin2Win" class="spin-to-win-game"></div>
+          <g class="mainContainer">
+              <g class="wheel"></g>
+          </g>
 
+          <g class="centerCircle"/>
+          <g class="wheelOutline" />
+          <g class="pegContainer" opacity="1">
+            <path class="peg" fill="#ddd" d="M22.139,0C5.623,0-1.523,15.572,0.269,27.037c3.392,21.707,21.87,42.232,21.87,42.232 s18.478-20.525,21.87-42.232C45.801,15.572,38.623,0,22.139,0z" />
+          </g>
+          <g class="valueContainer" />
+        </svg>
+
+        <div class="toast">
+            <p/>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <script>
-    $(function(){
-        $('.trivia-submit').click(function(){
-            $( ".trivia-container" ).addClass( "noDisplay" );
-            $('#spin2Win').load('spin-to-win.html');
-            return false;
-        });
-    })
-  </script>
+</div>
 
 </body>
 </html>

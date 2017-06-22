@@ -1,0 +1,11 @@
+{
+  "correct": true,
+  "entries":[
+    {"value": "1^ENTRIES", "resultText":"1 Entry for grand prize","probability":0,"type":"string","id":1,"win":true,"userData": {"score": 1}},
+    {"value": "5^ENTRIES", "resultText":"5 entries for grand prize","probability":0,"type":"string","id":2,"win":false,"userData": {"score": 5}},
+    {"value": "3^ENTRIES", "resultText":"3 Entries for grand prize","probability":0,"type":"string","id":3,"win":true,"userData": {"score": 3}},
+    {"value": "1^ENTRIES", "resultText":"1 Entry for grand prize","probability":0,"type":"string","id":4,"win":true,"userData": {"score": 1}},
+    {"value": "0^ENTRIES", "resultText":"Sorry, play again tomorrow","probability":100,"type":"string","id":5,"win":false,"userData": {"score": 0}},
+    {"value": "3^ENTRIES", "resultText":"3 Entries for grand prize","probability":0,"type":"string","id":6,"win":true,"userData": {"score": 3}}
+  ]
+}

@@ -55,25 +55,15 @@ function myGameEnd(e) {
 
 }
 
-function init() {
-  loadJSON(function(response) {
-    // Parse JSON string to an object
-    var jsonData = JSON.parse(response);
-    //if you want to spin it using your own button, then create a reference and pass it in as spinTrigger
-    //var mySpinBtn = document.querySelector('.spinBtn');
-    //create a new instance of Spin2Win Wheel and pass in the vars object
-    var myWheel = new Spin2WinWheel();
+function initSpinWheel(config) {
+  var myWheel = new Spin2WinWheel();
 
-    //WITH your own button
-    //myWheel.init({data:jsonData, onResult:myResult, onGameEnd:myGameEnd, onError:myError, spinTrigger:mySpinBtn});
+  //WITH your own button
+  //myWheel.init({data:jsonData, onResult:myResult, onGameEnd:myGameEnd, onError:myError, spinTrigger:mySpinBtn});
 
-    //WITHOUT your own button
-    myWheel.init({data:jsonData, onResult:myResult, onGameEnd:myGameEnd, onError:myError});
-
-
-  });
-
+  //WITHOUT your own button
+  myWheel.init({data:config, onResult:myResult, onGameEnd:myGameEnd, onError:myError});
 }
 
 //And finally call it
-init();
+// init();
