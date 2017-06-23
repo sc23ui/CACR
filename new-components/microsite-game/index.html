@@ -24,8 +24,23 @@
 
 <body class="v2" data-user="me@delta.com">
   <div class="spin-to-win">
-    <div id="loading">Loading</div>
-    <div id="trivia-message" class="noDisplay"></div>
+    <div id="triviaStart" class="">
+      <h4>This week’s trivia and grand prize is themed [insert theme name]. Answer the question correct and have the opportunity to spin the wheel!</h4>
+      <h4>The grand prize this week is [insert prize name].</h4>
+
+      <div id="triviaStartButton" class="trivia-button">
+        <button class="btn primaryButton activeButton trivia-submit" form="triviaForm">Get Started</button>
+      </div>
+    </div>
+
+    <div id="loading">
+      Loading
+    </div>
+
+    <div id="trivia-message" class="noDisplay">
+
+    </div>
+
     <form class="trivia-container noDisplay" id="triviaForm" action="mock/verify.json" method="POST">
       <h2 class="trivia-question">Is this where the trivia question will go?</h2>
 
@@ -35,13 +50,13 @@
           <label class="trivia-answer-label" for="triviaAnswerOne">I'm the correct answer.</label>
           <div class="trivia-answer-radio"></div>
         </div> -->
-
       </div>
 
       <div class="trivia-button">
-        <button class="btn primaryButton activeButton trivia-submit" form="triviaForm" >Submit Answer</button>
+        <button class="btn primaryButton activeButton trivia-submit" form="triviaForm">Submit Answer</button>
       </div>
     </form>
+
     <div id="spin2Win" class="noDisplay spin-to-win-game">
       <h2 class="spin-to-win-title">Play to win entries for the Grand Prize drawing!</h2>
 
