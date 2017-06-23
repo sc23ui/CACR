@@ -5,68 +5,57 @@
 <link
 	href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300'
 	rel='stylesheet' type='text/css'>
-<!-- <link rel="stylesheet" type="text/css"
+<link rel="stylesheet" type="text/css"
 	href="https://pro-si.delta.com/etc/designs/deltaPro/homeLib.20170330.css"
-	media="all" /> -->
-<!-- <link rel="stylesheet" type="text/css" media="all"
-	href="../agency/common/common-cacr-override.css" /> -->
+	media="all" />
+<link rel="stylesheet" type="text/css" media="all"
+	href="../agency/common/common-cacr-override.css" />
 <style>
+/* ALL THE FOLLOWING STYLES ARE FROM THE ACTIVE EXCEPTION POLICY COMPONENT */
 body.v2 {
 	background-color: #fff;
-	font: 14px/1.2 "Open Sans";
-}
-
-.container_12 {
-	width:960px;
-	margin: 0 auto;
 }
 
 .v2 main {
-	margin-top: 50px;
+	margin-top: 150px;
 }
-</style>
-</head>
-<body class="v2">
-<main>
-<div class="container_12">
-<!-- start of new component -->
-
-<!-- new component styles -->
-<style>
-
 .v2 .active-exceptions-asterisk:after {
-    color: #e3132c;
-    content: "*";
+	color: #e3132c;
+	content: "*";
 }
+
+.v2 .activediv {
+	margin-left: 311px;
+}
+
 .v2 .exceptions-accordion {
-	height: 40px;
+	height: 42px;
+	display: inline-block;
 	background-color: #02132d;
 	color: #fff;
+	width: 100%;
 	font-size: 18px;
 	font-weight: 500;
-	line-height: 38px;
 	text-transform: uppercase;
+	margin-left: -5px;
 }
 
 .v2 .showtable {
 	display: block;
+	border-bottom: none;
+	margin-left: -5px;
+	/*border: 1px solid #c7c7c7;*/
+	width: 958px;
+	margin-top: -3px;
+	border-top: none;
+}
+
+.v2 .group1 {
 	border: 1px solid #c7c7c7;
-	border-top: 0;
-}
-
-.v2 .active-exception {
-	box-sizing: border-box;
-	width: 100%;
+	width: 960px;
 	margin-bottom: 20px;
-	position: relative;
-}
-
-.v2 .activecontent .active-exception {
-	padding-left: 40px;
-}
-
-.v2 .active-exception table {
-	width: 100%;
+	margin-left: 40px;
+	border-top:none ;
 }
 
 .v2 .active-exception-header-link {
@@ -80,17 +69,27 @@ body.v2 {
 .v2 .exceptions-panel {
 	background-color: white;
 	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.v2 .active-exception .active-exception-content{
+	margin-bottom: 0px;
+}
+
+.v2 .active-exception .exceptions-panel{
+	margin-bottom: 0px;
 }
 
 .v2 .exception-policy-header {
-	display: block;
-	width: 400px;
+	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
+	width: 960px;
 }
 
 .v2 .exception-policy-content {
+	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -98,22 +97,28 @@ body.v2 {
 .v2 .exception-osi-hr {
 	width: 118px;
 	margin-top: 10px;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+    background-color: #fff;
+    height: 0px;
+}
+
+.v2 .active-exception-header {
+	width: 961px;
+	margin-left: 4px;
+	margin-bottom: 20px;
 }
 
 .v2 .active-exception-content {
 	display: none;
-	border: 1px solid #c7c7c7;
+	/*border: 1px solid #c7c7c7;*/
+	/*margin-left: 40px;*/
 	border-top: none;
+	width: 960px;
+	margin-bottom: 20px;
 }
 
-.v2 .active-exception-content table tr:nth-child(4n), .v2 .active-exception-content table tr:nth-child(4n-1)
-	{
-	background: #fff;
-}
-
-.v2 .active-exception-content table tr:nth-child(4n-2), .v2 .active-exception-content table tr:nth-child(4n-3)
-	{
+.v2 .greybackground {
 	background: #f6f6f7;;
 }
 
@@ -127,23 +132,33 @@ body.v2 {
 
 .v2 .active-exceptions-disclaimer {
 	display: none;
+	height: 32px;
 	font-size: 14px;
 	font-weight: 500;
 	color: #fff;
 	background-color: #707070;
-	padding: 10px;
+	width: 951px;
+	padding-left: 10px;
+	padding-top: 10px;
+	margin-left: -5px;
+	margin-top: -3px;
+}
+
+.v2 .exceptions-panel-inner .active-exceptions-disclaimer {
+    margin-top: 0;
+    width: 925px;
+    padding-bottom: 10px;
 }
 
 .v2 .activediv, .v2 .pastdiv {
-	display: table-cell;
+	float: left;
 	font-size: 20px;
 	font-weight: 500;
-	height: 45px;
-	line-height: 43px;
-	width: 200px;
-	text-align: center;
-	cursor: pointer;
-	margin: 0;
+	height: 35px;
+    width: 200px;
+    text-align: center;
+    padding-top: 8px;
+	cursor:pointer;
 }
 
 .v2 .inactivetab {
@@ -155,35 +170,57 @@ body.v2 {
 .v2 .activebutton {
 	color: #fff;
 	background-color: #e3132c;
-	border: 1px solid #e3132c
+	border: 1px solid #e3132c;
 }
 
 .v2 .right {
 	float: right;
 	padding-right: 10px;
+	padding-top: 10px;
 }
 
 .v2 .left {
 	float: left;
 	padding-left: 10px;
+	padding-top: 10px;
 }
 
 .v2 .active-exception-header-link:hover {
 	color: #a9dbff;
 }
 
-.v2 .exceptions-panel-inner {
-	padding: 10px;
+.v2 .exceptions-panel-inner table {
+	margin-top: 12px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom: 0px!important;
 }
 
-.v2 .exceptions-panel-inner + .exceptions-panel-inner {
-	padding-top: 0;
+.v2 .exceptions-panel-inner{
+	display:none;
+}
+
+.v2 .exceptions-panel-inner .active-exception-header {
+	width: 935px;
+	margin-top: 20px;
+	margin-bottom: 0;
+	margin-left: 18px;
+}
+
+.v2 .exceptions-panel-inner .exceptions-panel{
+	margin-bottom: 0px;
+}
+
+.v2 .exceptions-panel-inner .active-exception-content {
+	margin-left: 13px;
+    width: 933px;
+    margin-top: -24px;
+    /* margin-right: 5px; */
+    border: 1px solid #c7c7c7;
 }
 
 .v2 .exceptions-panel-inner .showtable {
 	border: none;
-	border-collapse: collapse;
-	border-spacing: 0;
 }
 
 .v2 .active-exceptions-table-head {
@@ -193,8 +230,9 @@ body.v2 {
 	color: #333333;
 	text-align: left;
 	padding-left: 10px;
-	padding-top: 8px;
-	width: 164px;
+	padding-top: 20px;
+	width: 240px;
+	padding-bottom:0px;
 	vertical-align: top;
 }
 
@@ -204,30 +242,39 @@ body.v2 {
 	color: #0b1f66;
 	font-weight: 700;
 	text-align: left;
-	width: 225px;
-  padding: 8px 10px;
+	width: 40px;
+	padding-left: 10px;
+	padding-bottom: 20px;
 	vertical-align: top;
-	width: 25%;
+	height:100%;
 }
 
-.v2 .tdata hr {
-	margin: 10px 0;
+.v2 .nopaddingbottom {
+	padding-bottom: 0px;
 }
 
-.v2 .tdata h5 {
-	font-size: 14px;
-	font-weight: 700;
-	color: #777;
-	margin-bottom: 10px;
+.v2 .nopaddingtop {
+	padding-top: 0px;
+}
+
+.v2 .nopaddingleft {
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .v2 .ulist {
 	list-style: disc;
-	padding-left: 20px;
+	padding-left: 16px;
 	font-weight: 700;
 	text-transform: none;
 	font-size: 16px;
 	color: #0b1f66;
+}
+
+.v2 .ulist ul {
+    margin-left: -27px;
+    overflow: auto;
+    max-height: 250px;
 }
 
 .v2 .timetext {
@@ -238,23 +285,22 @@ body.v2 {
 	text-align: left;
 }
 
-.v2 .viewmore {
+.v2 #viewmore {
 	background-color: #E3132C;
-	border: none;
+	border-width: 1px;
+	border-color: #E3132C;
 	color: #fff;
 	font-weight: 600;
 	text-transform: Uppercase;
-	cursor: default !important;
-	padding: 10px 20px;
+	cursor: pointer!important;
+	padding: 10px 20px 10px 20px;
 	font-size: 14px;
 	text-align: center;
+	width: 136px;
+	font-family:"open sans";
 }
 
-.v2 .exceptions-buttons {
-	text-align: right;
-}
-
-.v2 .viewmore:hover {
+.v2 #viewmore:hover {
 	background-color: #cb1127;
 }
 
@@ -263,11 +309,6 @@ body.v2 {
 	font-weight: 600;
 	text-transform: uppercase;
 	color: #0253a4;
-}
-
-.v2 .exception-request-form .tdata {
-	vertical-align: bottom;
-	line-height: 36px;
 }
 
 .v2 .refundrequest:hover {
@@ -293,24 +334,18 @@ body.v2 {
 	color: #fff;
 	background-color: #e3132c;
 	width: 40px;
-	height: 40px;
-	line-height: 38px;
+	height: 42px;
 	text-align: center;
 	font-weight: 800;
 	font-size: 22px;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.v2 .exception-osi-field {
-	padding: 0;
+	float: left;
 }
 
 .v2 .exception-osi-field-content {
-	height: auto;
+	height: 100%;
 	background-color: #22659c;
 	padding: 10px;
+	width: auto;
 }
 
 .v2 .fieldheader {
@@ -337,1184 +372,824 @@ body.v2 {
 	color: #fff;
 }
 
-.v2 .loadmore {
-	padding: 15px 20px;
-	background-color: #0235a4;
-	border: 0;
-	color: #FFFFFF;
-	font-size: 20px;
-	font-weight: 500;
-	text-transform: uppercase;
-	cursor: default !important;
-	font-family: 'Open Sans';
-	width: 320px;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
+.v2 .exception-osi-ordered {
+    margin: 0px;
 }
 
-.v2 .loadmore:hover {
-	background-color: #1c7bd9;
-	border-color: #1c7bd9;
+.v2 .exception-osi-ordered li {
+    text-align: left;
+    margin-left: -21px;
 }
 
-/* THESE STYLES SHOULD EXIST ALREADY IN THE SECTON TITLE COMPONENT */
-
-.v2 .section-title {
-	text-align:center;
-	max-width: 660px;
-	margin: 40px auto;
-	position: relative;
-}
-.v2 .section-title::before {
-	content: '';
-	position: absolute;
-	top: 50%;
-	right: 0;
-	left: 0;
-	height: 1px;
-	background-color: #333;
-}
-.v2 .section-title-content {
-	position: relative;
-	z-index: 1;
-	display:inline-block;
-	box-sizing: border-box;
-	max-width: 70%;
-	font-size:28px;
-	font-weight:300;
-	line-height:30px;
-	text-transform: uppercase;
-	color:#333;
-	text-align:center;
-	background-color: #fff;
-	padding-left: 25px;
-	padding-right: 25px;
-	margin-left: auto;
-	margin-right: auto;
+.v2 .vertical-align-middle {
+    vertical-align: middle;
 }
 
-#exceptions-map {
-	height: 400px;
-	background: #f6f6f7;
-	margin-bottom: 30px;
+.v2 .align-right{
+	padding-left: 100px;
 }
 
-g[role="menuitem"] path {
-  transform: translate(-50%, -100%) !important;
-  filter: url(#shadow);
+.v2 .noactivewaivers{
+	display: none;
+	color:#000;
+	font-family:"Open Sans";
+	font-weight: 600;
+	font-size:20px;
+	text-align: Center;
 }
+/* END OF ACTIVE EXCEPTION POLICIES CSS */
+</style>
+</head>
+<body class="v2">
+	<main>
+	<div class="container_12">
+		<!-- start of new component -->
 
-g[role="menuitem"] text {
-  font-weight: 700;
-  filter: url(#shadow);
-}
+		<!-- new component styles -->
+		<style>
+		#exceptions-map {
+			height: 400px;
+			background: #f6f6f7;
+			margin-bottom: 30px;
+		}
 
+		g[role="menuitem"] path {
+		  transform: translate(-50%, -100%) !important;
+		  filter: url(#shadow);
+		}
+
+		g[role="menuitem"] text {
+		  font-weight: 700;
+		  filter: url(#shadow);
+		}
 </style>
 
-		<div class="v2">
+	<div class="v2">
+		<!-- Active & Past Buttons -->
+		<div class="exception-policy-header">
+			<div class="activediv activebutton">ACTIVE</div>
+			<div class="pastdiv inactivetab">PAST</div>
+		</div>
+		<div class="exception-policy-content">
+			<!-- Active Content goes here -->
+			<div class="activecontent">
 
-			<!-- Active & Past Buttons -->
-			<div class="exception-policy-header">
-				<div class="activediv activebutton">ACTIVE</div>
-				<div class="pastdiv inactivetab">PAST</div>
-			</div>
-			<div class="exception-policy-content">
-				<!-- Active Content goes here -->
-				<div class="activecontent">
+				<!-- NEW TAG FOR MAP COMPONENT -->
+				<div id="exceptions-map"></div>
+				<!-- END NEW TAG FOR MAP COMPONENT -->
 
-					<div id="exceptions-map"></div>
+				<div class="noactivewaivers">No active event waivers</div>
+				<!--Active Content starts here-->
+				<div class="exclaim">!</div>
+				<div class="group1">
 
-					<!--Section 1: Demonstrations in French Guiana !-->
-					<div class="active-exception">
-						<!-- Parent Container -->
-						<div class='exclaim'>!</div>
-						<!-- Exclaimation mark box -->
-						<div class="active-exception-header">
-							<!-- This div holds the content of exceptions-accordion header and the first row that needs to be shown -->
-							<div class="exceptions-accordion active">
-								<!-- This div holds the left and right content of exceptions-accordion header -->
-
-								<div class="left">Demonstrations in French Guiana</div>
-								<a class="right active-exception-header-link" href="#">View
-									Details +</a>
-							</div>
-							<table class="showtable">
-								<!-- This table holds the first visible row -->
-								<tr>
-									<th class="active-exceptions-table-head">Date of Issue</th>
-									<th class="active-exceptions-table-head">Date(s) of
-										Impacted travel</th>
-									<th class="active-exceptions-table-head">Ticket must be
-										reissued on or before</th>
-									<th class="active-exceptions-table-head">Cabin to Cabin</th>
-								</tr>
-								<tr>
-									<td class="tdata">April 13, 2017<br>
-										<div class="timetext">3.30PM</div></td>
-									<td class="tdata">March 23, 2017 - April 21, 2017</td>
-									<td class="tdata">April 21, 2017</td>
-									<td class="tdata">Z5C4G</td>
-								</tr>
-							</table>
+				<div class="active-exception" data-airport-codes="ATL,BOS,MIA,SAT,LAS">
+					<div class="active-exception-header">
+						<div class="exceptions-accordion active">
+							<div class="left">Earth Quake - Bulletin 1</div>
+							<a class="right active-exception-header-link"
+										href="javascript:void(0)">View Details +</a>
 						</div>
-						<div class="active-exception-content">
-							<div class="exceptions-panel"></div>
-						</div>
-					</div>
-
-					<!-- Section 2:Atlanta Operations!-->
-					<div class="active-exception" data-airport-codes="ATL,BOS,MIA,SAT,LAS">
-						<div class='exclaim'>!</div>
-						<div class="active-exception-header">
-							<div class="exceptions-accordion active">
-								<div class="left">Atlanta Operations</div>
-								<a class="right active-exception-header-link" href="#">View
-									Details +</a>
-							</div>
-							<div class="active-exceptions-disclaimer">All sections in
-								the waiver that have been updated are indicated by asterisk</div>
-							<!-- This div holds the asterisk copy that will be shown -->
-							<table class="showtable">
+						<div class="active-exceptions-disclaimer">All sections in he waiver that have been updated are indicated by asterisk</div>
+						<table class="showtable">
+							<tbody>
 								<tr>
-									<th class="active-exceptions-table-head">Date of Issue</th>
-									<th class="active-exceptions-table-head">Date(s) of
-										Impacted travel</th>
-									<th class="active-exceptions-table-head">Ticket must be
-										reissued on or before</th>
-									<th class="active-exceptions-table-head">Cabin to Cabin</th>
+									<th class="active-exceptions-table-head active-exceptions-asterisk">Date
+												of Issue</th>
+									<th class="active-exceptions-table-head active-exceptions-asterisk">Date(s)
+												of Impacted travel</th>
+									<th class="active-exceptions-table-head active-exceptions-asterisk">Ticket
+												must be reissued on or before</th>
+									<th class="active-exceptions-table-head active-exceptions-asterisk">Cabin
+										 		to Cabin</th>
 								</tr>
 								<tr>
-									<td class="tdata">April 13, 2017</td>
-									<td class="tdata">March 23, 2017 - April 21, 2017</td>
-									<td class="tdata">April 21, 2017</td>
-									<td class="tdata">Z5C4G</td>
-								</tr>
-							</table>
-						</div>
-						<div class="active-exception-content">
-							<!-- This div holds the content that needs to be shown on click of view details link in exceptions-accordion header -->
-
-							<div class="exceptions-panel">
-								<table cellspacing=0>
-									<tr>
-										<th class="active-exceptions-table-head">Applies to
-											ticket issued on</th>
-										<th class="active-exceptions-table-head">New travel must
-											originate on/before</th>
-										<th class="active-exceptions-table-head">New travel must
-											be rebooked on/before</th>
-										<th class="active-exceptions-table-head active-exceptions-asterisk">Applies to
-											tickets issue don/before</th>
-									</tr>
-									<tr>
-										<td class="tdata">DL 006/KL 074</td>
-										<td class="tdata">March 23, 2017 - April 21, 2017</td>
-										<td class="tdata">April 21, 2017</td>
-										<td class="tdata">Z5C4G</td>
-									</tr>
-									<tr>
-										<th class="active-exceptions-table-head">Applies to
-											travel on</th>
-										<th class="active-exceptions-table-head active-exceptions-asterisk">Affected areas</th>
-										<td class="tdata"></td>
-										<td rowspan="3" class="exception-osi-field">
-											<div class="exception-osi-field-content">
-												<div class="fieldheader">RAPID REPRICE APPLIES</div>
-												<hr class="exception-osi-hr">
-												<div class="fieldcontent">
-													WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New
-													itenarary is rebooked/ticketed within all parameters of
-													this policy <br> 2. New itenarary is priced at current
-													applicable fares and rules
-												</div>
-
-												<div class="fieldheader">J5Q7G</div>
-												<hr class="exception-osi-hr">
-												<div class="fieldcontent">OSI</div>
-												<div class="exception-osi-field">OSI DL REFUNDED PER
-													ATL OPS 06aAPR2017</div>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="tdata">
-											<ul class="ulist">
-												<li class="ldata">Delta</li>
-												<li class="ldata">Delta connection</li>
-												<li class="ldata">Delta coded AF operated</li>
-												<li class="ldata">AF coded AF operated</li>
-												<li class="ldata">KL coded AF operated</li>
-											</ul>
-										</td>
-										<td class="tdata">
-											<ul class="ulist">
-												<li class="ldata">Atlanta (ATL)</li>
-												<li class="ldata">Boston(BOS)</li>
-												<li class="ldata">Miami (MIA)</li>
-												<li class="ldata">San Antonio(SAT)</li>
-												<li class="ldata">Las Vegas(LAS)</li>
-											</ul>
-										</td>
-										<td></td>
-									</tr>
-									<tr class="exception-request-form">
-										<td class="tdata"><a href="#" class="refundrequest">Refund
-												Request Form &gt </td>
-										<td class="tdata"></td>
-										<td class="tdata exceptions-buttons"><button class="viewmore">VIEW
-												MORE</button></td>
-									</tr>
-								</table>
-								<div class="exceptions-panel-inner">
-									<!-- Nested exception -->
-									<div class="active-exception-header">
-										<div class="exceptions-accordion active">
-											<div class="left">Atlanta Operations(2)</div>
-											<a class="right active-exception-header-link" href="#">View
-												Details +</a>
-										</div>
-										<table class="showtable" cellspacing="0">
-
-										</table>
-									</div>
-
-									<div class="active-exception-content">
-
-										<div class="exceptions-panel">
-											<table cellspacing=0>
-												<tr>
-													<th class="active-exceptions-table-head">Date of Issue</th>
-													<th class="active-exceptions-table-head">Date(s) of
-														Impacted travel</th>
-													<th class="active-exceptions-table-head">Ticket must
-														be reissued on or before</th>
-													<th class="active-exceptions-table-head">Cabin to
-														Cabin</th>
-												</tr>
-
-												<tr>
-													<td class="tdata">April 13, 2017<br>
-														<div class="timetext">1.00PM ET</div></td>
-													<td class="tdata">March 23, 2017 - April 21, 2017</td>
-													<td class="tdata">April 21, 2017</td>
-													<td class="tdata">Z5C4G<br>
-														<div class="cabintext">If new travel originates
-															April 20,2017-April 30,2017</div>
-
-												</tr>
-												<tr>
-													<th class="active-exceptions-table-head">Applies to
-														ticket issued on</th>
-													<th class="active-exceptions-table-head">New travel
-														must originate on/before</th>
-													<th class="active-exceptions-table-head">New travel
-														must be rebooked on/before</th>
-													<th class="active-exceptions-table-head">Applies to
-														tickets issue don/before</th>
-												</tr>
-												<tr>
-													<td class="tdata">DL 006/KL 074</td>
-													<td class="tdata">March 23, 2017 - April 21, 2017</td>
-													<td class="tdata">April 21, 2017</td>
-													<td class="tdata">Z5C4G</td>
-												</tr>
-												<tr>
-													<th class="active-exceptions-table-head">Applies to
-														travel on</th>
-													<th class="active-exceptions-table-head">Affected
-														areas</th>
-													<td class="tdata"></td>
-													<td rowspan="4" class="exception-osi-field">
-														<div class=" exception-osi-field-content">
-															<div class="fieldheader">RAPID REPRICE APPLIES</div>
-															<hr class="exception-osi-hr">
-															<div class="fieldcontent">
-																WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New
-																itenarary is rebooked/ticketed within all parameters of
-																this policy <br> 2. New itenarary is priced at
-																current applicable fares and rules
-															</div>
-
-															<div class="fieldheader">J5Q7G</div>
-															<hr class="exception-osi-hr">
-															<div class="fieldcontent">OSI</div>
-															<div class="exception-osi-field">OSI DL REFUNDED
-																PER ATL OPS 06aAPR2017</div>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td class="tdata">
-														<ul class="ulist">
-															<li class="ldata">Delta</li>
-															<li class="ldata">Delta connection</li>
-															<li class="ldata">Delta coded AF operated</li>
-															<li class="ldata">AF coded AF operated</li>
-															<li class="ldata">KL coded AF operated</li>
-														</ul>
-													</td>
-													<td class="tdata">
-														<ul class="ulist">
-															<li class="ldata">Atlanta (ATL)</li>
-															<li class="ldata">Boston(BOS)</li>
-															<li class="ldata">Miami (MIA)</li>
-															<li class="ldata">San Antonio(SAT)</li>
-															<li class="ldata">Las Vegas(LAS)</li>
-														</ul>
-													</td>
-													<td></td>
-												</tr>
-												<tr class="exception-request-form">
-													<td class="tdata"><a href="#" class="refundrequest">Refund
-															Request Form &gt </td>
-													<td class="tdata"></td>
-													<td class="tdata exceptions-buttons"><button class="viewmore">VIEW
-															MORE</button></td>
-												</tr>
-											</table>
-
-
-										</div>
-									</div>
-								</div>
-								<div class="exceptions-panel-inner">
-									<!-- Nested exception -->
-									<div class="active-exception-header">
-										<div class="exceptions-accordion active">
-											<div class="left">Atlanta Operations(1)</div>
-											<a class="right active-exception-header-link" href="#">View
-												Details +</a>
-										</div>
-										<table class="showtable">
-
-										</table>
-
-									</div>
-									<div class="active-exception-content">
-										<div class="exceptions-panel"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<!--Section 3 : Industrial actions by air france pilots unions !-->
-					<div class="active-exception" data-airport-codes="ATL,BOS,MIA,SAT,LAS">
-						<div class='exclaim'>!</div>
-						<div class="active-exception-header">
-							<div class="exceptions-accordion active">
-								<div class="left">Industrial actions by air france pilots
-									unions</div>
-								<a class="right active-exception-header-link" href="#">View
-									Details +</a>
-							</div>
-							<table class="showtable">
-								<tr>
-									<th class="active-exceptions-table-head">Date of Issue</th>
-									<th class="active-exceptions-table-head">Date(s) of
-										Impacted travel</th>
-									<th class="active-exceptions-table-head">Ticket must be
-										reissued on or before</th>
-									<th class="active-exceptions-table-head">Cabin to Cabin</th>
-								</tr>
-
-								<tr>
-									<td class="tdata">April 13, 2017<br>
-										<div class="timetext">1.00PM ET</div></td>
-									<td class="tdata">March 23, 2017 - April 21, 2017</td>
-									<td class="tdata">April 21, 2017</td>
-									<td class="tdata">Z5C4G<br>
+									<td class="tdata">06/13/2017 04:00</td>
+									<td class="tdata">May 22, 2017 through June 24, 2017</td>
+									<td class="tdata">06/14/2017 04:00</td>
+									<td class="tdata nopaddingbottom">Z8D2A<br>
 										<div class="cabintext">If new travel originates April
-											20,2017-April 30,2017</div>
-										<hr>
-										<h5>Class to Class</h5>
-										<div class="cabintext">If new travel originates May
-											2,2017 through valid date on original ticket</div>
+											20 2017 - April 30 2017</div>
+										<hr align="left">
 									</td>
 								</tr>
-							</table>
-						</div>
-						<div class="active-exception-content">
+								<tr>
+									<th class="active-exceptions-table-head"></th>
+									<th class="active-exceptions-table-head"></th>
+									<th class="active-exceptions-table-head"></th>
+									<th class="active-exceptions-table-head nopaddingtop">Class
+												to Class</th>
+								</tr>
+								<tr>
+									<td class="tdata"></td>
+									<td class="tdata"></td>
+									<td class="tdata"></td>
+									<td class="tdata">G2Y6F<br>
+									<div class="cabintext">If new travel originates May 1
+													2017 thru validity date on original ticket</div></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="active-exception-content">
+						<div class="exceptions-panel">
+							<table cellspacing="0">
+								<tbody>
+									<tr class="greybackground">
+										<th class="active-exceptions-table-head active-exceptions-asterisk">Applies
+													to ticket issued on</th>
+										<th class="active-exceptions-table-head active-exceptions-asterisk">New
+													travel must originate on/before</th>
+										<th class="active-exceptions-table-head active-exceptions-asterisk">New
+													travel must be rebooked on/before</th>
+										<th class="active-exceptions-table-head active-exceptions-asterisk">Applies
+													to tickets issued on/before</th>
+									</tr>
+									<tr class="greybackground">
+										<td class="tdata">DL 006 / KL 074</td>
+										<td class="tdata">06/14/2017 04:00</td>
+										<td class="tdata">06/15/2017 04:00</td>
+										<td class="tdata">06/14/2017 04:00</td>
+									</tr>
+									<tr>
+										<th class="active-exceptions-table-head active-exceptions-asterisk">Applies
+													to travel on</th>
+										<th class="active-exceptions-table-head active-exceptions-asterisk">Affected
+													areas</th>
 
-							<div class="exceptions-panel">
-								<table cellspacing=0>
-									<tr>
-										<th class="active-exceptions-table-head">Applies to
-											ticket issued on</th>
-										<th class="active-exceptions-table-head">New travel must
-											originate on/before</th>
-										<th class="active-exceptions-table-head">New travel must
-											be rebooked on/before</th>
-										<th class="active-exceptions-table-head">Applies to
-											tickets issue don/before</th>
 									</tr>
 									<tr>
-										<td class="tdata">DL 006/KL 074</td>
-										<td class="tdata">March 23, 2017 - April 21, 2017</td>
-										<td class="tdata">April 21, 2017</td>
-										<td class="tdata">Z5C4G</td>
-									</tr>
-									<tr>
-										<th class="active-exceptions-table-head">Applies to
-											travel on</th>
-										<th class="active-exceptions-table-head">Affected areas</th>
-										<td class="tdata"></td>
-										<td rowspan="4" class="exception-osi-field">
+										<td class="tdata ulist">
+											<ul>
+												<li>Delta</li>
+												<li>Delta Connection</li>
+												<li>Delta coded&nbsp;AF operated</li>
+												<li>AF coded AF operated</li>
+												<li>KL coded AF operated</li>
+											</ul>
+										</td>
+										<td class="tdata ulist">
+											<ul>
+												<li>Atlanta(ATL)</li>
+												<li>Atlanta(ATL)</li>
+												<li>Atlanta(ATL)</li>
+												<li>Atlanta(ATL)</li>
+
+											</ul>
+										</td>
+										<td></td>
+										<td class="tdata nopaddingbottom nopaddingleft" rowspan="4">
 											<div class=" exception-osi-field-content">
-												<div class="fieldheader">RAPID REPRICE APPLIES</div>
+												<div class="fieldheader">Rapid Reprice Applies</div>
 												<hr class="exception-osi-hr">
 												<div class="fieldcontent">
-													WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New
-													itenarary is rebooked/ticketed within all parameters of
-													this policy <br> 2. New itenarary is priced at current
-													applicable fares and rules
+															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: <ol class="exception-osi-ordered"> <li> New
+															itenarary is rebooked/ticketed within all parameters of
+															this policy</li><li> New itenarary is priced at
+															current applicable fares and rules</li></ol>
 												</div>
-
 												<div class="fieldheader">J5Q7G</div>
 												<hr class="exception-osi-hr">
 												<div class="fieldcontent">OSI</div>
 												<div class="exception-osi-field">OSI DL REFUNDED PER
-													ATL OPS 06aAPR2017</div>
+															ATL OPS 06aAPR2017</div>
 											</div>
 										</td>
 									</tr>
+									<tr class="greybackground">
+										<td class="tdata nopaddingbottom vertical-align-middle"><a href="#"
+													class="refundrequest">Refund Request From &gt; </a></td>
+										<td class="tdata"></td>
+										<td class="tdata nopaddingbottom vertical-align-middle align-right"><button id="viewmore">VIEW
+														MORE</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="exceptions-panel-inner"><!-- Nested exception -->
+					<div class="active-exception-header">
+						<div class="exceptions-accordion active">
+							<div class="left">Charlotte - Bulletin 1</div>
+							<a class="right active-exception-header-link"
+										href="javascript:void(0)">View Details +</a>
+						</div>
+						<table class="showtable" cellspacing="0">
+						</table>
+					</div>
+					<div class="active-exception-content">
+						<div class="exceptions-panel">
+							<table cellspacing="0">
+								<tbody>
 									<tr>
-										<td class="tdata">
-											<ul class="ulist">
-												<li class="ldata">Delta</li>
-												<li class="ldata">Delta connection</li>
-												<li class="ldata">Delta coded AF operated</li>
-												<li class="ldata">AF coded AF operated</li>
-												<li class="ldata">KL coded AF operated</li>
+										<th class="active-exceptions-table-head">Date of Issue</th>
+										<th class="active-exceptions-table-head">Date(s) of
+													Impacted travel</th>
+										<th class="active-exceptions-table-head">Ticket must be
+													reissued on or before</th>
+										<th class="active-exceptions-table-head">Cabin to Cabin</th>
+									</tr>
+									<tr>
+										<td class="tdata">06/13/2017 04:00</td>
+										<td class="tdata">May 22, 2017 through June 24, 2017</td>
+										<td class="tdata">06/06/2017 04:00</td>
+										<td class="tdata nopaddingbottom">Z8D2A<br>
+											<div class="cabintext">If new travel originates April
+														20 2017 - April 30 2017</div>
+
+										</td>
+									</tr>
+
+									<tr class="greybackground">
+										<th class="active-exceptions-table-head">Applies to
+													ticket issued on</th>
+										<th class="active-exceptions-table-head">New travel
+													must originate on/before</th>
+										<th class="active-exceptions-table-head">New travel
+													must be rebooked on/before</th>
+										<th class="active-exceptions-table-head">Applies to
+													tickets issued on/before</th>
+									</tr>
+									<tr class="greybackground">
+										<td class="tdata">DL 006 / KL 074</td>
+										<td class="tdata">06/14/2017 04:00</td>
+										<td class="tdata">06/15/2017 04:00</td>
+										<td class="tdata">06/14/2017 04:00false</td>
+									</tr>
+									<tr>
+										<th class="active-exceptions-table-head">Applies to
+													travel on</th>
+										<th class="active-exceptions-table-head   ">Affected
+													areas</th>
+
+									</tr>
+									<tr>
+										<td class="tdata ulist">
+											<ul>
+												<li>Delta</li>
+												<li>Delta Connection</li>
+												<li>Delta coded&nbsp;AF operated</li>
+												<li>AF coded AF operated</li>
+												<li>KL coded AF operated</li>
 											</ul>
 										</td>
-										<td class="tdata">
-											<ul class="ulist">
-												<li class="ldata">Atlanta (ATL)</li>
-												<li class="ldata">Boston(BOS)</li>
-												<li class="ldata">Miami (MIA)</li>
-												<li class="ldata">San Antonio(SAT)</li>
-												<li class="ldata">Las Vegas(LAS)</li>
+										<td class="tdata ulist">
+											<ul>
+												<li>All flights operated by Air France</li>
 											</ul>
 										</td>
 										<td></td>
+										<td class="tdata nopaddingbottom nopaddingleft" rowspan="4">
+											<div class=" exception-osi-field-content">
+												<div class="fieldheader">Rapid Reprice Applies</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">
+															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: <ol class="exception-osi-ordered"> <li> New
+															itenarary is rebooked/ticketed within all parameters of
+															this policy</li><li> New itenarary is priced at
+															current applicable fares and rules</li></ol>
+												</div>
+												<div class="fieldheader">J5Q7G</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">OSI</div>
+												<div class="exception-osi-field">OSI DL REFUNDED PER
+															ATL OPS 06aAPR2017</div>
+											</div>
+										</td>
 									</tr>
-									<tr class="exception-request-form">
-										<td class="tdata"><a href="#" class="refundrequest">Refund
-												Request Form &gt </td>
+									<tr class="greybackground" sss>
+										<td class="tdata nopaddingbottom vertical-align-middle"><a href="#"
+												class="refundrequest">Refund Request From &gt; </a></td>
 										<td class="tdata"></td>
-										<td class="tdata exceptions-buttons"><button class="viewmore">VIEW
-												MORE</button></td>
+										<td class="tdata nopaddingbottom vertical-align-middle align-right"><button id="viewmore">VIEW
+														MORE</button></td>
 									</tr>
-								</table>
-
-
-							</div>
-						</div>
-					</div>
-
-
-					<!--Section 4 : EarthQuake and Tsunami !-->
-					<div class="active-exception">
-						<div class='exclaim'>!</div>
-						<div class="active-exception-header">
-							<div class="exceptions-accordion active">
-								<div class="left">Earthquake and Tsunami</div>
-
-							</div>
-							<table class="showtable">
-								<tr>
-									<th class="active-exceptions-table-head">Date of Issue</th>
-								</tr>
-								<tr>
-									<td class="tdata">April 1,2017</td>
-									<td class="tdata"></td>
-									<td class="tdata"></td>
-									<td class="tdata exceptions-buttons"><button class="viewmore">VIEW
-											MORE</button>
-								</tr>
+								</tbody>
 							</table>
 						</div>
+					</div>
+				</div>
+
+				<div class="exceptions-panel-inner"><!-- Nested exception -->
+					<div class="active-exception-header">
+						<div class="exceptions-accordion active">
+							<div class="left">Greenville Weather - Bulletin 1</div>
+							<a class="right active-exception-header-link"
+										href="javascript:void(0)">View Details +</a>
+						</div>
+						<div class="active-exceptions-disclaimer">All sections in the waiver that
+									have been updated are indicated by asterisk</div>
+						<table class="showtable" cellspacing="0">
+
+						</table>
+						</div>
 						<div class="active-exception-content">
-							<div class="exceptions-panel"></div>
+							<div class="exceptions-panel">
+								<table cellspacing="0">
+									<tbody>
+										<tr>
+											<th class="active-exceptions-table-head">Date of Issue</th>
+											<th class="active-exceptions-table-head">Date(s) of
+													Impacted travel</th>
+											<th class="active-exceptions-table-head">Ticket must be
+													reissued on or before</th>
+											<th class="active-exceptions-table-head">Cabin to Cabin</th>
+										</tr>
+										<tr>
+											<td class="tdata">06/13/2017 04:00</td>
+											<td class="tdata">May 22, 2017 through June 24, 2017</td>
+											<td class="tdata">06/06/2017 04:00</td>
+											<td class="tdata nopaddingbottom">Z8D2A<br>
+												<div class="cabintext">If new travel originates April
+														20 2017 - April 30 2017</div>
+
+											</td>
+										</tr>
+
+										<tr class="greybackground">
+											<th class="active-exceptions-table-head">Applies to
+													ticket issued on</th>
+											<th class="active-exceptions-table-head">New travel
+													must originate on/before</th>
+											<th class="active-exceptions-table-head">New travel
+													must be rebooked on/before</th>
+											<th class="active-exceptions-table-head">Applies to
+													tickets issued on/before</th>
+										</tr>
+										<tr class="greybackground">
+											<td class="tdata">DL 006 / KL 074</td>
+											<td class="tdata">06/14/2017 04:00</td>
+											<td class="tdata">06/15/2017 04:00</td>
+											<td class="tdata">06/14/2017 04:00false</td>
+										</tr>
+										<tr>
+											<th class="active-exceptions-table-head">Applies to
+													travel on</th>
+											<th class="active-exceptions-table-head   ">Affected
+													areas</th>
+
+										</tr>
+										<tr>
+											<td class="tdata ulist">
+												<ul>
+													<li>Delta</li>
+													<li>Delta Connection</li>
+													<li>Delta coded&nbsp;AF operated</li>
+													<li>AF coded AF operated</li>
+													<li>KL coded AF operated</li>
+												</ul>
+											</td>
+											<td class="tdata ulist">
+												<ul>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+												</ul>
+											</td>
+											<td></td>
+											<td class="tdata nopaddingbottom nopaddingleft" rowspan="4">
+											<div class=" exception-osi-field-content">
+												<div class="fieldheader">Rapid Reprice Applies</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">
+															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: <ol class="exception-osi-ordered"> <li> New
+															itenarary is rebooked/ticketed within all parameters of
+															this policy</li><li> New itenarary is priced at
+															current applicable fares and rules</li></ol>
+												</div>
+												<div class="fieldheader">J5Q7G</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">OSI</div>
+												<div class="exception-osi-field">OSI DL REFUNDED PER
+															ATL OPS 06aAPR2017</div>
+											</div>
+										</td>
+										</tr>
+										<tr class="greybackground" sss>
+											<td class="tdata nopaddingbottom vertical-align-middle"><a href="#"
+													class="refundrequest vertical-align-middle">Refund Request From &gt; </a></td>
+											<td class="tdata"></td>
+											<td class="tdata nopaddingbottom vertical-align-middle align-right"><button id="viewmore">VIEW
+														MORE</button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div><!-- group 1 div -->
+
+				<div class="exclaim">!</div>
+				<div class="group1">
+				<div class="active-exception" data-airport-codes="ATL,BOS,MIA,SAT,LAS">
+					<div class="active-exception-header">
+						<div class="exceptions-accordion active">
+							<div class="left">New York City Area Weather - Bulletin 1</div>
+							<a class="right active-exception-header-link"
+										href="javascript:void(0)">View Details +</a>
+						</div>
+						<div class="active-exceptions-disclaimer">All sections in he waiver that have been updated are indicated by asterisk</div>
+						<table class="showtable">
+							<tbody>
+								<tr>
+									<th class="active-exceptions-table-head active-exceptions-asterisk">Date
+												of Issue</th>
+									<th class="active-exceptions-table-head active-exceptions-asterisk">Date(s)
+												of Impacted travel</th>
+									<th class="active-exceptions-table-head active-exceptions-asterisk">Ticket
+												must be reissued on or before</th>
+									<th class="active-exceptions-table-head active-exceptions-asterisk">Cabin
+										 		to Cabin</th>
+								</tr>
+								<tr>
+									<td class="tdata">06/13/2017 04:00</td>
+									<td class="tdata">May 22, 2017 through June 24, 2017</td>
+									<td class="tdata">06/14/2017 04:00</td>
+									<td class="tdata nopaddingbottom">Z8D2A<br>
+										<div class="cabintext">If new travel originates April
+											20 2017 - April 30 2017</div>
+										<hr align="left">
+									</td>
+								</tr>
+								<tr>
+									<th class="active-exceptions-table-head"></th>
+									<th class="active-exceptions-table-head"></th>
+									<th class="active-exceptions-table-head"></th>
+									<th class="active-exceptions-table-head nopaddingtop">Class
+												to Class</th>
+								</tr>
+								<tr>
+									<td class="tdata"></td>
+									<td class="tdata"></td>
+									<td class="tdata"></td>
+									<td class="tdata">G2Y6F<br>
+									<div class="cabintext">If new travel originates May 1
+													2017 thru validity date on original ticket</div></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="active-exception-content">
+						<div class="exceptions-panel">
+							<table cellspacing="0">
+								<tbody>
+									<tr class="greybackground">
+										<th class="active-exceptions-table-head active-exceptions-asterisk">Applies
+													to ticket issued on</th>
+										<th class="active-exceptions-table-head active-exceptions-asterisk">New
+													travel must originate on/before</th>
+										<th class="active-exceptions-table-head active-exceptions-asterisk">New
+													travel must be rebooked on/before</th>
+										<th class="active-exceptions-table-head active-exceptions-asterisk">Applies
+													to tickets issued on/before</th>
+									</tr>
+									<tr class="greybackground">
+										<td class="tdata">DL 006 / KL 074</td>
+										<td class="tdata">06/14/2017 04:00</td>
+										<td class="tdata">06/15/2017 04:00</td>
+										<td class="tdata">06/14/2017 04:00</td>
+									</tr>
+									<tr>
+										<th class="active-exceptions-table-head active-exceptions-asterisk">Applies
+													to travel on</th>
+										<th class="active-exceptions-table-head active-exceptions-asterisk">Affected
+													areas</th>
+
+									</tr>
+									<tr>
+										<td class="tdata ulist">
+											<ul>
+												<li>Delta</li>
+												<li>Delta Connection</li>
+												<li>Delta coded&nbsp;AF operated</li>
+												<li>AF coded AF operated</li>
+												<li>KL coded AF operated</li>
+											</ul>
+										</td>
+										<td class="tdata ulist">
+											<ul>
+												<li>Atlanta(ATL)</li>
+												<li>Atlanta(ATL)</li>
+												<li>Atlanta(ATL)</li>
+												<li>Atlanta(ATL)</li>
+
+											</ul>
+										</td>
+										<td></td>
+										<td class="tdata nopaddingbottom nopaddingleft" rowspan="4">
+											<div class=" exception-osi-field-content">
+												<div class="fieldheader">Rapid Reprice Applies</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">
+															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: <ol class="exception-osi-ordered"> <li> New
+															itenarary is rebooked/ticketed within all parameters of
+															this policy</li><li> New itenarary is priced at
+															current applicable fares and rules</li></ol>
+												</div>
+												<div class="fieldheader">J5Q7G</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">OSI</div>
+												<div class="exception-osi-field">OSI DL REFUNDED PER
+															ATL OPS 06aAPR2017</div>
+											</div>
+										</td>
+									</tr>
+									<tr class="greybackground">
+										<td class="tdata nopaddingbottom vertical-align-middle"><a href="#"
+													class="refundrequest">Refund Request From &gt; </a></td>
+										<td class="tdata"></td>
+										<td class="tdata nopaddingbottom vertical-align-middle align-right"><button id="viewmore">VIEW
+														MORE</button></td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 				</div>
-				<!--Past Content goes here -->
-				<div class="pastcontent">
-					<div class="section-title">
-				    <div class="section-title-content">
-				      March 2017
-				    </div>
-				  </div>
 
-					<!--Section 1: Demonstrations in French Guiana !-->
-							<div class="active-exception">
-								<!-- Parent Container -->
-								<!--<div class='exclaim'>!</div>-->
-								<!-- Exclaimation mark box -->
-								<div class="active-exception-header">
-									<!-- This div holds the content of exceptions-accordion header and the first row that needs to be shown -->
-									<div class="exceptions-accordion active">
-										<!-- This div holds the left and right content of exceptions-accordion header -->
+				<div class="exceptions-panel-inner"><!-- Nested exception -->
+					<div class="active-exception-header">
+						<div class="exceptions-accordion active">
+							<div class="left">New York City Area Weather - Bulletin 1</div>
+							<a class="right active-exception-header-link"
+										href="javascript:void(0)">View Details +</a>
+						</div>
+						<table class="showtable" cellspacing="0">
+						</table>
+					</div>
+					<div class="active-exception-content">
+						<div class="exceptions-panel">
+							<table cellspacing="0">
+								<tbody>
+									<tr>
+										<th class="active-exceptions-table-head">Date of Issue</th>
+										<th class="active-exceptions-table-head">Date(s) of
+													Impacted travel</th>
+										<th class="active-exceptions-table-head">Ticket must be
+													reissued on or before</th>
+										<th class="active-exceptions-table-head">Cabin to Cabin</th>
+									</tr>
+									<tr>
+										<td class="tdata">06/13/2017 04:00</td>
+										<td class="tdata">May 22, 2017 through June 24, 2017</td>
+										<td class="tdata">06/06/2017 04:00</td>
+										<td class="tdata nopaddingbottom">Z8D2A<br>
+											<div class="cabintext">If new travel originates April
+														20 2017 - April 30 2017</div>
 
-										<div class="left">Demonstrations in French Guiana</div>
-										<a class="right active-exception-header-link" href="#">View
-											Details +</a>
-									</div>
-									<table class="showtable">
-										<!-- This table holds the first visible row -->
-										<tr>
-											<th class="active-exceptions-table-head">Date of Issue</th>
-											<th class="active-exceptions-table-head">Date(s) of
-												Impacted travel</th>
-											<th class="active-exceptions-table-head">Ticket must be
-												reissued on or before</th>
-											<th class="active-exceptions-table-head">Cabin to Cabin</th>
-										</tr>
-										<tr>
-											<td class="tdata">April 13, 2017<br>
-												<div class="timetext">3.30PM</div></td>
-											<td class="tdata">March 23, 2017 - April 21, 2017</td>
-											<td class="tdata">April 21, 2017</td>
-											<td class="tdata">Z5C4G</td>
-										</tr>
-									</table>
-								</div>
-								<div class="active-exception-content">
-									<div class="exceptions-panel"></div>
-								</div>
-							</div>
+										</td>
+									</tr>
 
-					<!--Section 2 : EarthQuake and Tsunami !-->
-							<div class="active-exception">
-								<!--<div class='exclaim'>!</div>-->
-								<div class="active-exception-header">
-									<div class="exceptions-accordion active">
-										<div class="left">Earthquake and Tsunami</div>
-
-									</div>
-									<table class="showtable">
-										<tr>
-											<th class="active-exceptions-table-head">Date of Issue</th>
-										</tr>
-										<tr>
-											<td class="tdata">April 1,2017</td>
-											<td class="tdata"></td>
-											<td class="tdata"></td>
-											<td class="tdata" rowspan="3"><button class="viewmore">VIEW
-													MORE</button>
-										</tr>
-									</table>
-								</div>
-								<div class="active-exception-content">
-									<div class="exceptions-panel"></div>
-								</div>
-							</div>
-
-						<div class="section-title">
-					    <div class="section-title-content">
-					      February 2017
-					    </div>
-					  </div>
-
-
-					<!-- Section 2:Atlanta Operations!-->
-							<div class="active-exception">
-								<!--<div class='exclaim'>!</div>-->
-								<div class="active-exception-header">
-									<div class="exceptions-accordion active">
-										<div class="left">Atlanta Operations</div>
-										<a class="right active-exception-header-link" href="#">View
-											Details +</a>
-									</div>
-									<div class="active-exceptions-disclaimer">All sections in
-										the waiver that have been updated are indicated by asterisk</div>
-									<!-- This div holds the asterisk copy that will be shown -->
-									<table class="showtable">
-										<tr>
-											<th class="active-exceptions-table-head">Date of Issue</th>
-											<th class="active-exceptions-table-head">Date(s) of
-												Impacted travel</th>
-											<th class="active-exceptions-table-head">Ticket must be
-												reissued on or before</th>
-											<th class="active-exceptions-table-head">Cabin to Cabin</th>
-										</tr>
-										<tr>
-											<td class="tdata">April 13, 2017</td>
-											<td class="tdata">March 23, 2017 - April 21, 2017</td>
-											<td class="tdata">April 21, 2017</td>
-											<td class="tdata">Z5C4G</td>
-										</tr>
-									</table>
-								</div>
-								<div class="active-exception-content">
-									<!-- This div holds the content that needs to be shown on click of view details link in exceptions-accordion header -->
-
-									<div class="exceptions-panel">
-										<table cellspacing=0>
-											<tr>
-												<th class="active-exceptions-table-head">Applies to
+									<tr class="greybackground">
+										<th class="active-exceptions-table-head">Applies to
 													ticket issued on</th>
-												<th class="active-exceptions-table-head">New travel must
-													originate on/before</th>
-												<th class="active-exceptions-table-head">New travel must
-													be rebooked on/before</th>
-												<th class="active-exceptions-table-head active-exceptions-asterisk">Applies to
-													tickets issue don/before</th>
-											</tr>
-											<tr>
-												<td class="tdata">DL 006/KL 074</td>
-												<td class="tdata">March 23, 2017 - April 21, 2017</td>
-												<td class="tdata">April 21, 2017</td>
-												<td class="tdata">Z5C4G</td>
-											</tr>
-											<tr>
-												<th class="active-exceptions-table-head">Applies to
+										<th class="active-exceptions-table-head">New travel
+													must originate on/before</th>
+										<th class="active-exceptions-table-head">New travel
+													must be rebooked on/before</th>
+										<th class="active-exceptions-table-head">Applies to
+													tickets issued on/before</th>
+									</tr>
+									<tr class="greybackground">
+										<td class="tdata">DL 006 / KL 074</td>
+										<td class="tdata">06/14/2017 04:00</td>
+										<td class="tdata">06/15/2017 04:00</td>
+										<td class="tdata">06/14/2017 04:00false</td>
+									</tr>
+									<tr>
+										<th class="active-exceptions-table-head">Applies to
 													travel on</th>
-												<th class="active-exceptions-table-head active-exceptions-asterisk">Affected areas</th>
-												<td class="tdata"></td>
-												<td rowspan="4">
-													<div class=" exception-osi-field-content">
-														<div class="fieldheader">RAPID REPRICE APPLIES</div>
-														<hr class="exception-osi-hr">
-														<div class="fieldcontent">
-															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New
+										<th class="active-exceptions-table-head   ">Affected
+													areas</th>
+
+									</tr>
+									<tr>
+										<td class="tdata ulist">
+											<ul>
+												<li>Delta</li>
+												<li>Delta Connection</li>
+												<li>Delta coded&nbsp;AF operated</li>
+												<li>AF coded AF operated</li>
+												<li>KL coded AF operated</li>
+											</ul>
+										</td>
+										<td class="tdata ulist">
+											<ul>
+												<li>All flights operated by Air France</li>
+											</ul>
+										</td>
+										<td></td>
+										<td class="tdata nopaddingbottom nopaddingleft" rowspan="4">
+											<div class=" exception-osi-field-content">
+												<div class="fieldheader">Rapid Reprice Applies</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">
+															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: <ol class="exception-osi-ordered"> <li> New
 															itenarary is rebooked/ticketed within all parameters of
-															this policy <br> 2. New itenarary is priced at current
-															applicable fares and rules
-														</div>
-
-														<div class="fieldheader">J5Q7G</div>
-														<hr class="exception-osi-hr">
-														<div class="fieldcontent">OSI</div>
-														<div class="exception-osi-field">OSI DL REFUNDED PER
+															this policy</li><li> New itenarary is priced at
+															current applicable fares and rules</li></ol>
+												</div>
+												<div class="fieldheader">J5Q7G</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">OSI</div>
+												<div class="exception-osi-field">OSI DL REFUNDED PER
 															ATL OPS 06aAPR2017</div>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td class="tdata">
-													<ul class="ulist">
-														<li class="ldata">Delta</li>
-														<li class="ldata">Delta connection</li>
-														<li class="ldata">Delta coded AF operated</li>
-														<li class="ldata">AF coded AF operated</li>
-														<li class="ldata">KL coded AF operated</li>
-													</ul>
-												</td>
-												<td class="tdata">
-													<ul class="ulist">
-														<li class="ldata">Atlanta (ATL)</li>
-														<li class="ldata">Boston(BOS)</li>
-														<li class="ldata">Miami (MIA)</li>
-														<li class="ldata">San Antonio(SAT)</li>
-														<li class="ldata">Las Vegas(LAS)</li>
-													</ul>
-												</td>
-												<td></td>
-											</tr>
-											<tr>
-												<td class="tdata"><a href="#" class="refundrequest">Refund
-														Request From &gt </td>
-												<td class="tdata"></td>
-												<td class="tdata"><button class="viewmore">VIEW
+											</div>
+										</td>
+									</tr>
+									<tr class="greybackground" sss>
+										<td class="tdata nopaddingbottom vertical-align-middle"><a href="#"
+												class="refundrequest">Refund Request From &gt; </a></td>
+										<td class="tdata"></td>
+										<td class="tdata nopaddingbottom vertical-align-middle align-right"><button id="viewmore">VIEW
 														MORE</button></td>
-											</tr>
-										</table>
-										<div class="exceptions-panel-inner">
-											<!-- Nested exception -->
-											<div class="active-exception-header">
-												<div class="exceptions-accordion active">
-													<div class="left">Atlanta Operations(2)</div>
-													<a class="right active-exception-header-link" href="#">View
-														Details +</a>
-												</div>
-												<table class="showtable" cellspacing="0">
-
-												</table>
-											</div>
-
-											<div class="active-exception-content">
-
-												<div class="exceptions-panel">
-													<table cellspacing=0>
-														<tr>
-															<th class="active-exceptions-table-head">Date of Issue</th>
-															<th class="active-exceptions-table-head">Date(s) of
-																Impacted travel</th>
-															<th class="active-exceptions-table-head">Ticket must
-																be reissued on or before</th>
-															<th class="active-exceptions-table-head">Cabin to
-																Cabin</th>
-														</tr>
-
-														<tr>
-															<td class="tdata">April 13, 2017<br>
-																<div class="timetext">1.00PM ET</div></td>
-															<td class="tdata">March 23, 2017 - April 21, 2017</td>
-															<td class="tdata">April 21, 2017</td>
-															<td class="tdata">Z5C4G<br>
-																<div class="cabintext">If new travel originates
-																	April 20,2017-April 30,2017</div>
-
-														</tr>
-														<tr>
-															<th class="active-exceptions-table-head">Applies to
-																ticket issued on</th>
-															<th class="active-exceptions-table-head">New travel
-																must originate on/before</th>
-															<th class="active-exceptions-table-head">New travel
-																must be rebooked on/before</th>
-															<th class="active-exceptions-table-head">Applies to
-																tickets issue don/before</th>
-														</tr>
-														<tr>
-															<td class="tdata">DL 006/KL 074</td>
-															<td class="tdata">March 23, 2017 - April 21, 2017</td>
-															<td class="tdata">April 21, 2017</td>
-															<td class="tdata">Z5C4G</td>
-														</tr>
-														<tr>
-															<th class="active-exceptions-table-head">Applies to
-																travel on</th>
-															<th class="active-exceptions-table-head">Affected
-																areas</th>
-															<td class="tdata"></td>
-															<td rowspan="4">
-																<div class=" exception-osi-field-content">
-																	<div class="fieldheader">RAPID REPRICE APPLIES</div>
-																	<hr class="exception-osi-hr">
-																	<div class="fieldcontent">
-																		WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New
-																		itenarary is rebooked/ticketed within all parameters of
-																		this policy <br> 2. New itenarary is priced at
-																		current applicable fares and rules
-																	</div>
-
-																	<div class="fieldheader">J5Q7G</div>
-																	<hr class="exception-osi-hr">
-																	<div class="fieldcontent">OSI</div>
-																	<div class="exception-osi-field">OSI DL REFUNDED
-																		PER ATL OPS 06aAPR2017</div>
-																</div>
-															</td>
-														</tr>
-														<tr>
-															<td class="tdata">
-																<ul class="ulist">
-																	<li class="ldata">Delta</li>
-																	<li class="ldata">Delta connection</li>
-																	<li class="ldata">Delta coded AF operated</li>
-																	<li class="ldata">AF coded AF operated</li>
-																	<li class="ldata">KL coded AF operated</li>
-																</ul>
-															</td>
-															<td class="tdata">
-																<ul class="ulist">
-																	<li class="ldata">Atlanta (ATL)</li>
-																	<li class="ldata">Boston(BOS)</li>
-																	<li class="ldata">Miami (MIA)</li>
-																	<li class="ldata">San Antonio(SAT)</li>
-																	<li class="ldata">Las Vegas(LAS)</li>
-																</ul>
-															</td>
-															<td></td>
-														</tr>
-														<tr>
-															<td class="tdata"><a href="#" class="refundrequest">Refund
-																	Request From &gt </td>
-															<td class="tdata"></td>
-															<td class="tdata"><button class="viewmore">VIEW
-																	MORE</button></td>
-														</tr>
-													</table>
-
-
-												</div>
-											</div>
-										</div>
-										<div class="exceptions-panel-inner">
-											<!-- Nested exception -->
-											<div class="active-exception-header">
-												<div class="exceptions-accordion active">
-													<div class="left">Atlanta Operations(1)</div>
-													<a class="right active-exception-header-link" href="#">View
-														Details +</a>
-												</div>
-												<table class="showtable">
-
-												</table>
-
-											</div>
-											<div class="active-exception-content">
-												<div class="exceptions-panel"></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-
-					<!--Section 4: Demonstrations in French Guiana !-->
-							<div class="active-exception">
-								<!-- Parent Container -->
-								<!--<div class='exclaim'>!</div>-->
-								<!-- Exclaimation mark box -->
-								<div class="active-exception-header">
-									<!-- This div holds the content of exceptions-accordion header and the first row that needs to be shown -->
-									<div class="exceptions-accordion active">
-										<!-- This div holds the left and right content of exceptions-accordion header -->
-
-										<div class="left">Demonstrations in French Guiana</div>
-										<a class="right active-exception-header-link" href="#">View
-											Details +</a>
-									</div>
-									<table class="showtable">
-										<!-- This table holds the first visible row -->
-										<tr>
-											<th class="active-exceptions-table-head">Date of Issue</th>
-											<th class="active-exceptions-table-head">Date(s) of
-												Impacted travel</th>
-											<th class="active-exceptions-table-head">Ticket must be
-												reissued on or before</th>
-											<th class="active-exceptions-table-head">Cabin to Cabin</th>
-										</tr>
-										<tr>
-											<td class="tdata">April 13, 2017<br>
-												<div class="timetext">3.30PM</div></td>
-											<td class="tdata">March 23, 2017 - April 21, 2017</td>
-											<td class="tdata">April 21, 2017</td>
-											<td class="tdata">Z5C4G</td>
-										</tr>
-									</table>
-								</div>
-								<div class="active-exception-content">
-									<div class="exceptions-panel"></div>
-								</div>
-							</div>
-
-					<!--Section 5: Demonstrations in French Guiana !-->
-							<div class="active-exception">
-								<!-- Parent Container -->
-								<!--<div class='exclaim'>!</div>-->
-								<!-- Exclaimation mark box -->
-								<div class="active-exception-header">
-									<!-- This div holds the content of exceptions-accordion header and the first row that needs to be shown -->
-									<div class="exceptions-accordion active">
-										<!-- This div holds the left and right content of exceptions-accordion header -->
-
-										<div class="left">Demonstrations in French Guiana</div>
-										<a class="right active-exception-header-link" href="#">View
-											Details +</a>
-									</div>
-									<table class="showtable">
-										<!-- This table holds the first visible row -->
-										<tr>
-											<th class="active-exceptions-table-head">Date of Issue</th>
-											<th class="active-exceptions-table-head">Date(s) of
-												Impacted travel</th>
-											<th class="active-exceptions-table-head">Ticket must be
-												reissued on or before</th>
-											<th class="active-exceptions-table-head">Cabin to Cabin</th>
-										</tr>
-										<tr>
-											<td class="tdata">April 13, 2017<br>
-												<div class="timetext">3.30PM</div></td>
-											<td class="tdata">March 23, 2017 - April 21, 2017</td>
-											<td class="tdata">April 21, 2017</td>
-											<td class="tdata">Z5C4G</td>
-										</tr>
-									</table>
-								</div>
-								<div class="active-exception-content">
-									<div class="exceptions-panel"></div>
-								</div>
-							</div>
-
-					<!--Section 6 : Industrial actions by air france pilots unions !-->
-							<div class="active-exception" data-airport-codes="ATL,BOS,MIA,SAT,LAS,SFO">
-								<!--<div class='exclaim'>!</div>-->
-								<div class="active-exception-header">
-									<div class="exceptions-accordion active">
-										<div class="left">Industrial actions by air france pilots
-											unions</div>
-										<a class="right active-exception-header-link" href="#">View
-											Details +</a>
-									</div>
-									<table class="showtable">
-										<tr>
-											<th class="active-exceptions-table-head">Date of Issue</th>
-											<th class="active-exceptions-table-head">Date(s) of
-												Impacted travel</th>
-											<th class="active-exceptions-table-head">Ticket must be
-												reissued on or before</th>
-											<th class="active-exceptions-table-head">Cabin to Cabin</th>
-										</tr>
-
-										<tr>
-											<td class="tdata">April 13, 2017<br>
-												<div class="timetext">1.00PM ET</div></td>
-											<td class="tdata">March 23, 2017 - April 21, 2017</td>
-											<td class="tdata">April 21, 2017</td>
-											<td class="tdata">Z5C4G<br>
-												<div class="cabintext">If new travel originates April
-													20,2017-April 30,2017</div>
-												<hr align="left"></td>
-										</tr>
-										<tr>
-											<th class="active-exceptions-table-head"></th>
-											<th class="active-exceptions-table-head"></th>
-											<th class="active-exceptions-table-head"></th>
-											<th class="active-exceptions-table-head">Class to Class</th>
-										</tr>
-
-										<tr>
-											<td class="tdata"></td>
-											<td class="tdata"></td>
-											<td class="tdata"></td>
-											<td class="tdata">G2Y62F<br>
-												<div class="cabintext">If new travel originates May
-													2,2017 through valid date on original ticket</div></td>
-										</tr>
-									</table>
-								</div>
-								<div class="active-exception-content">
-
-									<div class="exceptions-panel">
-										<table cellspacing=0>
-											<tr>
-												<th class="active-exceptions-table-head">Applies to
-													ticket issued on</th>
-												<th class="active-exceptions-table-head">New travel must
-													originate on/before</th>
-												<th class="active-exceptions-table-head">New travel must
-													be rebooked on/before</th>
-												<th class="active-exceptions-table-head">Applies to
-													tickets issue don/before</th>
-											</tr>
-											<tr>
-												<td class="tdata">DL 006/KL 074</td>
-												<td class="tdata">March 23, 2017 - April 21, 2017</td>
-												<td class="tdata">April 21, 2017</td>
-												<td class="tdata">Z5C4G</td>
-											</tr>
-											<tr>
-												<th class="active-exceptions-table-head">Applies to
-													travel on</th>
-												<th class="active-exceptions-table-head">Affected areas</th>
-												<td class="tdata"></td>
-												<td rowspan="4">
-													<div class=" exception-osi-field-content">
-														<div class="fieldheader">RAPID REPRICE APPLIES</div>
-														<hr class="exception-osi-hr">
-														<div class="fieldcontent">
-															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: 1. New
-															itenarary is rebooked/ticketed within all parameters of
-															this policy <br> 2. New itenarary is priced at current
-															applicable fares and rules
-														</div>
-
-														<div class="fieldheader">J5Q7G</div>
-														<hr class="exception-osi-hr">
-														<div class="fieldcontent">OSI</div>
-														<div class="exception-osi-field">OSI DL REFUNDED PER
-															ATL OPS 06aAPR2017</div>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td class="tdata">
-													<ul class="ulist">
-														<li class="ldata">Delta</li>
-														<li class="ldata">Delta connection</li>
-														<li class="ldata">Delta coded AF operated</li>
-														<li class="ldata">AF coded AF operated</li>
-														<li class="ldata">KL coded AF operated</li>
-													</ul>
-												</td>
-												<td class="tdata">
-													<ul class="ulist">
-														<li class="ldata">Atlanta (ATL)</li>
-														<li class="ldata">Boston(BOS)</li>
-														<li class="ldata">Miami (MIA)</li>
-														<li class="ldata">San Antonio (SAT)</li>
-														<li class="ldata">San Francisco (SFO)</li>
-														<li class="ldata">Las Vegas (LAS)</li>
-													</ul>
-												</td>
-												<td></td>
-											</tr>
-											<tr>
-												<td class="tdata"><a href="#" class="refundrequest">Refund
-														Request From &gt </td>
-												<td class="tdata"></td>
-												<td class="tdata"><button class="viewmore">VIEW
-														MORE</button></td>
-											</tr>
-										</table>
-
-
-									</div>
-								</div>
-							</div>
-
-							<div class="section-title">
-						    <div class="section-title-content">
-						      January 2017
-						    </div>
-						  </div>
-
-					<!--Section 7: Demonstrations in French Guiana !-->
-							<div class="active-exception">
-								<!-- Parent Container -->
-								<!--<div class='exclaim'>!</div>-->
-								<!-- Exclaimation mark box -->
-								<div class="active-exception-header">
-									<!-- This div holds the content of exceptions-accordion header and the first row that needs to be shown -->
-									<div class="exceptions-accordion active">
-										<!-- This div holds the left and right content of exceptions-accordion header -->
-
-										<div class="left">Demonstrations in French Guiana</div>
-										<a class="right active-exception-header-link" href="#">View
-											Details +</a>
-									</div>
-									<table class="showtable">
-										<!-- This table holds the first visible row -->
-										<tr>
-											<th class="active-exceptions-table-head">Date of Issue</th>
-											<th class="active-exceptions-table-head">Date(s) of
-												Impacted travel</th>
-											<th class="active-exceptions-table-head">Ticket must be
-												reissued on or before</th>
-											<th class="active-exceptions-table-head">Cabin to Cabin</th>
-										</tr>
-										<tr>
-											<td class="tdata">April 13, 2017<br>
-												<div class="timetext">3.30PM</div></td>
-											<td class="tdata">March 23, 2017 - April 21, 2017</td>
-											<td class="tdata">April 21, 2017</td>
-											<td class="tdata">Z5C4G</td>
-										</tr>
-									</table>
-								</div>
-								<div class="active-exception-content">
-									<div class="exceptions-panel"></div>
-								</div>
-							</div>
-
-					<!--Section 8: Demonstrations in French Guiana !-->
-							<div class="active-exception">
-								<!-- Parent Container -->
-								<!--<div class='exclaim'>!</div>-->
-								<!-- Exclaimation mark box -->
-								<div class="active-exception-header">
-									<!-- This div holds the content of exceptions-accordion header and the first row that needs to be shown -->
-									<div class="exceptions-accordion active">
-										<!-- This div holds the left and right content of exceptions-accordion header -->
-
-										<div class="left">Demonstrations in French Guiana</div>
-										<a class="right active-exception-header-link" href="#">View
-											Details +</a>
-									</div>
-									<table class="showtable">
-										<!-- This table holds the first visible row -->
-										<tr>
-											<th class="active-exceptions-table-head">Date of Issue</th>
-											<th class="active-exceptions-table-head">Date(s) of
-												Impacted travel</th>
-											<th class="active-exceptions-table-head">Ticket must be
-												reissued on or before</th>
-											<th class="active-exceptions-table-head">Cabin to Cabin</th>
-										</tr>
-										<tr>
-											<td class="tdata">April 13, 2017<br>
-												<div class="timetext">3.30PM</div></td>
-											<td class="tdata">March 23, 2017 - April 21, 2017</td>
-											<td class="tdata">April 21, 2017</td>
-											<td class="tdata">Z5C4G</td>
-										</tr>
-									</table>
-								</div>
-								<div class="active-exception-content">
-									<div class="exceptions-panel"></div>
-								</div>
-							</div>
-
-					<!--Section 9 : EarthQuake and Tsunami !-->
-							<div class="active-exception">
-								<!--<div class='exclaim'>!</div>-->
-								<div class="active-exception-header">
-									<div class="exceptions-accordion active">
-										<div class="left">Earthquake and Tsunami</div>
-
-									</div>
-									<table class="showtable">
-										<tr>
-											<th class="active-exceptions-table-head">Date of Issue</th>
-										</tr>
-										<tr>
-											<td class="tdata">April 1,2017</td>
-											<td class="tdata"></td>
-											<td class="tdata"></td>
-											<td class="tdata" rowspan="3"><button class="viewmore">VIEW
-													MORE</button>
-										</tr>
-									</table>
-								</div>
-								<div class="active-exception-content">
-									<div class="exceptions-panel"></div>
-								</div>
-							</div>
-
-					<!--Section 10: Demonstrations in French Guiana !-->
-							<div class="active-exception">
-								<!-- Parent Container -->
-								<!--<div class='exclaim'>!</div>-->
-								<!-- Exclaimation mark box -->
-								<div class="active-exception-header">
-									<!-- This div holds the content of exceptions-accordion header and the first row that needs to be shown -->
-									<div class="exceptions-accordion active">
-										<!-- This div holds the left and right content of exceptions-accordion header -->
-
-										<div class="left">Demonstrations in French Guiana</div>
-										<a class="right active-exception-header-link" href="#">View
-											Details +</a>
-									</div>
-									<table class="showtable">
-										<!-- This table holds the first visible row -->
-										<tr>
-											<th class="active-exceptions-table-head">Date of Issue</th>
-											<th class="active-exceptions-table-head">Date(s) of
-												Impacted travel</th>
-											<th class="active-exceptions-table-head">Ticket must be
-												reissued on or before</th>
-											<th class="active-exceptions-table-head">Cabin to Cabin</th>
-										</tr>
-										<tr>
-											<td class="tdata">April 13, 2017<br>
-												<div class="timetext">3.30PM</div></td>
-											<td class="tdata">March 23, 2017 - April 21, 2017</td>
-											<td class="tdata">April 21, 2017</td>
-											<td class="tdata">Z5C4G</td>
-										</tr>
-									</table>
-								</div>
-								<div class="active-exception-content">
-									<div class="exceptions-panel"></div>
-								</div>
-							</div>
-					<div class="loadmore">Load More</div>
-
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
+
+				<div class="exceptions-panel-inner"><!-- Nested exception -->
+					<div class="active-exception-header">
+						<div class="exceptions-accordion active">
+							<div class="left">New York City Area Weather - Bulletin 1</div>
+							<a class="right active-exception-header-link"
+										href="javascript:void(0)">View Details +</a>
+						</div>
+						<div class="active-exceptions-disclaimer">All sections in the waiver that
+									have been updated are indicated by asterisk</div>
+						<table class="showtable" cellspacing="0">
+
+						</table>
+						</div>
+						<div class="active-exception-content">
+							<div class="exceptions-panel">
+								<table cellspacing="0">
+									<tbody>
+										<tr>
+											<th class="active-exceptions-table-head">Date of Issue</th>
+											<th class="active-exceptions-table-head">Date(s) of
+													Impacted travel</th>
+											<th class="active-exceptions-table-head">Ticket must be
+													reissued on or before</th>
+											<th class="active-exceptions-table-head">Cabin to Cabin</th>
+										</tr>
+										<tr>
+											<td class="tdata">06/13/2017 04:00</td>
+											<td class="tdata">May 22, 2017 through June 24, 2017</td>
+											<td class="tdata">06/06/2017 04:00</td>
+											<td class="tdata nopaddingbottom">Z8D2A<br>
+												<div class="cabintext">If new travel originates April
+														20 2017 - April 30 2017</div>
+
+											</td>
+										</tr>
+
+										<tr class="greybackground">
+											<th class="active-exceptions-table-head">Applies to
+													ticket issued on</th>
+											<th class="active-exceptions-table-head">New travel
+													must originate on/before</th>
+											<th class="active-exceptions-table-head">New travel
+													must be rebooked on/before</th>
+											<th class="active-exceptions-table-head">Applies to
+													tickets issued on/before</th>
+										</tr>
+										<tr class="greybackground">
+											<td class="tdata">DL 006 / KL 074</td>
+											<td class="tdata">06/14/2017 04:00</td>
+											<td class="tdata">06/15/2017 04:00</td>
+											<td class="tdata">06/14/2017 04:00false</td>
+										</tr>
+										<tr>
+											<th class="active-exceptions-table-head">Applies to
+													travel on</th>
+											<th class="active-exceptions-table-head   ">Affected
+													areas</th>
+
+										</tr>
+										<tr>
+											<td class="tdata ulist">
+												<ul>
+													<li>Delta</li>
+													<li>Delta Connection</li>
+													<li>Delta coded&nbsp;AF operated</li>
+													<li>AF coded AF operated</li>
+													<li>KL coded AF operated</li>
+												</ul>
+											</td>
+											<td class="tdata ulist">
+												<ul>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+													<li>Atlanta(ATL)</li>
+												</ul>
+											</td>
+											<td></td>
+											<td class="tdata nopaddingbottom nopaddingleft" rowspan="4">
+											<div class=" exception-osi-field-content">
+												<div class="fieldheader">Rapid Reprice Applies</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">
+															WAIVE CHNAGE FEE FOR FUTURE TRAVEL PROVIDED: <ol class="exception-osi-ordered"> <li> New
+															itenarary is rebooked/ticketed within all parameters of
+															this policy</li><li> New itenarary is priced at
+															current applicable fares and rules</li></ol>
+												</div>
+												<div class="fieldheader">J5Q7G</div>
+												<hr class="exception-osi-hr">
+												<div class="fieldcontent">OSI</div>
+												<div class="exception-osi-field">OSI DL REFUNDED PER
+															ATL OPS 06aAPR2017</div>
+											</div>
+										</td>
+										</tr>
+										<tr class="greybackground" sss>
+											<td class="tdata nopaddingbottom vertical-align-middle"><a href="#"
+													class="refundrequest vertical-align-middle">Refund Request From &gt; </a></td>
+											<td class="tdata"></td>
+											<td class="tdata nopaddingbottom vertical-align-middle align-right"><button id="viewmore">VIEW
+														MORE</button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div><!-- group1 -->
 			</div>
+
+				<!--Past Content goes here -->
+			<div class="pastcontent" style="display: none;">PAST EXCEPTION
+					POLICY GOES HERE</div>
+			</div>
+
 		</div>
 
-		<script>
-//Below script is to handle on clicks of active and past tabs, change background colors
+<script>
+// JAVASCRIPT FOR ACTIVE EXCEPTION POLICIES COMPONENT, NOT PART OF MAP COMPONENT */
   $(document).ready(function() {
     $(".pastcontent").hide();
     $(".activediv").on("click", function() {
@@ -1523,41 +1198,48 @@ g[role="menuitem"] text {
       $(".pastdiv").removeClass("activebutton").addClass("inactivetab");
       $(".activediv").removeClass("inactivetab").addClass("activebutton");
     });
-
     $(".pastdiv").on("click", function() {
       $(".pastcontent").show();
       $(".activecontent").hide();
       $(".activediv").removeClass("activebutton").addClass("inactivetab");
       $(".pastdiv").removeClass("inactivetab").addClass("activebutton");
     });
-
     });
-</script>
-
-		<script>
-	//This snippet is to handle on clicks of accordion headers, change background colors and toggle between close and View details
-     $(".exceptions-accordion").click(function(e) {
-			 e.preventDefault();
-			if ($(this).hasClass("active")) {
-				$(this).removeClass("active");
-				$(this).find(".active-exception-header-link").html("Close -");
-				$(this).addClass("inactivetabcolor");
-            } else {
-                $(this).addClass('active');
-				$(this).find(".active-exception-header-link").html("View Details +");
-                $(this).addClass("activetabcolor").removeClass("inactivetabcolor");
-            }
+    $(".exceptions-accordion").click(function() {
+		if ($(this).hasClass("active")) {
+			$(this).removeClass("active");
+			$(this).find(".active-exception-header-link").html("Close -");
+			$(this).addClass("inactivetabcolor");
+        } else {
+            $(this).addClass('active');
+			$(this).find(".active-exception-header-link").html("View Details +");
+               $(this).addClass("activetabcolor").removeClass("inactivetabcolor");
+        }
      })
-     //This snipper is to show corresponding content when each exceptions-accordion header is clicked
-	$('.active-exception-header').click(function(e) {
-		e.preventDefault();
-		$(this).toggleClass("marginbottom");// For removing the margin bottom from header when view details is clicked
-		$(this).children( ".showtable" ).toggleClass("borderbottom");// For removing the border bottom from header(show table_) when view details is clicked
-		$(this).nextAll(".active-exception-content").eq(0).toggle();// to show corresponding content when view details is clicked
-		$(this).children(".active-exceptions-disclaimer").toggle();// to show/hide asterisk copy
 
-	});
+	$('.exceptions-accordion').each(function() {
+		$(this).click(function() {
+			if($(this).parent().parent().hasClass("active-exception"))
+			{
+				//$(this).closest('.active-exception-header').toggleClass("marginbottom");// For removing the margin bottom from header when view details is clicked
+				//$(this).nextAll( ".showtable" ).eq(0).toggleClass("borderbottom");// For removing the border bottom from header(show table_) when view details is clicked
+				$(this).parent().siblings(".active-exception-content").toggle();// to show corresponding content when view details is clicked
+				if($(this).parent().parent().siblings(".exceptions-panel-inner").css("display")=="none"){
+					$(this).parent().parent().siblings(".exceptions-panel-inner").css("display", "block");
+				}
+				else{
+					$(this).parent().parent().siblings(".exceptions-panel-inner").css("display", "none");
+				}
+				$(this).nextAll(".active-exceptions-disclaimer").eq(0).toggle();// to show/hide asterisk copy
+			} else{
+				$(this).parent().siblings(".active-exception-content").toggle();
+				$(this).nextAll(".active-exceptions-disclaimer").eq(0).toggle();// to show/hide asterisk copy
+			}
+		})
+    })
+	/* END OF JAVASCRIPT FOR ACTIVE EXCEPTION POLICIES COMPONENT */
 </script>
+<!-- THE FOLLOWING JAVASCRIPTS ARE NEEDED FOR THE MAP -->
 <script src="./javascripts/ammap.js" charset="utf-8"></script>
 <script src="./javascripts/worldLow.js" charset="utf-8"></script>
 <script>
