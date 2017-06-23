@@ -1,5 +1,7 @@
 <!-- Include common (global/reusable) classes for components //-->
 <link rel="stylesheet" type="text/css" media="all" href="common-to-components.css" />
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="../plugins/ellipsis/ellipsis.js"></script>
 
 <style>
 	.v2 .image-component {
@@ -83,9 +85,6 @@
 <div class="v2">
 
 
-
-
-
 	<div class="image-component image-component-w33">
 
 		<!-- Dynamic element -->
@@ -107,7 +106,6 @@
 		<a href="#" class="image-component-link">Learn More&nbsp;&gt;</a>
 
 	</div>
-
 
 
 
@@ -182,3 +180,14 @@
 
 
 </div>
+
+
+
+
+<!--// Add plugin below to common JavaScript files and initialize the ellispsis plugin globally on all pages.  Also add initialization to page load. //-->
+<script>
+//Initialize Ellipsis Plugin onReady (globally)
+$(function() {
+  $('.ellipsis').ellipsis();
+});
+</script>
