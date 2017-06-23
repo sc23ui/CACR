@@ -1,0 +1,21 @@
+/* common-cacr-override.css */
+.v2 .delta-blue-background-color {
+    background-color: #22659c;
+}
+
+.v2 #footer-id {
+    background: #123c64!important;
+}
+
+.v2 #main-header-id,
+.v2 #header {
+    background: #174873;
+}
+
+.v2 .link-color-white {
+    color: #fff;
+}
+
+.v2 .current-language-position {
+    color: #87cdff !important;
+}

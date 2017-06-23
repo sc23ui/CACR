@@ -39,6 +39,24 @@
     background-color: #CB1127;
   }
 
+.v2 .horizantalloginDiv .v2 .horizantalloginContent{
+	background-color: #f6f6f7;
+}
+.v2 .horizantalErrorMsg {
+    background-color: #e3132c;
+}
+.v2 #loginBtnID {
+    margin-top: 16px!important;
+}
+
+.v2 .forgotUserAccountLink {
+    margin-right: 186px;
+}
+
+.v2 .horizantalErrorBox{
+	margin-left:0px
+}
+
 .v2 .remember-me-style {
     color: #333333;
     font-size: 1.4em;

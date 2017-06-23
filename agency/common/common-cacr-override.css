@@ -2,6 +2,8 @@
 .v2 #contentBody {
 	background-image:none !important;
 	background-color:#fff !important;
+	min-height: 650px !important;
+	height: auto !important;
 }
 
 .v2 .red {
@@ -26,9 +28,6 @@
 }
 
 
-.v2 .backtoNavPage{
-	font-size: 14px;
-
 .v2 #backtoNavPage{
 	font-size: 14px!important;
 }
@@ -38,26 +37,40 @@
 
 }
 
+.v2 .landingboxgroupMainDiv {
+	margin-bottom: 90px;
+}
+
+.v2 a{
+	font-weight:600;
+}
+
 .v2 .landingboxcontent {
 	background-color: #f6f6f7;
-	height: 225px;
+	height: auto;
+	padding-bottom: 0;
 }
 
 .v2 .landingboximage {
 	margin-left: -22px;
 	width: 312px;
+	height: 161px;
 }
 
 .v2 .landingboximage img {
 	width: 334px;
 }
 
-.v2 .mainComponentDiv ul{
+.v2 .mainComponentDiv ul {
 	font-size: 14px;
 }
 
-.v2 .mainComponentDiv ol{
+.v2 .mainComponentDiv ol {
 	font-size: 14px;
+}
+
+.v2 .landingLineHeight {
+	font-size: 32px;
 }
 
 .v2 .landingboxtext {
@@ -65,16 +78,25 @@
 	font-size: 14px;
 }
 
-.v2 h1{
+.v2 h1 {
     font-weight: 300;
     font-size: 45px;
     margin: 0;
-    color: #333333;
+    color: #333;
     text-align: left;
 }
 
 
-.v2 h6{
+.v2 h6 {
 	font-size: 14px !important;
 }
+
+.v2 .delta-blue-background-color {
+	background-color: #22659c;
+}
+
+.v2 #blueComponentVerticalMainDiv {
+background-color: #22659c;
+}
+
 

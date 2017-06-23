@@ -3,7 +3,6 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 </head>
 <style>
-
   /* For testing purposes only - do not include during integrtation */
   body {
     background: #efefef;
@@ -11,19 +10,20 @@
     margin: 0;
     font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
   }
-  .testing-header {
-    margin-bottom: 80px;
-  }
-  .testing-header-container {
-    width: 960px;
-    margin: 0 auto;
-  }
-
 </style>
 
 <style>
-
-  /* Primary Menu "Main Menu" */
+  /* Main Menu */
+  .header-menu {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .header-menu-top {
+    background-color:#134775;
+  }
+  .header-menu-bottom {
+    background-color:#fff;
+  }
   .menu {
     display: table;
     background: #134775;
@@ -51,7 +51,7 @@
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    min-width:2em;
+    min-width:2.1em;
   }
   .menu-link.active, .menu-link.active:hover {
     background-color:#fff;
@@ -81,6 +81,7 @@
     background-color: #22699c;
     font-weight:300;
     color: #fff;
+    border-right: 1px solid #134775;
   }
   .menu-tab.active .menu-login-title {
     font-size:22px;
@@ -114,24 +115,53 @@
     padding-top:2px;
     cursor: default;
   }
+  .menu-dropdown:hover {
+    background-color:#3f81b1;
+    border-right: 1px solid #e6e7e8;
+  }
   .menu-dropdown.active {
     border-right: 1px solid #fff;
   }
-  .menu-dropdown:hover {
-    background-color: #fff;
+  .menu-dropdown.active:hover {
+    background-color:#fff;
     border-right: 1px solid #e6e7e8;
   }
   .menu-dropdown .menu-dropdown-title::after {
     content: "\2228";
     position: relative;
     top: -2px;
+    font-size:11px;
+    color:#fff !important;
+  }
+  .menu-dropdown.active  .menu-dropdown-title::after {
+    content: "\2228";
+    position: relative;
+    top: -2px;
+    font-size:11px;
+    color:#000 !important;
   }
   .menu-dropdown-title {
     box-sizing: border-box;
-    padding: 0 24px;
+    padding: 0;
     text-align: center;
     font-weight: 400;
     text-transform: uppercase;
+  }
+  .menu-dropdown-title-link {
+    padding: 17px 0px 17px 0px;
+    color: #fff !important;
+    text-decoration: none;
+  }
+  .menu-dropdown-title-link:hover {
+    color:#054276;
+    cursor:pointer;
+  }
+  .active .menu-dropdown-title-link {
+    color: #054276 !important;
+    text-decoration: none;
+  }
+  .active .menu-dropdown-title-link:hover {
+    color:#fff;
   }
   .active .menu-dropdown-title {
     font-weight: 600;
@@ -141,6 +171,7 @@
   }
   .menu-dropdown:hover .menu-dropdown-title::after {
     content: "\2227";
+    font-size:11px;
     color:#999;
   }
   .menu-dropdown-links {
@@ -174,7 +205,6 @@
   .menu-dropdown-link.menu-dropdown-link {
     border-top: 1px solid #e6e7e8;
   }
-
 
   /* Secondary Menu "Sub Menu" */
   .sub-menu {
@@ -250,8 +280,118 @@
   - During integration, ignore DIVs with classes that have 'testing' in their name.
  ///////////////////////////////////////////-->
 
-  <div class="testing-header testing-header-only-links">
-    <div class="testing-header-container">
+
+<!--// User this menu as a template //-->
+<div class="header-menu-top">
+  <div class="header-menu">
+
+      <nav class="menu">
+        <div class="menu-section">
+          <div class="menu-links">
+            <a href="#" class="menu-link">Home</a>
+            <!--// Display 'menu-app-label' when used with our app container page //-->
+            <a href="#" class="menu-link menu-app-label" style="display:none;">Preferred Seats</a>
+          </div>
+        </div>
+        <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
+          <div class="menu-dropdown-title">
+            <a href="#" class="menu-dropdown-title-link">My Dashboard</a>
+          </div>
+          <div class="menu-dropdown-links">
+            <a href="#" class="menu-dropdown-link">Preferred Seats</a>
+            <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
+          </div>
+        </div>
+        <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
+      </nav>
+
+  </div>
+</div>
+
+<div class="header-menu-bottom">
+  <div class="header-menu">
+
+      <div class="sub-menu">
+        <div class="sub-menu-links">
+          <a href="#" class="sub-menu-link">Users</a>
+          <a href="#" class="sub-menu-link active">Admin User Management</a>
+          <a href="#" class="sub-menu-link">Agency Details</a>
+          <a href="#" class="sub-menu-link">Application Settings</a>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+
+<!--////////////////// Use these examples for reference of how different states should look /////------->
+<div class="header-menu-top">
+  <div class="header-menu">
+
+      <nav class="menu">
+        <div class="menu-section">
+          <div class="menu-links">
+            <a href="#" class="menu-link menu-app-label">Preferred Seats</a>
+          </div>
+        </div>
+        <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
+          <div class="menu-dropdown-title">
+            <a href="#" class="menu-dropdown-title-link">My Dashboard</a>
+          </div>
+          <div class="menu-dropdown-links">
+            <a href="#" class="menu-dropdown-link">Preferred Seats</a>
+            <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
+          </div>
+        </div>
+        <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
+      </nav>
+
+  </div>
+</div>
+
+<div class="header-menu-bottom">
+  <div class="header-menu">
+
+      <div class="sub-menu">
+        <div class="sub-menu-links">
+          <a href="#" class="sub-menu-link">Users</a>
+          <a href="#" class="sub-menu-link">Admin User Management</a>
+          <a href="#" class="sub-menu-link">Agency Details</a>
+          <a href="#" class="sub-menu-link">Application Settings</a>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -260,12 +400,26 @@
           </div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-only-links">
-    <div class="testing-header-container">
+
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -277,74 +431,27 @@
           </div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-logged-in">
-    <div class="testing-header-container">
-      <nav class="menu">
-        <div class="menu-section">
-          <div class="menu-links">
-            <a href="#" class="menu-link menu-app-label">Preferred Seats</a>
-          </div>
-        </div>
-        <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
-          <div class="menu-dropdown-title">
-            My Dashboard
-          </div>
-          <div class="menu-dropdown-links">
-            <a href="#" class="menu-dropdown-link">Preferred Seats</a>
-            <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
-          </div>
-        </div>
-        <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
-      </nav>
-      <div class="sub-menu">
-        <div class="sub-menu-links">
-          <a href="#" class="sub-menu-link">Users</a>
-          <a href="#" class="sub-menu-link">Admin User Management</a>
-          <a href="#" class="sub-menu-link">Agency Details</a>
-          <a href="#" class="sub-menu-link">Application Settings</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
-  <div class="testing-header testing-header-logged-in">
-    <div class="testing-header-container">
-      <nav class="menu">
-        <div class="menu-section">
-          <div class="menu-links">
-            <a href="#" class="menu-link">Home</a>
-          </div>
-        </div>
-        <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
-          <div class="menu-dropdown-title">
-            My Dashboard
-          </div>
-          <div class="menu-dropdown-links">
-            <a href="#" class="menu-dropdown-link">Preferred Seats</a>
-            <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
-          </div>
-        </div>
-        <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
-      </nav>
-      <div class="sub-menu">
-        <div class="sub-menu-links">
-          <a href="#" class="sub-menu-link">Users</a>
-          <a href="#" class="sub-menu-link active">Admin User Management</a>
-          <a href="#" class="sub-menu-link">Agency Details</a>
-          <a href="#" class="sub-menu-link">Application Settings</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
-  <div class="testing-header testing-header-logged-in">
-    <div class="testing-header-container">
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -357,7 +464,7 @@
         </div>
         <div class="menu-section menu-tab menu-dropdown active" id="menu-tab-dashboard">
           <div class="menu-dropdown-title">
-            My Dashboard
+            <a href="#" class="menu-dropdown-title-link">My Dashboard</a>
           </div>
           <div class="menu-dropdown-links">
             <a href="#" class="menu-dropdown-link">Preferred Seats</a>
@@ -366,12 +473,53 @@
         </div>
         <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-logged-in">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
+      <nav class="menu">
+        <div class="menu-section">
+          <div class="menu-links">
+            <a href="#" class="menu-link">Home</a>
+            <a href="#" class="menu-link">Agent Resources</a>
+            <a href="#" class="menu-link">Policy Library</a>
+            <a href="#" class="menu-link">Products &amp; Services</a>
+            <a href="#" class="menu-link">News</a>
+          </div>
+        </div>
+        <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-dashboard">My Dashboard</a>
+        <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
+      </nav>
+
+  </div>
+</div>
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -384,7 +532,7 @@
         </div>
         <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
           <div class="menu-dropdown-title">
-            My Dashboard
+            <a href="#" class="menu-dropdown-title-link">My Dashboard</a>
           </div>
           <div class="menu-dropdown-links">
             <a href="#" class="menu-dropdown-link">Preferred Seats</a>
@@ -393,12 +541,25 @@
         </div>
         <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-logged-in">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -411,7 +572,7 @@
         </div>
         <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
           <div class="menu-dropdown-title">
-            My Dashboard
+            <a href="#" class="menu-dropdown-title-link">My Dashboard</a>
           </div>
           <div class="menu-dropdown-links">
             <a href="#" class="menu-dropdown-link">Preferred Seats</a>
@@ -419,12 +580,25 @@
           </div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-logged-in">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -437,12 +611,26 @@
         </div>
         <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-login">
-    <div class="testing-header-container">
+
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -457,12 +645,24 @@
           <div class="menu-login-title">Log In</div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-login">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -477,12 +677,26 @@
           <div class="menu-login-title">Log In</div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-login">
-    <div class="testing-header-container">
+
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -497,12 +711,25 @@
           <div class="menu-login-title">Log In</div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-login">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -517,12 +744,25 @@
           <div class="menu-login-title">Log In</div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>
 
 
-  <div class="testing-header testing-header-login">
-    <div class="testing-header-container">
+
+
+
+<!--// Do not included <br/> tags during integration.  //-->
+<br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<div class="header-menu-top">
+  <div class="header-menu">
+
       <nav class="menu">
         <div class="menu-section">
           <div class="menu-links">
@@ -537,5 +777,6 @@
           <div class="menu-login-title">Log In</div>
         </div>
       </nav>
-    </div>
+
   </div>
+</div>

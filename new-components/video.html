@@ -1,0 +1,626 @@
+<head>
+
+	<!--///////////////////////////////////////////
+  INTEGRATIN GUIDELINES
+
+  This component supports 3rd party hosted embedded videos.
+
+	YouTube:
+
+	 - Author should be able to copy/paste an 'embed URL' from YouTube, not the same as page URL.
+   - AEM should always add an autoplay parameter to the end of a Vimeo query string i.e. ?autoplay=1 or &autoplay=1 (if a '?' has already been used in the supplied URL)
+
+	Vimeo:
+
+	 - Author should be able to copy/paste an 'embed URL' from Vimeo, not the same as page URL.
+	 - Author can optionally add time markers to start a video at a specific time.  i.e. #t=1m30s
+	 - AEM should always add an autoplay parameter to the end of a Vimeo query string i.e. ?autoplay=1
+
+	Piksel
+
+	 - Author should be able to copy/paste an 'embed URL' from Vimeo, not the same as page URL.
+	 - AEM should always add width and height parameters to the end of a Piksel video embed URL
+	 			i.e. w=300&h=165 for w33
+				i.e. w=465&h=250 for w50
+				i.e. w=630&h=350 for w66
+
+	 - autoplay is not an option for Piksel videos
+
+  ///////////////////////////////////////////-->
+
+	<!--// Add these to our plugin assets and only include on pages when a video arousel component is being used. //-->
+	<!--// Plugin files are located in /CACR/plugins/owl-carousel -->
+	<link rel="stylesheet" href="../plugins/owl-carousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="../plugins/owl-carousel/assets/owl.theme.default.min.css">
+
+	<!--// This jquery script source should already exist in AEM project, no need to add twice //-->
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+</head>
+
+<style>
+	/* Do not integrate anything in this style block */
+	body.v2 {
+			font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
+	}
+</style>
+
+<style>
+	/* Include all of these styles when a video component is being used. */
+	.v2 .video {
+		position:relative;
+		background:#f6f6f7;
+	}
+	.v2 .video-w33 {
+		width:300px;
+		height:357px;
+	}
+	.v2 .video-w50 {
+		width:465px;
+		height:532px;
+	}
+	.v2 .video-w66 {
+		width:630px;
+		height:532px;
+	}
+	.v2 .video-w33 .video-embed {
+		width:300px;
+		height:169px;
+	}
+	.v2 .video-w50 .video-embed {
+		width:465px;
+		height:262px;
+	}
+	.v2 .video-w66 .video-embed {
+		width:630px;
+		height:354px;
+	}
+	.v2 .video-w33 .video-description {
+		height:80px;
+	}
+	.v2 .video-w50 .video-description {
+		height:163px;
+	}
+	.v2 .video-w66 .video-description {
+		height:80px;
+	}
+
+	.v2 .video-content {
+		padding:15px 20px 40px 20px;
+	}
+	.v2 a.video-title {
+		display:block;
+		font-weight:600;
+		font-size:24px;
+		line-height:30px;
+		color:#0b1f66;
+		text-transform:uppercase;
+		padding-bottom:10px;
+		text-decoration:none;
+		overflow:hidden;
+	}
+	.v2 a.video-title:hover {
+		color:#1c7bd9;
+	}
+	.v2 .video-description {
+		font-size:14px;
+		font-weight:400;
+		color:#0b1f66;
+		overflow:hidden;
+		text-overflow:ellipsis;
+	}
+	.v2 a.video-link {
+		position:absolute;
+		right:20px;
+		bottom:20px;
+		display:block;
+		font-size:14px;
+		font-weight:600;
+		color:#0253a4;
+	}
+	.v2 a.video-link:hover {
+		color:#1c7bd9;
+	}
+	.v2 .video-carousel {
+		font-size:14px;
+		font-weight:400;
+		color:#0b1f66;
+	}
+	.v2 .owl-carousel .owl-stage {
+		min-height:80px;
+	}
+	.v2 .owl-carousel .owl-stage-outer {
+		width:100%;
+	}
+	.v2 .video-w33 .owl-carousel .owl-item {
+		height:88px;
+	}
+	.v2 .video-w50 .owl-carousel .owl-item {
+		height:170px;
+	}
+	.v2 .video-w66 .owl-carousel .owl-item {
+		height:84px;
+	}
+	.v2 .owl-carousel .owl-item {
+		background:#174873;
+		border-radius:5px;
+	}
+	.v2 .owl-carousel .owl-item:hover {
+		background:#22659c;
+	}
+	.v2 .owl-carousel .owl-item a {
+		font-size:11px;
+		font-weight:300;
+		color:#fff;
+		text-decoration:none;
+	}
+	.v2 .owl-carousel .owl-item a:hover {
+		color:#fff;
+	}
+
+	.v2 .owl-carousel .video-thumb-container {
+		cursor:pointer;
+		opacity:0.9;
+	}
+	.v2 .owl-carousel .video-thumb-container:hover {
+		cursor:pointer;
+		opacity:1;
+	}
+	.v2 .video-thumb {
+		background-size: cover;
+	  background-position: top center;
+		border-radius:5px;
+		box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+	}
+	.v2 .video-w33 .video-thumb {
+		height:60px;
+	}
+	.v2 .video-w50 .video-thumb {
+		height:140px;
+	}
+	.v2 .video-w66 .video-thumb {
+		height:55px;
+	}
+	.v2 .owl-carousel .video-thumb-title {
+		padding:8px 2px 2px 2px;
+		text-align:center;
+		font-size:11px;
+		color:#fff;
+	}
+	.v2 .owl-carousel .owl-dots {
+		margin-top:6px !important;
+	}
+	.v2 .owl-prev {
+		position:absolute;
+		left:-22px;
+		background:#c4c4c4 !important;
+		font-family:Georgia, "Apple Symbols", serif;
+		font-size:20px !important;
+		color:#fff !important;
+		font-weight:900;
+	}
+	.v2 .owl-next {
+		position:absolute;
+		right:-22px;
+
+		background:#c4c4c4 !important;
+		font-family:Georgia, "Apple Symbols", serif;
+		font-size:20px !important;
+		color:#fff !important;
+		font-weight:900;
+	}
+	.v2 .owl-prev:hover , .v2 .owl-next:hover {
+		background:#afaeae !important;
+	}
+	.v2 .owl-nav .disabled {
+		opacity:0 !important;
+		font-weight:900;
+	}
+	.v2 .video-w33 .owl-prev, .v2 .video-w33 .owl-next {
+
+		top:18px;
+		padding:10px 3px !important;
+	}
+	.v2 .video-w50 .owl-prev, .v2 .video-w50 .owl-next {
+		top:50px;
+		padding:20px 3px !important;
+	}
+	.v2 .video-w66 .owl-prev, .v2 .video-w66 .owl-next {
+		top:12px;
+		padding:14px 3px !important;
+	}
+</style>
+
+<body class="v2">
+
+
+
+
+
+	<!--// EXAMPLE OF W33 VIDEO COMPONENT WITHOUT MULTI-VIDEO CAROUSEL //-->
+	<div class="video video-w33">
+
+		<iframe class="video-embed" src="https://player.vimeo.com/video/100760192" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+		<div class="video-content">
+
+    	<!--// AEM property limit of 18 characters //-->
+			<a href="#" class="video-title">Lorem Ipsum Dolar</a>
+
+      <!--// AEM property limit of 110 characters //-->
+			<div class="video-description ellipsis">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			</div>
+
+		</div>
+
+		<a href="#" class="video-link">Learn More&nbsp;&gt;</a>
+
+	</div>
+	<!--// END EXAMPLE //-->
+
+
+
+
+
+
+	<!--// Do not use these <br> tags //-->
+	<br/><br/>
+
+
+
+
+
+
+	<!--// W33 VIDEO COMPONENT WITH MULTI-VIDEO CAROUSEL //-->
+	<div class="video video-w33">
+
+		<!--// iFrames must have a unique numerical id, prefixed with 'player"  Increment the id number for each instance of a video component used on a page. //-->
+		<iframe class="video-embed" id="player1" src="https://player.vimeo.com/video/100760192" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+		<div class="video-content">
+
+    	<!--// AEM property limit of 18 characters //-->
+			<a href="#" class="video-title">Time Markers</a>
+
+			<!--// Using inline style to toggle hide and display multi-video carousel instead - NOT shown for multi-videos //-->
+			<div class="video-description ellipsis" style="display:none;">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			</div>
+
+			<div class="video-carousel">
+
+				<div class="owl-carousel owl-theme">
+
+						<!--// They playerID must match the iFrame id used to display video.  THis is unique to each instance of a video component used on a page.  //-->
+						<div class="video-thumb-container" playerID="1" videoURL="https://player.vimeo.com/video/100760192#t=0s?autoplay=1">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">Intro</div>
+						</div>
+
+						<div class="video-thumb-container" playerID="1" videoURL="https://player.vimeo.com/video/100760192#t=30s?autoplay=1">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">30 secs</div>
+						</div>
+
+						<div class="video-thumb-container" playerID="1" videoURL="https://player.vimeo.com/video/100760192#t=50s?autoplay=1">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">50 secs</div>
+						</div>
+
+						<div class="video-thumb-container" playerID="1" videoURL="https://player.vimeo.com/video/100760192#t=1m10s?autoplay=1">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">1 min 10 secs</div>
+						</div>
+
+						<div class="video-thumb-container" playerID="1" videoURL="https://player.vimeo.com/video/100760192#t=1m30s?autoplay=1">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">1 min 30 secs</div>
+						</div>
+
+				</div>
+
+			</div>
+
+			<!--// Using inline style to toggle hide and display multi-video carousel instead //-->
+			<a href="#" class="video-link" style="display:none;">Learn More&nbsp;&gt;</a>
+
+		</div>
+
+	</div>
+	<!--// END W33 VIDEO COMPONENT //-->
+
+
+
+
+
+  <!--// Do not use these <br> tags //-->
+	<br/><br/>
+
+
+
+
+
+	<!--// EXAMPLE OF W50 VIDEO COMPONENT WITHOUT MULTI-VIDEO CAROUSEL //-->
+	<div class="video video-w50">
+
+		<iframe class="video-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+		<div class="video-content">
+
+	  		<!--// AEM property limit of 60 characters //-->
+				<a href="#" class="video-title">LOREM IPSUM DOLAR AMIT</a>
+
+				<!--// AEM property limit of 550 characters //-->
+				<div class="video-description ellipsis">
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+				</div>
+
+		</div>
+
+		<a href="#" class="video-link">Learn More&nbsp;&gt;</a>
+
+	</div>
+	<!--// END EXAMPLE //-->
+
+
+
+
+
+
+	<!--// Do not use these <br> tags //-->
+	<br/><br/>
+
+
+
+
+
+
+
+	<!--// W50 VIDEO COMPONENT WITH MULTI-VIDEO CAROUSEL //-->
+	<div class="video video-w50">
+
+		<!--// iFrames must have a unique numerical id, prefixed with 'player"  Increment the id number for each instance of a video component used on a page. //-->
+		<iframe class="video-embed" id="player2" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+		<div class="video-content">
+
+		    <!--// AEM property limit of 60 characters //-->
+				<a href="#" class="video-title">Different Videos</a>
+
+				<!--// AEM property limit of 550 characters - NOT shown for multi-videos  //-->
+				<div class="video-description ellipsis" style="display:none;">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+				</div>
+
+				<div class="video-carousel">
+
+						<div class="owl-carousel owl-theme">
+
+							<!--// The playerID must match the iFrame id used to display video.  THis is unique to each instance of a video component used on a page.  //-->
+							<div class="video-thumb-container" playerID="2" videoURL="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0">
+								<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+								<div class="video-thumb-title">Intro</div>
+							</div>
+
+							<div class="video-thumb-container" playerID="2" videoURL="https://www.youtube.com/embed/ptciFcVQPik">
+								<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+								<div class="video-thumb-title">Step 1</div>
+							</div>
+
+							<div class="video-thumb-container" playerID="2" videoURL="https://player.piksel.com/v/w5d2c0z2?w=460&h=258">
+								<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+								<div class="video-thumb-title">Step 2</div>
+							</div>
+
+							<div class="video-thumb-container" playerID="2" videoURL="https://www.youtube.com/embed/hD4hz8TFSAI">
+								<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+								<div class="video-thumb-title">Step 3</div>
+							</div>
+
+							<div class="video-thumb-container" playerID="2" videoURL="https://www.youtube.com/embed/CT5uwLZQRfk">
+								<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+								<div class="video-thumb-title">Step 4</div>
+							</div>
+
+						</div>
+
+				</div>
+
+		</div>
+
+		<a href="#" class="video-link" style="display:none;">Learn More&nbsp;&gt;</a>
+
+	</div>
+	<!--// END W50 VIDEO COMPONENT //-->
+
+
+
+
+
+	<!--// Do not use these <br> tags //-->
+	<br/><br/>
+
+
+
+
+
+
+
+	<!--// EXAMPLE OF W66 VIDEO COMPONENT WITHOUT MULTI-VIDEO CAROUSEL //-->
+	<div class="video video-w66">
+
+		<iframe class="video-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+		<div class="video-content">
+
+	    	<!--// AEM property limit of 40 characters //-->
+				<a href="#" class="video-title">LOREM IPSUM DOLAR AMIT</a>
+
+				<div class="video-description ellipsis">
+	            <!--// AEM property limit of 350 characters //-->
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+				</div>
+
+		</div>
+
+		<a href="#" class="video-link">Learn More&nbsp;&gt;</a>
+
+	</div>
+	<!--// END EXAMPLE //-->
+
+
+
+
+
+
+	<!--// Do not use these <br> tags //-->
+	<br/><br/>
+
+
+
+
+
+
+
+	<!--// 66% VIDEO COMPONENT WITH MULTI-VIDEO CAROUSEL //-->
+	<div class="video video-w66">
+
+		<!--// iFrames must have a unique numerical id, prefixed with 'player"  Increment the id number for each instance of a video component used on a page. //-->
+		<iframe class="video-embed" id="player3" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+		<div class="video-content">
+
+			<!--// AEM property limit of 40 characters //-->
+			<a href="#" class="video-title">Different Video Hosting Sources</a>
+
+			<div class="video-description ellipsis" style="display:none;">
+						<!--// AEM property limit of 350 characters //-->
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			</div>
+
+			<div class="video-carousel">
+
+				<div class="owl-carousel owl-theme">
+
+					<!--// They playerID must match the iFrame id used to display video.  THis is unique to each instance of a video component used on a page.  //-->
+					<div class="video-thumb-container" playerID="3" videoURL="https://www.youtube.com/embed/Z6JRidQkWsk">
+						<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+						<div class="video-thumb-title">Intro</div>
+					</div>
+
+					<div class="video-thumb-container" playerID="3" videoURL="https://player.vimeo.com/video/20732587#t=0s?autoplay=1">
+						<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+						<div class="video-thumb-title">Step 1</div>
+					</div>
+
+					<!--// IMPORTANT FOR INTEGRAITON:  Add help text to AEM stating Piksel embed videos must be 630x350 pixels //-->
+					<div class="video-thumb-container" playerID="3" videoURL="https://player.piksel.com/v/w5d2c0z2?w=630&h=350">
+						<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+						<div class="video-thumb-title">Step 2</div>
+					</div>
+
+					<div class="video-thumb-container" playerID="3" videoURL="https://player.vimeo.com/video/100760192#t=0s?autoplay=1">
+						<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+						<div class="video-thumb-title">Step 3</div>
+					</div>
+
+					<div class="video-thumb-container" playerID="3" videoURL="https://www.youtube.com/embed/CT5uwLZQRfk">
+						<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+						<div class="video-thumb-title">Step 4</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		<a href="#" class="video-link" style="display:none;">Learn More&nbsp;&gt;</a>
+
+	</div>
+	<!--// END W66 VIDEO COMPONENT //-->
+
+
+
+
+
+
+
+
+
+</body>
+
+<!--// Add this JavaScfipt to bottom of any page where a video component is displayed //-->
+<script src="../plugins/owl-carousel/owl.carousel.min.js"></script>
+
+<script>
+
+	$(document).ready(function(){
+
+		// Initialize carousel feature for w33 video copmonent
+		$('.video-w33 .owl-carousel').owlCarousel({
+		    loop:false,
+		    margin:10,
+		    nav:true,
+				navText:['&ltrif;','&rtrif;'],
+				dots:true,
+				stagePadding:0,
+				mouseDrag:false,
+				items:2
+		});
+
+		// Initialize carousel feature for w50 video copmonent
+		$('.video-w50 .owl-carousel').owlCarousel({
+		    loop:false,
+		    margin:10,
+		    nav:true,
+				navText:['&ltrif;','&rtrif;'],
+				dots:true,
+				stagePadding:0,
+				mouseDrag:false,
+				items:3
+		});
+
+		// Initialize carousel feature for w66 video copmonent
+		$('.video-w66 .owl-carousel').owlCarousel({
+		    loop:false,
+		    margin:10,
+		    nav:true,
+				navText:['&ltrif;','&rtrif;'],
+				dots:true,
+				stagePadding:0,
+				mouseDrag:false,
+				items:5
+		});
+
+		// Video switching code - needed to replace entire iframe element, this is required to resolve iframe URL reload caching issues.
+		$('.video-thumb-container').click(function(){
+			changeVideo($(this).attr('playerID'),$(this).attr('videoURL'));
+		});
+
+		// This function can be called by links anywhere on an AEM page, to change the state of a specific video component.
+		// Example usage:  <a href="javascript:changeVideo(1,'https://www.youtube.com/embed/hD4hz8TFSAI')">Change video component in player 1</a>
+		function changeVideo(playerID,videoURL) {
+			$('#player' + playerID).replaceWith('<iframe class="video-embed" id="player' + playerID + '" src="' + videoURL + '" frameborder="0" allowfullscreen></iframe>');
+		}
+
+	});
+</script>

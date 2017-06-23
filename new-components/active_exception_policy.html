@@ -21,17 +21,21 @@ body.v2 {
 </style>
 </head>
 <body class="v2">
-<main>
-<div class="container_12">
-<!-- start of new component -->
+	<main>
+	<div class="container_12">
+		<!-- start of new component -->
 
-<!-- new component styles -->
-<style>
-		
+		<!-- new component styles -->
+		<style>
 .v2 .active-exceptions-asterisk:after {
-    color: #e3132c;
-    content: "*";
+	color: #e3132c;
+	content: "*";
 }
+
+.v2 .activediv {
+    margin-left: 311px;
+}
+
 .v2 .exceptions-accordion {
 	height: 42px;
 	display: inline-block;
@@ -50,6 +54,8 @@ body.v2 {
 	margin-left: -5px;
 	border: 1px solid #c7c7c7;
 	width: 958px;
+	margin-top: -3px;
+	border-top: none;
 }
 
 .v2 .active-exception-header-link {
@@ -68,9 +74,10 @@ body.v2 {
 
 .v2 .exception-policy-header {
 	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
+    	margin-left: auto;
+    	margin-right: auto;
+   	margin-bottom: 30px;
+    	width: 960px;
 }
 
 .v2 .exception-policy-content {
@@ -82,7 +89,7 @@ body.v2 {
 .v2 .exception-osi-hr {
 	width: 118px;
 	margin-top: 10px;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .v2 .active-exception-header {
@@ -129,15 +136,16 @@ body.v2 {
 	padding-left: 10px;
 	padding-top: 10px;
 	margin-left: -5px;
+	margin-top: -3px;
 }
 
 .v2 .activediv, .v2 .pastdiv {
-	float: left;
-	font-size: 20px;
-	font-weight: 500;
-	height: 45px;
-	width: 200px;
-	text-align: center;
+	    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    height: 45px;
+    width: 200px;
+    text-align: center;
 }
 
 .v2 .inactivetab {
@@ -149,7 +157,8 @@ body.v2 {
 .v2 .activebutton {
 	color: #fff;
 	background-color: #e3132c;
-	border: 1px solid #e3132c
+	border: 1px solid #e3132c;
+	
 }
 
 .v2 .right {
@@ -194,7 +203,7 @@ body.v2 {
 	color: #333333;
 	text-align: left;
 	padding-left: 10px;
-	padding-top: 5px;
+	padding-top: 25px;
 	width: 164px;
 }
 
@@ -205,7 +214,16 @@ body.v2 {
 	font-weight: 700;
 	text-align: left;
 	width: 225px;
-    padding-left: 10px;
+	padding-left: 10px;
+	padding-bottom:25px;
+}
+			
+.v2 .nopaddingbottom{
+	padding-bottom:0px;
+}
+
+.v2 .nopaddingtop{
+	padding-top:0px;
 }
 
 .v2 .ulist {
@@ -334,7 +352,7 @@ body.v2 {
 								<!-- This div holds the left and right content of exceptions-accordion header -->
 
 								<div class="left">Demonstrations in French Guiana</div>
-								<a class="right active-exception-header-link" href="#">View
+								<a class="right active-exception-header-link" href="javascript:void(0)">View
 									Details +</a>
 							</div>
 							<table class="showtable">
@@ -367,7 +385,7 @@ body.v2 {
 						<div class="active-exception-header">
 							<div class="exceptions-accordion active">
 								<div class="left">Atlanta Operations</div>
-								<a class="right active-exception-header-link" href="#">View
+								<a class="right active-exception-header-link" href="javascript:void(0)">View
 									Details +</a>
 							</div>
 							<div class="active-exceptions-disclaimer">All sections in
@@ -402,8 +420,9 @@ body.v2 {
 											originate on/before</th>
 										<th class="active-exceptions-table-head">New travel must
 											be rebooked on/before</th>
-										<th class="active-exceptions-table-head active-exceptions-asterisk">Applies to
-											tickets issue don/before</th>
+										<th
+											class="active-exceptions-table-head active-exceptions-asterisk">Applies
+											to tickets issue don/before</th>
 									</tr>
 									<tr>
 										<td class="tdata">DL 006/KL 074</td>
@@ -414,7 +433,9 @@ body.v2 {
 									<tr>
 										<th class="active-exceptions-table-head">Applies to
 											travel on</th>
-										<th class="active-exceptions-table-head active-exceptions-asterisk">Affected areas</th>
+										<th
+											class="active-exceptions-table-head active-exceptions-asterisk">Affected
+											areas</th>
 										<td class="tdata"></td>
 										<td rowspan="4">
 											<div class=" exception-osi-field-content">
@@ -436,32 +457,33 @@ body.v2 {
 										</td>
 									</tr>
 									<tr>
-										<td class="tdata">
-											<ul class="ulist">
-												<li class="ldata">Delta</li>
-												<li class="ldata">Delta connection</li>
-												<li class="ldata">Delta coded AF operated</li>
-												<li class="ldata">AF coded AF operated</li>
-												<li class="ldata">KL coded AF operated</li>
+										<td class="tdata ulist">
+											<ul>
+													<li class="ldata">Delta</li>
+														<li class="ldata">Delta connection</li>
+														<li class="ldata">Delta coded AF operated</li>
+														<li class="ldata">AF coded AF operated</li>
+														<li class="ldata">KL coded AF operated</li>
 											</ul>
 										</td>
-										<td class="tdata">
-											<ul class="ulist">
-												<li class="ldata">Atlanta (ATL)</li>
-												<li class="ldata">Boston(BOS)</li>
-												<li class="ldata">Miami (MIA)</li>
-												<li class="ldata">San Antonio(SAT)</li>
-												<li class="ldata">Las Vegas(LAS)</li>
+										<td class="tdata ulist">
+											<ul>
+													<li class="ldata">Atlanta(ATL)</li>
+														<li class="ldata">Las Vegas(LAS)</li>
+														<li class="ldata">San Antonio(SAT)</li>
+														<li class="ldata">Miami(MIA)</li>
+														<li class="ldata">New York(JFK)</li>
 											</ul>
 										</td>
 										<td></td>
+
 									</tr>
 									<tr>
-										<td class="tdata"><a href="#" class="refundrequest">Refund
+										<td class="tdata nopaddingbottom"><a href="#" class="refundrequest">Refund
 												Request From &gt </td>
 										<td class="tdata"></td>
-										<td class="tdata"><button id="viewmore">VIEW
-												MORE</button></td>
+										<td class="tdata nopaddingbottom"><a href="javascript:void(0)"><button id="viewmore">VIEW
+												MORE</button></a></td>
 									</tr>
 								</table>
 								<div class="exceptions-panel-inner">
@@ -469,7 +491,7 @@ body.v2 {
 									<div class="active-exception-header">
 										<div class="exceptions-accordion active">
 											<div class="left">Atlanta Operations(2)</div>
-											<a class="right active-exception-header-link" href="#">View
+											<a class="right active-exception-header-link" href="javascript:void(0)">View
 												Details +</a>
 										</div>
 										<table class="showtable" cellspacing="0">
@@ -499,7 +521,6 @@ body.v2 {
 													<td class="tdata">Z5C4G<br>
 														<div class="cabintext">If new travel originates
 															April 20,2017-April 30,2017</div>
-														
 												</tr>
 												<tr>
 													<th class="active-exceptions-table-head">Applies to
@@ -543,32 +564,32 @@ body.v2 {
 													</td>
 												</tr>
 												<tr>
-													<td class="tdata">
-														<ul class="ulist">
+													<td class="tdata ulist">
+														<ul>
 															<li class="ldata">Delta</li>
 															<li class="ldata">Delta connection</li>
 															<li class="ldata">Delta coded AF operated</li>
 															<li class="ldata">AF coded AF operated</li>
 															<li class="ldata">KL coded AF operated</li>
-														</ul>
+-														</ul>
 													</td>
-													<td class="tdata">
-														<ul class="ulist">
-															<li class="ldata">Atlanta (ATL)</li>
-															<li class="ldata">Boston(BOS)</li>
-															<li class="ldata">Miami (MIA)</li>
-															<li class="ldata">San Antonio(SAT)</li>
-															<li class="ldata">Las Vegas(LAS)</li>
+													<td class="tdata ulist">
+														<ul>
+																<li class="ldata">Atlanta(ATL)</li>
+																	<li class="ldata">Las Vegas(LAS)</li>
+																	<li class="ldata">San Antonio(SAT)</li>
+																	<li class="ldata">Miami(MIA)</li>
+																	<li class="ldata">New York(JFK)</li>
 														</ul>
 													</td>
 													<td></td>
 												</tr>
 												<tr>
-													<td class="tdata"><a href="#" class="refundrequest">Refund
+													<td class="tdata nopaddingbottom"><a href="#" class="refundrequest">Refund
 															Request From &gt </td>
 													<td class="tdata"></td>
-													<td class="tdata"><button id="viewmore">VIEW
-															MORE</button></td>
+													<td class="tdata nopaddingbottom"><a href="javascript:void(0)"><button id="viewmore">VIEW
+															MORE</button></a></td>
 												</tr>
 											</table>
 
@@ -581,7 +602,7 @@ body.v2 {
 									<div class="active-exception-header">
 										<div class="exceptions-accordion active">
 											<div class="left">Atlanta Operations(1)</div>
-											<a class="right active-exception-header-link" href="#">View
+											<a class="right active-exception-header-link" href="javascript:void(0)">View
 												Details +</a>
 										</div>
 										<table class="showtable">
@@ -605,7 +626,7 @@ body.v2 {
 							<div class="exceptions-accordion active">
 								<div class="left">Industrial actions by air france pilots
 									unions</div>
-								<a class="right active-exception-header-link" href="#">View
+								<a class="right active-exception-header-link" href="javascript:void(0)">View
 									Details +</a>
 							</div>
 							<table class="showtable">
@@ -623,16 +644,16 @@ body.v2 {
 										<div class="timetext">1.00PM ET</div></td>
 									<td class="tdata">March 23, 2017 - April 21, 2017</td>
 									<td class="tdata">April 21, 2017</td>
-									<td class="tdata">Z5C4G<br>
+									<td class="tdata nopaddingbottom">Z5C4G<br>
 										<div class="cabintext">If new travel originates April
 											20,2017-April 30,2017</div>
-										<hr align="left"></td>
+										<hr align="left" class="exception-osi-hr"></td>
 								</tr>
 								<tr>
 									<th class="active-exceptions-table-head"></th>
 									<th class="active-exceptions-table-head"></th>
 									<th class="active-exceptions-table-head"></th>
-									<th class="active-exceptions-table-head">Class to Class</th>
+									<th class="active-exceptions-table-head nopaddingtop">Class to Class</th>
 								</tr>
 
 								<tr>
@@ -690,32 +711,32 @@ body.v2 {
 										</td>
 									</tr>
 									<tr>
-										<td class="tdata">
-											<ul class="ulist">
-												<li class="ldata">Delta</li>
-												<li class="ldata">Delta connection</li>
-												<li class="ldata">Delta coded AF operated</li>
-												<li class="ldata">AF coded AF operated</li>
-												<li class="ldata">KL coded AF operated</li>
+										<td class="tdata ulist">
+											<ul>
+														<li class="ldata">Delta</li>
+														<li class="ldata">Delta connection</li>
+														<li class="ldata">Delta coded AF operated</li>
+														<li class="ldata">AF coded AF operated</li>
+														<li class="ldata">KL coded AF operated</li>
 											</ul>
 										</td>
-										<td class="tdata">
-											<ul class="ulist">
-												<li class="ldata">Atlanta (ATL)</li>
-												<li class="ldata">Boston(BOS)</li>
-												<li class="ldata">Miami (MIA)</li>
-												<li class="ldata">San Antonio(SAT)</li>
-												<li class="ldata">Las Vegas(LAS)</li>
+										<td class="tdata ulist">
+											<ul>
+													<li class="ldata">Atlanta(ATL)</li>
+														<li class="ldata">Las Vegas(LAS)</li>
+														<li class="ldata">San Antonio(SAT)</li>
+														<li class="ldata">Miami(MIA)</li>
+														<li class="ldata">New York(JFK)</li>
 											</ul>
 										</td>
 										<td></td>
 									</tr>
 									<tr>
-										<td class="tdata"><a href="#" class="refundrequest">Refund
+										<td class="tdata nopaddingbottom"><a href="#" class="refundrequest">Refund
 												Request From &gt </td>
 										<td class="tdata"></td>
-										<td class="tdata"><button id="viewmore">VIEW
-												MORE</button></td>
+										<td class="tdata nopaddingbottom"><a href="javascript:void(0)"><button id="viewmore">VIEW
+												MORE</button></a></td>
 									</tr>
 								</table>
 
@@ -741,8 +762,8 @@ body.v2 {
 									<td class="tdata">April 1,2017</td>
 									<td class="tdata"></td>
 									<td class="tdata"></td>
-									<td class="tdata" rowspan="3"><button id="viewmore">VIEW
-											MORE</button>
+									<td class="tdata" rowspan="3"><a href="javascript:void(0)"><button id="viewmore">VIEW
+											MORE</button></a>
 								</tr>
 							</table>
 						</div>
@@ -766,14 +787,12 @@ body.v2 {
       $(".pastdiv").removeClass("activebutton").addClass("inactivetab");
       $(".activediv").removeClass("inactivetab").addClass("activebutton");
     });
-
     $(".pastdiv").on("click", function() {
       $(".pastcontent").show();
       $(".activecontent").hide();
       $(".activediv").removeClass("activebutton").addClass("inactivetab");
       $(".pastdiv").removeClass("inactivetab").addClass("activebutton");
     });
-
     });
 </script>
 
@@ -791,18 +810,29 @@ body.v2 {
             }
      })
      //This snipper is to show corresponding content when each exceptions-accordion header is clicked
-	$('.active-exception-header').each(function() {
+	//$('.active-exception-header').each(function() {
+		//$(this).click(function() {
+		
+			//$(this).toggleClass("marginbottom");// For removing the margin bottom from header when view details is clicked
+			//$(this).children( ".showtable" ).toggleClass("borderbottom");// For removing the border bottom from header(show table_) when view details is clicked
+			//$(this).nextAll(".active-exception-content").eq(0).toggle();// to show corresponding content when view details is clicked
+			//$(this).children(".active-exceptions-disclaimer").toggle();// to show/hide asterisk copy
+			
+		//})
+    //})
+	//This snipper is to show corresponding content when each exceptions-accordion header is clicked
+	$('.exceptions-accordion').each(function() {
 		$(this).click(function() {
 		
-			$(this).toggleClass("marginbottom");// For removing the margin bottom from header when view details is clicked
-			$(this).children( ".showtable" ).toggleClass("borderbottom");// For removing the border bottom from header(show table_) when view details is clicked
-			$(this).nextAll(".active-exception-content").eq(0).toggle();// to show corresponding content when view details is clicked
-			$(this).children(".active-exceptions-disclaimer").toggle();// to show/hide asterisk copy
+			$(this).closest('.active-exception-header').toggleClass("marginbottom");// For removing the margin bottom from header when view details is clicked
+			$(this).nextAll( ".showtable" ).eq(0).toggleClass("borderbottom");// For removing the border bottom from header(show table_) when view details is clicked
+			$(this).parent().siblings(".active-exception-content").toggle();// to show corresponding content when view details is clicked
+			$(this).nextAll(".active-exceptions-disclaimer").eq(0).toggle();// to show/hide asterisk copy
 			
 		})
     })
 </script>
-</div>
-</main>
+	</div>
+	</main>
 </body>
 </html>

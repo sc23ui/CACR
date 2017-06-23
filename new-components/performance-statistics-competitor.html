@@ -1,7 +1,9 @@
 <head>
 <link
-	href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
-	rel="stylesheet">
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<!-- Include common (global/reusable) classes for components //-->
+	<link rel="stylesheet" type="text/css" media="all" href="common-to-components.css" />
 </head>
 
 <style>
@@ -32,15 +34,16 @@
 }
 
 .v2 .performance-statistics-component-overlay-content {
-	background-color: #000;
-	height: 150px;
-	width: 300px;
-	opacity: 0.8;
-	font-family: Verdana, Geneva, sans-serif;
-	color: #FFF;
-	bottom: 0px;
-	z-index: 1;
-	text-align: center;
+	background: rgba(0,0,0,0.8);
+    height: 150px;
+    width: 300px;
+    opacity: 1;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #FFF;
+    bottom: 0px;
+    z-index: 1;
+    text-align: center;
+    position: relative;
 }
 
 .v2 .performance-statistics-competitor-content {
@@ -49,6 +52,8 @@
 	background-color: #02132d;
 	font-family: 'Open Sans';
 	padding: 10px;
+	margin-bottom:30px;
+	position:relative;
 }
 
 .v2 .performance-statistics-competitor-header {
@@ -58,7 +63,15 @@
 	font-family: Open Sans;
 }
 
-.v2 .performance-statistics-competitor-subheader {
+.v2 .performance-statistics-competitor-subheader{
+	font-size: 14px;
+	font-weight: 200;
+	color: #fff;
+	font-family: Open Sans;
+	margin-top: -12px;
+}
+
+.v2 .performance-statistics-competitor-name {
 	font-size: 14px;
 	font-weight: 200;
 	color: #fff;
@@ -67,22 +80,23 @@
 
 .v2 .performance-statistics-competitor-one {
 	float: left;
-	padding-left: 60px;
-	padding-right: 50px;
+	padding-left: 46px;
+	text-align: center;
 }
 
-.v2 .performance-statistics-competitor-one:after {
+.v2 .performance-statistics-competitor-two:before {
 	content: "";
 	height: 47px;
 	border: 1px solid #fff;
-	float: right;
-	margin-top: -45px;
-	margin-right: -27px;
+	position: absolute;
+   	margin-top: 5px;
+    	left: 50%;
 }
 
 .v2 .performance-statistics-competitor-two {
-	padding-left: 50px;
-	padding-right: 50px;
+	float: right;
+	padding-right: 46px;
+	text-align : center;
 }
 
 .v2 .performance-statistics-component-title-content {
@@ -101,38 +115,39 @@
 	font-weight: 400;
 	Text-transform: uppercase;
 	color: #FFF;
+	padding-top: 4px;
 }
 
 .v2  .performance-statistics-component-title-content sup {
-	margin-left: -3px;
+	margin-left: 2px;
+  vertical-align: super;
+  /*line-height: normal;*/
 }
 </style>
 <div class="v2">
+
 	<div class="performance-statistics-component-title-content">
-		<div class="performance-statistics-component-title">
-			Mishandled bags <sup>1</sup>
-		</div>
-		<div class="performance-statistics-competitor-subheader">
-			Per 1000 Passengers <sup>2</sup> - DOT
-		</div>
+		<div class="performance-statistics-component-title">Mishandled bags <sup>1</sup>	</div>
+		<div class="performance-statistics-competitor-subheader">	Per 1000 Passengers <sup>2</sup> - DOT	</div>
 	</div>
 	<div class="performance-statistics-component">
-		<img class="performance-statistics-component-image"
-			src="http://placekitten.com/300/330" />
+
+		<!-- Dynamic element -->
+		<div class="bkg-img performance-statistics-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
+
 	</div>
 	<div class="performance-statistics-component-overlay-content">
 		<div class="performance-statistics-component-header">2.55</div>
-		<div class="performance-statistics-component-subheader">per 1000
-			Passengers-DOT</div>
+		<div class="performance-statistics-component-subheader">per 1000 Passengers-DOT</div>
 	</div>
 	<div class="performance-statistics-competitor-content">
 		<div class="performance-statistics-competitor-one">
 			<div class="performance-statistics-competitor-header">2.22</div>
-			<div class="performance-statistics-competitor-subheader">United</div>
+			<div class="performance-statistics-competitor-name">United</div>
 		</div>
 		<div class="performance-statistics-competitor-two">
 			<div class="performance-statistics-competitor-header">2.38</div>
-			<div class="performance-statistics-competitor-subheader">American</div>
+			<div class="performance-statistics-competitor-name">American</div>
 		</div>
 	</div>
 

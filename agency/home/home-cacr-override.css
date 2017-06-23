@@ -1,6 +1,7 @@
 /* home-cacr-override.css */
-.v2 .streamComponentButtonDiv, .v2 .streamComponentButton {
-	height:45px;
+.v2 .streamComponentButtonDiv,
+.v2 .streamComponentButton {
+	height: 45px;
 }
 
 .v2 .streamComponentContentDiv {
@@ -17,11 +18,11 @@
 }
 
 .v2 .newsPaneltdLeft {
-	font-size:14px;
+	font-size: 14px;
 }
 
 .v2 .newsPaneltdRight {
-	font-size:14px;
+	font-size: 14px;
 }
 
 .v2 .categoryTitle span {
@@ -33,4 +34,30 @@
 	margin-right: auto;
 	width: 960px;
 	margin-bottom: 30px;
+}
+
+.v2 .featuredBox,
+.v2 .featuredVerticalPromo{
+    background-color: #f6f6f7;
+}
+
+.v2 .events66Date{
+	padding-bottom: 5px;
+}
+
+.v2 .events66Title{
+	padding-top: 15px;
+}
+
+.v2 .featuredBoxDesc {
+	font-size: 14px !important;
+}
+
+.v2 .featuredHeader {
+  color: #22659c;
+  font-size: 20px;
+}
+
+.v2 .blueComponentHeader {
+font-size: 20px;
 }
