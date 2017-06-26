@@ -16,7 +16,7 @@
 	 - Author can optionally add time markers to start a video at a specific time.  i.e. #t=1m30s
 	 - AEM should always add an autoplay parameter to the end of a Vimeo query string i.e. ?autoplay=1
 
-	Piksel
+	Piksel:
 
 	 - Author should be able to copy/paste an 'embed URL' from Vimeo, not the same as page URL.
 	 - AEM should always add width and height parameters to the end of a Piksel video embed URL
@@ -36,9 +36,8 @@
 	<link rel="stylesheet" href="../plugins/owl-carousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="../plugins/owl-carousel/assets/owl.theme.default.min.css">
 
-  <!--// Add global ellipsis plugin //-->
+  <!--// Add global ellipsis plugin styles //-->
 	<link rel="stylesheet" href="common-to-components.css">
-	<script src="../plugins/ellipsis/ellipsis.js"></script>[]
 
 </head>
 
@@ -88,7 +87,6 @@
 	.v2 .video-w66 .video-description {
 		height:80px;
 	}
-
 	.v2 .video-content {
 		padding:15px 20px 40px 20px;
 	}
@@ -204,7 +202,6 @@
 	.v2 .owl-next {
 		position:absolute;
 		right:-23px;
-
 		background:#c4c4c4 !important;
 		font-family:Georgia, "Apple Symbols", serif;
 		font-size:20px !important;
@@ -450,6 +447,7 @@
 
 
 
+
 	<!--// Do not use these <br> tags //-->
 	<br/><br/>
 
@@ -571,6 +569,9 @@
 
 <!--// Add this JavaScfipt to bottom of any page where a video component is displayed //-->
 <script src="../plugins/owl-carousel/owl.carousel.min.js"></script>
+
+<!--// Utilize features of jQuery ellipsis plugin //-->
+<script src="../plugins/ellipsis/ellipsis.js"></script>
 
 <script>
 
