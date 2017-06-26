@@ -28,13 +28,17 @@
 
   ///////////////////////////////////////////-->
 
+	<!--// This jquery script source should already exist in AEM project, no need to add twice //-->
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
 	<!--// Add these to our plugin assets and only include on pages when a video arousel component is being used. //-->
 	<!--// Plugin files are located in /CACR/plugins/owl-carousel -->
 	<link rel="stylesheet" href="../plugins/owl-carousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="../plugins/owl-carousel/assets/owl.theme.default.min.css">
 
-	<!--// This jquery script source should already exist in AEM project, no need to add twice //-->
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <!--// Add global ellipsis plugin //-->
+	<link rel="stylesheet" href="common-to-components.css">
+	<script src="../plugins/ellipsis/ellipsis.js"></script>[]
 
 </head>
 
@@ -107,7 +111,6 @@
 		font-weight:400;
 		color:#0b1f66;
 		overflow:hidden;
-		text-overflow:ellipsis;
 	}
 	.v2 a.video-link {
 		position:absolute;
@@ -157,7 +160,6 @@
 	.v2 .owl-carousel .owl-item a:hover {
 		color:#fff;
 	}
-
 	.v2 .owl-carousel .video-thumb-container {
 		cursor:pointer;
 		opacity:0.9;
@@ -192,7 +194,7 @@
 	}
 	.v2 .owl-prev {
 		position:absolute;
-		left:-22px;
+		left:-23px;
 		background:#c4c4c4 !important;
 		font-family:Georgia, "Apple Symbols", serif;
 		font-size:20px !important;
@@ -201,7 +203,7 @@
 	}
 	.v2 .owl-next {
 		position:absolute;
-		right:-22px;
+		right:-23px;
 
 		background:#c4c4c4 !important;
 		font-family:Georgia, "Apple Symbols", serif;
@@ -217,7 +219,6 @@
 		font-weight:900;
 	}
 	.v2 .video-w33 .owl-prev, .v2 .video-w33 .owl-next {
-
 		top:18px;
 		padding:10px 3px !important;
 	}
@@ -611,6 +612,9 @@
 				items:5
 		});
 
+		//Initialize Ellipsis jQuery plugin
+		$('.ellipsis').ellipsis();
+
 		// Video switching code - needed to replace entire iframe element, this is required to resolve iframe URL reload caching issues.
 		$('.video-thumb-container').click(function(){
 			changeVideo($(this).attr('playerID'),$(this).attr('videoURL'));
@@ -623,4 +627,9 @@
 		}
 
 	});
+</script>
+
+<script>
+//Initialize Ellipsis Plugin onReady (globally)
+$('.ellipsis').ellipsis();
 </script>
