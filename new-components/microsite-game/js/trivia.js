@@ -42,35 +42,49 @@ $(function(){
     "clickToSpin":true
   }
 
+  var checkStatusUrl = $('[data-check-status-url]').attr('data-check-status-url');
 
-  $.getJSON("mock/can_play.json", function(data) {
-    $('#loading').hide()
+  $.getJSON(checkStatusUrl, function(data) {
+    $('#triviaStart').show()
     if (data.canPlay) {
-      createQuestions();
+      $('#triviaStartContainer').show()
     } else {
-      $('#try-tomorrow').show()
+      $('#tryTomorrow').show()
     }
   });
 
-  var createQuestions = function() {
-    $.getJSON("mock/questions.json", function(data) {
-      console.log(data);
+  $('#triviaStartButton').click(function(e) {
+    $('#triviaStart').hide()
+    $('#triviaForm').show()
+    var url = $(this).attr('data-get-questions-url');
+    createQuestions(url);
+  });
+
+  var createQuestions = function(url) {
+    $.getJSON(url, function(data) {
       $('.trivia-question').text(data.question.text);
       var $answers = $('.trivia-answers');
+      var $questionInput = $('<input >');
+      $questionInput.attr('type', 'hidden');
+      $questionInput.attr('name', 'questionId');
+      $questionInput.attr('value', data.question.questionId);
+      $questionInput.appendTo($answers);
+
       for (var i = 0; i < data.question.answers.length; i++) {
         var answer = data.question.answers[i];
         var $div = $('<div class="trivia-answer" />');
         var $input = $('<input />');
-        $input.attr('name', 'selector');
+        $input.attr('name', 'answerId');
         $input.attr('type', 'radio');
+        $input.val(answer.answerId);
         $input.addClass('trivia-answer-input');
-        $input.attr('value', answer.text);
 
         var $label = $('<label />');
         $label.addClass('trivia-answer-label');
         $label.text(answer.text);
 
-        var $pretty = $('<div class="trivia-answer-radio"/>');
+        var $pretty = $('<div class="trivia-answer-radio" />');
+        $pretty.attr('data-answer-id', answer.answerId);
 
         $input.appendTo($label);
         $label.appendTo($div);
@@ -79,15 +93,30 @@ $(function(){
         $div.appendTo($answers)
       }
 
+      $('.trivia-submit').prop('disabled', true);
       $('#triviaForm').show();
+    });
+
+    $(document).on('change', '.trivia-answer-input', function () {
+      $('.trivia-submit').prop('disabled', false);
     });
 
     $('#triviaForm').submit(function(e) {
       e.preventDefault();
+      $form = $(this);
       var url = $(this).attr('action');
+      var questionId = $('input[name="questionId"]').val();
+      var answerId = $('input[name="answerId"]:checked').val();
+
+      $(this).find("input[type=radio]").prop('disabled', true);
+
       $.ajax(url, {
         method: 'POST',
         dataType: 'json',
+        data: {
+          questionId: questionId,
+          answerId: answerId
+        },
         success: function(data) {
           if (data.correct) {
             spinDefaults["colorArray"] = data.entries.map(function(e) {
@@ -98,7 +127,10 @@ $(function(){
             $('#spin2Win').show();
             initSpinWheel(spinDefaults);
           } else {
-            // Show try again
+            $form.find('input[value="' + data.correctAnswerId + '"]').closest('.trivia-answer').addClass("trivia-answer-correct");
+            $form.find('input:checked').closest('.trivia-answer').addClass( "trivia-answer-wrong" );
+            $form.find('input').closest('.trivia-answer').addClass( "trivia-answer-disabled" );
+            $('.trivia-submit').prop('disabled', true);
           }
         }
       });

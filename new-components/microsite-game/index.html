@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <title>Delta Pro - Summer Trivia Bonanza!!!!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="https://pro-si.delta.com/etc/clientlibs/granite/jquery.min.js"></script>
+    <script type="text/javascript" src="https://pro.delta.com/etc/clientlibs/granite/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://pro-si.delta.com/etc/designs/deltaPro/lib.20170620.css" media="all">
+    <link rel="stylesheet" type="text/css" href="https://pro.delta.com/etc/designs/deltaPro/lib.20170620.css" media="all">
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/header-cacr-override.css" media="all">
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/common-cacr-override.css" media="all">
     <link rel="stylesheet" href="css/Spin2Win-style.css">
@@ -22,26 +22,22 @@
     <script src="js/trivia.js"></script>
 </head>
 
-<body class="v2" data-user="me@delta.com">
+<body class="v2" data-check-status-url="mock/can_play.json">
   <div class="spin-to-win">
-    <div id="triviaStart" class="">
+    <div id="triviaStart" class="noDisplay">
       <h4>This week’s trivia and grand prize is themed [insert theme name]. Answer the question correct and have the opportunity to spin the wheel!</h4>
       <h4>The grand prize this week is [insert prize name].</h4>
 
-      <div id="triviaStartButton" class="trivia-button">
-        <button class="btn primaryButton activeButton trivia-submit" form="triviaForm">Get Started</button>
+      <div id="triviaStartContainer" class="trivia-button noDisplay">
+        <button id="triviaStartButton" class="btn primaryButton activeButton trivia-submit" data-get-questions-url="mock/questions.json">Get Started</button>
+      </div>
+
+      <div id="tryTomorrow" class="noDisplay">
+        <h4>You're next shot at the grand prize starts tomorrow.</h4>
       </div>
     </div>
 
-    <div id="loading">
-      Loading
-    </div>
-
-    <div id="trivia-message" class="noDisplay">
-
-    </div>
-
-    <form class="trivia-container noDisplay" id="triviaForm" action="mock/verify.json" method="POST">
+    <form id="triviaForm" class="trivia-container noDisplay" action="mock/verifyWrong.json" method="POST">
       <h2 class="trivia-question">Is this where the trivia question will go?</h2>
 
       <div class="trivia-answers">
