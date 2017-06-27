@@ -2,3 +2,30 @@
 	background-size: cover;
   background-position: top center;
 }
+.v2 .disable-link {
+	color:inherit !important;
+	cursor:default !important;
+	opacity:1 !important;
+}
+.v2 .disable-link:hover * {
+	cursor:default !important;
+	opacity:1 !important;
+}
+
+/* Include these classes in the global stylesheet (no need to prefix these with v2 class) */
+.ellip {
+	display: block;
+	height: 100%;
+}
+.ellip-line {
+	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+.ellip,
+.ellip-line {
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+}
