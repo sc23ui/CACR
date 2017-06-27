@@ -1,7 +1,9 @@
+/* Background cover fixes */
 .v2 .bkg-img {
 	background-size: cover;
   background-position: top center;
 }
+<<<<<<< HEAD
 .v2 .disable-link {
 	color:inherit !important;
 	cursor:default !important;
@@ -13,6 +15,11 @@
 }
 
 /* Include these classes in the global stylesheet (no need to prefix these with v2 class) */
+=======
+
+
+/* Ellipsis Plugin Support */
+>>>>>>> origin/video-fixes
 .ellip {
 	display: block;
 	height: 100%;
