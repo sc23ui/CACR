@@ -14,47 +14,57 @@
     <link rel="stylesheet" href="css/Spin2Win-style.css">
 
     <script src='js/TweenMax.min.js'></script>
-    <!-- <script src='js/Draggable.min.js'></script> -->
+    <!-- <script src='js/Draggable.min.js'></script> --> <!-- For touch devices -->
     <script src='js/ThrowPropsPlugin.min.js'></script>
-    <script src='js/Spin2WinWheel.min.js'></script>
-    <!-- <script src='js/TextPlugin.min.js'></script> -->
+    <script src='js/Spin2WinWheel.js'></script>
+    <!-- <script src='js/TextPlugin.min.js'></script> --> <!-- For touch devices -->
     <script src="js/index.js"></script>
     <script src="js/trivia.js"></script>
 </head>
 
 <body class="v2" data-check-status-url="mock/can_play.json">
-  <div class="spin-to-win">
-    <div id="triviaStart" class="noDisplay">
-      <h4>This week’s trivia and grand prize is themed [insert theme name]. Answer the question correct and have the opportunity to spin the wheel!</h4>
-      <h4>The grand prize this week is [insert prize name].</h4>
+  <div class="game-container">
+    <div class="js-game-start noDisplay">
+      <h4 class="game-text">
+        This week’s trivia and grand prize is themed <span class="js-game-theme"><!-- Trivia theme is shown here. --></span>. Answer the question correct and have the opportunity to spin the wheel!
+      </h4>
+      <h4 class="game-text">
+        The grand prize this week is <span class="js-game-prize"><!-- Trivia prize is shown here. --></span>.
+      </h4>
 
-      <div id="triviaStartContainer" class="trivia-button noDisplay">
-        <button id="triviaStartButton" class="btn primaryButton activeButton trivia-submit" data-get-questions-url="mock/questions.json">Get Started</button>
+      <div class="js-game-start-action game-btn-container noDisplay">
+        <button class="js-game-start-btn game-submit-btn btn primaryButton activeButton" data-get-questions-url="mock/questions.json">
+          Get Started
+        </button>
       </div>
 
-      <div id="tryTomorrow" class="noDisplay">
-        <h4>You're next shot at the grand prize starts tomorrow.</h4>
+      <div class="js-game-message noDisplay">
+        <h4 class="game-text game-message">
+          You're next shot at the grand prize starts <span class="js-game-frequency"><!-- Trivia frequency is shown here. --></span>.
+        </h4>
       </div>
     </div>
 
-    <form id="triviaForm" class="trivia-container noDisplay" action="mock/verifyWrong.json" method="POST">
-      <h2 class="trivia-question">Is this where the trivia question will go?</h2>
+    <form class="js-trivia-form trivia-container noDisplay" action="mock/verify.json" method="POST">
+      <h2 class="js-trivia-question game-title">
+        <!-- Trivia question goes here.-->
+      </h2>
 
-      <div class="trivia-answers">
-        <!-- <div class="trivia-answer">
-          <input class="trivia-answer-input" type="radio" id="triviaAnswerOne" name="selector">
-          <label class="trivia-answer-label" for="triviaAnswerOne">I'm the correct answer.</label>
-          <div class="trivia-answer-radio"></div>
-        </div> -->
+      <div class="js-trivia-answers trivia-answers">
+        <!-- Trivia answers are listed here. -->
       </div>
 
-      <div class="trivia-button">
-        <button class="btn primaryButton activeButton trivia-submit" form="triviaForm">Submit Answer</button>
+      <div class="game-btn-container">
+        <button class="js-trivia-submit game-submit-btn btn primaryButton activeButton" type="submit">
+          Submit Answer
+        </button>
       </div>
     </form>
 
-    <div id="spin2Win" class="noDisplay spin-to-win-game">
-      <h2 class="spin-to-win-title">Play to win entries for the Grand Prize drawing!</h2>
+    <div class="js-spin-container spin-container noDisplay">
+      <h2 class="game-title">
+        Play to win entries for the Grand Prize drawing!
+      </h2>
 
       <div class="wheelContainer">
         <svg class="wheelSVG" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" text-rendering="optimizeSpeed">

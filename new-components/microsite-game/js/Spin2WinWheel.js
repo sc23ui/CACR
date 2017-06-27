@@ -119,10 +119,10 @@ function Spin2WinWheel() {
       hasShadows = dataObj.hasShadows;
       spinDestinationArray = dataObj.spinDestinationArray;
       if (hasShadows) {
-        wheelOutline.setAttributeNS(null, 'filter', 'url(#shadow)');
+        // wheelOutline.setAttributeNS(null, 'filter', 'url(#shadow)');
         valueContainer.setAttributeNS(null, 'filter', 'url(#shadow)');
         centerCircle.setAttributeNS(null, 'filter', 'url(#shadow)');
-        pegContainer.setAttributeNS(null, 'filter', 'url(#shadow)');
+        // pegContainer.setAttributeNS(null, 'filter', 'url(#shadow)');
         toast.style.boxShadow = "0px 0px 20px rgba(21,21,21,0.5)";
       }
 

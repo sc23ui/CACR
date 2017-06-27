@@ -3,15 +3,14 @@ $(function(){
   var colorCounts = {
     0: "#767676",
     1: "#87CDFF",
+    2: "#a9dbff",
     3: "#0253a4",
+    4: "#1c7bd9",
     5: "#ea8a1a"
   }
 
   var spinDefaults = {
-    "colorArray":[ "#0253a4", "#87cdff", "#0253a4", "#87cdff", "#ea8a1a", "#87cdff", "#16A085", "#27AE60", "#2980B9", "#8E44AD", "#2C3E50", "#F39C12", "#D35400", "#C0392B", "#BDC3C7","#ECF0F1", "#2ECC71", "#E87AC2", "#3498DB", "#9B59B6", "#7F8C8D"],
-
     "segmentValuesArray" : [],
-
     "svgWidth": 1024,
     "svgHeight": 768,
     "wheelStrokeColor": "#0b1f66",
@@ -30,11 +29,11 @@ $(function(){
     "segmentStrokeWidth": 4,
     "centerX": 512,
     "centerY": 384,
-    "hasShadows": false,
+    "hasShadows": true,
     "numSpins": -1 ,
     "spinDestinationArray":[],
     "minSpinDuration":6,
-    "gameOverText":"Thank you for playing. See you tomorrow.",
+    "gameOverText":"Thank you for playing. Grand prize winners will be notified by email.",
     "invalidSpinText":"Oops, something went wrong. Please spin again.",
     "introText":"Click the wheel to spin.",
     "hasSound":true,
@@ -45,25 +44,28 @@ $(function(){
   var checkStatusUrl = $('[data-check-status-url]').attr('data-check-status-url');
 
   $.getJSON(checkStatusUrl, function(data) {
-    $('#triviaStart').show()
+    $('.js-game-start').show()
+    $('.js-game-theme').text(data.game.name);
+    $('.js-game-prize').text(data.game.prize);
+    $('.js-game-frequency').text(data.game.frequency);
     if (data.canPlay) {
-      $('#triviaStartContainer').show()
+      $('.js-game-start-action').show()
     } else {
-      $('#tryTomorrow').show()
+      $('.js-game-message').show()
     }
   });
 
-  $('#triviaStartButton').click(function(e) {
-    $('#triviaStart').hide()
-    $('#triviaForm').show()
+  $('.js-game-start-btn').click(function(e) {
+    $('.js-game-start').hide()
+    $('.js-trivia-form').show()
     var url = $(this).attr('data-get-questions-url');
     createQuestions(url);
   });
 
   var createQuestions = function(url) {
     $.getJSON(url, function(data) {
-      $('.trivia-question').text(data.question.text);
-      var $answers = $('.trivia-answers');
+      $('.js-trivia-question').text(data.question.text);
+      var $answers = $('.js-trivia-answers');
       var $questionInput = $('<input >');
       $questionInput.attr('type', 'hidden');
       $questionInput.attr('name', 'questionId');
@@ -93,15 +95,15 @@ $(function(){
         $div.appendTo($answers)
       }
 
-      $('.trivia-submit').prop('disabled', true);
-      $('#triviaForm').show();
+      $('.js-trivia-start-btn').prop('disabled', true);
+      $('.js-trivia-form').show();
     });
 
     $(document).on('change', '.trivia-answer-input', function () {
-      $('.trivia-submit').prop('disabled', false);
+      $('.js-trivia-submit').prop('disabled', false);
     });
 
-    $('#triviaForm').submit(function(e) {
+    $('.js-trivia-form').submit(function(e) {
       e.preventDefault();
       $form = $(this);
       var url = $(this).attr('action');
@@ -123,25 +125,18 @@ $(function(){
               return colorCounts[e.userData.score];
             });
             spinDefaults["segmentValuesArray"] = data.entries;
-            $('#triviaForm').hide();
-            $('#spin2Win').show();
+            $('.js-trivia-form').hide();
+            $('.js-spin-container').show();
             initSpinWheel(spinDefaults);
           } else {
             $form.find('input[value="' + data.correctAnswerId + '"]').closest('.trivia-answer').addClass("trivia-answer-correct");
             $form.find('input:checked').closest('.trivia-answer').addClass( "trivia-answer-wrong" );
             $form.find('input').closest('.trivia-answer').addClass( "trivia-answer-disabled" );
-            $('.trivia-submit').prop('disabled', true);
+            $('.js-trivia-submit').prop('disabled', true);
           }
         }
       });
     });
   }
-
-    // $('.trivia-submit').click(function(){
-    //     $( ".trivia-container" ).addClass( "noDisplay" );
-    //     $('#spin2Win').hide();
-    //     return false;
-    // });
-
 
 })

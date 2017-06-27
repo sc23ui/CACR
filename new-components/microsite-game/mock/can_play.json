@@ -1,3 +1,11 @@
 {
-  "canPlay": true
+    "game": {
+        "startDate": "Jun 25, 2017 12:00:00 AM",
+        "prize": "2 tickets to Mexico City",
+        "endDate": "Jul 1, 2017 12:00:00 AM",
+        "name": "Aero Mexico",
+        "frequency": "DAILY",
+        "code": "AEROMEXICO"
+    },
+    "canPlay": true
 }
