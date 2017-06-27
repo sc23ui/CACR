@@ -1,6 +1,6 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <!-- Include common (global/reusable) classes for components //-->
   <link rel="stylesheet" type="text/css" media="all" href="common-to-components.css" />
 </head>
@@ -51,8 +51,10 @@
     font-family: 'Open Sans';
     color: #ffffff;
     text-align: left;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     padding-top: 15px;
+    margin-bottom:15px;
+    overflow:hidden;
 }
 .v2 .headline-component-only-heading,
 .v2 .headline-component-heading-arrow,
@@ -143,15 +145,19 @@
     width: inherit;
     height: inherit;
 }
-/*.v2 .headline-component-w33 .headline-component-image {
-    width: 300px;
+
+
+.v2 .headline-component-w33 .headline-component-description {
+    max-height:120px;
 }
-.v2 .headline-component-w50 .headline-component-image {
-    width: 465px;
+.v2 .headline-component-w50 .headline-component-description {
+    max-height:70px;
 }
-.v2 .headline-component-w66 .headline-component-image {
-    width: 630px;
-}*/
+.v2 .headline-component-w66 .headline-component-description {
+    max-height:70px;
+}
+
+
 .v2 .headline-component-w33 .headline-component-heading-description-arrow .headline-component-heading {
     margin: 0;
 }
@@ -170,32 +176,12 @@
 
 </style>
 
-<script type="text/javascript">
-$(document).ready( function() {
-  //AEM author specifies the url for entire clickable area
-	$(".headline-component").click( function() {
-    window.open("#", "_self");
-		});
-  //AEM author specifies the url for Learn more button
-  $(".headline-component-learn-more").click( function() {
-    event.cancelBubble = true;
-    if(event.stopPropagation) event.stopPropagation();
-    window.open("#", "_self");
-    });
-    //AEM author specifies the url for arrow image
-  $(".headline-component-arrow").click( function() {
-    event.cancelBubble = true;
-    if(event.stopPropagation) event.stopPropagation();
-  	window.open("#", "_self");
-    });
-});
-</script>
 
 <div class="v2">
 
 
         <!--// AEM author adjusts heights for components using height property of class headline-component-w33//-->
-        <div class="headline-component headline-component-w33">
+        <div class="headline-component headline-component-w33 disable-link">
 
                 <!-- Dynamic element -->
                 <div class="bkg-img headline-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
@@ -204,13 +190,13 @@ $(document).ready( function() {
                         <!--// AEM author has ability to show/hide one of the below options by adding or removing headline-component-hide class//-->
                         <div class="headline-component-heading-description-button">
                                 <div class="headline-component-heading">Customize the Ideal Vacation</div>
-                                <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                                <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf sadf saf sadf safd saf fsd fsd saf safd sfad sfad sf fsd  as asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf sadf saf sadf safd saf fsd fsd saf safd sfad sfad sf fsd  as asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf sadf saf sadf safd saf fsd fsd saf safd sfad sfad sf fsd  as asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf sadf saf sadf safd saf fsd fsd saf safd sfad sfad sf fsd  as asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf sadf saf sadf safd saf fsd fsd saf safd sfad sfad sf fsd  as</div>
                                 <button class="headline-component-learn-more"> Learn More</button>
                         </div>
                         <div class="headline-component-heading-description-arrow headline-component-hide">
                                 <div class="headline-component-heading">Customize the Ideal Vacation</div>
                                 <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
-                                <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" /></div>
+                                <div class="headline-component-arrow"><img src="../../images/arrow.png" /></div>
                         </div>
                         <div class="headline-component-heading-button headline-component-hide">
                                 <div class="headline-component-heading">A step up at every step</div>
@@ -218,7 +204,7 @@ $(document).ready( function() {
                         </div>
                         <div class="headline-component-heading-arrow headline-component-hide">
                                 <div class="headline-component-heading">A step up at every step</div>
-                                <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" align="right" /></div>
+                                <div class="headline-component-arrow"><img src="../../images/arrow.png" align="right" /></div>
                         </div>
                         <div class="headline-component-only-heading headline-component-hide">
                                 <div class="headline-component-heading">A step up at every step</div>
@@ -229,7 +215,8 @@ $(document).ready( function() {
 
         <br/><br/>
 
-<div class="headline-component headline-component-w50">
+
+        <div class="headline-component headline-component-w50">
 
         <!-- Dynamic element -->
         <div class="bkg-img headline-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
@@ -237,12 +224,12 @@ $(document).ready( function() {
               <div class="headline-component-overlay-content">
                     <div class="headline-component-heading-description-button">
                             <div class="headline-component-heading">Customize the Ideal Vacation</div>
-                            <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                            <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites asdf asdfto truely own the to truely own the to truely own the </div>
                             <button class="headline-component-learn-more"> Learn More</button>
                     </div>
                     <div class="headline-component-heading-description-arrow headline-component-hide">
                             <div class="headline-component-heading">Customize the Ideal Vacation</div>
-                            <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                            <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and to truely own the to truely own the to truely own the to truely own the flexibility to truely own the to truely own the to truely own the to truely own the to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites asdf asdf</div>
                             <div class="headline-component-arrow"><img src=" CACR/images/arrow.png" /></div>
                     </div>
                     <div class="headline-component-heading-button headline-component-hide">
@@ -270,13 +257,13 @@ $(document).ready( function() {
                 <div class="headline-component-overlay-content">
                         <div class="headline-component-heading-description-button">
                                 <div class="headline-component-heading">Customize the Ideal Vacation</div>
-                                <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                                <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacationto truely own the to truely own the to truely own the to truely own the  experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activitesto truely own the to truely own the to truely own the to truely own the to truely own the to truely own the to truely own the to truely own the to truely own the </div>
                                 <button class="headline-component-learn-more"> Learn More</button>
                         </div>
                         <div class="headline-component-heading-description-arrow headline-component-hide">
                                 <div class="headline-component-heading">Customize the Ideal Vacation</div>
-                                <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and flexibility to truely own the vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
-                                <div class="headline-component-arrow"><img src="CACR/images/arrow.png" /></div>
+                                <div class="headline-component-description ellipsis">Delta Vacations gives the benefits and to truely own the to truely own the to truely own the to truely own the flexibility to truely own theto truely own the to truely own the to truely own the  vacation experience with packages inspired by hundreds of destinations and thousands of accomodations and endless activites</div>
+                                <div class="headline-component-arrow"><img src="../../images/arrow.png" /></div>
                         </div>
                         <div class="headline-component-heading-button headline-component-hide">
                                 <div class="headline-component-heading">A step up at every step</div>
@@ -284,7 +271,7 @@ $(document).ready( function() {
                         </div>
                         <div class="headline-component-heading-arrow headline-component-hide">
                                 <div class="headline-component-heading">A step up at every step</div>
-                                <div class="headline-component-arrow"><img src="CACR/images/arrow.png " align="right" /></div>
+                                <div class="headline-component-arrow"><img src="../../images/arrow.png " align="right" /></div>
                         </div>
                         <div class="headline-component-only-heading headline-component-hide">
                                 <div class="headline-component-heading">A step up at every step</div>
@@ -293,3 +280,33 @@ $(document).ready( function() {
         </div>
 
 </div>
+
+
+<!--// Utilize features of jQuery ellipsis plugin //-->
+<script src="../plugins/ellipsis/ellipsis.js"></script>
+
+
+<script type="text/javascript">
+  $(document).ready( function() {
+
+    //AEM author specifies the url for entire clickable area
+  	$(".headline-component").click( function() {
+      window.open("#", "_self");
+  	});
+    //AEM author specifies the url for Learn more button
+    $(".headline-component-learn-more").click( function() {
+      event.cancelBubble = true;
+      if(event.stopPropagation) event.stopPropagation();
+      window.open("#", "_self");
+    });
+      //AEM author specifies the url for arrow image
+    $(".headline-component-arrow").click( function() {
+      event.cancelBubble = true;
+      if(event.stopPropagation) event.stopPropagation();
+    	window.open("#", "_self");
+    });
+
+    $('.ellipsis').ellipsis();
+
+  });
+</script>

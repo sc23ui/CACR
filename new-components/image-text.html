@@ -1,5 +1,7 @@
 <!-- Include common (global/reusable) classes for components //-->
 <link rel="stylesheet" type="text/css" media="all" href="common-to-components.css" />
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="../plugins/ellipsis/ellipsis.js"></script>
 
 <style>
 	.v2 .image-component {
@@ -20,6 +22,20 @@
 		width:630px;
 		height:532px;
 	}
+
+	.v2 .shorten .image-component-w33 {
+		width:300px;
+		height:270px;
+	}
+	.v2 .shorten .image-component-w50 {
+		width:465px;
+		height:270px;
+	}
+	.v2 .shorten .image-component-w66 {
+		width:630px;
+		height:270px;
+	}
+
 	.v2 .image-component-w33 .image-component-image {
 		width:300px;
 		height:120px;
@@ -43,13 +59,23 @@
 		height:300px;
 	}
 
+	.v2 .shorten .image-component-w33 .image-component-description {
+		height:50px;
+	}
+	.v2 .shorten .image-component-w50 .image-component-description {
+		height:40px;
+	}
+	.v2 .shorten .image-component-w66 .image-component-description {
+		height:40px;
+	}
+
 	.v2 .image-component-content {
 		padding:15px 20px 40px 20px;
 	}
 	.v2 a.image-component-title {
 		display:block;
 		font-weight:600;
-		font-size:25px;
+		font-size:24px;
 		line-height:30px;
 		color:#0b1f66;
 		text-transform:uppercase;
@@ -78,6 +104,7 @@
 	.v2 a.image-component-link:hover {
 		color:#1c7bd9;
 	}
+
 </style>
 
 <div class="v2">
@@ -86,99 +113,126 @@
 
 
 
-	<div class="image-component image-component-w33">
 
-		<!-- Dynamic element -->
-		<div class="bkg-img image-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
+	<div class="shorten">
 
-		<div class="image-component-content">
+		<div class="image-component image-component-w33">
 
+<<<<<<< HEAD
         	<!--// AEM property limit of 30 characters //-->
-			<a href="#" class="image-component-title">LOREM IPSUM DOLAR AMIT</a>
+			<a href="#" class="image-component-title disable-link">LOREM IPSUM DOLAR AMIT</a>
+=======
+			<!-- Dynamic element -->
+			<div class="bkg-img image-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
 
-      <!--// AEM property limit of 110 characters //-->
-			<div class="image-component-description ellipsis">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			<div class="image-component-content">
+
+	        	<!--// AEM property limit of 30 characters //-->
+				<a href="#" class="image-component-title">LOREM IPSUM DOLAR</a>
+
+	      <!--// AEM property limit of 110 characters //-->
+				<div class="image-component-description ellipsis">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In digsim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+				</div>
+>>>>>>> origin/video-fixes
+
 			</div>
 
-		</div>
+			<a href="#" class="image-component-link">Learn More&nbsp;&gt;</a>
 
-		<a href="#" class="image-component-link">Learn More&nbsp;&gt;</a>
+		</div>
 
 	</div>
 
 
 
 
-<br><br>
+
+	<br><br>
 
 
 
 
+	<div class="shorten">
 
-	<div class="image-component image-component-w50">
+		<div class="image-component image-component-w50">
 
-		<!-- Dynamic element -->
-		<div class="bkg-img image-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
+			<!-- Dynamic element -->
+			<div class="bkg-img image-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
 
-		<div class="image-component-content">
+			<div class="image-component-content">
 
-        	<!--// AEM property limit of 60 characters //-->
-			<a href="#" class="image-component-title">LOREM IPSUM DOLAR AMIT</a>
+	        	<!--// AEM property limit of 60 characters //-->
+				<a href="#" class="image-component-title">LOREM IPSUM DOLAR AMIT</a>
 
-					<div class="image-component-description ellipsis">
-            <!--// AEM property limit of 550 characters //-->
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-					</div>
+						<div class="image-component-description ellipsis">
+	            <!--// AEM property limit of 550 characters //-->
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						</div>
 
-		</div>
-
-		<a href="#" class="image-component-link">Learn More &nbsp;&gt;</a>
-
-	</div>
-
-
-
-
-	<br/><br/>
-
-
-
-
-	<div class="image-component image-component-w66">
-
-		<!-- Dynamic element -->
-		<div class="bkg-img image-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
-
-
-		<div class="image-component-content">
-
-        	<!--// AEM property limit of 40 characters //-->
-			<a href="#" class="image-component-title">LOREM IPSUM DOLAR AMIT</a>
-
-			<div class="image-component-description ellipsis">
-            <!--// AEM property limit of 1400 characters //-->
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.nec tempor magna volutpat.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.nec tempor magna volutpat.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
 			</div>
 
+			<a href="#" class="image-component-link">Learn More &nbsp;&gt;</a>
+
 		</div>
 
-		<a href="#" class="image-component-link">Learn More &nbsp;&gt;</a>
+	</div>
+
+
+		<br/><br/>
+
+
+	<div class="shorten">
+
+		<div class="image-component image-component-w66">
+
+			<!-- Dynamic element -->
+			<div class="bkg-img image-component-image" style="background-image:url('http://lorempixel.com/output/cats-q-c-640-480-3.jpg');"></div>
+
+			<div class="image-component-content">
+
+	        	<!--// AEM property limit of 40 characters //-->
+				<a href="#" class="image-component-title">LOREM IPSUM DOLAR AMIT</a>
+
+				<div class="image-component-description ellipsis">
+	            <!--// AEM property limit of 1400 characters //-->
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.nec tempor magna volutpat.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.nec tempor magna volutpat.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+	            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+				</div>
+
+			</div>
+
+			<a href="#" class="image-component-link">Learn More &nbsp;&gt;</a>
+
+		</div>
 
 	</div>
+
+
+
 
 
 
 
 
 </div>
+
+
+
+
+<!--// Add plugin below to common JavaScript files and initialize the ellispsis plugin globally on all pages.  Also add initialization to page load. //-->
+<script>
+//Initialize Ellipsis Plugin onReady (globally)
+$(function() {
+  $('.ellipsis').ellipsis();
+});
+</script>
