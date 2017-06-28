@@ -486,7 +486,7 @@ body.v2 {
 					POLICY GOES HERE</div>
 		<!--Past Content goes here -->
 		<div class="pastcontent">
-			<div class="monthname">March 2017</div>
+			<div class="monthname noDisplay">March 2017</div>
 			
 			<div class="group1">
 				
@@ -877,7 +877,7 @@ body.v2 {
 			
 			
 
-			<div class="monthname">February 2017</div>
+			<div class="monthname noDisplay">February 2017</div>
 			
 			<div class="group1 noDisplay">
 				
@@ -1396,7 +1396,7 @@ body.v2 {
 			</div>
 
 
-			<div class="monthname">January 2017</div>
+			<div class="monthname noDisplay">January 2017</div>
 			
 			<div class="group1 noDisplay">
 				
@@ -1982,7 +1982,7 @@ body.v2 {
 function loadMorePastExceptions() {
 	var counter = 0;
 	var hasAllLoaded = true;
-	var noOfMoreExceptions=25;
+	var noOfMoreExceptions=3;
 	var allLoaded = true;
 	
 	$(".group1 .active-exception").each( function() {
@@ -1990,6 +1990,7 @@ function loadMorePastExceptions() {
 			var idList = $(this).attr("id").split("_");
 			if (noOfMoreExceptions > counter) {
 					$(this).parent().removeClass('noDisplay');
+					$(this).parent().prev('.monthname').removeClass('noDisplay');
 					counter++;
 				} else {
 					hasAllLoaded = false;
@@ -2002,6 +2003,14 @@ function loadMorePastExceptions() {
 		$(".loadmore").addClass('noDisplay');
 	}
 }
+$(document).ready(function() {
+$(".group1").each( function() {
+		if (!$(this).hasClass("noDisplay")) {
+			$(this).prev('.monthname').removeClass('noDisplay');
+		}
+	});
+});
+
 </script>
 </div>
 </main>
