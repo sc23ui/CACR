@@ -19,22 +19,22 @@ function loadJSON(callback) {
 
 //your own function to capture the spin results
 function myResult(e) {
-  //e is the result object
-    console.log('Spin Count: ' + e.spinCount + ' - ' + 'Win: ' + e.win + ' - ' + 'Message: ' +  e.msg);
-
-    // if you have defined a userData object...
-    if(e.userData){
-
-      console.log('User defined score: ' + e.userData.score)
-
-    }
-
-  //if(e.spinCount == 3){
-    //show the game progress when the spinCount is 3
-    //console.log(e.target.getGameProgress());
-    //restart it if you like
-    //e.target.restart();
-  //}
+  // //e is the result object
+  //   console.log('Spin Count: ' + e.spinCount + ' - ' + 'Win: ' + e.win + ' - ' + 'Message: ' +  e.msg);
+  //
+  //   // if you have defined a userData object...
+  //   if(e.userData){
+  //
+  //     console.log('User defined score: ' + e.userData.score)
+  //
+  //   }
+  //
+  // //if(e.spinCount == 3){
+  //   //show the game progress when the spinCount is 3
+  //   //console.log(e.target.getGameProgress());
+  //   //restart it if you like
+  //   //e.target.restart();
+  // //}
 
 }
 
@@ -45,24 +45,13 @@ function myError(e) {
 
 }
 
-function myGameEnd(e) {
-  //e is gameResultsArray
-  console.log(e);
-  TweenMax.delayedCall(5, function(){
-    /*location.reload();*/
-  })
-
-
-}
-
-function initSpinWheel(config) {
+function initSpinWheel(config, gameEndCallback) {
   var myWheel = new Spin2WinWheel();
-
   //WITH your own button
   //myWheel.init({data:jsonData, onResult:myResult, onGameEnd:myGameEnd, onError:myError, spinTrigger:mySpinBtn});
 
   //WITHOUT your own button
-  myWheel.init({data:config, onResult:myResult, onGameEnd:myGameEnd, onError:myError});
+  myWheel.init({data:config, onResult:myResult, onGameEnd:gameEndCallback, onError:myError});
 }
 
 //And finally call it

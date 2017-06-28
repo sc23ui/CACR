@@ -23,82 +23,100 @@
 </head>
 
 <body class="v2" data-check-status-url="mock/can_play.json">
-  <div class="game-container">
-    <div class="js-game-start noDisplay">
-      <h4 class="game-text">
-        This week’s trivia and grand prize is themed <span class="js-game-theme"><!-- Trivia theme is shown here. --></span>. Answer the question correct and have the opportunity to spin the wheel!
-      </h4>
-      <h4 class="game-text">
-        The grand prize this week is <span class="js-game-prize"><!-- Trivia prize is shown here. --></span>.
-      </h4>
-
-      <div class="js-game-start-action game-btn-container noDisplay">
-        <button class="js-game-start-btn game-submit-btn btn primaryButton activeButton" data-get-questions-url="mock/questions.json">
-          Get Started
-        </button>
-      </div>
-
-      <div class="js-game-message noDisplay">
-        <h4 class="game-text game-message">
-          You're next shot at the grand prize starts <span class="js-game-frequency"><!-- Trivia frequency is shown here. --></span>.
-        </h4>
-      </div>
-    </div>
-
-    <form class="js-trivia-form trivia-container noDisplay" action="mock/verify.json" method="POST">
-      <h2 class="js-trivia-question game-title">
-        <!-- Trivia question goes here.-->
-      </h2>
-
-      <div class="js-trivia-answers trivia-answers">
-        <!-- Trivia answers are listed here. -->
-      </div>
-
-      <div class="game-btn-container">
-        <button class="js-trivia-submit game-submit-btn btn primaryButton activeButton" type="submit">
-          Submit Answer
-        </button>
-      </div>
-    </form>
-
-    <div class="js-spin-container spin-container noDisplay">
-      <h2 class="game-title">
-        Play to win entries for the Grand Prize drawing!
-      </h2>
-
-      <div class="wheelContainer">
-        <svg class="wheelSVG" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" text-rendering="optimizeSpeed">
-          <defs>
-            <filter id="shadow" x="-100%" y="-100%" width="550%" height="550%">
-                <feOffset in="SourceAlpha" dx="0" dy="0" result="offsetOut"></feOffset>
-                <feGaussianBlur stdDeviation="9" in="offsetOut" result="drop" />
-                <feColorMatrix in="drop" result="color-out" type="matrix" values="0 0 0 0   0
-                  0 0 0 0   0
-                  0 0 0 0   0
-                  0 0 0 .3 0" />
-                <feBlend in="SourceGraphic" in2="color-out" mode="normal" />
-            </filter>
-          </defs>
-
-          <g class="mainContainer">
-              <g class="wheel"></g>
-          </g>
-
-          <g class="centerCircle"/>
-          <g class="wheelOutline" />
-          <g class="pegContainer" opacity="1">
-            <path class="peg" fill="#ddd" d="M22.139,0C5.623,0-1.523,15.572,0.269,27.037c3.392,21.707,21.87,42.232,21.87,42.232 s18.478-20.525,21.87-42.232C45.801,15.572,38.623,0,22.139,0z" />
-          </g>
-          <g class="valueContainer" />
-        </svg>
-
-        <div class="toast">
-            <p/>
+<div class="container_12">
+  <div class="game-background" style="background-image:url('http://placekitten.com/920/1200');">
+    <div class="game-wrapper">
+      <div class="game-score-bar clearfix">
+        <!-- <a class="game-link-legal darkBGLink" href="">Terms and Conditions</a> -->
+        <div class="game-score-content">
+          Your entries into this weeks grand prize drawing: <span class="js-game-score game-score"></span>
         </div>
+        <div class="game-btn-dashboard">
+          <button class="btn primaryButton activeButton">My Dashboard &gt;</button>
+        </div>
+      </div>
+
+      <div class="game-container">
+        <div class="js-game-start">
+          <h4 class="game-text">
+            Answer <span class="js-game-frequency-possessive"></span> <span class="js-game-theme game-text-theme"><!-- Trivia theme is shown here. --></span> trivia question to win
+          </h4>
+
+          <h2 class="game-text-prize">
+            <span class="js-game-prize"><!-- Trivia prize is shown here. --></span>
+          </h2>
+
+          <div class="js-game-message game-text-no-play display-none">
+            <h4 class="game-text game-text-emphasis">
+              Thank you for answering <span class="js-game-frequency-possessive"></span> trivia question.<br> You're next shot at the grand prize starts <span class="js-game-frequency"><!-- Trivia frequency is shown here. --></span>.
+            </h4>
+          </div>
+        </div>
+
+        <form class="js-trivia-form trivia-container display-none" action="mock/verify.json" method="POST">
+          <h2 class="js-trivia-question game-title">
+            <!-- Trivia question goes here.-->
+          </h2>
+
+          <div class="js-trivia-answers trivia-answers">
+            <!-- Trivia answers are listed here. -->
+          </div>
+
+          <h4 class="js-trivia-wrong game-text game-text-wrong display-none">
+            Try again <span class="js-game-frequency"><!-- Trivia frequency is shown here. --></span>.
+          </h4>
+
+          <div class="game-btn-container">
+            <button class="js-trivia-submit game-submit-btn btn primaryButton activeButton" type="submit">
+              Submit Answer
+            </button>
+          </div>
+        </form>
+
+        <div class="js-spin-container spin-container display-none">
+          <h2 class="game-title">
+            <strong>CORRECT!</strong> Spin for your entries into this week's prize.
+          </h2>
+
+          <div class="wheelContainer">
+            <svg class="wheelSVG" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" text-rendering="optimizeSpeed">
+              <defs>
+                <filter id="shadow" x="-100%" y="-100%" width="550%" height="550%">
+                    <feOffset in="SourceAlpha" dx="0" dy="0" result="offsetOut"></feOffset>
+                    <feGaussianBlur stdDeviation="9" in="offsetOut" result="drop" />
+                    <feColorMatrix in="drop" result="color-out" type="matrix" values="0 0 0 0   0
+                      0 0 0 0   0
+                      0 0 0 0   0
+                      0 0 0 .3 0" />
+                    <feBlend in="SourceGraphic" in2="color-out" mode="normal" />
+                </filter>
+              </defs>
+
+              <g class="mainContainer">
+                  <g class="wheel"></g>
+              </g>
+
+              <g class="centerCircle"/>
+              <g class="wheelOutline" />
+              <g class="pegContainer" opacity="1">
+                <path class="peg" fill="#ddd" d="M22.139,0C5.623,0-1.523,15.572,0.269,27.037c3.392,21.707,21.87,42.232,21.87,42.232 s18.478-20.525,21.87-42.232C45.801,15.572,38.623,0,22.139,0z" />
+              </g>
+              <g class="valueContainer" />
+            </svg>
+
+            <div class="toast">
+                <p/>
+            </div>
+          </div>
+          <p class="game-text-legal">
+             Grand prize winners will be notified by email.
+          </p>
+        </div>
+
       </div>
     </div>
   </div>
 </div>
-
+</div>
 </body>
 </html>

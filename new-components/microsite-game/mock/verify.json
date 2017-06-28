@@ -1,11 +1,64 @@
 {
-  "correct": true,
-  "entries":[
-    {"value": "1^ENTRY", "resultText":"1 Entry for grand prize","probability":0,"type":"string","id":1,"win":true,"userData": {"score": 1}},
-    {"value": "5^ENTRIES", "resultText":"5 entries for grand prize","probability":0,"type":"string","id":2,"win":false,"userData": {"score": 5}},
-    {"value": "3^ENTRIES", "resultText":"3 Entries for grand prize","probability":0,"type":"string","id":3,"win":true,"userData": {"score": 3}},
-    {"value": "1^ENTRY", "resultText":"1 Entry for grand prize","probability":0,"type":"string","id":4,"win":true,"userData": {"score": 1}},
-    {"value": "0^ENTRIES", "resultText":"Sorry, play again tomorrow","probability":100,"type":"string","id":5,"win":false,"userData": {"score": 0}},
-    {"value": "3^ENTRIES", "resultText":"3 Entries for grand prize","probability":0,"type":"string","id":6,"win":true,"userData": {"score": 3}}
-  ]
+    "participation": {
+        "canPlay": true,
+        "userName": "aditalo@delta.com",
+        "totalEntries": 15,
+        "count": 1,
+        "gameCode": "AEROMEXICO"
+    },
+    "answer": {
+        "correctIndicator": "N",
+        "id": 2,
+        "text": "19"
+    },
+    "entries": [
+        {
+            "value": "1 Entry for grand prize",
+            "probability": 0,
+            "type": "string",
+            "id": 1,
+            "win": true,
+            "count": 1
+        },
+        {
+            "value": "Sorry, play again tomorrow",
+            "probability": 0,
+            "type": "string",
+            "id": 2,
+            "win": false,
+            "count": 0
+        },
+        {
+            "value": "3 Entries for grand prize",
+            "probability": 0,
+            "type": "string",
+            "id": 3,
+            "win": true,
+            "count": 3
+        },
+        {
+            "value": "1 Entry for grand prize",
+            "probability": 100,
+            "type": "string",
+            "id": 4,
+            "win": true,
+            "count": 3
+        },
+        {
+            "value": "Sorry, play again tomorrow",
+            "probability": 0,
+            "type": "string",
+            "id": 5,
+            "win": false,
+            "count": 0
+        },
+        {
+            "value": "3 Entries for grand prize",
+            "probability": 0,
+            "type": "string",
+            "id": 6,
+            "win": true,
+            "count": 3
+        }
+    ]
 }

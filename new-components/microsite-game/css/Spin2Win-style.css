@@ -1,25 +1,75 @@
 body {
   background-color: #fff;
   color: #333;
-  overflow: hidden;
+}
+
+.display-none {
+  display: none;
+}
+
+.game-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.game-wrapper > * {
+  box-sizing: border-box;
+}
+
+.game-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  width: 720px;
 }
 
 .game-container {
-  margin: 40px auto;
-  position: relative;
-  width: 960px;
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
 }
 
 .game-title {
   margin-bottom: 25px;
-  text-align: center;
 }
 
 .game-text {
   padding-bottom: 15px;
 }
 
-.game-message {
+.game-text-theme {
+  color: #0b1f66;
+  font-weight: 700;
+}
+
+.game-text-prize {
+  font-size: 45px;
+  font-weight: 100;
+  margin-top: -10px;
+}
+
+.game-text-wrong {
+  color: #e01935;
+  clear: both;
+  padding-top: 25px;
+}
+
+.game-text-no-play {
+  margin-top: 40px;
+}
+
+.game-text-legal {
+  /*color: #c7c7c7;*/
+}
+
+.game-text-emphasis {
   font-weight: 700;
 }
 
@@ -44,12 +94,72 @@ body {
   padding: 15px 20px;
 }
 
-/* Trivia Form */
-.trivia-answer {
-  position: relative;
-  float: left;
+/* Score Board */
+.game-score-bar {
+  background-color: #02132d;
+  color: #fff;
+  display: table;
+  min-height: 60px;
+  padding-left: 15px;
+  padding-right: 11px;
   width: 100%;
-	border-bottom: 1px solid #f6f6f7;
+}
+
+.game-score-content {
+  display: table-cell;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 480px;
+  vertical-align: middle;
+}
+
+.game-score {
+  background: #04285e;
+  background: -moz-linear-gradient(top, #04285e 0%, #053276 100%);
+  background: -webkit-linear-gradient(top, #04285e 0%,#053276 100%);
+  background: linear-gradient(to bottom, #04285e 0%,#053276 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04285e', endColorstr='#053276',GradientType=0 );
+  border: 1px solid rgba(255,255,255,.05);
+  border-radius: 2px;
+  box-shadow: 0 0 1px #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 50px;
+  padding: 5px 8px;
+  position: relative;
+  margin-left: 3px;
+  margin-right: 3px;
+  top: 1px;
+}
+
+.game-link-legal {
+  display: inline-block;
+  float: left;
+  line-height: 60px;
+  padding-left: 15px;
+}
+
+.game-btn-dashboard {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.game-btn-dashboard .btn {
+  padding: 7px 20px;
+}
+
+/* Trivia Form */
+.trivia-container {
+  margin-top: 40px;
+}
+
+.trivia-answer {
+  border-bottom: 1px solid #f6f6f7;
+  float: left;
+  position: relative;
+  text-align: left;
+  width: 100%;
 }
 
 .trivia-answer-label {
@@ -158,15 +268,13 @@ body {
 /* Spin2Win */
 .wheelContainer {
   font-size: 18px;
-  position: absolute;
-  width: 850px;
+  position: relative;
   height: 100%;
-  max-width: 960px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
-  left: 50%;
-  top: 100px;
-  transform: translate(-50%, -50%);
+  min-height: 630px;
+  right: 63px;
 }
 
 /* .wheelText tspan{
