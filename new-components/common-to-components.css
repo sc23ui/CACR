@@ -3,7 +3,8 @@
 	background-size: cover;
   background-position: top center;
 }
-<<<<<<< HEAD
+
+/* Disable Link */;
 .v2 .disable-link {
 	color:inherit !important;
 	cursor:default !important;
@@ -14,12 +15,8 @@
 	opacity:1 !important;
 }
 
-/* Include these classes in the global stylesheet (no need to prefix these with v2 class) */
-=======
-
 
 /* Ellipsis Plugin Support */
->>>>>>> origin/video-fixes
 .ellip {
 	display: block;
 	height: 100%;
