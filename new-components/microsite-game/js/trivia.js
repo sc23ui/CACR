@@ -154,6 +154,7 @@ $(function(){
             $('.js-spin-container').show();
             initSpinWheel(spinDefaults, function() {
               $('.js-game-score').text(newTotalEntries);
+              $('.js-game-score').addClass("game-score-animate");
             });
           } else {
             $form.find('input[value="' + data.answer.id + '"]').closest('.trivia-answer').addClass("trivia-answer-correct");
