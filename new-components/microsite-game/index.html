@@ -6,13 +6,15 @@
     <title>Delta Pro - Summer Trivia Bonanza!!!!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="https://pro.delta.com/etc/clientlibs/granite/jquery.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://pro.delta.com/etc/designs/deltaPro/lib.20170620.css" media="all">
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/header-cacr-override.css" media="all">
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/chenrygit/CACR/master/agency/common/common-cacr-override.css" media="all">
-    <link rel="stylesheet" href="css/Spin2Win-style.css">
 
+    <!--------------------------->
+    <!-- GAME CODE DEPENDECIES -->
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/Spin2Win-style.css">
     <script src='js/TweenMax.min.js'></script>
     <!-- <script src='js/Draggable.min.js'></script> --> <!-- For touch devices -->
     <script src='js/ThrowPropsPlugin.min.js'></script>
@@ -20,16 +22,20 @@
     <!-- <script src='js/TextPlugin.min.js'></script> --> <!-- For touch devices -->
     <script src="js/index.js"></script>
     <script src="js/trivia.js"></script>
+    <!-- End of Game Dependencies -->
+    <!------------------------------>
 </head>
 
-<body class="v2" data-check-status-url="mock/can_play.json">
+<body class="v2">
 <div class="container_12">
-  <div class="game-background" style="background-image:url('http://placekitten.com/920/1200');">
+
+  <!------------------------>
+  <!-- START OF GAME CODE -->
+  <div class="game-background"  data-check-status-url="mock/can_play.json" style="background-image:url('http://placekitten.com/920/1200');"> <!-- Dynamic AEM: Background Image -->
     <div class="game-wrapper">
       <div class="game-score-bar clearfix">
-        <!-- <a class="game-link-legal darkBGLink" href="">Terms and Conditions</a> -->
         <div class="game-score-content">
-          Your entries into this weeks grand prize drawing: <span class="js-game-score game-score"></span>
+          Your entries into this weeks grand prize drawing: <span class="js-game-score game-score game-score-animate"></span>
         </div>
         <div class="game-btn-dashboard">
           <button class="btn primaryButton activeButton">My Dashboard &gt;</button>
@@ -39,31 +45,31 @@
       <div class="game-container">
         <div class="js-game-start">
           <h4 class="game-text">
-            Answer <span class="js-game-frequency-possessive"></span> <span class="js-game-theme game-text-theme"><!-- Trivia theme is shown here. --></span> trivia question to win
+            Answer <span class="js-game-frequency-possessive"></span> <span class="js-game-theme game-text-theme"><!-- Dynamic JS: Trivia Theme --></span> trivia question to win
           </h4>
 
           <h2 class="game-text-prize">
-            <span class="js-game-prize"><!-- Trivia prize is shown here. --></span>
+            <span class="js-game-prize"><!-- Dynamic JS: Trivia Prize --></span>
           </h2>
 
           <div class="js-game-message game-text-no-play display-none">
             <h4 class="game-text game-text-emphasis">
-              Thank you for answering <span class="js-game-frequency-possessive"></span> trivia question.<br> You're next shot at the grand prize starts <span class="js-game-frequency"><!-- Trivia frequency is shown here. --></span>.
+              Thank you for answering <span class="js-game-frequency-possessive"></span> trivia question.<br> You're next shot at the grand prize starts <span class="js-game-frequency"><!-- Dynamic JS: Trivia Frequency --></span>.
             </h4>
           </div>
         </div>
 
         <form class="js-trivia-form trivia-container display-none" action="mock/verify.json" method="POST">
           <h2 class="js-trivia-question game-title">
-            <!-- Trivia question goes here.-->
+            <!-- Dynamic JS: Trivia Question -->
           </h2>
 
           <div class="js-trivia-answers trivia-answers">
-            <!-- Trivia answers are listed here. -->
+            <!-- Dynamic JS: Trivia Answers -->
           </div>
 
           <h4 class="js-trivia-wrong game-text game-text-wrong display-none">
-            Try again <span class="js-game-frequency"><!-- Trivia frequency is shown here. --></span>.
+            Try again <span class="js-game-frequency"><!-- Dynamic JS: Trivia Frequency --></span>.
           </h4>
 
           <div class="game-btn-container">
@@ -78,6 +84,7 @@
             <strong>CORRECT!</strong> Spin for your entries into this week's prize.
           </h2>
 
+          <!-- Spin2Win Code starts here -->
           <div class="wheelContainer">
             <svg class="wheelSVG" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" text-rendering="optimizeSpeed">
               <defs>
@@ -108,15 +115,27 @@
                 <p/>
             </div>
           </div>
+          <!-- End Spin2Win Code -->
+        </div>
+
+        <div class="game-legal-container">
           <p class="game-text-legal">
-             Grand prize winners will be notified by email.
+             Grand prize winners will be notified by email. <!-- Dynamic AEM: Legal Text -->
+          </p>
+          <p class="game-text-legal">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. <!-- Dynamic AEM: Legal Text -->
+          </p>
+          <p class="game-text-legal">
+             <a href="">See all terms and conditions.</a> <!-- Dynamic AEM: Legal Link -->
           </p>
         </div>
 
       </div>
     </div>
   </div>
-</div>
+  <!-- END OF GAME CODE -->
+  <!------------------------>
+
 </div>
 </body>
 </html>
