@@ -1,0 +1,40 @@
+{
+    "participation": {
+        "canPlay": true,
+        "userName": "aditalo@delta.com",
+        "totalEntries": 12,
+        "count": 1,
+        "gameCode": "AEROMEXICO"
+    },
+    "game": {
+        "startDate": "Jun 25, 2017 12:00:00 AM",
+        "prize": "2 tickets to Mexico City",
+        "endDate": "Jul 1, 2017 12:00:00 AM",
+        "name": "Aero Mexico",
+        "frequency": "DAILY",
+        "code": "AEROMEXICO"
+    },
+    "question": {
+        "answers": [
+            {
+                "id": 1,
+                "text": "16"
+            },
+            {
+                "id": 2,
+                "text": "19"
+            },
+            {
+                "id": 3,
+                "text": "21"
+            },
+            {
+                "id": 4,
+                "text": "22"
+            }
+        ],
+        "id": 1,
+        "text": "How many US destinations does Aero Mexico have?",
+        "date": "Jun 28, 2017 12:03:21 PM"
+    }
+}
