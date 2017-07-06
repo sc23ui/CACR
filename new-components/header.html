@@ -40,11 +40,13 @@
   }
   .menu-links {
     display: table;
-    padding-right:20px;
+  }
+  a.menu-link {
+    max-width:90px;
   }
   .menu-link {
     line-height: 1.4;
-    padding: 17px 25px;
+    padding: 17px 19px;
     margin: 0;
     display: table-cell;
     vertical-align: middle;
@@ -68,6 +70,7 @@
     font-size:24px;
     font-weight:400;
     cursor:default;
+    box-sizing: border-box;
   }
   .menu-link.menu-app-label:hover {
     background:#134775;
@@ -77,7 +80,7 @@
 
   /* Tabs seen after user authentication (located on right) */
   .menu-tab {
-    width: 300px;
+    display:table-cell;
     position: relative;
     background-color: #22699c;
     font-weight:300;
@@ -96,11 +99,17 @@
     opacity:1;
   }
   .menu-tab-link {
-    padding: 0 24px;
-    text-align: center;
+    line-height: 1.4;
+    padding: 17px 25px;
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    font-weight: 600;
     text-transform: uppercase;
-    box-sizing: border-box;
     text-decoration: none;
+    min-width:2.1em;
+    text-align:center;
   }
   .menu-link:hover,
   .menu-tab-link:hover {
@@ -115,6 +124,8 @@
     border-right: 1px solid #134775;
     padding-top:2px;
     cursor: default;
+    display:table-cell;
+    padding:17px;
   }
   .menu-dropdown:hover {
     background-color:#3f81b1;
@@ -139,14 +150,17 @@
     position: relative;
     top: -2px;
     font-size:11px;
-    color:#000 !important;
+    color:#054276 !important;
   }
   .menu-dropdown-title {
+    /*must know the height for dropdown to work */
     box-sizing: border-box;
+    position:relative;
     padding: 0;
     text-align: center;
     font-weight: 400;
     text-transform: uppercase;
+    display:table-cell;
   }
   .menu-dropdown-title-link {
     padding: 17px 0px 17px 0px;
@@ -179,7 +193,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: -1px;
+    left: 0;
     background: #fff;
     border: 1px solid #e6e7e8;
     margin-top: -1px;
@@ -187,7 +201,7 @@
   }
   .menu-dropdown .menu-dropdown-links {
     width: 240px;
-    margin-left:-41px;
+
   }
   .menu-dropdown:hover .menu-dropdown-links {
     display: block;
@@ -197,6 +211,7 @@
     padding: 17px 16px;
     font-weight:400;
     color: #153f64;
+    background-color:#fff;
     text-decoration: none;
   }
   .menu-dropdown-link:hover {
@@ -245,21 +260,28 @@
     font-weight: 600;
     font-size: 14px;
     padding: 0 24px;
-    display: block;
+    display: table-cell;
     text-transform: uppercase;
   }
 
   /* Single-use toggleable fixed-width elements */
-  #menu-tab-admin{
-    width: 100px;
-  }
-  #menu-tab-dashboard {
-    width: 199px;
-  }
   #menu-login {
     width: 300px;
   }
+  .menu-categories {
+    width:580px;
+  }
+</style>
 
+
+<style>
+/* ie fixes */
+.menu-dropdown-links {
+  position:absolute;
+  bottom:100%;
+  left: -1px;
+}
+*/
 </style>
 
  <!--///////////////////////////////////////////
@@ -287,14 +309,15 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">Home</a>
             <!--// Display 'menu-app-label' when used with our app container page //-->
-            <a href="#" class="menu-link menu-app-label" style="display:none;">Preferred Seats</a>
+            <div class="menu-link menu-app-label" style="display:none;">Preferred Seats</div>
           </div>
         </div>
-        <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
+
+        <div class="menu-section menu-tab menu-dropdown">
           <div class="menu-dropdown-title">
             <a href="#" class="menu-dropdown-title-link">My Dashboard</a>
           </div>
@@ -303,7 +326,8 @@
             <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
           </div>
         </div>
-        <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
+
+        <a href="#" class="menu-section menu-tab menu-tab-link active">Administrador</a>
       </nav>
 
   </div>
@@ -343,12 +367,13 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+        <div class="menu-section menu-categories">
           <div class="menu-links">
-            <a href="#" class="menu-link menu-app-label">Preferred Seats</a>
+            <div class="menu-link menu-app-label">Preferred Seats</div>
           </div>
         </div>
-        <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
+
+        <div class="menu-section menu-tab menu-dropdown active">
           <div class="menu-dropdown-title">
             <a href="#" class="menu-dropdown-title-link">My Dashboard</a>
           </div>
@@ -357,23 +382,10 @@
             <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
           </div>
         </div>
-        <a href="#" class="menu-section menu-tab menu-tab-link active" id="menu-tab-admin">Admin</a>
+
+        <a href="#" class="menu-section menu-tab menu-tab-link">Administrador</a>
+
       </nav>
-
-  </div>
-</div>
-
-<div class="header-menu-bottom">
-  <div class="header-menu">
-
-      <div class="sub-menu">
-        <div class="sub-menu-links">
-          <a href="#" class="sub-menu-link">Users</a>
-          <a href="#" class="sub-menu-link">Admin User Management</a>
-          <a href="#" class="sub-menu-link">Agency Details</a>
-          <a href="#" class="sub-menu-link">Application Settings</a>
-        </div>
-      </div>
 
   </div>
 </div>
@@ -394,7 +406,7 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">Home</a>
             <a href="#" class="menu-link">News</a>
@@ -422,7 +434,7 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">Home</a>
             <a href="#" class="menu-link active">Agent Resources</a>
@@ -454,7 +466,8 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">Home</a>
             <a href="#" class="menu-link">Agent Resources</a>
@@ -463,7 +476,8 @@
             <a href="#" class="menu-link">News</a>
           </div>
         </div>
-        <div class="menu-section menu-tab menu-dropdown active" id="menu-tab-dashboard">
+
+        <div class="menu-section menu-tab menu-dropdown active">
           <div class="menu-dropdown-title">
             <a href="#" class="menu-dropdown-title-link">My Dashboard</a>
           </div>
@@ -472,7 +486,9 @@
             <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
           </div>
         </div>
-        <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
+
+        <a href="#" class="menu-section menu-tab menu-tab-link">Administrador</a>
+
       </nav>
 
   </div>
@@ -494,7 +510,8 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">Home</a>
             <a href="#" class="menu-link">Agent Resources</a>
@@ -503,8 +520,11 @@
             <a href="#" class="menu-link">News</a>
           </div>
         </div>
-        <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-dashboard">My Dashboard</a>
-        <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
+
+        <a href="#" class="menu-section menu-tab menu-tab-link">My Dashboard</a>
+
+        <a href="#" class="menu-section menu-tab menu-tab-link">Admin</a>
+
       </nav>
 
   </div>
@@ -522,7 +542,7 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">Home</a>
             <a href="#" class="menu-link">Agent Resources</a>
@@ -531,7 +551,8 @@
             <a href="#" class="menu-link">News</a>
           </div>
         </div>
-        <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
+
+        <div class="menu-section menu-tab menu-dropdown">
           <div class="menu-dropdown-title">
             <a href="#" class="menu-dropdown-title-link">My Dashboard</a>
           </div>
@@ -540,7 +561,9 @@
             <a href="#" class="menu-dropdown-link">Travel Exceptions</a>
           </div>
         </div>
-        <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
+
+        <a href="#" class="menu-section menu-tab menu-tab-link">Admin</a>
+
       </nav>
 
   </div>
@@ -562,7 +585,7 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">Home</a>
             <a href="#" class="menu-link">Agent Resources</a>
@@ -571,7 +594,7 @@
             <a href="#" class="menu-link">News</a>
           </div>
         </div>
-        <div class="menu-section menu-tab menu-dropdown" id="menu-tab-dashboard">
+        <div class="menu-section menu-tab menu-dropdown">
           <div class="menu-dropdown-title">
             <a href="#" class="menu-dropdown-title-link">My Dashboard</a>
           </div>
@@ -601,7 +624,7 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">Home</a>
             <a href="#" class="menu-link">Agent Resources</a>
@@ -610,7 +633,7 @@
             <a href="#" class="menu-link">News</a>
           </div>
         </div>
-        <a href="#" class="menu-section menu-tab menu-tab-link" id="menu-tab-admin">Admin</a>
+        <a href="#" class="menu-section menu-tab menu-tab-link">Admin</a>
       </nav>
 
   </div>
@@ -633,7 +656,7 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">Home</a>
             <a href="#" class="menu-link">Agent Resources</a>
@@ -665,7 +688,7 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">Home</a>
             <a href="#" class="menu-link">Agent Resources That Are Really Really Really Really Long</a>
@@ -699,7 +722,7 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">旅行会向け情報</a>
             <a href="#" class="menu-link">旅行会社向報</a>
@@ -732,7 +755,7 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">B2및 여행 정보를 제공하는  온라인 </a>
             <a href="#" class="menu-link">B2B 뉴스 및 제공하는  온라인 </a>
@@ -765,7 +788,7 @@
   <div class="header-menu">
 
       <nav class="menu">
-        <div class="menu-section">
+        <div class="menu-section menu-categories">
           <div class="menu-links">
             <a href="#" class="menu-link">成合中国人的航成最中国人航中国人航中国人航</a>
             <a href="#" class="menu-link">成为国人的美国为最中国人航中国人航中国人航适</a>
