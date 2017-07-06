@@ -433,7 +433,7 @@ body.v2 {
 	font-size: 20px;
 	font-weight: 500;
 	text-transform: Uppercase;
-	cursor: default !important;
+	cursor: cursor !important;
 	font-family: 'Open Sans';
 	width: 320px;
 	height: 25px;
@@ -1934,6 +1934,17 @@ body.v2 {
       $(".activediv").removeClass("inactivetab").addClass("activebutton");
     });
     $(".pastdiv").on("click", function() {
+       var idList="";
+       var idCount=0;
+       $(".active-exception").each( function() {
+           	idList = $(this).attr("id");
+            if(idList!==undefined){
+				idCount=idList.split("_")[1];
+           	}
+		});
+        if(idCount <= 24){
+               $(".loadmore").addClass('noDisplay');
+           }
       $(".pastcontent").show();
       $(".activecontent").hide();
       $(".activediv").removeClass("activebutton").addClass("inactivetab");
