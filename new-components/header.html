@@ -811,9 +811,32 @@ function detectIE() {
 }
 var ie = detectIE();
 if (ie && ie <= 11) {
-  $(document).on('mouseenter', '.menu-dropdown', function() {
-    var height = $(this).closest('.menu').height();
-    $(this).find('.menu-dropdown-links').css({top: height + "px"});
+  if (window.Element && !Element.prototype.closest) {
+    Element.prototype.closest =
+      function(s) {
+        var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+          i,
+          el = this;
+        do {
+          i = matches.length;
+          while (--i >= 0 && matches.item(i) !== el) {};
+        } while ((i < 0) && (el = el.parentElement));
+        return el;
+      };
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var menu_items = document.getElementsByClassName('menu-dropdown');
+    for (var i = 0; i < menu_items.length; i++) {
+      var item = menu_items[i];
+      item.addEventListener('mouseenter', function(e) {
+        var menu = e.target.getElementsByClassName('menu-dropdown-links')[0];
+        var header = e.target.closest('.header-menu');
+        var height = header.offsetHeight;
+        menu.style.top = height + "px";
+        console.log(height);
+      })
+    }
   });
 }
 </script>
