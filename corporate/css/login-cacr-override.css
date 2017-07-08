@@ -91,3 +91,10 @@
     font-size: 1.4em;
 }
 	
+.v2 #loginContent {
+   height: auto!important;
+}
+
+.v2 .errorText{
+   font-size:14px;
+ }

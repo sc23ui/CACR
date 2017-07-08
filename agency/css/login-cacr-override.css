@@ -3,9 +3,13 @@
    background-color: #f6f6f7;
 }
 
-.v2 .loginContent {
+.v2 #loginContent {
    height: auto!important;
 }
+
+.v2 .errorText{
+   font-size:14px;
+ }
 
 .v2 .loginBtn {
    font-size: 16px !important;
