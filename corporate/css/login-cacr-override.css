@@ -98,3 +98,7 @@
 .v2 .errorText, .v2 .errorTextLabel{
    font-size:14px;
  }
+
+.v2 .loginMessageDiv {
+    height: auto!important;
+}
