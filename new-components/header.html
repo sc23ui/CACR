@@ -140,6 +140,24 @@
     background-color:#fff;
     border-right: 1px solid #e6e7e8;
   }
+
+  /* preload fix */
+  .menu-dropdown .menu-dropdown-title::before {
+    content: url(images/white-chevron-up.png);
+    width:0;
+    height:0;
+    visibility:hidden;
+    display:none;
+  }
+  /* preload fix */
+  .menu-dropdown.active .menu-dropdown-title::before {
+    content: url(images/blue-chevron-up.png);
+    width:0;
+    height:0;
+    visibility:hidden;
+    display:none;
+  }
+
   .menu-dropdown .menu-dropdown-title::after {
     content: url(images/white-chevron-down.png);
     position: relative;
@@ -176,6 +194,7 @@
   .menu-dropdown:hover .menu-dropdown-title {
     color: #0b1f66;
   }
+
   .menu-dropdown:hover .menu-dropdown-title::after {
     content: url(images/white-chevron-up.png);
     position: relative;
