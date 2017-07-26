@@ -66,6 +66,10 @@
 		width:630px;
 		height:532px;
 	}
+	.v2 .video-w100 {
+		width:960px;
+		height:800px;
+	}
 
 
 
@@ -86,7 +90,11 @@
 	}
 	.v2 .video-w66 .video-embed {
 		width:630px;
-		height:354px;
+		height:360px;
+	}
+	.v2 .video-w100 .video-embed {
+		width:960px;
+		height:600px;
 	}
 
 	.v2 .video-w33 .video-description {
@@ -96,6 +104,9 @@
 		height:163px;
 	}
 	.v2 .video-w66 .video-description {
+		height:80px;
+	}
+	.v2 .video-w100 .video-description {
 		height:80px;
 	}
 
@@ -160,6 +171,9 @@
 	.v2 .video-w66 .owl-carousel .owl-item {
 		height:84px;
 	}
+	.v2 .video-w100 .owl-carousel .owl-item {
+		height:110px;
+	}
 	.v2 .owl-carousel .owl-item {
 		background:#174873;
 		border-radius:5px;
@@ -199,6 +213,10 @@
 	.v2 .video-w66 .video-thumb {
 		height:55px;
 	}
+	.v2 .video-w100 .video-thumb {
+		height:80px;
+	}
+
 	.v2 .owl-carousel .video-thumb-title {
 		padding:6px 2px 2px 2px;
 		text-align:center;
@@ -576,7 +594,7 @@
 					</div>
 
 					<!--// IMPORTANT FOR INTEGRAITON:  Add help text to AEM stating Piksel embed videos must be 630x350 pixels //-->
-					<div class="video-thumb-container" data-player-id="3" data-video-url="https://player.piksel.com/v/w5d2c0z2?w=630&h=350">
+					<div class="video-thumb-container" data-player-id="3" data-video-url="https://player.piksel.com/v/w5d2c0z2?w=628&h=354">
 						<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
 						<div class="video-thumb-title">Step 2</div>
 					</div>
@@ -601,6 +619,127 @@
 	<!--// END W66 VIDEO COMPONENT //-->
 
 
+
+
+
+
+
+		<!--// Do not use these <br> tags //-->
+		<br/><br/>
+
+
+
+
+
+
+
+
+			<!--// EXAMPLE OF W66 VIDEO COMPONENT WITHOUT MULTI-VIDEO CAROUSEL //-->
+			<div class="video video-w100">
+
+				<iframe class="video-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+				<div class="video-content">
+
+			    	<!--// AEM property limit of 40 characters //-->
+						<a href="#" class="video-title">Lorem Ipsum Dolar</a>
+
+						<!--// Use this DIV if there's no URL available...
+						<div class="video-title disble-link">Lorem Ipsum Dolar</div>
+						//-->
+
+						<div class="video-description ellipsis">
+			            <!--// AEM property limit of 350 characters //-->
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						</div>
+
+				</div>
+
+				<a href="#" class="video-link">Learn More&nbsp;&gt;</a>
+
+			</div>
+			<!--// END EXAMPLE //-->
+
+
+
+
+
+
+		<!--// Do not use these <br> tags //-->
+		<br/><br/>
+
+
+
+
+
+
+		<!--// 66% VIDEO COMPONENT WITH MULTI-VIDEO CAROUSEL //-->
+		<div class="video video-w100">
+
+			<!--// iFrames must have a unique numerical id, prefixed with 'player"  Increment the id number for each instance of a video component used on a page. //-->
+			<iframe class="video-embed" id="player4" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+			<div class="video-content">
+
+				<!--// AEM property limit of 40 characters //-->
+				<a href="#" class="video-title">Lorem Ipsum Dolar</a>
+
+				<!--// Use this DIV if there's no URL available...
+				<div class="video-title disble-link">Lorem Ipsum Dolar</div>
+				//-->
+
+				<div class="video-description ellipsis" style="display:none;">
+							<!--// AEM property limit of 350 characters //-->
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+				</div>
+
+				<div class="video-carousel">
+
+					<div class="owl-carousel owl-theme">
+
+						<!--// They data-player-id must match the iFrame id used to display video.  THis is unique to each instance of a video component used on a page.  //-->
+						<div class="video-thumb-container" data-player-id="4" data-video-url="https://www.youtube.com/embed/Z6JRidQkWsk">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">Intro</div>
+						</div>
+
+						<div class="video-thumb-container" data-player-id="4" data-video-url="https://player.vimeo.com/video/20732587#t=0s?autoplay=1">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">Step 1</div>
+						</div>
+
+						<!--// IMPORTANT FOR INTEGRAITON:  Add help text to AEM stating Piksel embed videos must be 630x350 pixels //-->
+						<div class="video-thumb-container" data-player-id="4" data-video-url="https://player.piksel.com/v/w5d2c0z2?w=956&h=540">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">Step 2</div>
+						</div>
+
+						<div class="video-thumb-container" data-player-id="4" data-video-url="https://player.vimeo.com/video/100760192#t=0s?autoplay=1">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">Step 3</div>
+						</div>
+
+						<div class="video-thumb-container" data-player-id="4" data-video-url="https://www.youtube.com/embed/CT5uwLZQRfk">
+							<div class="video-thumb" style="background-image:url('http://placekitten.com/g/400/300');"></div>
+							<div class="video-thumb-title">Step 4</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			<a href="#" class="video-link" style="display:none;">Learn More&nbsp;&gt;</a>
+
+		</div>
+		<!--// END W66 VIDEO COMPONENT //-->
 
 
 
