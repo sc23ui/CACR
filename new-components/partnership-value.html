@@ -1,0 +1,81 @@
+<head>
+	<!--// This jquery script source should already exist in AEM project, no need to add twice //-->
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <!--// Add global ellipsis plugin styles //-->
+	<link rel="stylesheet" href="common-to-components.css">
+</head>
+
+<style>
+	/* Do not integrate anything in this style block */
+	body.v2 {
+			font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
+	}
+</style>
+
+<style>
+	.partner-value {
+		display:table;
+		background:#22659c;
+		width:600px;
+		height:108px;
+		color:#fff;
+		text-align:center;
+	}
+	.partner-value-separator {
+		background:#ccc;
+		width:1px;
+		height:80px;
+		margin-top:14px;
+		float:left;
+	}
+	.partner-value-section {
+		display:table-cell;
+		width:300px;
+		height:100%;
+		font-size:16px;
+		font-weight:normal;
+		color:#eff8fd;
+		text-align:center;
+		vertical-align:middle;
+	}
+	.partner-value-metrics {
+		font-size:20px;
+		font-weight:300;
+		text-align:center;
+	}
+	.partner-value-tagline {
+		text-transform:uppercase;
+		margin-top:10px;
+	}
+	.partner-value-lg {
+		font-size:36px;
+		font-weight:bold;
+		line-height:36px;
+	}
+</style>
+
+<body class="v2">
+
+	<div class="partner-value">
+
+		<div class="partner-value-section">
+			<div class="partner-value-metrics"><span class="partner-value-lg">7</span> of <span class="partner-value-lg">20</span> remaining</div>
+			<div class="partner-value-tagline">Edge Points Q1 2017</div>
+		</div>
+
+		<div class="partner-value-separator"></div>
+
+		<div class="partner-value-section">
+			<div class="partner-value-metrics"><span class="partner-value-lg">$250,027</span></div>
+			<div class="partner-value-tagline">Total Partnership Value Q1 2017</div>
+		</div>
+
+	</div>
+
+</body>
+
+<script>
+	$(document).ready(function(){
+		//scripts
+	});
+</script>
