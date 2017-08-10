@@ -1,0 +1,261 @@
+<!--// Add global ellipsis plugin styles //-->
+<!--// This jquery script source should already exist in AEM project, no need to add twice //-->
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<link rel="stylesheet" href="common-to-components.css">
+
+
+<style>
+	.v2 .video-text {
+		position:relative;
+		font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
+		background:#f6f6f7;
+	}
+
+	.v2 .video-text-w33 {
+		width:300px;
+		height:357px;
+	}
+	.v2 .video-text-w50 {
+		width:465px;
+		height:532px;
+	}
+	.v2 .video-text-w66 {
+		width:630px;
+		height:532px;
+	}
+	.v2 .video-text-w100 {
+		width:960px;
+		height:800px;
+	}
+
+	.v2 .video-text-w33 .video-text-embed {
+		width:300px;
+		height:169px;
+	}
+	.v2 .video-text-w50 .video-text-embed {
+		width:465px;
+		height:262px;
+	}
+	.v2 .video-text-w66 .video-text-embed {
+		width:630px;
+		height:354px;
+	}
+	.v2 .video-text-w100 .video-text-embed {
+		width:960px;
+		height:544px;
+	}
+
+	.v2 .video-text-w33 .video-text-description {
+		height:58px;
+	}
+	.v2 .video-text-w50 .video-text-description {
+		height:171px;
+	}
+	.v2 .video-text-w66 .video-text-description {
+		height:80px;
+	}
+	.v2 .video-text-w100 .video-text-description {
+		height:170px;
+	}
+
+	.v2 .video-text-content {
+		padding:15px 20px 40px 20px;
+	}
+	.v2 a.video-text-title {
+		display:block;
+		font-weight:600;
+		font-size:25px;
+		line-height:30px;
+		color:#0b1f66;
+		text-transform:uppercase;
+		padding-bottom:10px;
+		text-decoration:none;
+	}
+	.v2 a.video-text-title:hover {
+		color:#1c7bd9;
+	}
+	.v2 .video-text-description {
+		font-size:14px;
+		font-weight:400;
+		color:#0b1f66;
+		overflow:hidden;
+		text-overflow:ellipsis;
+	}
+	.v2 a.video-text-link {
+		position:absolute;
+		right:20px;
+		bottom:20px;
+		display:block;
+		font-size:14px;
+		font-weight:600;
+		color:#0253a4;
+	}
+	.v2 a.video-text-link:hover {
+		color:#1c7bd9;
+	}
+</style>
+
+<div class="v2">
+
+
+
+
+
+	<div class="video-text video-text-w33">
+
+		<!--// Example of non-Youtube video link
+		For YouTube and Non-YouTube videos - have the content manager paste the entire video resource URL (for any service)
+		and then output that URL into the existing iframe's src parameter //-->
+		<iframe class="video-text-embed" src="https://player.vimeo.com/video/100760192" frameborder="0" allowfullscreen></iframe>
+
+		<div class="video-text-content">
+
+    <!--// AEM property limit of 30 characters //-->
+		<a href="#" class="video-text-title">Lorem Ipsum Dola</a>
+
+      <!--// AEM property limit of 110 characters //-->
+			<div class="video-text-description ellipsis">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			</div>
+
+		</div>
+
+		<a href="#" class="video-text-link">Learn More&nbsp;&gt;</a>
+
+	</div>
+
+
+
+	<br/><br/>
+
+
+
+	<div class="video-text video-text-w50">
+
+		<iframe class="video-text-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
+
+		<div class="video-text-content">
+
+    <!--// AEM property limit of 60 characters //-->
+		<a href="#" class="video-text-title">LOREM IPSUM DOLAR AMIT</a>
+
+					<div class="video-text-description ellipsis">
+            <!--// AEM property limit of 550 characters //-->
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In set amit dignissim justo ut leo imperdiet, nec tempor magna volutpat enat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+					</div>
+
+		</div>
+
+		<a href="#" class="video-text-link">Learn More &nbsp;&gt;</a>
+
+	</div>
+
+
+
+	<br/><br/>
+
+
+
+	<div class="video-text video-text-w66">
+
+		<iframe class="video-text-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
+
+		<div class="video-text-content">
+
+    <!--// AEM property limit of 40 characters //-->
+		<a href="#" class="video-text-title">LOREM IPSUM DOLAR AMIT </a>
+
+			<div class="video-text-description ellipsis">
+            <!--// AEM property limit of 350 characters //-->
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			</div>
+
+		</div>
+
+		<a href="#" class="video-text-link">Learn More &nbsp;&gt;</a>
+
+	</div>
+
+
+
+
+
+
+	<br/><br/>
+
+
+
+	<div class="video-text video-text-w100">
+
+		<iframe class="video-text-embed" src="https://www.youtube.com/embed/Z6JRidQkWsk?rel=0" frameborder="0" allowfullscreen></iframe>
+
+		<div class="video-text-content">
+
+		<!--// AEM property limit of 40 characters //-->
+		<a href="#" class="video-text-title">LOREM IPSUM DOLAR AMIT </a>
+
+			<div class="video-text-description ellipsis">
+						<!--// AEM property limit of 350 characters //-->
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim justo ut leo imperdiet, nec tempor magna volutpat.
+			</div>
+
+		</div>
+
+		<a href="#" class="video-text-link">Learn More &nbsp;&gt;</a>
+
+	</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!--// Add plugin below to common JavaScript files and include globally as a plugin.  Also add initialization to page load. //-->
+<script>
+/*!
+ * jQuery.ellipsis
+ * https://github.com/jjenzz/jquery.ellipsis
+ * --------------------------------------------------------------------------
+ * Copyright (c) 2013 J. Smith (@jjenzz)
+ * Dual licensed under the MIT and GPL licenses:
+ * https://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ */
+(function(a){if(typeof define==="function"&&define.amd){define(["jquery"],a)}else{a(jQuery)}}(function(d){var c="ellipsis",b='<span style="white-space: nowrap;">',e={lines:"auto",ellipClass:"ellip",responsive:false};function a(h,q){var m=this,w=0,g=[],k,p,i,f,j,n,s;m.$cont=d(h);m.opts=d.extend({},e,q);function o(){m.text=m.$cont.text();m.opts.ellipLineClass=m.opts.ellipClass+"-line";m.$el=d('<span class="'+m.opts.ellipClass+'" />');m.$el.text(m.text);m.$cont.empty().append(m.$el);t()}function t(){if(typeof m.opts.lines==="number"&&m.opts.lines<2){m.$el.addClass(m.opts.ellipLineClass);return}n=m.$cont.height();if(m.opts.lines==="auto"&&m.$el.prop("scrollHeight")<=n){return}if(!k){return}s=d.trim(m.text).split(/\s+/);m.$el.html(b+s.join("</span> "+b)+"</span>");m.$el.find("span").each(k);if(p!=null){u(p)}}function u(x){s[x]='<span class="'+m.opts.ellipLineClass+'">'+s[x];s.push("</span>");m.$el.html(s.join(" "))}if(m.opts.lines==="auto"){var r=function(y,A){var x=d(A),z=x.position().top;j=j||x.height();if(z===f){g[w].push(x)}else{f=z;w+=1;g[w]=[x]}if(z+j>n){p=y-g[w-1].length;return false}};k=r}if(typeof m.opts.lines==="number"&&m.opts.lines>1){var l=function(y,A){var x=d(A),z=x.position().top;if(z!==f){f=z;w+=1}if(w===m.opts.lines){p=y;return false}};k=l}if(m.opts.responsive){var v=function(){g=[];w=0;f=null;p=null;m.$el.html(m.text);clearTimeout(i);i=setTimeout(t,100)};d(window).on("resize."+c,v)}o()}d.fn[c]=function(f){return this.each(function(){try{d(this).data(c,(new a(this,f)))}catch(g){if(window.console){console.error(c+": "+g)}}})}}));
+
+//Initialize onReady (globally)
+$(function() {
+  $('.ellipsis').ellipsis();
+});
+</script>
