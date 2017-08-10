@@ -1,0 +1,84 @@
+<head>
+	<!--// This jquery script source should already exist in AEM project, no need to add twice //-->
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<!--// This Google font should already exist in the AEM project, no need to add twice //-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!--// Add global ellipsis plugin styles //-->
+	<link rel="stylesheet" href="common-to-components.css">
+</head>
+
+<style>
+	/* Do not integrate anything in this style block */
+	body.v2 {
+			font-family: 'Open Sans','Trebuchet MS',Verdana,Tahoma,'MS UI Gothic','MS PMincho',sans-serif;
+	}
+</style>
+
+<style>
+	.linked-text {
+		display:table;
+		background:#f6f6f7;
+		width:300px;
+		height:109px;
+	}
+	.linked-text-description {
+    font-weight:400;
+    padding-bottom:5px;
+    font-size:14px;
+    color:#0b1f66;
+    width:260px;
+    height:71px;
+    padding:13px 13px 0px 13px;
+    line-height:16px;
+	}
+  .linked-text-link {
+    text-align:right;
+    padding:0px 15px 5px 10px;
+  }
+  .linked-text-link a {
+    font-weight:bold;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#0253a4;
+    font-size:14px;
+    line-height:14px;
+  }
+  .linked-text-link a:hover {
+    color:#1c7bd9;
+  }
+</style>
+
+<body class="v2">
+
+
+		<div class="linked-text">
+			<div class="linked-text-description ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget vehicula nisl. Maecenas bibendum, turpis sollicitudin consequat commodo, leo est malesuada quam, a efficitur velit orci dictum ipsum.Maecenas bibendum, turpis sollicitudin consequat commodo, leo est malesuada quam, a efficitur velit orci dictum ipsum.</div>
+			<div class="linked-text-link"><a href="#">Learn More &#62;</a></div>
+		</div>
+
+
+
+
+
+
+
+
+  <!--// Add plugin below to common JavaScript files and include globally as a plugin.  Also add initialization to page load. //-->
+  <script>
+  /*!
+   * jQuery.ellipsis
+   * https://github.com/jjenzz/jquery.ellipsis
+   * --------------------------------------------------------------------------
+   * Copyright (c) 2013 J. Smith (@jjenzz)
+   * Dual licensed under the MIT and GPL licenses:
+   * https://www.opensource.org/licenses/mit-license.php
+   * http://www.gnu.org/licenses/gpl.html
+   */
+  (function(a){if(typeof define==="function"&&define.amd){define(["jquery"],a)}else{a(jQuery)}}(function(d){var c="ellipsis",b='<span style="white-space: nowrap;">',e={lines:"auto",ellipClass:"ellip",responsive:false};function a(h,q){var m=this,w=0,g=[],k,p,i,f,j,n,s;m.$cont=d(h);m.opts=d.extend({},e,q);function o(){m.text=m.$cont.text();m.opts.ellipLineClass=m.opts.ellipClass+"-line";m.$el=d('<span class="'+m.opts.ellipClass+'" />');m.$el.text(m.text);m.$cont.empty().append(m.$el);t()}function t(){if(typeof m.opts.lines==="number"&&m.opts.lines<2){m.$el.addClass(m.opts.ellipLineClass);return}n=m.$cont.height();if(m.opts.lines==="auto"&&m.$el.prop("scrollHeight")<=n){return}if(!k){return}s=d.trim(m.text).split(/\s+/);m.$el.html(b+s.join("</span> "+b)+"</span>");m.$el.find("span").each(k);if(p!=null){u(p)}}function u(x){s[x]='<span class="'+m.opts.ellipLineClass+'">'+s[x];s.push("</span>");m.$el.html(s.join(" "))}if(m.opts.lines==="auto"){var r=function(y,A){var x=d(A),z=x.position().top;j=j||x.height();if(z===f){g[w].push(x)}else{f=z;w+=1;g[w]=[x]}if(z+j>n){p=y-g[w-1].length;return false}};k=r}if(typeof m.opts.lines==="number"&&m.opts.lines>1){var l=function(y,A){var x=d(A),z=x.position().top;if(z!==f){f=z;w+=1}if(w===m.opts.lines){p=y;return false}};k=l}if(m.opts.responsive){var v=function(){g=[];w=0;f=null;p=null;m.$el.html(m.text);clearTimeout(i);i=setTimeout(t,100)};d(window).on("resize."+c,v)}o()}d.fn[c]=function(f){return this.each(function(){try{d(this).data(c,(new a(this,f)))}catch(g){if(window.console){console.error(c+": "+g)}}})}}));
+
+  //Initialize onReady (globally)
+  $(function() {
+    $('.ellipsis').ellipsis();
+  });
+  </script>
+</body>
